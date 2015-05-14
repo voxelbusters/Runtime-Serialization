@@ -1,0 +1,117 @@
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{}\section{Runtime\+Serialization\+Info}
+\label{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}\index{Runtime\+Serialization\+Info@{Runtime\+Serialization\+Info}}
+
+
+Stores all the data required to serialize or deserialize an object.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_ac0ca49c051194ccb86acf86a757a9fed}{Add\+Value$<$ T $>$} (string \+\_\+name, T \+\_\+value)
+\begin{DoxyCompactList}\small\item\em Adds the specified object into the \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Voxel\+Busters.\+Runtime\+Serialization.\+Runtime\+Serialization\+Info} for serialization, where it is associated with name. \end{DoxyCompactList}\item 
+void \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_a2c98842a732a81c60f927c1c93664dac}{Add\+Value} (string \+\_\+name, object \+\_\+value, Type \+\_\+value\+Type)
+\begin{DoxyCompactList}\small\item\em Adds the specified object into the \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Voxel\+Busters.\+Runtime\+Serialization.\+Runtime\+Serialization\+Info} for serialization, where it is associated with name. \end{DoxyCompactList}\item 
+T \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_a197deebcf58f289b38878942ec3f980c}{Get\+Value$<$ T $>$} (string \+\_\+name)
+\begin{DoxyCompactList}\small\item\em Retrieves value from \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Voxel\+Busters.\+Runtime\+Serialization.\+Runtime\+Serialization\+Info}. \end{DoxyCompactList}\item 
+object \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_a4ed12be7f59087807778a09c29468439}{Get\+Value} (string \+\_\+name, Type \+\_\+type)
+\begin{DoxyCompactList}\small\item\em Retrieves value from \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Voxel\+Busters.\+Runtime\+Serialization.\+Runtime\+Serialization\+Info}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores all the data required to serialize or deserialize an object. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_ac0ca49c051194ccb86acf86a757a9fed}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}!Add\+Value$<$ T $>$@{Add\+Value$<$ T $>$}}
+\index{Add\+Value$<$ T $>$@{Add\+Value$<$ T $>$}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}}
+\subsubsection[{Add\+Value$<$ T $>$}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Add\+Value}$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+name, }
+\item[{T}]{\+\_\+value}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_ac0ca49c051194ccb86acf86a757a9fed}
+
+
+Adds the specified object into the \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Voxel\+Busters.\+Runtime\+Serialization.\+Runtime\+Serialization\+Info} for serialization, where it is associated with name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+name} & The name to associate with the value, so it can be deserialized later.\\
+\hline
+{\em \+\_\+value} & The value to be serialized. Any children of this object will automatically be serialized.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The Type associated with the current object. This must always be the type of the object itself.\\
+\hline
+\end{DoxyTemplParams}
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_a2c98842a732a81c60f927c1c93664dac}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}!Add\+Value@{Add\+Value}}
+\index{Add\+Value@{Add\+Value}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}}
+\subsubsection[{Add\+Value}]{\setlength{\rightskip}{0pt plus 5cm}void Add\+Value (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+name, }
+\item[{object}]{\+\_\+value, }
+\item[{Type}]{\+\_\+value\+Type}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_a2c98842a732a81c60f927c1c93664dac}
+
+
+Adds the specified object into the \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Voxel\+Busters.\+Runtime\+Serialization.\+Runtime\+Serialization\+Info} for serialization, where it is associated with name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+name} & The name to associate with the value, so it can be deserialized later.\\
+\hline
+{\em \+\_\+value} & The value to be serialized. Any children of this object will automatically be serialized.\\
+\hline
+{\em \+\_\+value\+Type} & The Type associated with the current object. This must always be the type of the object itself.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_a197deebcf58f289b38878942ec3f980c}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}!Get\+Value$<$ T $>$@{Get\+Value$<$ T $>$}}
+\index{Get\+Value$<$ T $>$@{Get\+Value$<$ T $>$}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}}
+\subsubsection[{Get\+Value$<$ T $>$}]{\setlength{\rightskip}{0pt plus 5cm}T {\bf Get\+Value}$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_a197deebcf58f289b38878942ec3f980c}
+
+
+Retrieves value from \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Voxel\+Busters.\+Runtime\+Serialization.\+Runtime\+Serialization\+Info}. 
+
+\begin{DoxyReturn}{Returns}
+The object of specified type associated with name.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+name} & The name associated with the value to retrieve.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The Type of the value to retrieve.\\
+\hline
+\end{DoxyTemplParams}
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_a4ed12be7f59087807778a09c29468439}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}!Get\+Value@{Get\+Value}}
+\index{Get\+Value@{Get\+Value}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}}
+\subsubsection[{Get\+Value}]{\setlength{\rightskip}{0pt plus 5cm}object Get\+Value (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+name, }
+\item[{Type}]{\+\_\+type}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_a4ed12be7f59087807778a09c29468439}
+
+
+Retrieves value from \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Voxel\+Busters.\+Runtime\+Serialization.\+Runtime\+Serialization\+Info}. 
+
+\begin{DoxyReturn}{Returns}
+The object of specified type associated with name.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+name} & The name associated with the value to retrieve.\\
+\hline
+\end{DoxyParams}
+$<$param name==\char`\"{}\+\_\+type\char`\"{}$>$The Type of the value to retrieve.

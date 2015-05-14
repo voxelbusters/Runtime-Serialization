@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialize_field_attribute">
+<title>VoxelBusters::RuntimeSerialization::RuntimeSerializeFieldAttribute class Reference</title>
+    <simplesect>
+
+<para>Indicates that a field of a <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute">VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute</link> class should be serialized at runtime. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 13 of file RuntimeSerializeFieldAttribute.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>RuntimeSerializeFieldAttribute.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+</section>

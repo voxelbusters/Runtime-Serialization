@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler">
+<title>VoxelBusters::RuntimeSerialization::Benchmark::Profiler class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a61fe0349d692eb6d4f5b94e35049b2e9">TestCase</link> {
+<link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a61fe0349d692eb6d4f5b94e35049b2e9a0db45d2a4141101bdfe48e3314cfbca3">UNDEFINED</link>,
+<link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a61fe0349d692eb6d4f5b94e35049b2e9a71eeb2a47c7b0a5761c4bfdb0747ef22">BS_SERIALIZATION</link>,
+<link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a61fe0349d692eb6d4f5b94e35049b2e9a8e6828bf70047076c4b207259e5dee99">BS_DESERIALIZATION</link>,
+<link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a61fe0349d692eb6d4f5b94e35049b2e9a85551a75d2247a61504b4aeaf79c7f6b">RS_SERIALIZATION_CLASS</link>,
+<link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a61fe0349d692eb6d4f5b94e35049b2e9ad1448d9b2b6d16893e54f0141df09ee6">RS_DESERIALIZATION_CLASS</link>,
+<link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a61fe0349d692eb6d4f5b94e35049b2e9a60990949cdbe73c55e8ea98611490ca4">RS_SERIALIZATION_GAMEOBJECT</link>,
+<link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a61fe0349d692eb6d4f5b94e35049b2e9a16bbbc25b0be721c392cd1fe24703c91">RS_DESERIALIZATION_GAMEOBJECT</link>
+}</literallayout>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BenchmarkSample m_benchmarkSample</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>GameObject m_serializeGameObject</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string m_BSSerializationData</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int m_executionCount</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string m_testResult</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kBinarySerializationID</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kRuntimeSerializationClassID</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kRuntimeSerializationGameobjectID</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a07aaf1227e4d645f15e0a964f54ef291">Start</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1ac54ce402cec4f1d67a1cef4db841d26d">OnDestroy</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1aed4a27d48069265ea875624f0b7c61a4">OnGUI</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a76bbf7775cd9332215771fbb63b3df71">StartProfiling</link> (
+TestCase _test)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a3114f0525fce3e8bb5e3435b11aba799">PerformBSSerialization&lt; T &gt;</link> (
+T _object)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>T <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a85fc0c30159acf458c0db1f68ef5641f">PerformBSDeserialization&lt; T &gt;</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a46fa8f831f20d0df499aceae82064328">LoadBSData</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1af0ddc26500fa22c2f27c8b6aaa67a544">SaveBSData</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a61fe0349d692eb6d4f5b94e35049b2e9">
+               <title>enum TestCase </title>
+               
+               <formalpara>
+                    <title>Enumerator:</title>
+                    <variablelist>
+                        <varlistentry xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a61fe0349d692eb6d4f5b94e35049b2e9a0db45d2a4141101bdfe48e3314cfbca3">
+                            <term>UNDEFINED</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a61fe0349d692eb6d4f5b94e35049b2e9a71eeb2a47c7b0a5761c4bfdb0747ef22">
+                            <term>BS_SERIALIZATION</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a61fe0349d692eb6d4f5b94e35049b2e9a8e6828bf70047076c4b207259e5dee99">
+                            <term>BS_DESERIALIZATION</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a61fe0349d692eb6d4f5b94e35049b2e9a85551a75d2247a61504b4aeaf79c7f6b">
+                            <term>RS_SERIALIZATION_CLASS</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a61fe0349d692eb6d4f5b94e35049b2e9ad1448d9b2b6d16893e54f0141df09ee6">
+                            <term>RS_DESERIALIZATION_CLASS</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a61fe0349d692eb6d4f5b94e35049b2e9a60990949cdbe73c55e8ea98611490ca4">
+                            <term>RS_SERIALIZATION_GAMEOBJECT</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a61fe0349d692eb6d4f5b94e35049b2e9a16bbbc25b0be721c392cd1fe24703c91">
+                            <term>RS_DESERIALIZATION_GAMEOBJECT</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                     </variablelist>
+                </formalpara>
+                <para>Definition at line 21 of file Profiler.cs
+                    <computeroutput><literallayout>
+{
+UNDEFINED, 
+BS_SERIALIZATION, 
+BS_DESERIALIZATION, 
+RS_SERIALIZATION_CLASS, 
+RS_DESERIALIZATION_CLASS, 
+RS_SERIALIZATION_GAMEOBJECT, 
+RS_DESERIALIZATION_GAMEOBJECT, 
+}TestCase;
+                    </literallayout></computeroutput>
+                </para>
+            </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a07aaf1227e4d645f15e0a964f54ef291">
+                <title>void Start ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1ac54ce402cec4f1d67a1cef4db841d26d">
+                <title>void OnDestroy ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1aed4a27d48069265ea875624f0b7c61a4">
+                <title>void OnGUI ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a76bbf7775cd9332215771fbb63b3df71">
+                <title>void StartProfiling (TestCase _test)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a3114f0525fce3e8bb5e3435b11aba799">
+                <title>void PerformBSSerialization&lt; T &gt; (T _object)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a85fc0c30159acf458c0db1f68ef5641f">
+                <title>T PerformBSDeserialization&lt; T &gt; ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a46fa8f831f20d0df499aceae82064328">
+                <title>void LoadBSData ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1af0ddc26500fa22c2f27c8b6aaa67a544">
+                <title>void SaveBSData ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

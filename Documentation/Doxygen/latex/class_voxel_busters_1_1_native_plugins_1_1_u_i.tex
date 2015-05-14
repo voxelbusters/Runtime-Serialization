@@ -1,0 +1,263 @@
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_u_i}{}\section{U\+I}
+\label{class_voxel_busters_1_1_native_plugins_1_1_u_i}\index{U\+I@{U\+I}}
+
+
+Provides interface for Native \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_u_i}{U\+I} system.  
+
+
+
+
+Inherits Mono\+Behaviour, Mono\+Behaviour, Mono\+Behaviour, Mono\+Behaviour, and Mono\+Behaviour.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_u_i_a640efb5f4583b0e5a104ea26dff47c26}{Show\+Alert\+Dialog\+With\+Single\+Button} (string \+\_\+title, string \+\_\+message, string \+\_\+button, \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_u_i_a13f3f1e52779c188248ff0f1db247fb5}{Alert\+Dialog\+Completion} \+\_\+on\+Completion)
+\begin{DoxyCompactList}\small\item\em Shows the alert dialog with single button. \end{DoxyCompactList}\item 
+void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_u_i_a7c3d280e08154cd2348e104392a24af9}{Show\+Alert\+Dialog\+With\+Multiple\+Buttons} (string \+\_\+title, string \+\_\+message, string\mbox{[}$\,$\mbox{]} \+\_\+buttons\+List, \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_u_i_a13f3f1e52779c188248ff0f1db247fb5}{Alert\+Dialog\+Completion} \+\_\+on\+Completion)
+\begin{DoxyCompactList}\small\item\em Shows the alert dialog with multiple buttons. \end{DoxyCompactList}\item 
+delegate void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_u_i_a13f3f1e52779c188248ff0f1db247fb5}{Alert\+Dialog\+Completion} (string \+\_\+button\+Pressed)
+\begin{DoxyCompactList}\small\item\em Use this delegate type to get callback when the user clicks a button on an alert dialog. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_u_i_aeae37ed3111f972cab7cc2f95fe8020a}{Set\+Popover\+Point} (Vector2 \+\_\+position)
+\begin{DoxyCompactList}\small\item\em Sets position of popover controller to given position. Popover controllers are used to Pick Media and to present Share options in i\+Pad. Default position is set to (0.\+0, 0.\+0). Note that this is i\+O\+S only feature. On Android this call has no effect. \end{DoxyCompactList}\item 
+void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_u_i_a6bd0bc0253cdf398318892a9bc72e156}{Set\+Popover\+Point\+At\+Last\+Touch\+Position} ()
+\begin{DoxyCompactList}\small\item\em Sets position of popover controller to last touch position. Popover controllers are used to Pick Media and to present Share options in i\+Pad. Default position is set to (0.\+0, 0.\+0). Note that this is i\+O\+S only feature. On Android this call has no effect. \end{DoxyCompactList}\item 
+void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_u_i_ad78010ddfdb7303a095989f561dd895f}{Show\+Single\+Field\+Prompt\+Dialog\+With\+Plain\+Text} (string \+\_\+title, string \+\_\+message, string \+\_\+placeholder, string\mbox{[}$\,$\mbox{]} \+\_\+buttons\+List, \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_u_i_ab0a0d009b7dbdc669cedc932da72e0ea}{Single\+Field\+Prompt\+Completion} \+\_\+on\+Completion)
+\begin{DoxyCompactList}\small\item\em Prompt dialog that allows the user to enter text. \end{DoxyCompactList}\item 
+void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_u_i_ad8376c30acf9b24dc8c4209a8b093b36}{Show\+Single\+Field\+Prompt\+Dialog\+With\+Secured\+Text} (string \+\_\+title, string \+\_\+message, string \+\_\+placeholder, string\mbox{[}$\,$\mbox{]} \+\_\+buttons\+List, \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_u_i_ab0a0d009b7dbdc669cedc932da72e0ea}{Single\+Field\+Prompt\+Completion} \+\_\+on\+Completion)
+\begin{DoxyCompactList}\small\item\em Prompt dialog that allows the user to enter text. The text field is obscured. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_u_i_abfc8e5d3fc0d3a42a8e04112c90c98e5}{Show\+Login\+Prompt\+Dialog} (string \+\_\+title, string \+\_\+message, string \+\_\+username\+Place\+Holder, string \+\_\+password\+Place\+Holder, string\mbox{[}$\,$\mbox{]} \+\_\+buttons\+List, \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_u_i_a8f84064901adeb069478fb7946e5f573}{Login\+Prompt\+Completion} \+\_\+on\+Completion)
+\begin{DoxyCompactList}\small\item\em Prompt dialog that allows the user to enter login identifier and password. \end{DoxyCompactList}\item 
+delegate void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_u_i_ab0a0d009b7dbdc669cedc932da72e0ea}{Single\+Field\+Prompt\+Completion} (string \+\_\+button\+Pressed, string \+\_\+input\+Text)
+\begin{DoxyCompactList}\small\item\em Use this delegate type to get callback when the user clicks a button on single field prompt dialog. \end{DoxyCompactList}\item 
+delegate void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_u_i_a8f84064901adeb069478fb7946e5f573}{Login\+Prompt\+Completion} (string \+\_\+button\+Pressed, string \+\_\+username\+Text, string \+\_\+password\+Text)
+\begin{DoxyCompactList}\small\item\em Use this delegate type to get callback when the user clicks a button on login prompt dialog. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides interface for Native \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_u_i}{U\+I} system. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_u_i_a640efb5f4583b0e5a104ea26dff47c26}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I@{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I}!Show\+Alert\+Dialog\+With\+Single\+Button@{Show\+Alert\+Dialog\+With\+Single\+Button}}
+\index{Show\+Alert\+Dialog\+With\+Single\+Button@{Show\+Alert\+Dialog\+With\+Single\+Button}!Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I@{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I}}
+\subsubsection[{Show\+Alert\+Dialog\+With\+Single\+Button}]{\setlength{\rightskip}{0pt plus 5cm}void Show\+Alert\+Dialog\+With\+Single\+Button (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+title, }
+\item[{string}]{\+\_\+message, }
+\item[{string}]{\+\_\+button, }
+\item[{{\bf Alert\+Dialog\+Completion}}]{\+\_\+on\+Completion}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_u_i_a640efb5f4583b0e5a104ea26dff47c26}
+
+
+Shows the alert dialog with single button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+title} & Text that appears in title bar.\\
+\hline
+{\em \+\_\+message} & Descriptive text that provides more details.\\
+\hline
+{\em \+\_\+button} & Title of action button.\\
+\hline
+{\em \+\_\+on\+Completion} & Calls the delegate when action button is pressed.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_u_i_a7c3d280e08154cd2348e104392a24af9}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I@{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I}!Show\+Alert\+Dialog\+With\+Multiple\+Buttons@{Show\+Alert\+Dialog\+With\+Multiple\+Buttons}}
+\index{Show\+Alert\+Dialog\+With\+Multiple\+Buttons@{Show\+Alert\+Dialog\+With\+Multiple\+Buttons}!Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I@{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I}}
+\subsubsection[{Show\+Alert\+Dialog\+With\+Multiple\+Buttons}]{\setlength{\rightskip}{0pt plus 5cm}void Show\+Alert\+Dialog\+With\+Multiple\+Buttons (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+title, }
+\item[{string}]{\+\_\+message, }
+\item[{string\mbox{[}$\,$\mbox{]}}]{\+\_\+buttons\+List, }
+\item[{{\bf Alert\+Dialog\+Completion}}]{\+\_\+on\+Completion}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_u_i_a7c3d280e08154cd2348e104392a24af9}
+
+
+Shows the alert dialog with multiple buttons. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+title} & Text that appears in title bar.\\
+\hline
+{\em \+\_\+message} & Descriptive text that provides more details.\\
+\hline
+{\em \+\_\+buttons\+List} & Title of action buttons.\\
+\hline
+{\em \+\_\+on\+Completion} & Calls the delegate when action button is pressed.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_u_i_a13f3f1e52779c188248ff0f1db247fb5}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I@{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I}!Alert\+Dialog\+Completion@{Alert\+Dialog\+Completion}}
+\index{Alert\+Dialog\+Completion@{Alert\+Dialog\+Completion}!Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I@{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I}}
+\subsubsection[{Alert\+Dialog\+Completion}]{\setlength{\rightskip}{0pt plus 5cm}delegate void Alert\+Dialog\+Completion (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+button\+Pressed}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_u_i_a13f3f1e52779c188248ff0f1db247fb5}
+
+
+Use this delegate type to get callback when the user clicks a button on an alert dialog. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+button\+Pressed} & Title of the button that was pressed.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_u_i_aeae37ed3111f972cab7cc2f95fe8020a}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I@{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I}!Set\+Popover\+Point@{Set\+Popover\+Point}}
+\index{Set\+Popover\+Point@{Set\+Popover\+Point}!Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I@{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I}}
+\subsubsection[{Set\+Popover\+Point}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Set\+Popover\+Point (
+\begin{DoxyParamCaption}
+\item[{Vector2}]{\+\_\+position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_u_i_aeae37ed3111f972cab7cc2f95fe8020a}
+
+
+Sets position of popover controller to given position. Popover controllers are used to Pick Media and to present Share options in i\+Pad. Default position is set to (0.\+0, 0.\+0). Note that this is i\+O\+S only feature. On Android this call has no effect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+position} & Screen position where popover is displayed.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_u_i_a6bd0bc0253cdf398318892a9bc72e156}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I@{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I}!Set\+Popover\+Point\+At\+Last\+Touch\+Position@{Set\+Popover\+Point\+At\+Last\+Touch\+Position}}
+\index{Set\+Popover\+Point\+At\+Last\+Touch\+Position@{Set\+Popover\+Point\+At\+Last\+Touch\+Position}!Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I@{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I}}
+\subsubsection[{Set\+Popover\+Point\+At\+Last\+Touch\+Position}]{\setlength{\rightskip}{0pt plus 5cm}void Set\+Popover\+Point\+At\+Last\+Touch\+Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_u_i_a6bd0bc0253cdf398318892a9bc72e156}
+
+
+Sets position of popover controller to last touch position. Popover controllers are used to Pick Media and to present Share options in i\+Pad. Default position is set to (0.\+0, 0.\+0). Note that this is i\+O\+S only feature. On Android this call has no effect. 
+
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_u_i_ad78010ddfdb7303a095989f561dd895f}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I@{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I}!Show\+Single\+Field\+Prompt\+Dialog\+With\+Plain\+Text@{Show\+Single\+Field\+Prompt\+Dialog\+With\+Plain\+Text}}
+\index{Show\+Single\+Field\+Prompt\+Dialog\+With\+Plain\+Text@{Show\+Single\+Field\+Prompt\+Dialog\+With\+Plain\+Text}!Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I@{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I}}
+\subsubsection[{Show\+Single\+Field\+Prompt\+Dialog\+With\+Plain\+Text}]{\setlength{\rightskip}{0pt plus 5cm}void Show\+Single\+Field\+Prompt\+Dialog\+With\+Plain\+Text (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+title, }
+\item[{string}]{\+\_\+message, }
+\item[{string}]{\+\_\+placeholder, }
+\item[{string\mbox{[}$\,$\mbox{]}}]{\+\_\+buttons\+List, }
+\item[{{\bf Single\+Field\+Prompt\+Completion}}]{\+\_\+on\+Completion}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_u_i_ad78010ddfdb7303a095989f561dd895f}
+
+
+Prompt dialog that allows the user to enter text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+title} & Text that appears in title bar.\\
+\hline
+{\em \+\_\+message} & Descriptive text that provides more details.\\
+\hline
+{\em \+\_\+placeholder} & String that is displayed when there is no other text in the textfield.\\
+\hline
+{\em \+\_\+buttons\+List} & Title of action buttons.\\
+\hline
+{\em \+\_\+on\+Completion} & Calls the delegate when action button is pressed.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_u_i_ad8376c30acf9b24dc8c4209a8b093b36}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I@{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I}!Show\+Single\+Field\+Prompt\+Dialog\+With\+Secured\+Text@{Show\+Single\+Field\+Prompt\+Dialog\+With\+Secured\+Text}}
+\index{Show\+Single\+Field\+Prompt\+Dialog\+With\+Secured\+Text@{Show\+Single\+Field\+Prompt\+Dialog\+With\+Secured\+Text}!Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I@{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I}}
+\subsubsection[{Show\+Single\+Field\+Prompt\+Dialog\+With\+Secured\+Text}]{\setlength{\rightskip}{0pt plus 5cm}void Show\+Single\+Field\+Prompt\+Dialog\+With\+Secured\+Text (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+title, }
+\item[{string}]{\+\_\+message, }
+\item[{string}]{\+\_\+placeholder, }
+\item[{string\mbox{[}$\,$\mbox{]}}]{\+\_\+buttons\+List, }
+\item[{{\bf Single\+Field\+Prompt\+Completion}}]{\+\_\+on\+Completion}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_u_i_ad8376c30acf9b24dc8c4209a8b093b36}
+
+
+Prompt dialog that allows the user to enter text. The text field is obscured. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+title} & Text that appears in title bar.\\
+\hline
+{\em \+\_\+message} & Descriptive text that provides more details.\\
+\hline
+{\em \+\_\+placeholder} & String that is displayed when there is no other text in the textfield.\\
+\hline
+{\em \+\_\+buttons\+List} & Title of action buttons.\\
+\hline
+{\em \+\_\+on\+Completion} & Calls the delegate when action button is pressed.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_u_i_abfc8e5d3fc0d3a42a8e04112c90c98e5}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I@{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I}!Show\+Login\+Prompt\+Dialog@{Show\+Login\+Prompt\+Dialog}}
+\index{Show\+Login\+Prompt\+Dialog@{Show\+Login\+Prompt\+Dialog}!Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I@{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I}}
+\subsubsection[{Show\+Login\+Prompt\+Dialog}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Show\+Login\+Prompt\+Dialog (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+title, }
+\item[{string}]{\+\_\+message, }
+\item[{string}]{\+\_\+username\+Place\+Holder, }
+\item[{string}]{\+\_\+password\+Place\+Holder, }
+\item[{string\mbox{[}$\,$\mbox{]}}]{\+\_\+buttons\+List, }
+\item[{{\bf Login\+Prompt\+Completion}}]{\+\_\+on\+Completion}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_u_i_abfc8e5d3fc0d3a42a8e04112c90c98e5}
+
+
+Prompt dialog that allows the user to enter login identifier and password. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+title} & Text that appears in title bar.\\
+\hline
+{\em \+\_\+message} & Descriptive text that provides more details.\\
+\hline
+{\em \+\_\+username\+Place\+Holder} & String that is displayed when there is no other text in the username textfield.\\
+\hline
+{\em \+\_\+password\+Place\+Holder} & String that is displayed when there is no other text in the password textfield.\\
+\hline
+{\em \+\_\+buttons\+List} & Title of action buttons.\\
+\hline
+{\em \+\_\+on\+Completion} & Calls the delegate when action button is pressed.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_u_i_ab0a0d009b7dbdc669cedc932da72e0ea}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I@{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I}!Single\+Field\+Prompt\+Completion@{Single\+Field\+Prompt\+Completion}}
+\index{Single\+Field\+Prompt\+Completion@{Single\+Field\+Prompt\+Completion}!Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I@{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I}}
+\subsubsection[{Single\+Field\+Prompt\+Completion}]{\setlength{\rightskip}{0pt plus 5cm}delegate void Single\+Field\+Prompt\+Completion (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+button\+Pressed, }
+\item[{string}]{\+\_\+input\+Text}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_u_i_ab0a0d009b7dbdc669cedc932da72e0ea}
+
+
+Use this delegate type to get callback when the user clicks a button on single field prompt dialog. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+button\+Pressed} & Title of the button that was pressed.\\
+\hline
+{\em \+\_\+input\+Text} & Text contents of textfield.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_u_i_a8f84064901adeb069478fb7946e5f573}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I@{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I}!Login\+Prompt\+Completion@{Login\+Prompt\+Completion}}
+\index{Login\+Prompt\+Completion@{Login\+Prompt\+Completion}!Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I@{Voxel\+Busters\+::\+Native\+Plugins\+::\+U\+I}}
+\subsubsection[{Login\+Prompt\+Completion}]{\setlength{\rightskip}{0pt plus 5cm}delegate void Login\+Prompt\+Completion (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+button\+Pressed, }
+\item[{string}]{\+\_\+username\+Text, }
+\item[{string}]{\+\_\+password\+Text}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_u_i_a8f84064901adeb069478fb7946e5f573}
+
+
+Use this delegate type to get callback when the user clicks a button on login prompt dialog. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+button\+Pressed} & Title of the button that was pressed.\\
+\hline
+{\em \+\_\+username\+Text} & Text contents of login textfield.\\
+\hline
+{\em \+\_\+password\+Text} & Text contents of password textfield.\\
+\hline
+\end{DoxyParams}

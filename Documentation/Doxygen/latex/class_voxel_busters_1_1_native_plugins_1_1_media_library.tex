@@ -1,0 +1,290 @@
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_media_library}{}\section{Media\+Library}
+\label{class_voxel_busters_1_1_native_plugins_1_1_media_library}\index{Media\+Library@{Media\+Library}}
+
+
+Media library provides an unique way to access devices\textquotesingle{}s media gallery and camera for picking images and playing videos.  
+
+
+
+
+Inherits Mono\+Behaviour, and Mono\+Behaviour.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_media_library_af2368db810c73e2f4cb13ba65484c420}{Is\+Camera\+Supported} ()
+\begin{DoxyCompactList}\small\item\em Determines if camera is supported. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_media_library_abbccbd69133420708fd4d61d720e2a71}{Pick\+Image} (\hyperlink{namespace_voxel_busters_1_1_native_plugins_a7c22ee0fa98a425137dcfc6463ddfc2c}{e\+Image\+Source} \+\_\+source, float \+\_\+scale\+Factor, \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_media_library_a95dd54d80020c5ba3c14361984b098c7}{Pick\+Image\+Completion} \+\_\+on\+Completion)
+\begin{DoxyCompactList}\small\item\em Picks the image. \end{DoxyCompactList}\item 
+void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_media_library_ac02352f342e714e86ae3b2054dc59485}{Save\+Screenshot\+To\+Gallery} (\hyperlink{class_voxel_busters_1_1_native_plugins_1_1_media_library_a2dc4a641f32b69e42c223332fa7dfebd}{Save\+Image\+To\+Gallery\+Completion} \+\_\+on\+Completion)
+\begin{DoxyCompactList}\small\item\em Saves the screenshot to gallery/media library of the users device. \end{DoxyCompactList}\item 
+void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_media_library_a344a5d82071e4da51af9d1e279bd0fc7}{Save\+Image\+To\+Gallery} (U\+R\+L \+\_\+\+U\+R\+L, \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_media_library_a2dc4a641f32b69e42c223332fa7dfebd}{Save\+Image\+To\+Gallery\+Completion} \+\_\+on\+Completion)
+\begin{DoxyCompactList}\small\item\em Saves an image from the specified url to gallery/media library of the users device. \end{DoxyCompactList}\item 
+void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_media_library_a2d7bd812342f26b6ef41af91d4486c50}{Save\+Image\+To\+Gallery} (Texture2\+D \+\_\+texture, \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_media_library_a2dc4a641f32b69e42c223332fa7dfebd}{Save\+Image\+To\+Gallery\+Completion} \+\_\+on\+Completion)
+\begin{DoxyCompactList}\small\item\em Saves the specified texture to gallery. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_media_library_a302c749e6655fdd24b55bbf54ba3512f}{Save\+Image\+To\+Gallery} (byte\mbox{[}$\,$\mbox{]} \+\_\+image\+Byte\+Array, \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_media_library_a2dc4a641f32b69e42c223332fa7dfebd}{Save\+Image\+To\+Gallery\+Completion} \+\_\+on\+Completion)
+\begin{DoxyCompactList}\small\item\em Saves the specified image data source to gallery. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_media_library_a34913dd531622ffa0eeb8a41c610844f}{Play\+Youtube\+Video} (string \+\_\+video\+I\+D, \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_media_library_abdb2811c23515fd8ac3335152b5a8951}{Play\+Video\+Completion} \+\_\+on\+Completion)
+\begin{DoxyCompactList}\small\item\em Plays youtube video for the corresponding video id specified. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_media_library_afecbbc321f2903974c5f65f31b4622fa}{Play\+Embedded\+Video} (string \+\_\+embed\+H\+T\+M\+L\+String, \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_media_library_abdb2811c23515fd8ac3335152b5a8951}{Play\+Video\+Completion} \+\_\+on\+Completion)
+\begin{DoxyCompactList}\small\item\em Plays embedded video using web view. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_media_library_a73aa1ce9546df342b6b407e762d10d98}{Play\+Video\+From\+U\+R\+L} (U\+R\+L \+\_\+\+U\+R\+L, \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_media_library_abdb2811c23515fd8ac3335152b5a8951}{Play\+Video\+Completion} \+\_\+on\+Completion)
+\begin{DoxyCompactList}\small\item\em Play video from specified U\+R\+L. This can be an U\+R\+L pointing to local/remote file. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_media_library_aa2544dbf89d6b643672a8439e0b21566}{Play\+Video\+From\+Gallery} (\hyperlink{class_voxel_busters_1_1_native_plugins_1_1_media_library_a693a7a3dd11e94e64de370bc78e23b45}{Pick\+Video\+Completion} \+\_\+on\+Pick\+Video\+Completion, \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_media_library_abdb2811c23515fd8ac3335152b5a8951}{Play\+Video\+Completion} \+\_\+on\+Play\+Video\+Completion)
+\begin{DoxyCompactList}\small\item\em Allows to pick a video from gallery and play it. \end{DoxyCompactList}\item 
+delegate void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_media_library_a95dd54d80020c5ba3c14361984b098c7}{Pick\+Image\+Completion} (\hyperlink{namespace_voxel_busters_1_1_native_plugins_a827272a4a290f79aec1c1634fcb15ab0}{e\+Pick\+Image\+Finish\+Reason} \+\_\+reason, Texture2\+D \+\_\+image)
+\begin{DoxyCompactList}\small\item\em Use this delegate type to get callback when pick image action is done. Check \+\_\+reason for success or failure. If successful, returns the texture of picked image. \end{DoxyCompactList}\item 
+delegate void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_media_library_a2dc4a641f32b69e42c223332fa7dfebd}{Save\+Image\+To\+Gallery\+Completion} (bool \+\_\+saved\+Successfully)
+\begin{DoxyCompactList}\small\item\em Use this delegate type to get callback when image is saved to gallery. \end{DoxyCompactList}\item 
+delegate void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_media_library_a693a7a3dd11e94e64de370bc78e23b45}{Pick\+Video\+Completion} (\hyperlink{namespace_voxel_busters_1_1_native_plugins_a461fe22d94c9553cd71a869b628c698d}{e\+Pick\+Video\+Finish\+Reason} \+\_\+reason)
+\begin{DoxyCompactList}\small\item\em Use this delegate type to get callback when pick video action is done. Check \+\_\+reason for success or failure. \end{DoxyCompactList}\item 
+delegate void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_media_library_abdb2811c23515fd8ac3335152b5a8951}{Play\+Video\+Completion} (\hyperlink{namespace_voxel_busters_1_1_native_plugins_a1573f15aadb41505f5f0c0ae33abe7e1}{e\+Play\+Video\+Finish\+Reason} \+\_\+reason)
+\begin{DoxyCompactList}\small\item\em Use this delegate type to get callback when play video action is done. Check \+\_\+reason for success or failure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Media library provides an unique way to access devices\textquotesingle{}s media gallery and camera for picking images and playing videos. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_media_library_af2368db810c73e2f4cb13ba65484c420}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}!Is\+Camera\+Supported@{Is\+Camera\+Supported}}
+\index{Is\+Camera\+Supported@{Is\+Camera\+Supported}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}}
+\subsubsection[{Is\+Camera\+Supported}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Is\+Camera\+Supported (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_media_library_af2368db810c73e2f4cb13ba65484c420}
+
+
+Determines if camera is supported. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if camera is supported; otherwise, {\ttfamily false}.
+\end{DoxyReturn}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_media_library_abbccbd69133420708fd4d61d720e2a71}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}!Pick\+Image@{Pick\+Image}}
+\index{Pick\+Image@{Pick\+Image}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}}
+\subsubsection[{Pick\+Image}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Pick\+Image (
+\begin{DoxyParamCaption}
+\item[{{\bf e\+Image\+Source}}]{\+\_\+source, }
+\item[{float}]{\+\_\+scale\+Factor, }
+\item[{{\bf Pick\+Image\+Completion}}]{\+\_\+on\+Completion}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_media_library_abbccbd69133420708fd4d61d720e2a71}
+
+
+Picks the image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+source} & Specify from where you want to pick the image from. \hyperlink{namespace_voxel_busters_1_1_native_plugins_a7c22ee0fa98a425137dcfc6463ddfc2c}{e\+Image\+Source} \\
+\hline
+{\em \+\_\+scale\+Factor} & Specify if scaled up or scaled down version of pick image is required. 1.\+0f returns the image with out any modification.\\
+\hline
+{\em \+\_\+on\+Completion} & Callback triggered once Pick from the source is finised.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_media_library_ac02352f342e714e86ae3b2054dc59485}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}!Save\+Screenshot\+To\+Gallery@{Save\+Screenshot\+To\+Gallery}}
+\index{Save\+Screenshot\+To\+Gallery@{Save\+Screenshot\+To\+Gallery}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}}
+\subsubsection[{Save\+Screenshot\+To\+Gallery}]{\setlength{\rightskip}{0pt plus 5cm}void Save\+Screenshot\+To\+Gallery (
+\begin{DoxyParamCaption}
+\item[{{\bf Save\+Image\+To\+Gallery\+Completion}}]{\+\_\+on\+Completion}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_media_library_ac02352f342e714e86ae3b2054dc59485}
+
+
+Saves the screenshot to gallery/media library of the users device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+on\+Completion} & Callback triggered once save to gallery is done.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_media_library_a344a5d82071e4da51af9d1e279bd0fc7}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}!Save\+Image\+To\+Gallery@{Save\+Image\+To\+Gallery}}
+\index{Save\+Image\+To\+Gallery@{Save\+Image\+To\+Gallery}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}}
+\subsubsection[{Save\+Image\+To\+Gallery}]{\setlength{\rightskip}{0pt plus 5cm}void Save\+Image\+To\+Gallery (
+\begin{DoxyParamCaption}
+\item[{U\+R\+L}]{\+\_\+\+U\+R\+L, }
+\item[{{\bf Save\+Image\+To\+Gallery\+Completion}}]{\+\_\+on\+Completion}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_media_library_a344a5d82071e4da51af9d1e279bd0fc7}
+
+
+Saves an image from the specified url to gallery/media library of the users device. 
+
+\begin{DoxyNote}{Note}
+The path needs to be absolute path if its local file. Take care of the path on multiple platforms as the file structure will be different. 
+\end{DoxyNote}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+U\+R\+L} & U\+R\+L to pick the source from. This can be a file url existing on local storage or a web url at remote location.\\
+\hline
+{\em \+\_\+on\+Completion} & Callback triggered once save to gallery is done.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_media_library_a2d7bd812342f26b6ef41af91d4486c50}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}!Save\+Image\+To\+Gallery@{Save\+Image\+To\+Gallery}}
+\index{Save\+Image\+To\+Gallery@{Save\+Image\+To\+Gallery}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}}
+\subsubsection[{Save\+Image\+To\+Gallery}]{\setlength{\rightskip}{0pt plus 5cm}void Save\+Image\+To\+Gallery (
+\begin{DoxyParamCaption}
+\item[{Texture2\+D}]{\+\_\+texture, }
+\item[{{\bf Save\+Image\+To\+Gallery\+Completion}}]{\+\_\+on\+Completion}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_media_library_a2d7bd812342f26b6ef41af91d4486c50}
+
+
+Saves the specified texture to gallery. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+texture} & Texture that needs to be saved to gallery.\\
+\hline
+{\em \+\_\+on\+Completion} & Callback triggered once save to gallery is done.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_media_library_a302c749e6655fdd24b55bbf54ba3512f}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}!Save\+Image\+To\+Gallery@{Save\+Image\+To\+Gallery}}
+\index{Save\+Image\+To\+Gallery@{Save\+Image\+To\+Gallery}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}}
+\subsubsection[{Save\+Image\+To\+Gallery}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Save\+Image\+To\+Gallery (
+\begin{DoxyParamCaption}
+\item[{byte\mbox{[}$\,$\mbox{]}}]{\+\_\+image\+Byte\+Array, }
+\item[{{\bf Save\+Image\+To\+Gallery\+Completion}}]{\+\_\+on\+Completion}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_media_library_a302c749e6655fdd24b55bbf54ba3512f}
+
+
+Saves the specified image data source to gallery. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+image\+Byte\+Array} & image byte array to use as source.\\
+\hline
+{\em \+\_\+on\+Completion} & Callback triggered once save to gallery is done.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_media_library_a34913dd531622ffa0eeb8a41c610844f}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}!Play\+Youtube\+Video@{Play\+Youtube\+Video}}
+\index{Play\+Youtube\+Video@{Play\+Youtube\+Video}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}}
+\subsubsection[{Play\+Youtube\+Video}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Play\+Youtube\+Video (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+video\+I\+D, }
+\item[{{\bf Play\+Video\+Completion}}]{\+\_\+on\+Completion}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_media_library_a34913dd531622ffa0eeb8a41c610844f}
+
+
+Plays youtube video for the corresponding video id specified. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+video\+I\+D} & Video id of the youtube video.\\
+\hline
+{\em \+\_\+on\+Completion} & Callback triggered on completion or failure. see \hyperlink{namespace_voxel_busters_1_1_native_plugins_a1573f15aadb41505f5f0c0ae33abe7e1}{e\+Play\+Video\+Finish\+Reason} for status.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_media_library_afecbbc321f2903974c5f65f31b4622fa}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}!Play\+Embedded\+Video@{Play\+Embedded\+Video}}
+\index{Play\+Embedded\+Video@{Play\+Embedded\+Video}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}}
+\subsubsection[{Play\+Embedded\+Video}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Play\+Embedded\+Video (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+embed\+H\+T\+M\+L\+String, }
+\item[{{\bf Play\+Video\+Completion}}]{\+\_\+on\+Completion}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_media_library_afecbbc321f2903974c5f65f31b4622fa}
+
+
+Plays embedded video using web view. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+embed\+H\+T\+M\+L\+String} & Embed H\+T\+M\+L string to load in the webview.\\
+\hline
+{\em \+\_\+on\+Completion} & Callback triggered on completion or failure. see \hyperlink{namespace_voxel_busters_1_1_native_plugins_a1573f15aadb41505f5f0c0ae33abe7e1}{e\+Play\+Video\+Finish\+Reason} for status.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_media_library_a73aa1ce9546df342b6b407e762d10d98}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}!Play\+Video\+From\+U\+R\+L@{Play\+Video\+From\+U\+R\+L}}
+\index{Play\+Video\+From\+U\+R\+L@{Play\+Video\+From\+U\+R\+L}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}}
+\subsubsection[{Play\+Video\+From\+U\+R\+L}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Play\+Video\+From\+U\+R\+L (
+\begin{DoxyParamCaption}
+\item[{U\+R\+L}]{\+\_\+\+U\+R\+L, }
+\item[{{\bf Play\+Video\+Completion}}]{\+\_\+on\+Completion}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_media_library_a73aa1ce9546df342b6b407e762d10d98}
+
+
+Play video from specified U\+R\+L. This can be an U\+R\+L pointing to local/remote file. 
+
+\begin{DoxyWarning}{Warning}
+This U\+R\+L needs to point directly to the video. Direct video link ex\+: www.\+voxelbusters.\+com/movie.mp4 
+\end{DoxyWarning}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+U\+R\+L} & U\+R\+L of the video to play.\\
+\hline
+{\em \+\_\+on\+Completion} & Callback triggered on completion or failure. see \hyperlink{namespace_voxel_busters_1_1_native_plugins_a1573f15aadb41505f5f0c0ae33abe7e1}{e\+Play\+Video\+Finish\+Reason} for status.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_media_library_aa2544dbf89d6b643672a8439e0b21566}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}!Play\+Video\+From\+Gallery@{Play\+Video\+From\+Gallery}}
+\index{Play\+Video\+From\+Gallery@{Play\+Video\+From\+Gallery}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}}
+\subsubsection[{Play\+Video\+From\+Gallery}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Play\+Video\+From\+Gallery (
+\begin{DoxyParamCaption}
+\item[{{\bf Pick\+Video\+Completion}}]{\+\_\+on\+Pick\+Video\+Completion, }
+\item[{{\bf Play\+Video\+Completion}}]{\+\_\+on\+Play\+Video\+Completion}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_media_library_aa2544dbf89d6b643672a8439e0b21566}
+
+
+Allows to pick a video from gallery and play it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+on\+Pick\+Video\+Completion} & Triggered once pick video action is done. \\
+\hline
+{\em \+\_\+on\+Play\+Video\+Completion} & Callback triggered on completion or failure. see \hyperlink{namespace_voxel_busters_1_1_native_plugins_a1573f15aadb41505f5f0c0ae33abe7e1}{e\+Play\+Video\+Finish\+Reason} for status.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_media_library_a95dd54d80020c5ba3c14361984b098c7}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}!Pick\+Image\+Completion@{Pick\+Image\+Completion}}
+\index{Pick\+Image\+Completion@{Pick\+Image\+Completion}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}}
+\subsubsection[{Pick\+Image\+Completion}]{\setlength{\rightskip}{0pt plus 5cm}delegate void Pick\+Image\+Completion (
+\begin{DoxyParamCaption}
+\item[{{\bf e\+Pick\+Image\+Finish\+Reason}}]{\+\_\+reason, }
+\item[{Texture2\+D}]{\+\_\+image}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_media_library_a95dd54d80020c5ba3c14361984b098c7}
+
+
+Use this delegate type to get callback when pick image action is done. Check \+\_\+reason for success or failure. If successful, returns the texture of picked image. 
+
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_media_library_a2dc4a641f32b69e42c223332fa7dfebd}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}!Save\+Image\+To\+Gallery\+Completion@{Save\+Image\+To\+Gallery\+Completion}}
+\index{Save\+Image\+To\+Gallery\+Completion@{Save\+Image\+To\+Gallery\+Completion}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}}
+\subsubsection[{Save\+Image\+To\+Gallery\+Completion}]{\setlength{\rightskip}{0pt plus 5cm}delegate void Save\+Image\+To\+Gallery\+Completion (
+\begin{DoxyParamCaption}
+\item[{bool}]{\+\_\+saved\+Successfully}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_media_library_a2dc4a641f32b69e42c223332fa7dfebd}
+
+
+Use this delegate type to get callback when image is saved to gallery. 
+
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_media_library_a693a7a3dd11e94e64de370bc78e23b45}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}!Pick\+Video\+Completion@{Pick\+Video\+Completion}}
+\index{Pick\+Video\+Completion@{Pick\+Video\+Completion}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}}
+\subsubsection[{Pick\+Video\+Completion}]{\setlength{\rightskip}{0pt plus 5cm}delegate void Pick\+Video\+Completion (
+\begin{DoxyParamCaption}
+\item[{{\bf e\+Pick\+Video\+Finish\+Reason}}]{\+\_\+reason}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_media_library_a693a7a3dd11e94e64de370bc78e23b45}
+
+
+Use this delegate type to get callback when pick video action is done. Check \+\_\+reason for success or failure. 
+
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_media_library_abdb2811c23515fd8ac3335152b5a8951}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}!Play\+Video\+Completion@{Play\+Video\+Completion}}
+\index{Play\+Video\+Completion@{Play\+Video\+Completion}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Media\+Library}}
+\subsubsection[{Play\+Video\+Completion}]{\setlength{\rightskip}{0pt plus 5cm}delegate void Play\+Video\+Completion (
+\begin{DoxyParamCaption}
+\item[{{\bf e\+Play\+Video\+Finish\+Reason}}]{\+\_\+reason}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_media_library_abdb2811c23515fd8ac3335152b5a8951}
+
+
+Use this delegate type to get callback when play video action is done. Check \+\_\+reason for success or failure. 
+

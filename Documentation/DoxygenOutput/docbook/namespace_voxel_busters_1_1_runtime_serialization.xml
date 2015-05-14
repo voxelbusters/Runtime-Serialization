@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="namespace_voxel_busters_1_1_runtime_serialization">
+<title>VoxelBusters::RuntimeSerialization</title>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable">VoxelBusters::RuntimeSerialization::IRuntimeSerializable</link></para>
+<para><emphasis>&lt;summary&gt;
+Implement this interface to control serialization and deserialization of &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; object.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_callback">VoxelBusters::RuntimeSerialization::IRuntimeSerializationCallback</link></para>
+<para><emphasis>&lt;summary&gt;
+Implement this interface to receive implicit callbacks on &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; object.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener">VoxelBusters::RuntimeSerialization::IRuntimeSerializationEventListener</link></para>
+<para><emphasis>&lt;summary&gt;
+Implement this interface to observe serialization process of &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; object.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_extension">VoxelBusters::RuntimeSerialization::IRuntimeSerializationExtension</link></para>
+<para><emphasis>&lt;summary&gt;
+Implement this interface to support runtime serialization for classes which belong to external assembly.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager">VoxelBusters::RuntimeSerialization::RSManager</link></para>
+<para><emphasis>&lt;summary&gt;
+RSManager class is responsible for serializing and deserializing objects at runtime.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute">VoxelBusters::RuntimeSerialization::RuntimeSerializableAttribute</link></para>
+<para><emphasis>&lt;summary&gt;
+Indicates that a class can be serialized at runtime.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">VoxelBusters::RuntimeSerialization::RuntimeSerializationInfo</link></para>
+<para><emphasis>&lt;summary&gt;
+Stores all the data required to serialize or deserialize an object.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialize_field_attribute">VoxelBusters::RuntimeSerialization::RuntimeSerializeFieldAttribute</link></para>
+<para><emphasis>&lt;summary&gt;
+Indicates that a field of a &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; class should be serialized at runtime.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="namespace_voxel_busters_1_1_runtime_serialization_1_1_benchmark">VoxelBusters::RuntimeSerialization::Benchmark</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Enumerations</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="namespace_voxel_busters_1_1_runtime_serialization_1aacaa3008b2cb441fbe4708df854019bf">eSaveTarget</link> {
+<link linkend="namespace_voxel_busters_1_1_runtime_serialization_1aacaa3008b2cb441fbe4708df854019bfa4cc629b75d0db85993aaa1ceab89775e">PLAYER_PREFS</link>,
+<link linkend="namespace_voxel_busters_1_1_runtime_serialization_1aacaa3008b2cb441fbe4708df854019bfa47859e0cd44b283c0b013bb759600bf7">FILE_SYSTEM</link>
+}</literallayout>
+<para><emphasis>&lt;summary&gt;
+Saves serialization data to specified save target.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>The <link linkend="namespace_voxel_busters_1_1_runtime_serialization">VoxelBusters.RuntimeSerialization</link> namespace contains classes that can be used for serializing and deserializing objects at runtime. Serialization is a process of converting an object into binary stream of data and storing it on disk. Deserialization is a process of reading stored data and recreating objects from it. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>The <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable">VoxelBusters.RuntimeSerialization.IRuntimeSerializable</link> interface provides a way to control their own serialization behaviour. The <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_extension">VoxelBusters.RuntimeSerialization.IRuntimeSerializationExtension</link> interface provides a way to support runtime serialization for classes which belong to external assembly. </para>
+                <para>Definition at line 1 of file [generated]</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>[generated]</para></listitem></itemizedlist></para>
+        </simplesect>
+</section>

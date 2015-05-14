@@ -1,0 +1,190 @@
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_billing}{}\section{Billing}
+\label{class_voxel_busters_1_1_native_plugins_1_1_billing}\index{Billing@{Billing}}
+
+
+\hyperlink{class_voxel_busters_1_1_native_plugins_1_1_billing}{Billing} provides an unique interface to provide in-\/app purchases from with in the application.  
+
+
+
+
+Inherits Mono\+Behaviour, and Mono\+Behaviour.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_billing_ab2d39b35e76f33981cbc4e5261290ebc}{Request\+For\+Billing\+Products} (List$<$ \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_billing_product}{Billing\+Product} $>$ \+\_\+billing\+Products)
+\begin{DoxyCompactList}\small\item\em Request details for given list of billing products. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_billing_a9f4b9e824b45e38980b0e6e3cb1faa3d}{Is\+Product\+Purchased} (string \+\_\+product\+I\+D)
+\begin{DoxyCompactList}\small\item\em Check purchase status of specified billing product. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_billing_a1232f7b71e94e1d3ccac71b82ffb0097}{Buy\+Product} (string \+\_\+product\+I\+D)
+\begin{DoxyCompactList}\small\item\em Buy the specified billing product. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_billing_a2897cb978428d90065b0c9b1fbf36200}{Restore\+Completed\+Transactions} ()
+\begin{DoxyCompactList}\small\item\em Restores the previous non-\/consumable/\+Managed billing products that were purchased previously, if any. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_billing_afcce8e38d572018183652ee39623d3bd}{Custom\+Verification\+Finished} (\hyperlink{class_voxel_busters_1_1_native_plugins_1_1_billing_transaction}{Billing\+Transaction} \+\_\+transaction)
+\begin{DoxyCompactList}\small\item\em This adds the specified billing transaction to the inventory of purchased products. \end{DoxyCompactList}\item 
+delegate void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_billing_a59d14c1fff02f8bbf1946415f81b77f0}{Billing\+Products\+Request\+Completion} (List$<$ \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_billing_product}{Billing\+Product} $>$ \+\_\+reg\+Products\+List, string \+\_\+error)
+\begin{DoxyCompactList}\small\item\em Use this delegate type to get callback when products request is finished. \end{DoxyCompactList}\item 
+delegate void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_billing_a699955fbb88fca96d0c7cda1d3c4b736}{Transaction\+Completion} (List$<$ \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_billing_transaction}{Billing\+Transaction} $>$ \+\_\+finished\+Transactions)
+\begin{DoxyCompactList}\small\item\em Use this delegate type to get callback when any transaction gets finished. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_billing_a59d14c1fff02f8bbf1946415f81b77f0}{Billing\+Products\+Request\+Completion} \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_billing_a2b73687297c706b0cf67bd0aaa64a782}{Billing\+Products\+Request\+Finished\+Event}
+\begin{DoxyCompactList}\small\item\em Occurs when billing products request finished. \end{DoxyCompactList}\item 
+static \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_billing_a699955fbb88fca96d0c7cda1d3c4b736}{Transaction\+Completion} \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_billing_ad59cc097e59a8605d00c8a0b9a1743cb}{Transaction\+Finished\+Event}
+\begin{DoxyCompactList}\small\item\em Occurs when transaction is finished and ready with a result. See \hyperlink{namespace_voxel_busters_1_1_native_plugins_a1b545f54cd8f7e04410c379e01ff27f2}{e\+Billing\+Transaction\+State} for the status of the transaction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_voxel_busters_1_1_native_plugins_1_1_billing}{Billing} provides an unique interface to provide in-\/app purchases from with in the application. 
+
+You can set the list of billing products you will use for billing in the N\+P\+Settings editor utility or can provide details of the products runtime.  
+
+\subsection{Member Function Documentation}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_billing_ab2d39b35e76f33981cbc4e5261290ebc}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing}!Request\+For\+Billing\+Products@{Request\+For\+Billing\+Products}}
+\index{Request\+For\+Billing\+Products@{Request\+For\+Billing\+Products}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing}}
+\subsubsection[{Request\+For\+Billing\+Products}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Request\+For\+Billing\+Products (
+\begin{DoxyParamCaption}
+\item[{List$<$ {\bf Billing\+Product} $>$}]{\+\_\+billing\+Products}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_billing_ab2d39b35e76f33981cbc4e5261290ebc}
+
+
+Request details for given list of billing products. 
+
+\begin{DoxyWarning}{Warning}
+Details of billing products needs to be fetched first with this method before purchasing any product. 
+\end{DoxyWarning}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+billing\+Products} & List of billing products which needs details.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_billing_a9f4b9e824b45e38980b0e6e3cb1faa3d}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing}!Is\+Product\+Purchased@{Is\+Product\+Purchased}}
+\index{Is\+Product\+Purchased@{Is\+Product\+Purchased}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing}}
+\subsubsection[{Is\+Product\+Purchased}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Is\+Product\+Purchased (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+product\+I\+D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_billing_a9f4b9e824b45e38980b0e6e3cb1faa3d}
+
+
+Check purchase status of specified billing product. 
+
+This works only for non-\/consumable/\+Managed billing products. For consumable, this always returns false. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the specified \+\_\+product\+I\+D is already purchased; otherwise, {\ttfamily false}.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+product\+I\+D} & Product I\+D to check for purchase status.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_billing_a1232f7b71e94e1d3ccac71b82ffb0097}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing}!Buy\+Product@{Buy\+Product}}
+\index{Buy\+Product@{Buy\+Product}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing}}
+\subsubsection[{Buy\+Product}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Buy\+Product (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+product\+I\+D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_billing_a1232f7b71e94e1d3ccac71b82ffb0097}
+
+
+Buy the specified billing product. 
+
+\begin{DoxyNote}{Note}
+\+\_\+product\+I\+D should already have billing product details ahead. see \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_billing_ab2d39b35e76f33981cbc4e5261290ebc}{Request\+For\+Billing\+Products} for getting the details. 
+\end{DoxyNote}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+product\+I\+D} & product identifier that needs to be purchased.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_billing_a2897cb978428d90065b0c9b1fbf36200}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing}!Restore\+Completed\+Transactions@{Restore\+Completed\+Transactions}}
+\index{Restore\+Completed\+Transactions@{Restore\+Completed\+Transactions}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing}}
+\subsubsection[{Restore\+Completed\+Transactions}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Restore\+Completed\+Transactions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_billing_a2897cb978428d90065b0c9b1fbf36200}
+
+
+Restores the previous non-\/consumable/\+Managed billing products that were purchased previously, if any. 
+
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_billing_afcce8e38d572018183652ee39623d3bd}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing}!Custom\+Verification\+Finished@{Custom\+Verification\+Finished}}
+\index{Custom\+Verification\+Finished@{Custom\+Verification\+Finished}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing}}
+\subsubsection[{Custom\+Verification\+Finished}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Custom\+Verification\+Finished (
+\begin{DoxyParamCaption}
+\item[{{\bf Billing\+Transaction}}]{\+\_\+transaction}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_billing_afcce8e38d572018183652ee39623d3bd}
+
+
+This adds the specified billing transaction to the inventory of purchased products. 
+
+\begin{DoxyNote}{Note}
+i\+O\+S has external validation option. So once external validation is done, this should be called with the transaction details. On Android this call has no effect as the products are internally verified and products will be updated internally right after the purchase. 
+\end{DoxyNote}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+transaction} & Transaction instance thats updated with verification state after custom verification.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_billing_a59d14c1fff02f8bbf1946415f81b77f0}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing}!Billing\+Products\+Request\+Completion@{Billing\+Products\+Request\+Completion}}
+\index{Billing\+Products\+Request\+Completion@{Billing\+Products\+Request\+Completion}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing}}
+\subsubsection[{Billing\+Products\+Request\+Completion}]{\setlength{\rightskip}{0pt plus 5cm}delegate void Billing\+Products\+Request\+Completion (
+\begin{DoxyParamCaption}
+\item[{List$<$ {\bf Billing\+Product} $>$}]{\+\_\+reg\+Products\+List, }
+\item[{string}]{\+\_\+error}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_billing_a59d14c1fff02f8bbf1946415f81b77f0}
+
+
+Use this delegate type to get callback when products request is finished. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+reg\+Products\+List} & List of billing products with detailed information.\\
+\hline
+{\em \+\_\+error} & Error description if request billing products fail.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_billing_a699955fbb88fca96d0c7cda1d3c4b736}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing}!Transaction\+Completion@{Transaction\+Completion}}
+\index{Transaction\+Completion@{Transaction\+Completion}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing}}
+\subsubsection[{Transaction\+Completion}]{\setlength{\rightskip}{0pt plus 5cm}delegate void Transaction\+Completion (
+\begin{DoxyParamCaption}
+\item[{List$<$ {\bf Billing\+Transaction} $>$}]{\+\_\+finished\+Transactions}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_billing_a699955fbb88fca96d0c7cda1d3c4b736}
+
+
+Use this delegate type to get callback when any transaction gets finished. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+finished\+Transactions} & List of billing transactions. This can be multiple for restore purchases. Rest of the times it will be a single transaction.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Event Documentation}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_billing_a2b73687297c706b0cf67bd0aaa64a782}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing}!Billing\+Products\+Request\+Finished\+Event@{Billing\+Products\+Request\+Finished\+Event}}
+\index{Billing\+Products\+Request\+Finished\+Event@{Billing\+Products\+Request\+Finished\+Event}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing}}
+\subsubsection[{Billing\+Products\+Request\+Finished\+Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Billing\+Products\+Request\+Completion} Billing\+Products\+Request\+Finished\+Event\hspace{0.3cm}{\ttfamily [static]}}\label{class_voxel_busters_1_1_native_plugins_1_1_billing_a2b73687297c706b0cf67bd0aaa64a782}
+
+
+Occurs when billing products request finished. 
+
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_billing_ad59cc097e59a8605d00c8a0b9a1743cb}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing}!Transaction\+Finished\+Event@{Transaction\+Finished\+Event}}
+\index{Transaction\+Finished\+Event@{Transaction\+Finished\+Event}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Billing}}
+\subsubsection[{Transaction\+Finished\+Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Transaction\+Completion} Transaction\+Finished\+Event\hspace{0.3cm}{\ttfamily [static]}}\label{class_voxel_busters_1_1_native_plugins_1_1_billing_ad59cc097e59a8605d00c8a0b9a1743cb}
+
+
+Occurs when transaction is finished and ready with a result. See \hyperlink{namespace_voxel_busters_1_1_native_plugins_a1b545f54cd8f7e04410c379e01ff27f2}{e\+Billing\+Transaction\+State} for the status of the transaction. 
+

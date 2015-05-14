@@ -1,0 +1,479 @@
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_twitter}{}\section{Twitter}
+\label{class_voxel_busters_1_1_native_plugins_1_1_twitter}\index{Twitter@{Twitter}}
+
+
+Provides support for sending \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter}{Twitter} requests on behalf of the user and for composing and sending tweets.  
+
+
+
+
+Inherits Mono\+Behaviour, and Mono\+Behaviour.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_a9949714add72302695128d30d824f7a7}{Login} (\hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_a34f959f59508d1442e3d921bbfe45cd5}{T\+W\+T\+R\+Login\+Completion} \+\_\+on\+Completion)
+\begin{DoxyCompactList}\small\item\em Triggers user authentication with \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter}{Twitter}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_a49f9678ea9f85d72d78bdd288d989d8e}{Logout} ()
+\begin{DoxyCompactList}\small\item\em Deletes the local \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter}{Twitter} user session from this app. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_aefcb0d34ecb87897b685fc737f64b68c}{Is\+Logged\+In} ()
+\begin{DoxyCompactList}\small\item\em Determines whether user is logged in or not. \end{DoxyCompactList}\item 
+virtual string \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_af1adce748fac02f3ccaea0ee1f104e6c}{Get\+Auth\+Token} ()
+\begin{DoxyCompactList}\small\item\em Gets the authorization token. Returns N\+U\+L\+L if user isnt logged in. \end{DoxyCompactList}\item 
+virtual string \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_a4f0e464281e402f2aeecdf542ec1cb68}{Get\+Auth\+Token\+Secret} ()
+\begin{DoxyCompactList}\small\item\em Gets the authorization token secret. Returns N\+U\+L\+L if user isnt logged in. \end{DoxyCompactList}\item 
+virtual string \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_ade45ff64f7c0b82b94219df5767db8f5}{Get\+User\+I\+D} ()
+\begin{DoxyCompactList}\small\item\em Gets the user I\+D of twitter user. Returns N\+U\+L\+L if user isnt logged in. \end{DoxyCompactList}\item 
+virtual string \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_a1e99e0a5863f109ff85a2f57a105505a}{Get\+User\+Name} ()
+\begin{DoxyCompactList}\small\item\em Gets the name of the twitter user. Returns N\+U\+L\+L if user isnt logged in. \end{DoxyCompactList}\item 
+void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_a79de75394508b2e9564b831a74e45f88}{Show\+Tweet\+Composer\+With\+Message} (string \+\_\+message, \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_afc6b9ce57f190495125926ab9a0a2986}{T\+W\+T\+R\+Tweet\+Completion} \+\_\+on\+Completion)
+\begin{DoxyCompactList}\small\item\em Presents composer to tweet text. \end{DoxyCompactList}\item 
+void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_a48a128d7714f79e801e7a09b8edacf8e}{Show\+Tweet\+Composer\+With\+Screenshot} (string \+\_\+message, \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_afc6b9ce57f190495125926ab9a0a2986}{T\+W\+T\+R\+Tweet\+Completion} \+\_\+on\+Completion)
+\begin{DoxyCompactList}\small\item\em Presents composer to tweet text along with screenshot. \end{DoxyCompactList}\item 
+void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_a7c85b7565e0f020adabee3ff7bb17308}{Show\+Tweet\+Composer\+With\+Image} (string \+\_\+message, Texture2\+D \+\_\+texture, \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_afc6b9ce57f190495125926ab9a0a2986}{T\+W\+T\+R\+Tweet\+Completion} \+\_\+on\+Completion)
+\begin{DoxyCompactList}\small\item\em Presents composer to tweet text along with attached image. \end{DoxyCompactList}\item 
+void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_a302299a78c702ca3910f63f7afc2edfe}{Show\+Tweet\+Composer\+With\+Link} (string \+\_\+message, string \+\_\+\+U\+R\+L, \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_afc6b9ce57f190495125926ab9a0a2986}{T\+W\+T\+R\+Tweet\+Completion} \+\_\+on\+Completion)
+\begin{DoxyCompactList}\small\item\em Presents composer to tweet text along with U\+R\+L. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_aaa7380eea4791587c171d201b79a6567}{Show\+Tweet\+Composer} (string \+\_\+message, string \+\_\+\+U\+R\+L, byte\mbox{[}$\,$\mbox{]} \+\_\+img\+Byte\+Array, \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_afc6b9ce57f190495125926ab9a0a2986}{T\+W\+T\+R\+Tweet\+Completion} \+\_\+on\+Completion)
+\begin{DoxyCompactList}\small\item\em Presents composer to tweet text along with U\+R\+L and image. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_ac8b89da6d5f00af4292bcab518f3a33f}{Request\+Account\+Details} (\hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_a547ee925356415ce1472068ed1011ce3}{T\+W\+T\+R\+Account\+Details\+Completion} \+\_\+on\+Completion)
+\begin{DoxyCompactList}\small\item\em Sends request to load users account details. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_a791224d4484a3d54d96092c3f91d8404}{Request\+Email\+Access} (\hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_ae65acbb90b23780b10cc2881d1739bb7}{T\+W\+T\+R\+Email\+Access\+Completion} \+\_\+on\+Completion)
+\begin{DoxyCompactList}\small\item\em Requests user to provide access to his email address. \end{DoxyCompactList}\item 
+void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_a2fbc52d6ceac20cb210f6b6e0224259c}{Get\+U\+R\+L\+Request} (string \+\_\+\+U\+R\+L, I\+Dictionary \+\_\+parameters, \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_a75983752eed2d648d967943ca91eb9aa}{T\+W\+T\+R\+Resonse} \+\_\+on\+Completion)
+\begin{DoxyCompactList}\small\item\em Sends a \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter}{Twitter} G\+E\+T request. \end{DoxyCompactList}\item 
+void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_a24e6281b9778b4dcfb6b35b5522013ad}{Post\+U\+R\+L\+Request} (string \+\_\+\+U\+R\+L, I\+Dictionary \+\_\+parameters, \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_a75983752eed2d648d967943ca91eb9aa}{T\+W\+T\+R\+Resonse} \+\_\+on\+Completion)
+\begin{DoxyCompactList}\small\item\em Sends a \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter}{Twitter} P\+O\+S\+T request. \end{DoxyCompactList}\item 
+void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_afe9cc3d9c200534cfec99ffd6e521798}{Put\+U\+R\+L\+Request} (string \+\_\+\+U\+R\+L, I\+Dictionary \+\_\+parameters, \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_a75983752eed2d648d967943ca91eb9aa}{T\+W\+T\+R\+Resonse} \+\_\+on\+Completion)
+\begin{DoxyCompactList}\small\item\em Sends a \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter}{Twitter} P\+U\+T request. \end{DoxyCompactList}\item 
+void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_a60a173d7e40567cf4c848f458f63e23d}{Delete\+U\+R\+L\+Request} (string \+\_\+\+U\+R\+L, I\+Dictionary \+\_\+parameters, \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_a75983752eed2d648d967943ca91eb9aa}{T\+W\+T\+R\+Resonse} \+\_\+on\+Completion)
+\begin{DoxyCompactList}\small\item\em Sends a \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter}{Twitter} D\+E\+L\+E\+T\+E request. \end{DoxyCompactList}\item 
+delegate void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_a34f959f59508d1442e3d921bbfe45cd5}{T\+W\+T\+R\+Login\+Completion} (\hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_session}{Twitter\+Session} \+\_\+session, string \+\_\+error)
+\begin{DoxyCompactList}\small\item\em Use this delegate type to get callback when user login succeeds or fails. \end{DoxyCompactList}\item 
+delegate void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_afc6b9ce57f190495125926ab9a0a2986}{T\+W\+T\+R\+Tweet\+Completion} (\hyperlink{namespace_voxel_busters_1_1_native_plugins_a6b27d398d97a7d2de511f9aa2244fcc0}{e\+Twitter\+Composer\+Result} \+\_\+result)
+\begin{DoxyCompactList}\small\item\em Use this delegate type to get callback when the user finishes composing a Tweet. \end{DoxyCompactList}\item 
+delegate void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_a547ee925356415ce1472068ed1011ce3}{T\+W\+T\+R\+Account\+Details\+Completion} (\hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_user}{Twitter\+User} \+\_\+user, string \+\_\+error)
+\begin{DoxyCompactList}\small\item\em Use this delegate type to get callback when load user details request succeeds or fails. \end{DoxyCompactList}\item 
+delegate void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_ae65acbb90b23780b10cc2881d1739bb7}{T\+W\+T\+R\+Email\+Access\+Completion} (string \+\_\+email, string \+\_\+error)
+\begin{DoxyCompactList}\small\item\em Use this delegate type to get callback when the user accepts or denies access to their email address. \end{DoxyCompactList}\item 
+delegate void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter_a75983752eed2d648d967943ca91eb9aa}{T\+W\+T\+R\+Resonse} (I\+Dictionary \+\_\+response, string \+\_\+error)
+\begin{DoxyCompactList}\small\item\em Use this delegate type to get callback when the network request succeeds or fails. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides support for sending \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter}{Twitter} requests on behalf of the user and for composing and sending tweets. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_twitter_a9949714add72302695128d30d824f7a7}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}!Login@{Login}}
+\index{Login@{Login}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}}
+\subsubsection[{Login}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Login (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+W\+T\+R\+Login\+Completion}}]{\+\_\+on\+Completion}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_twitter_a9949714add72302695128d30d824f7a7}
+
+
+Triggers user authentication with \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter}{Twitter}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+on\+Completion} & Calls the delegate after authentication is successful or if there is an error.\\
+\hline
+\end{DoxyParams}
+This method will present \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_u_i}{U\+I} to allow the user to log in if there are no saved \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter}{Twitter} login credentials.  \hypertarget{class_voxel_busters_1_1_native_plugins_1_1_twitter_a49f9678ea9f85d72d78bdd288d989d8e}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}!Logout@{Logout}}
+\index{Logout@{Logout}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}}
+\subsubsection[{Logout}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Logout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_twitter_a49f9678ea9f85d72d78bdd288d989d8e}
+
+
+Deletes the local \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter}{Twitter} user session from this app. 
+
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_twitter_aefcb0d34ecb87897b685fc737f64b68c}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}!Is\+Logged\+In@{Is\+Logged\+In}}
+\index{Is\+Logged\+In@{Is\+Logged\+In}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}}
+\subsubsection[{Is\+Logged\+In}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Is\+Logged\+In (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_twitter_aefcb0d34ecb87897b685fc737f64b68c}
+
+
+Determines whether user is logged in or not. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if user is logged in; otherwise, {\ttfamily false}.
+\end{DoxyReturn}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_twitter_af1adce748fac02f3ccaea0ee1f104e6c}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}!Get\+Auth\+Token@{Get\+Auth\+Token}}
+\index{Get\+Auth\+Token@{Get\+Auth\+Token}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}}
+\subsubsection[{Get\+Auth\+Token}]{\setlength{\rightskip}{0pt plus 5cm}virtual string Get\+Auth\+Token (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_twitter_af1adce748fac02f3ccaea0ee1f104e6c}
+
+
+Gets the authorization token. Returns N\+U\+L\+L if user isnt logged in. 
+
+\begin{DoxyReturn}{Returns}
+The authorization token.
+\end{DoxyReturn}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_twitter_a4f0e464281e402f2aeecdf542ec1cb68}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}!Get\+Auth\+Token\+Secret@{Get\+Auth\+Token\+Secret}}
+\index{Get\+Auth\+Token\+Secret@{Get\+Auth\+Token\+Secret}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}}
+\subsubsection[{Get\+Auth\+Token\+Secret}]{\setlength{\rightskip}{0pt plus 5cm}virtual string Get\+Auth\+Token\+Secret (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_twitter_a4f0e464281e402f2aeecdf542ec1cb68}
+
+
+Gets the authorization token secret. Returns N\+U\+L\+L if user isnt logged in. 
+
+\begin{DoxyReturn}{Returns}
+The authorization token secret.
+\end{DoxyReturn}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_twitter_ade45ff64f7c0b82b94219df5767db8f5}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}!Get\+User\+I\+D@{Get\+User\+I\+D}}
+\index{Get\+User\+I\+D@{Get\+User\+I\+D}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}}
+\subsubsection[{Get\+User\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}virtual string Get\+User\+I\+D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_twitter_ade45ff64f7c0b82b94219df5767db8f5}
+
+
+Gets the user I\+D of twitter user. Returns N\+U\+L\+L if user isnt logged in. 
+
+\begin{DoxyReturn}{Returns}
+The user I.
+\end{DoxyReturn}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_twitter_a1e99e0a5863f109ff85a2f57a105505a}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}!Get\+User\+Name@{Get\+User\+Name}}
+\index{Get\+User\+Name@{Get\+User\+Name}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}}
+\subsubsection[{Get\+User\+Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual string Get\+User\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_twitter_a1e99e0a5863f109ff85a2f57a105505a}
+
+
+Gets the name of the twitter user. Returns N\+U\+L\+L if user isnt logged in. 
+
+\begin{DoxyReturn}{Returns}
+The user name.
+\end{DoxyReturn}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_twitter_a79de75394508b2e9564b831a74e45f88}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}!Show\+Tweet\+Composer\+With\+Message@{Show\+Tweet\+Composer\+With\+Message}}
+\index{Show\+Tweet\+Composer\+With\+Message@{Show\+Tweet\+Composer\+With\+Message}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}}
+\subsubsection[{Show\+Tweet\+Composer\+With\+Message}]{\setlength{\rightskip}{0pt plus 5cm}void Show\+Tweet\+Composer\+With\+Message (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+message, }
+\item[{{\bf T\+W\+T\+R\+Tweet\+Completion}}]{\+\_\+on\+Completion}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_twitter_a79de75394508b2e9564b831a74e45f88}
+
+
+Presents composer to tweet text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+message} & The text to tweet.\\
+\hline
+{\em \+\_\+on\+Completion} & Calls the delegate when the user finished or cancelled the Tweet composition.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_twitter_a48a128d7714f79e801e7a09b8edacf8e}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}!Show\+Tweet\+Composer\+With\+Screenshot@{Show\+Tweet\+Composer\+With\+Screenshot}}
+\index{Show\+Tweet\+Composer\+With\+Screenshot@{Show\+Tweet\+Composer\+With\+Screenshot}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}}
+\subsubsection[{Show\+Tweet\+Composer\+With\+Screenshot}]{\setlength{\rightskip}{0pt plus 5cm}void Show\+Tweet\+Composer\+With\+Screenshot (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+message, }
+\item[{{\bf T\+W\+T\+R\+Tweet\+Completion}}]{\+\_\+on\+Completion}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_twitter_a48a128d7714f79e801e7a09b8edacf8e}
+
+
+Presents composer to tweet text along with screenshot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+message} & The text to tweet.\\
+\hline
+{\em \+\_\+on\+Completion} & Calls the delegate when the user finished or cancelled the Tweet composition.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_twitter_a7c85b7565e0f020adabee3ff7bb17308}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}!Show\+Tweet\+Composer\+With\+Image@{Show\+Tweet\+Composer\+With\+Image}}
+\index{Show\+Tweet\+Composer\+With\+Image@{Show\+Tweet\+Composer\+With\+Image}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}}
+\subsubsection[{Show\+Tweet\+Composer\+With\+Image}]{\setlength{\rightskip}{0pt plus 5cm}void Show\+Tweet\+Composer\+With\+Image (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+message, }
+\item[{Texture2\+D}]{\+\_\+texture, }
+\item[{{\bf T\+W\+T\+R\+Tweet\+Completion}}]{\+\_\+on\+Completion}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_twitter_a7c85b7565e0f020adabee3ff7bb17308}
+
+
+Presents composer to tweet text along with attached image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+message} & The text to tweet.\\
+\hline
+{\em \+\_\+texture} & The image to attached along with tweet message.\\
+\hline
+{\em \+\_\+on\+Completion} & Calls the delegate when the user finished or cancelled the Tweet composition.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_twitter_a302299a78c702ca3910f63f7afc2edfe}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}!Show\+Tweet\+Composer\+With\+Link@{Show\+Tweet\+Composer\+With\+Link}}
+\index{Show\+Tweet\+Composer\+With\+Link@{Show\+Tweet\+Composer\+With\+Link}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}}
+\subsubsection[{Show\+Tweet\+Composer\+With\+Link}]{\setlength{\rightskip}{0pt plus 5cm}void Show\+Tweet\+Composer\+With\+Link (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+message, }
+\item[{string}]{\+\_\+\+U\+R\+L, }
+\item[{{\bf T\+W\+T\+R\+Tweet\+Completion}}]{\+\_\+on\+Completion}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_twitter_a302299a78c702ca3910f63f7afc2edfe}
+
+
+Presents composer to tweet text along with U\+R\+L. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+message} & The text to tweet.\\
+\hline
+{\em \+\_\+\+U\+R\+L} & U\+R\+L to be shared.\\
+\hline
+{\em \+\_\+on\+Completion} & Calls the delegate when the user finished or cancelled the Tweet composition.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_twitter_aaa7380eea4791587c171d201b79a6567}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}!Show\+Tweet\+Composer@{Show\+Tweet\+Composer}}
+\index{Show\+Tweet\+Composer@{Show\+Tweet\+Composer}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}}
+\subsubsection[{Show\+Tweet\+Composer}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Show\+Tweet\+Composer (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+message, }
+\item[{string}]{\+\_\+\+U\+R\+L, }
+\item[{byte\mbox{[}$\,$\mbox{]}}]{\+\_\+img\+Byte\+Array, }
+\item[{{\bf T\+W\+T\+R\+Tweet\+Completion}}]{\+\_\+on\+Completion}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_twitter_aaa7380eea4791587c171d201b79a6567}
+
+
+Presents composer to tweet text along with U\+R\+L and image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+message} & The text to tweet.\\
+\hline
+{\em \+\_\+\+U\+R\+L} & U\+R\+L to be shared.\\
+\hline
+{\em \+\_\+img\+Byte\+Array} & The image data to be attached along with the tweet.\\
+\hline
+{\em \+\_\+on\+Completion} & Calls the delegate when the user finished or cancelled the Tweet composition.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_twitter_ac8b89da6d5f00af4292bcab518f3a33f}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}!Request\+Account\+Details@{Request\+Account\+Details}}
+\index{Request\+Account\+Details@{Request\+Account\+Details}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}}
+\subsubsection[{Request\+Account\+Details}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Request\+Account\+Details (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+W\+T\+R\+Account\+Details\+Completion}}]{\+\_\+on\+Completion}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_twitter_ac8b89da6d5f00af4292bcab518f3a33f}
+
+
+Sends request to load users account details. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+on\+Completion} & Calls the delegate when load user details request succeeds or fails.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_twitter_a791224d4484a3d54d96092c3f91d8404}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}!Request\+Email\+Access@{Request\+Email\+Access}}
+\index{Request\+Email\+Access@{Request\+Email\+Access}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}}
+\subsubsection[{Request\+Email\+Access}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Request\+Email\+Access (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+W\+T\+R\+Email\+Access\+Completion}}]{\+\_\+on\+Completion}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_twitter_a791224d4484a3d54d96092c3f91d8404}
+
+
+Requests user to provide access to his email address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+on\+Completion} & Calls the delegate when user either accepts or denies access to their email address.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_twitter_a2fbc52d6ceac20cb210f6b6e0224259c}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}!Get\+U\+R\+L\+Request@{Get\+U\+R\+L\+Request}}
+\index{Get\+U\+R\+L\+Request@{Get\+U\+R\+L\+Request}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}}
+\subsubsection[{Get\+U\+R\+L\+Request}]{\setlength{\rightskip}{0pt plus 5cm}void Get\+U\+R\+L\+Request (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+\+U\+R\+L, }
+\item[{I\+Dictionary}]{\+\_\+parameters, }
+\item[{{\bf T\+W\+T\+R\+Resonse}}]{\+\_\+on\+Completion}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_twitter_a2fbc52d6ceac20cb210f6b6e0224259c}
+
+
+Sends a \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter}{Twitter} G\+E\+T request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+U\+R\+L} & Request U\+R\+L. This is the full \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter}{Twitter} A\+P\+I U\+R\+L. E.\+g. \href{https://api.twitter.com/1.1/statuses/user_timeline.json}{\tt https\+://api.\+twitter.\+com/1.\+1/statuses/user\+\_\+timeline.\+json}.\\
+\hline
+{\em \+\_\+parameters} & Request parameters.\\
+\hline
+{\em \+\_\+on\+Completion} & Calls the delegate on response.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_twitter_a24e6281b9778b4dcfb6b35b5522013ad}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}!Post\+U\+R\+L\+Request@{Post\+U\+R\+L\+Request}}
+\index{Post\+U\+R\+L\+Request@{Post\+U\+R\+L\+Request}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}}
+\subsubsection[{Post\+U\+R\+L\+Request}]{\setlength{\rightskip}{0pt plus 5cm}void Post\+U\+R\+L\+Request (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+\+U\+R\+L, }
+\item[{I\+Dictionary}]{\+\_\+parameters, }
+\item[{{\bf T\+W\+T\+R\+Resonse}}]{\+\_\+on\+Completion}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_twitter_a24e6281b9778b4dcfb6b35b5522013ad}
+
+
+Sends a \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter}{Twitter} P\+O\+S\+T request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+U\+R\+L} & Request U\+R\+L. This is the full \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter}{Twitter} A\+P\+I U\+R\+L. E.\+g. \href{https://api.twitter.com/1.1/statuses/user_timeline.json}{\tt https\+://api.\+twitter.\+com/1.\+1/statuses/user\+\_\+timeline.\+json}.\\
+\hline
+{\em \+\_\+parameters} & Request parameters.\\
+\hline
+{\em \+\_\+on\+Completion} & Calls the delegate on response.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_twitter_afe9cc3d9c200534cfec99ffd6e521798}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}!Put\+U\+R\+L\+Request@{Put\+U\+R\+L\+Request}}
+\index{Put\+U\+R\+L\+Request@{Put\+U\+R\+L\+Request}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}}
+\subsubsection[{Put\+U\+R\+L\+Request}]{\setlength{\rightskip}{0pt plus 5cm}void Put\+U\+R\+L\+Request (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+\+U\+R\+L, }
+\item[{I\+Dictionary}]{\+\_\+parameters, }
+\item[{{\bf T\+W\+T\+R\+Resonse}}]{\+\_\+on\+Completion}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_twitter_afe9cc3d9c200534cfec99ffd6e521798}
+
+
+Sends a \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter}{Twitter} P\+U\+T request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+U\+R\+L} & Request U\+R\+L. This is the full \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter}{Twitter} A\+P\+I U\+R\+L. E.\+g. \href{https://api.twitter.com/1.1/statuses/user_timeline.json}{\tt https\+://api.\+twitter.\+com/1.\+1/statuses/user\+\_\+timeline.\+json}.\\
+\hline
+{\em \+\_\+parameters} & Request parameters.\\
+\hline
+{\em \+\_\+on\+Completion} & Calls the delegate on response.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_twitter_a60a173d7e40567cf4c848f458f63e23d}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}!Delete\+U\+R\+L\+Request@{Delete\+U\+R\+L\+Request}}
+\index{Delete\+U\+R\+L\+Request@{Delete\+U\+R\+L\+Request}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}}
+\subsubsection[{Delete\+U\+R\+L\+Request}]{\setlength{\rightskip}{0pt plus 5cm}void Delete\+U\+R\+L\+Request (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+\+U\+R\+L, }
+\item[{I\+Dictionary}]{\+\_\+parameters, }
+\item[{{\bf T\+W\+T\+R\+Resonse}}]{\+\_\+on\+Completion}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_twitter_a60a173d7e40567cf4c848f458f63e23d}
+
+
+Sends a \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter}{Twitter} D\+E\+L\+E\+T\+E request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+U\+R\+L} & Request U\+R\+L. This is the full \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter}{Twitter} A\+P\+I U\+R\+L. E.\+g. \href{https://api.twitter.com/1.1/statuses/user_timeline.json}{\tt https\+://api.\+twitter.\+com/1.\+1/statuses/user\+\_\+timeline.\+json}.\\
+\hline
+{\em \+\_\+parameters} & Request parameters.\\
+\hline
+{\em \+\_\+on\+Completion} & Calls the delegate on response.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_twitter_a34f959f59508d1442e3d921bbfe45cd5}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}!T\+W\+T\+R\+Login\+Completion@{T\+W\+T\+R\+Login\+Completion}}
+\index{T\+W\+T\+R\+Login\+Completion@{T\+W\+T\+R\+Login\+Completion}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}}
+\subsubsection[{T\+W\+T\+R\+Login\+Completion}]{\setlength{\rightskip}{0pt plus 5cm}delegate void T\+W\+T\+R\+Login\+Completion (
+\begin{DoxyParamCaption}
+\item[{{\bf Twitter\+Session}}]{\+\_\+session, }
+\item[{string}]{\+\_\+error}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_twitter_a34f959f59508d1442e3d921bbfe45cd5}
+
+
+Use this delegate type to get callback when user login succeeds or fails. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+session} & Contains the O\+Auth tokens and minimal information associated with the logged in user or nil.\\
+\hline
+{\em \+\_\+error} & Error that will be non nil if the authentication request failed.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_twitter_afc6b9ce57f190495125926ab9a0a2986}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}!T\+W\+T\+R\+Tweet\+Completion@{T\+W\+T\+R\+Tweet\+Completion}}
+\index{T\+W\+T\+R\+Tweet\+Completion@{T\+W\+T\+R\+Tweet\+Completion}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}}
+\subsubsection[{T\+W\+T\+R\+Tweet\+Completion}]{\setlength{\rightskip}{0pt plus 5cm}delegate void T\+W\+T\+R\+Tweet\+Completion (
+\begin{DoxyParamCaption}
+\item[{{\bf e\+Twitter\+Composer\+Result}}]{\+\_\+result}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_twitter_afc6b9ce57f190495125926ab9a0a2986}
+
+
+Use this delegate type to get callback when the user finishes composing a Tweet. 
+
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_twitter_a547ee925356415ce1472068ed1011ce3}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}!T\+W\+T\+R\+Account\+Details\+Completion@{T\+W\+T\+R\+Account\+Details\+Completion}}
+\index{T\+W\+T\+R\+Account\+Details\+Completion@{T\+W\+T\+R\+Account\+Details\+Completion}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}}
+\subsubsection[{T\+W\+T\+R\+Account\+Details\+Completion}]{\setlength{\rightskip}{0pt plus 5cm}delegate void T\+W\+T\+R\+Account\+Details\+Completion (
+\begin{DoxyParamCaption}
+\item[{{\bf Twitter\+User}}]{\+\_\+user, }
+\item[{string}]{\+\_\+error}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_twitter_a547ee925356415ce1472068ed1011ce3}
+
+
+Use this delegate type to get callback when load user details request succeeds or fails. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+user} & The \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_twitter}{Twitter} User.\\
+\hline
+{\em \+\_\+error} & Error that will be set if the A\+P\+I request failed.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_twitter_ae65acbb90b23780b10cc2881d1739bb7}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}!T\+W\+T\+R\+Email\+Access\+Completion@{T\+W\+T\+R\+Email\+Access\+Completion}}
+\index{T\+W\+T\+R\+Email\+Access\+Completion@{T\+W\+T\+R\+Email\+Access\+Completion}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}}
+\subsubsection[{T\+W\+T\+R\+Email\+Access\+Completion}]{\setlength{\rightskip}{0pt plus 5cm}delegate void T\+W\+T\+R\+Email\+Access\+Completion (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+email, }
+\item[{string}]{\+\_\+error}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_twitter_ae65acbb90b23780b10cc2881d1739bb7}
+
+
+Use this delegate type to get callback when the user accepts or denies access to their email address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+email} & The user\textquotesingle{}s email address. This will be nil if the user does not grant access to their email address or your application is not allowed to request email addresses.\\
+\hline
+{\em \+\_\+error} & An error that details why a user\textquotesingle{}s email address could not be provided.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_twitter_a75983752eed2d648d967943ca91eb9aa}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}!T\+W\+T\+R\+Resonse@{T\+W\+T\+R\+Resonse}}
+\index{T\+W\+T\+R\+Resonse@{T\+W\+T\+R\+Resonse}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Twitter}}
+\subsubsection[{T\+W\+T\+R\+Resonse}]{\setlength{\rightskip}{0pt plus 5cm}delegate void T\+W\+T\+R\+Resonse (
+\begin{DoxyParamCaption}
+\item[{I\+Dictionary}]{\+\_\+response, }
+\item[{string}]{\+\_\+error}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_twitter_a75983752eed2d648d967943ca91eb9aa}
+
+
+Use this delegate type to get callback when the network request succeeds or fails. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+response} & Content data of the response.\\
+\hline
+{\em \+\_\+error} & Describes the network error that occurred.\\
+\hline
+\end{DoxyParams}

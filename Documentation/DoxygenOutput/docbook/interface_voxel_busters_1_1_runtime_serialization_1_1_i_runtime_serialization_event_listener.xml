@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener">
+<title>VoxelBusters::RuntimeSerialization::IRuntimeSerializationEventListener interface Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener_1abfb7c64c92db39873b146329d65b28d3">OnAfterRuntimeSerialize</link> (
+string _serializationID)<para><emphasis>&lt;summary&gt;
+Event triggered after &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; object is serialized.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener_1a173869901c67a8165ae0c3bb05e35502">OnAfterRuntimeDeserialize</link> (
+string _serializationID, object _deserializedObject)<para><emphasis>&lt;summary&gt;
+Event triggered after &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; object is deserialized.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Implement this interface to observe serialization process of <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute">VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute</link> object. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 10 of file IRuntimeSerializationEventListener.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>IRuntimeSerializationEventListener.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener_1abfb7c64c92db39873b146329d65b28d3">
+                <title>void OnAfterRuntimeSerialize (string _serializationID)</title> <emphasis>&lt;summary&gt;
+Event triggered after &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; object is serialized.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_serializationID</entry>
+                                <entry>
+<para>Identifier associated with <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute">VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute</link> object.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener_1a173869901c67a8165ae0c3bb05e35502">
+                <title>void OnAfterRuntimeDeserialize (string _serializationID, object _deserializedObject)</title> <emphasis>&lt;summary&gt;
+Event triggered after &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; object is deserialized.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_serializationID</entry>
+                                <entry>
+<para>Identifier associated with <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute">VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute</link> object.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_deserializedObject</entry>
+                                <entry>
+<para>Deserialized <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute">VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute</link> object.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

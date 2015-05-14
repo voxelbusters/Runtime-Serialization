@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_callback">
+<title>VoxelBusters::RuntimeSerialization::IRuntimeSerializationCallback interface Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_callback_1aac1895404ac627f90f5c2da1e0168430">OnAfterRuntimeSerialize</link> (
+)<para><emphasis>&lt;summary&gt;
+Event triggered after &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; object is serialized.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_callback_1ae69d517ef3e44fb508e804a576a0ad36">OnAfterRuntimeDeserialize</link> (
+)<para><emphasis>&lt;summary&gt;
+Event triggered after &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; object is deserialized.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Implement this interface to receive implicit callbacks on <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute">VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute</link> object. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 10 of file IRuntimeSerializationCallback.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>IRuntimeSerializationCallback.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_callback_1aac1895404ac627f90f5c2da1e0168430">
+                <title>void OnAfterRuntimeSerialize ()</title> <emphasis>&lt;summary&gt;
+Event triggered after &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; object is serialized.
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_callback_1ae69d517ef3e44fb508e804a576a0ad36">
+                <title>void OnAfterRuntimeDeserialize ()</title> <emphasis>&lt;summary&gt;
+Event triggered after &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; object is deserialized.
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+</section>

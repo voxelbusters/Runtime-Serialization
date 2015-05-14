@@ -1,0 +1,64 @@
+\hypertarget{namespace_voxel_busters_1_1_runtime_serialization}{}\section{Package Voxel\+Busters.\+Runtime\+Serialization}
+\label{namespace_voxel_busters_1_1_runtime_serialization}\index{Voxel\+Busters.\+Runtime\+Serialization@{Voxel\+Busters.\+Runtime\+Serialization}}
+
+
+The \hyperlink{namespace_voxel_busters_1_1_runtime_serialization}{Voxel\+Busters.\+Runtime\+Serialization} namespace contains classes that can be used for serializing and deserializing objects at runtime. Serialization is a process of converting an object into binary stream of data and storing it on disk. Deserialization is a process of reading stored data and recreating objects from it.  
+
+
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+package \hyperlink{namespace_voxel_busters_1_1_runtime_serialization_1_1_benchmark}{Benchmark}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+interface \hyperlink{interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable}{I\+Runtime\+Serializable}
+\begin{DoxyCompactList}\small\item\em Implement this interface to control serialization and deserialization of \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute}{Voxel\+Busters.\+Runtime\+Serialization.\+Runtime\+Serializable\+Attribute} object. \end{DoxyCompactList}\item 
+interface \hyperlink{interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_callback}{I\+Runtime\+Serialization\+Callback}
+\begin{DoxyCompactList}\small\item\em Implement this interface to receive implicit callbacks on \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute}{Voxel\+Busters.\+Runtime\+Serialization.\+Runtime\+Serializable\+Attribute} object. \end{DoxyCompactList}\item 
+interface \hyperlink{interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener}{I\+Runtime\+Serialization\+Event\+Listener}
+\begin{DoxyCompactList}\small\item\em Implement this interface to observe serialization process of \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute}{Voxel\+Busters.\+Runtime\+Serialization.\+Runtime\+Serializable\+Attribute} object. \end{DoxyCompactList}\item 
+interface \hyperlink{interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_extension}{I\+Runtime\+Serialization\+Extension}
+\begin{DoxyCompactList}\small\item\em Implement this interface to support runtime serialization for classes which belong to external assembly. \end{DoxyCompactList}\item 
+class \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager}{R\+S\+Manager}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager}{R\+S\+Manager} class is responsible for serializing and deserializing objects at runtime. \end{DoxyCompactList}\item 
+class \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute}{Runtime\+Serializable\+Attribute}
+\begin{DoxyCompactList}\small\item\em Indicates that a class can be serialized at runtime. \end{DoxyCompactList}\item 
+class \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info}
+\begin{DoxyCompactList}\small\item\em Stores all the data required to serialize or deserialize an object. \end{DoxyCompactList}\item 
+class \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialize_field_attribute}{Runtime\+Serialize\+Field\+Attribute}
+\begin{DoxyCompactList}\small\item\em Indicates that a field of a \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute}{Voxel\+Busters.\+Runtime\+Serialization.\+Runtime\+Serializable\+Attribute} class should be serialized at runtime. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespace_voxel_busters_1_1_runtime_serialization_aacaa3008b2cb441fbe4708df854019bf}{e\+Save\+Target} \+: byte \{ \\*
+\hyperlink{namespace_voxel_busters_1_1_runtime_serialization_aacaa3008b2cb441fbe4708df854019bfa4cc629b75d0db85993aaa1ceab89775e}{P\+L\+A\+Y\+E\+R\+\_\+\+P\+R\+E\+F\+S}, 
+\\*
+\hyperlink{namespace_voxel_busters_1_1_runtime_serialization_aacaa3008b2cb441fbe4708df854019bfa47859e0cd44b283c0b013bb759600bf7}{F\+I\+L\+E\+\_\+\+S\+Y\+S\+T\+E\+M}
+ \}
+\begin{DoxyCompactList}\small\item\em Saves serialization data to specified save target. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{namespace_voxel_busters_1_1_runtime_serialization}{Voxel\+Busters.\+Runtime\+Serialization} namespace contains classes that can be used for serializing and deserializing objects at runtime. Serialization is a process of converting an object into binary stream of data and storing it on disk. Deserialization is a process of reading stored data and recreating objects from it. 
+
+The \hyperlink{interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable}{Voxel\+Busters.\+Runtime\+Serialization.\+I\+Runtime\+Serializable} interface provides a way to control their own serialization behaviour. The \hyperlink{interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_extension}{Voxel\+Busters.\+Runtime\+Serialization.\+I\+Runtime\+Serialization\+Extension} interface provides a way to support runtime serialization for classes which belong to external assembly. 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{namespace_voxel_busters_1_1_runtime_serialization_aacaa3008b2cb441fbe4708df854019bf}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization@{Voxel\+Busters\+::\+Runtime\+Serialization}!e\+Save\+Target@{e\+Save\+Target}}
+\index{e\+Save\+Target@{e\+Save\+Target}!Voxel\+Busters\+::\+Runtime\+Serialization@{Voxel\+Busters\+::\+Runtime\+Serialization}}
+\subsubsection[{e\+Save\+Target}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf e\+Save\+Target} \+: byte}\label{namespace_voxel_busters_1_1_runtime_serialization_aacaa3008b2cb441fbe4708df854019bf}
+
+
+Saves serialization data to specified save target. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{P\+L\+A\+Y\+E\+R\+\_\+\+P\+R\+E\+F\+S@{P\+L\+A\+Y\+E\+R\+\_\+\+P\+R\+E\+F\+S}!Voxel\+Busters\+::\+Runtime\+Serialization@{Voxel\+Busters\+::\+Runtime\+Serialization}}\index{Voxel\+Busters\+::\+Runtime\+Serialization@{Voxel\+Busters\+::\+Runtime\+Serialization}!P\+L\+A\+Y\+E\+R\+\_\+\+P\+R\+E\+F\+S@{P\+L\+A\+Y\+E\+R\+\_\+\+P\+R\+E\+F\+S}}\item[{\em 
+\hypertarget{namespace_voxel_busters_1_1_runtime_serialization_aacaa3008b2cb441fbe4708df854019bfa4cc629b75d0db85993aaa1ceab89775e}{}P\+L\+A\+Y\+E\+R\+\_\+\+P\+R\+E\+F\+S\label{namespace_voxel_busters_1_1_runtime_serialization_aacaa3008b2cb441fbe4708df854019bfa4cc629b75d0db85993aaa1ceab89775e}
+}]Saves serialization data to Player\+Prefs. \index{F\+I\+L\+E\+\_\+\+S\+Y\+S\+T\+E\+M@{F\+I\+L\+E\+\_\+\+S\+Y\+S\+T\+E\+M}!Voxel\+Busters\+::\+Runtime\+Serialization@{Voxel\+Busters\+::\+Runtime\+Serialization}}\index{Voxel\+Busters\+::\+Runtime\+Serialization@{Voxel\+Busters\+::\+Runtime\+Serialization}!F\+I\+L\+E\+\_\+\+S\+Y\+S\+T\+E\+M@{F\+I\+L\+E\+\_\+\+S\+Y\+S\+T\+E\+M}}\item[{\em 
+\hypertarget{namespace_voxel_busters_1_1_runtime_serialization_aacaa3008b2cb441fbe4708df854019bfa47859e0cd44b283c0b013bb759600bf7}{}F\+I\+L\+E\+\_\+\+S\+Y\+S\+T\+E\+M\label{namespace_voxel_busters_1_1_runtime_serialization_aacaa3008b2cb441fbe4708df854019bfa47859e0cd44b283c0b013bb759600bf7}
+}]Saves serialization data to files. This option is not available for Unity Web\+Player. \end{description}
+\end{Desc}

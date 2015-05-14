@@ -1,0 +1,61 @@
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_address_book}{}\section{Address\+Book}
+\label{class_voxel_busters_1_1_native_plugins_1_1_address_book}\index{Address\+Book@{Address\+Book}}
+
+
+Address Book provides access to a centralized contacts database.  
+
+
+
+
+Inherits Mono\+Behaviour, and Mono\+Behaviour.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_address_book_a4915a0fd5a78ea9aa35c251b763cd5fb}{Read\+Contacts} (\hyperlink{class_voxel_busters_1_1_native_plugins_1_1_address_book_a0556c7cb8692eea8cedddd0ff11108c1}{Read\+Contacts\+Completion} \+\_\+on\+Completion)
+\begin{DoxyCompactList}\small\item\em Request to fetch the contacts. \end{DoxyCompactList}\item 
+delegate void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_address_book_a0556c7cb8692eea8cedddd0ff11108c1}{Read\+Contacts\+Completion} (\hyperlink{namespace_voxel_busters_1_1_native_plugins_a52e7845cde15260bea7e2d269fd8711c}{e\+A\+B\+Authorization\+Status} \+\_\+authorization\+Status, \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_address_book_contact}{Address\+Book\+Contact}\mbox{[}$\,$\mbox{]} \+\_\+contact\+List)
+\begin{DoxyCompactList}\small\item\em Use this delegate type to get callback when reading contacts information completes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Address Book provides access to a centralized contacts database. 
+
+Provides access to get First Name, Last Name , Contact Picture, Phone numbers and Email I\+D list details for each contact.  
+
+\subsection{Member Function Documentation}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_address_book_a4915a0fd5a78ea9aa35c251b763cd5fb}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Address\+Book@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Address\+Book}!Read\+Contacts@{Read\+Contacts}}
+\index{Read\+Contacts@{Read\+Contacts}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Address\+Book@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Address\+Book}}
+\subsubsection[{Read\+Contacts}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Read\+Contacts (
+\begin{DoxyParamCaption}
+\item[{{\bf Read\+Contacts\+Completion}}]{\+\_\+on\+Completion}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_address_book_a4915a0fd5a78ea9aa35c251b763cd5fb}
+
+
+Request to fetch the contacts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+on\+Completion} & Callback triggered once reading contacts is finished.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_address_book_a0556c7cb8692eea8cedddd0ff11108c1}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Address\+Book@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Address\+Book}!Read\+Contacts\+Completion@{Read\+Contacts\+Completion}}
+\index{Read\+Contacts\+Completion@{Read\+Contacts\+Completion}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Address\+Book@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Address\+Book}}
+\subsubsection[{Read\+Contacts\+Completion}]{\setlength{\rightskip}{0pt plus 5cm}delegate void Read\+Contacts\+Completion (
+\begin{DoxyParamCaption}
+\item[{{\bf e\+A\+B\+Authorization\+Status}}]{\+\_\+authorization\+Status, }
+\item[{{\bf Address\+Book\+Contact}\mbox{[}$\,$\mbox{]}}]{\+\_\+contact\+List}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_address_book_a0556c7cb8692eea8cedddd0ff11108c1}
+
+
+Use this delegate type to get callback when reading contacts information completes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+authorization\+Status} & Authorization status for address book access .\\
+\hline
+{\em \+\_\+contact\+List} & List of contacts read from address book database.\\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,279 @@
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager}{}\section{R\+S\+Manager}
+\label{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager}\index{R\+S\+Manager@{R\+S\+Manager}}
+
+
+\hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager}{R\+S\+Manager} class is responsible for serializing and deserializing objects at runtime.  
+
+
+
+
+Inherits Singleton\+Pattern$<$ R\+S\+Manager $>$.
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_ab6530217efdcb8d99bf7d3044f2b8561}{Serialize$<$ T $>$} (T \+\_\+object, string \+\_\+serialization\+I\+D=null)
+\begin{DoxyCompactList}\small\item\em Returns serialization data after serializing target object. Note\+: Serialization data is not saved. \end{DoxyCompactList}\item 
+static void \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a49a845ef8799d3cb183a51011e5aee88}{Serialize$<$ T $>$} (T \+\_\+object, string \+\_\+serialization\+I\+D, \hyperlink{namespace_voxel_busters_1_1_runtime_serialization_aacaa3008b2cb441fbe4708df854019bf}{e\+Save\+Target} \+\_\+save\+Target)
+\begin{DoxyCompactList}\small\item\em Serialize the specified object and save serialization data to specified target where it is associated with an identifier. \end{DoxyCompactList}\item 
+static T \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a862f53c7275407d42b1c1e282cdc7d48}{Deserialize\+Data$<$ T $>$} (string \+\_\+serialization\+Data, T \+\_\+target\+Object=default(T), string \+\_\+serialization\+I\+D=null)
+\begin{DoxyCompactList}\small\item\em Deserializes the serialization data and recreates the object of specified type. \end{DoxyCompactList}\item 
+static T \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a38aa7a063cb3ac84eed6f198d5654fdb}{Deserialize$<$ T $>$} (string \+\_\+serialization\+I\+D, T \+\_\+target\+Object=default(T))
+\begin{DoxyCompactList}\small\item\em Deserializes the data serialization associated with identifier and recreates the object of specified type. \end{DoxyCompactList}\item 
+static string \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a75d7bd13b5eb98362397280ef2744862}{Get\+Serialization\+Data} (string \+\_\+serialization\+I\+D)
+\begin{DoxyCompactList}\small\item\em Returns serialization data associated with given identifier. Ideal for supporting multi device login, wherein you can remotely save serialization data and restore it on other devices using \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a9c0963c7dad73a4331c53ec8937c889c}{Voxel\+Busters.\+Runtime\+Serialization.\+R\+S\+Manager.\+Restore\+Serialization\+Data}. \end{DoxyCompactList}\item 
+static bool \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a9c0963c7dad73a4331c53ec8937c889c}{Restore\+Serialization\+Data} (string \+\_\+serialization\+Data, string \+\_\+serialization\+I\+D, \hyperlink{namespace_voxel_busters_1_1_runtime_serialization_aacaa3008b2cb441fbe4708df854019bf}{e\+Save\+Target} \+\_\+save\+Target)
+\begin{DoxyCompactList}\small\item\em Saves Base64\+String format serialization data to specified target location where it is associated with an identifier. \end{DoxyCompactList}\item 
+static void \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a66f9398473654f1ba786049512c6c228}{Register\+Event\+Listener} (string \+\_\+serialization\+I\+D, \hyperlink{interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener}{I\+Runtime\+Serialization\+Event\+Listener} \+\_\+new\+Listener)
+\begin{DoxyCompactList}\small\item\em Register object to receive serialization events. \end{DoxyCompactList}\item 
+static void \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_af0b7b8a2966346bbc84bfcb469894764}{Un\+Register\+Event\+Listener} (string \+\_\+serialization\+I\+D, \hyperlink{interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener}{I\+Runtime\+Serialization\+Event\+Listener} \+\_\+listener)
+\begin{DoxyCompactList}\small\item\em Unregister object from receiving serialization events. \end{DoxyCompactList}\item 
+static void \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_afc15ae076f5d17b9b2a9f70aa6e9630d}{Remove} (string \+\_\+serialization\+I\+D)
+\begin{DoxyCompactList}\small\item\em Clears existing serialization data associated with serialization identifier. \end{DoxyCompactList}\item 
+static void \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_ae181b60d8c24114b8c417b74a51bff12}{Remove\+All} ()
+\begin{DoxyCompactList}\small\item\em Clears all existing serialization data. \end{DoxyCompactList}\item 
+static void \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a93ae17b65d2a85ee2ad86ffb69107301}{Save} ()
+\begin{DoxyCompactList}\small\item\em Writes all serialization data to disk. By default \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager}{Voxel\+Busters.\+Runtime\+Serialization.\+R\+S\+Manager} writes serialization data to Player\+Prefs/\+File on Application Pause and on Application Quit. \end{DoxyCompactList}\item 
+static void \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a4535a66d6e679c4b1f3a5d0488159eac}{Purge} (Type \+\_\+object\+Type)
+\begin{DoxyCompactList}\small\item\em Clears all the cached information of specified object type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager}{R\+S\+Manager} class is responsible for serializing and deserializing objects at runtime. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_ab6530217efdcb8d99bf7d3044f2b8561}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}!Serialize$<$ T $>$@{Serialize$<$ T $>$}}
+\index{Serialize$<$ T $>$@{Serialize$<$ T $>$}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}}
+\subsubsection[{Serialize$<$ T $>$}]{\setlength{\rightskip}{0pt plus 5cm}static string Serialize$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{T}]{\+\_\+object, }
+\item[{string}]{\+\_\+serialization\+I\+D = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_ab6530217efdcb8d99bf7d3044f2b8561}
+
+
+Returns serialization data after serializing target object. Note\+: Serialization data is not saved. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+object} & Object to serialize.\\
+\hline
+{\em \+\_\+serialization\+I\+D} & Identifier associated with serialization data.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of the object to serialize.\\
+\hline
+\end{DoxyTemplParams}
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a49a845ef8799d3cb183a51011e5aee88}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}!Serialize$<$ T $>$@{Serialize$<$ T $>$}}
+\index{Serialize$<$ T $>$@{Serialize$<$ T $>$}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}}
+\subsubsection[{Serialize$<$ T $>$}]{\setlength{\rightskip}{0pt plus 5cm}static void Serialize$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{T}]{\+\_\+object, }
+\item[{string}]{\+\_\+serialization\+I\+D, }
+\item[{{\bf e\+Save\+Target}}]{\+\_\+save\+Target}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a49a845ef8799d3cb183a51011e5aee88}
+
+
+Serialize the specified object and save serialization data to specified target where it is associated with an identifier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+object} & Object to serialize.\\
+\hline
+{\em \+\_\+serialization\+I\+D} & Identifier associated with serialization data of the target object.\\
+\hline
+{\em \+\_\+save\+Target} & Save target for serialization data.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of the object to serialize.\\
+\hline
+\end{DoxyTemplParams}
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a862f53c7275407d42b1c1e282cdc7d48}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}!Deserialize\+Data$<$ T $>$@{Deserialize\+Data$<$ T $>$}}
+\index{Deserialize\+Data$<$ T $>$@{Deserialize\+Data$<$ T $>$}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}}
+\subsubsection[{Deserialize\+Data$<$ T $>$}]{\setlength{\rightskip}{0pt plus 5cm}static T Deserialize\+Data$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+serialization\+Data, }
+\item[{T}]{\+\_\+target\+Object = {\ttfamily default(T)}, }
+\item[{string}]{\+\_\+serialization\+I\+D = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a862f53c7275407d42b1c1e282cdc7d48}
+
+
+Deserializes the serialization data and recreates the object of specified type. 
+
+\begin{DoxyReturn}{Returns}
+The deserialized object of specified type.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+serialization\+Data} & Serialization data in Base64\+String format.\\
+\hline
+{\em \+\_\+target\+Object} & Deserialized value is assigned to this instance, if value is not null.\\
+\hline
+{\em \+\_\+serialization\+I\+D} & Identifier associated with serialization data.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The Type of the value to deserialize.\\
+\hline
+\end{DoxyTemplParams}
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a38aa7a063cb3ac84eed6f198d5654fdb}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}!Deserialize$<$ T $>$@{Deserialize$<$ T $>$}}
+\index{Deserialize$<$ T $>$@{Deserialize$<$ T $>$}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}}
+\subsubsection[{Deserialize$<$ T $>$}]{\setlength{\rightskip}{0pt plus 5cm}static T Deserialize$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+serialization\+I\+D, }
+\item[{T}]{\+\_\+target\+Object = {\ttfamily default(T)}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a38aa7a063cb3ac84eed6f198d5654fdb}
+
+
+Deserializes the data serialization associated with identifier and recreates the object of specified type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+serialization\+I\+D} & Identifier associated with serialization data.\\
+\hline
+{\em \+\_\+target\+Object} & Deserialized value is assigned to this instance, if value is not null.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The Type of the value to deserialize.\\
+\hline
+\end{DoxyTemplParams}
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a75d7bd13b5eb98362397280ef2744862}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}!Get\+Serialization\+Data@{Get\+Serialization\+Data}}
+\index{Get\+Serialization\+Data@{Get\+Serialization\+Data}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}}
+\subsubsection[{Get\+Serialization\+Data}]{\setlength{\rightskip}{0pt plus 5cm}static string Get\+Serialization\+Data (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+serialization\+I\+D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a75d7bd13b5eb98362397280ef2744862}
+
+
+Returns serialization data associated with given identifier. Ideal for supporting multi device login, wherein you can remotely save serialization data and restore it on other devices using \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a9c0963c7dad73a4331c53ec8937c889c}{Voxel\+Busters.\+Runtime\+Serialization.\+R\+S\+Manager.\+Restore\+Serialization\+Data}. 
+
+\begin{DoxyReturn}{Returns}
+Serialization data as Base64\+String.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+serialization\+I\+D} & Identifier associated with serialization data.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a9c0963c7dad73a4331c53ec8937c889c}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}!Restore\+Serialization\+Data@{Restore\+Serialization\+Data}}
+\index{Restore\+Serialization\+Data@{Restore\+Serialization\+Data}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}}
+\subsubsection[{Restore\+Serialization\+Data}]{\setlength{\rightskip}{0pt plus 5cm}static bool Restore\+Serialization\+Data (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+serialization\+Data, }
+\item[{string}]{\+\_\+serialization\+I\+D, }
+\item[{{\bf e\+Save\+Target}}]{\+\_\+save\+Target}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a9c0963c7dad73a4331c53ec8937c889c}
+
+
+Saves Base64\+String format serialization data to specified target location where it is associated with an identifier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+serialization\+Data} & Serialization data in Base64\+String format.\\
+\hline
+{\em \+\_\+serialization\+I\+D} & Identifier associated with serialization data.\\
+\hline
+{\em \+\_\+save\+Target} & Serialization data save target.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a66f9398473654f1ba786049512c6c228}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}!Register\+Event\+Listener@{Register\+Event\+Listener}}
+\index{Register\+Event\+Listener@{Register\+Event\+Listener}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}}
+\subsubsection[{Register\+Event\+Listener}]{\setlength{\rightskip}{0pt plus 5cm}static void Register\+Event\+Listener (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+serialization\+I\+D, }
+\item[{{\bf I\+Runtime\+Serialization\+Event\+Listener}}]{\+\_\+new\+Listener}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a66f9398473654f1ba786049512c6c228}
+
+
+Register object to receive serialization events. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+serialization\+I\+D} & Identifier associated with serialization.\\
+\hline
+{\em \+\_\+new\+Listener} & Instance to be registered as listener.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_af0b7b8a2966346bbc84bfcb469894764}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}!Un\+Register\+Event\+Listener@{Un\+Register\+Event\+Listener}}
+\index{Un\+Register\+Event\+Listener@{Un\+Register\+Event\+Listener}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}}
+\subsubsection[{Un\+Register\+Event\+Listener}]{\setlength{\rightskip}{0pt plus 5cm}static void Un\+Register\+Event\+Listener (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+serialization\+I\+D, }
+\item[{{\bf I\+Runtime\+Serialization\+Event\+Listener}}]{\+\_\+listener}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_af0b7b8a2966346bbc84bfcb469894764}
+
+
+Unregister object from receiving serialization events. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+serialization\+I\+D} & Identifier associated with serialization data.\\
+\hline
+{\em \+\_\+callback} & Target object to be unregistered from serialization callbacks.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_afc15ae076f5d17b9b2a9f70aa6e9630d}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}!Remove@{Remove}}
+\index{Remove@{Remove}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}}
+\subsubsection[{Remove}]{\setlength{\rightskip}{0pt plus 5cm}static void Remove (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+serialization\+I\+D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_afc15ae076f5d17b9b2a9f70aa6e9630d}
+
+
+Clears existing serialization data associated with serialization identifier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+serialization\+I\+D} & Identifier associated with serialization data.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_ae181b60d8c24114b8c417b74a51bff12}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}!Remove\+All@{Remove\+All}}
+\index{Remove\+All@{Remove\+All}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}}
+\subsubsection[{Remove\+All}]{\setlength{\rightskip}{0pt plus 5cm}static void Remove\+All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_ae181b60d8c24114b8c417b74a51bff12}
+
+
+Clears all existing serialization data. 
+
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a93ae17b65d2a85ee2ad86ffb69107301}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}!Save@{Save}}
+\index{Save@{Save}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}}
+\subsubsection[{Save}]{\setlength{\rightskip}{0pt plus 5cm}static void Save (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a93ae17b65d2a85ee2ad86ffb69107301}
+
+
+Writes all serialization data to disk. By default \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager}{Voxel\+Busters.\+Runtime\+Serialization.\+R\+S\+Manager} writes serialization data to Player\+Prefs/\+File on Application Pause and on Application Quit. 
+
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a4535a66d6e679c4b1f3a5d0488159eac}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}!Purge@{Purge}}
+\index{Purge@{Purge}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}}
+\subsubsection[{Purge}]{\setlength{\rightskip}{0pt plus 5cm}static void Purge (
+\begin{DoxyParamCaption}
+\item[{Type}]{\+\_\+object\+Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a4535a66d6e679c4b1f3a5d0488159eac}
+
+
+Clears all the cached information of specified object type. 
+

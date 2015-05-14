@@ -1,0 +1,72 @@
+\indexentry{Unity\+Engine@{Unity\+Engine}|hyperpage}{7}
+\indexentry{Voxel\+Busters@{Voxel\+Busters}|hyperpage}{7}
+\indexentry{Voxel\+Busters.\+Runtime\+Serialization@{Voxel\+Busters.\+Runtime\+Serialization}|hyperpage}{7}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization@{Voxel\+Busters\+::\+Runtime\+Serialization}!e\+Save\+Target@{e\+Save\+Target}|hyperpage}{8}
+\indexentry{e\+Save\+Target@{e\+Save\+Target}!Voxel\+Busters\+::\+Runtime\+Serialization@{Voxel\+Busters\+::\+Runtime\+Serialization}|hyperpage}{8}
+\indexentry{P\+L\+A\+Y\+E\+R\+\_\+\+P\+R\+E\+F\+S@{P\+L\+A\+Y\+E\+R\+\_\+\+P\+R\+E\+F\+S}!Voxel\+Busters\+::\+Runtime\+Serialization@{Voxel\+Busters\+::\+Runtime\+Serialization}|hyperpage}{8}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization@{Voxel\+Busters\+::\+Runtime\+Serialization}!P\+L\+A\+Y\+E\+R\+\_\+\+P\+R\+E\+F\+S@{P\+L\+A\+Y\+E\+R\+\_\+\+P\+R\+E\+F\+S}|hyperpage}{8}
+\indexentry{F\+I\+L\+E\+\_\+\+S\+Y\+S\+T\+E\+M@{F\+I\+L\+E\+\_\+\+S\+Y\+S\+T\+E\+M}!Voxel\+Busters\+::\+Runtime\+Serialization@{Voxel\+Busters\+::\+Runtime\+Serialization}|hyperpage}{8}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization@{Voxel\+Busters\+::\+Runtime\+Serialization}!F\+I\+L\+E\+\_\+\+S\+Y\+S\+T\+E\+M@{F\+I\+L\+E\+\_\+\+S\+Y\+S\+T\+E\+M}|hyperpage}{8}
+\indexentry{Voxel\+Busters.\+Runtime\+Serialization.\+Benchmark@{Voxel\+Busters.\+Runtime\+Serialization.\+Benchmark}|hyperpage}{8}
+\indexentry{I\+Runtime\+Serializable@{I\+Runtime\+Serializable}|hyperpage}{9}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serializable@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serializable}!Write\+Serialization\+Data@{Write\+Serialization\+Data}|hyperpage}{9}
+\indexentry{Write\+Serialization\+Data@{Write\+Serialization\+Data}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serializable@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serializable}|hyperpage}{9}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serializable@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serializable}!Read\+Serialization\+Data@{Read\+Serialization\+Data}|hyperpage}{9}
+\indexentry{Read\+Serialization\+Data@{Read\+Serialization\+Data}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serializable@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serializable}|hyperpage}{9}
+\indexentry{I\+Runtime\+Serialization\+Callback@{I\+Runtime\+Serialization\+Callback}|hyperpage}{10}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Callback@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Callback}!On\+After\+Runtime\+Serialize@{On\+After\+Runtime\+Serialize}|hyperpage}{10}
+\indexentry{On\+After\+Runtime\+Serialize@{On\+After\+Runtime\+Serialize}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Callback@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Callback}|hyperpage}{10}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Callback@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Callback}!On\+After\+Runtime\+Deserialize@{On\+After\+Runtime\+Deserialize}|hyperpage}{10}
+\indexentry{On\+After\+Runtime\+Deserialize@{On\+After\+Runtime\+Deserialize}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Callback@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Callback}|hyperpage}{10}
+\indexentry{I\+Runtime\+Serialization\+Event\+Listener@{I\+Runtime\+Serialization\+Event\+Listener}|hyperpage}{10}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Event\+Listener@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Event\+Listener}!On\+After\+Runtime\+Serialize@{On\+After\+Runtime\+Serialize}|hyperpage}{11}
+\indexentry{On\+After\+Runtime\+Serialize@{On\+After\+Runtime\+Serialize}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Event\+Listener@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Event\+Listener}|hyperpage}{11}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Event\+Listener@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Event\+Listener}!On\+After\+Runtime\+Deserialize@{On\+After\+Runtime\+Deserialize}|hyperpage}{11}
+\indexentry{On\+After\+Runtime\+Deserialize@{On\+After\+Runtime\+Deserialize}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Event\+Listener@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Event\+Listener}|hyperpage}{11}
+\indexentry{I\+Runtime\+Serialization\+Extension@{I\+Runtime\+Serialization\+Extension}|hyperpage}{11}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Extension@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Extension}!Write\+Serialization\+Data@{Write\+Serialization\+Data}|hyperpage}{11}
+\indexentry{Write\+Serialization\+Data@{Write\+Serialization\+Data}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Extension@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Extension}|hyperpage}{11}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Extension@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Extension}!Read\+Serialization\+Data@{Read\+Serialization\+Data}|hyperpage}{12}
+\indexentry{Read\+Serialization\+Data@{Read\+Serialization\+Data}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Extension@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Extension}|hyperpage}{12}
+\indexentry{R\+S\+Manager@{R\+S\+Manager}|hyperpage}{12}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}!Serialize$<$ T $>$@{Serialize$<$ T $>$}|hyperpage}{13}
+\indexentry{Serialize$<$ T $>$@{Serialize$<$ T $>$}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}|hyperpage}{13}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}!Serialize$<$ T $>$@{Serialize$<$ T $>$}|hyperpage}{13}
+\indexentry{Serialize$<$ T $>$@{Serialize$<$ T $>$}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}|hyperpage}{13}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}!Deserialize\+Data$<$ T $>$@{Deserialize\+Data$<$ T $>$}|hyperpage}{13}
+\indexentry{Deserialize\+Data$<$ T $>$@{Deserialize\+Data$<$ T $>$}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}|hyperpage}{13}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}!Deserialize$<$ T $>$@{Deserialize$<$ T $>$}|hyperpage}{14}
+\indexentry{Deserialize$<$ T $>$@{Deserialize$<$ T $>$}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}|hyperpage}{14}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}!Get\+Serialization\+Data@{Get\+Serialization\+Data}|hyperpage}{14}
+\indexentry{Get\+Serialization\+Data@{Get\+Serialization\+Data}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}|hyperpage}{14}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}!Restore\+Serialization\+Data@{Restore\+Serialization\+Data}|hyperpage}{14}
+\indexentry{Restore\+Serialization\+Data@{Restore\+Serialization\+Data}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}|hyperpage}{14}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}!Register\+Event\+Listener@{Register\+Event\+Listener}|hyperpage}{14}
+\indexentry{Register\+Event\+Listener@{Register\+Event\+Listener}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}|hyperpage}{14}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}!Un\+Register\+Event\+Listener@{Un\+Register\+Event\+Listener}|hyperpage}{14}
+\indexentry{Un\+Register\+Event\+Listener@{Un\+Register\+Event\+Listener}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}|hyperpage}{14}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}!Remove@{Remove}|hyperpage}{16}
+\indexentry{Remove@{Remove}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}|hyperpage}{16}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}!Remove\+All@{Remove\+All}|hyperpage}{16}
+\indexentry{Remove\+All@{Remove\+All}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}|hyperpage}{16}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}!Save@{Save}|hyperpage}{16}
+\indexentry{Save@{Save}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}|hyperpage}{16}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}!Purge@{Purge}|hyperpage}{16}
+\indexentry{Purge@{Purge}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}|hyperpage}{16}
+\indexentry{Runtime\+Serializable\+Attribute@{Runtime\+Serializable\+Attribute}|hyperpage}{16}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serializable\+Attribute@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serializable\+Attribute}!Runtime\+Serializable\+Attribute@{Runtime\+Serializable\+Attribute}|hyperpage}{16}
+\indexentry{Runtime\+Serializable\+Attribute@{Runtime\+Serializable\+Attribute}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serializable\+Attribute@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serializable\+Attribute}|hyperpage}{16}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serializable\+Attribute@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serializable\+Attribute}!Runtime\+Serializable\+Attribute@{Runtime\+Serializable\+Attribute}|hyperpage}{16}
+\indexentry{Runtime\+Serializable\+Attribute@{Runtime\+Serializable\+Attribute}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serializable\+Attribute@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serializable\+Attribute}|hyperpage}{16}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serializable\+Attribute@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serializable\+Attribute}!Runtime\+Serializable\+Attribute@{Runtime\+Serializable\+Attribute}|hyperpage}{18}
+\indexentry{Runtime\+Serializable\+Attribute@{Runtime\+Serializable\+Attribute}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serializable\+Attribute@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serializable\+Attribute}|hyperpage}{18}
+\indexentry{Runtime\+Serialization\+Info@{Runtime\+Serialization\+Info}|hyperpage}{18}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}!Add\+Value$<$ T $>$@{Add\+Value$<$ T $>$}|hyperpage}{18}
+\indexentry{Add\+Value$<$ T $>$@{Add\+Value$<$ T $>$}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}|hyperpage}{18}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}!Add\+Value@{Add\+Value}|hyperpage}{19}
+\indexentry{Add\+Value@{Add\+Value}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}|hyperpage}{19}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}!Get\+Value$<$ T $>$@{Get\+Value$<$ T $>$}|hyperpage}{19}
+\indexentry{Get\+Value$<$ T $>$@{Get\+Value$<$ T $>$}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}|hyperpage}{19}
+\indexentry{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}!Get\+Value@{Get\+Value}|hyperpage}{19}
+\indexentry{Get\+Value@{Get\+Value}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}|hyperpage}{19}
+\indexentry{Runtime\+Serialize\+Field\+Attribute@{Runtime\+Serialize\+Field\+Attribute}|hyperpage}{19}

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="namespace_voxel_busters_1_1_runtime_serialization_1_1_benchmark">
+<title>VoxelBusters::RuntimeSerialization::Benchmark</title>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_benchmark_sample">VoxelBusters::RuntimeSerialization::Benchmark::BenchmarkSample</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_benchmark_sample_base">VoxelBusters::RuntimeSerialization::Benchmark::BenchmarkSampleBase</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler">VoxelBusters::RuntimeSerialization::Benchmark::Profiler</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

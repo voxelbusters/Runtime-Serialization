@@ -1,0 +1,793 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager">
+<title>VoxelBusters::RuntimeSerialization::RSManager class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kIdentifiersForPrefsKey</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kIdentifiersForFilesKey</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static Dictionary&lt; string, string &gt; save2PrefsSerializationData</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static Dictionary&lt; string, string &gt; save2FileSerializationData</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static Dictionary&lt; string, List&lt; IRuntimeSerializationEventListener &gt; &gt; serializationListeners</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a6eb438b76ddfd5cded8609d750b1a039">RSManager</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static bool <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a42bc1e7ff7d79ae9cec53d7c7ddca682">TryGetSerializationData</link> (
+string _serializationID, out string _serializationData)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a8aa356c5ab3992f843c6e135248b2beb">AddSerializationData</link> (
+string _serializationID, string _serializationData, <link linkend="namespace_voxel_busters_1_1_runtime_serialization_1aacaa3008b2cb441fbe4708df854019bf">eSaveTarget</link> _saveTarget)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static List&lt; <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener">IRuntimeSerializationEventListener</link> &gt; <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a4a0acfcc388c10606ba58c29c4bb8d5f">GetEventListeners</link> (
+string _serializationID)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1ab7b79daf82b4b4d08aba6aedb867ae7a">OnSerializationFinished</link> (
+string _serializationID)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a8c61472d8e8ea03401ddee7bee61238f">OnDeserializationFinished</link> (
+string _serializationID, object _deserializedObject)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a72ee669d1e49c51d09c3fcf0f957c84f">LoadSerializationData</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1aee1bf6e706b8dffce0d4b118773879f9">LoadSerializationDataFromPrefs</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1aa79dddb5a466ae5088824a8c46f083b7">LoadSerializationDataFromFiles</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static List&lt; string &gt; <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a4f3c8245df3deb55abec7c5d14cc4fdb">LoadSerializationIdentifiers</link> (
+string _key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a7ecefc6c09c38dffd14b8eff71a5a72a">SaveSerializationData</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1aae7b50338624037f5fa3378464f3a65d">SaveSerializationDataToPrefs</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a2ac49dc8ce207764c761928899a96f6c">SaveSerializationDataToFiles</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1acfd5a55fad8fe660cf2be24798487d7d">OnApplicationPause</link> (
+bool _isPaused)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1aafb2e5ff9ac0b154ba7c920402922a91">OnDestroy</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1ab6530217efdcb8d99bf7d3044f2b8561">Serialize&lt; T &gt;</link> (
+T _object, string _serializationID)<para><emphasis>&lt;summary&gt;
+Returns serialization data after serializing target object. 
+Note: Serialization data is not saved.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a49a845ef8799d3cb183a51011e5aee88">Serialize&lt; T &gt;</link> (
+T _object, string _serializationID, <link linkend="namespace_voxel_busters_1_1_runtime_serialization_1aacaa3008b2cb441fbe4708df854019bf">eSaveTarget</link> _saveTarget)<para><emphasis>&lt;summary&gt;
+Serialize the specified object and save serialization data to specified target where it is associated with an identifier.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static T <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a862f53c7275407d42b1c1e282cdc7d48">DeserializeData&lt; T &gt;</link> (
+string _serializationData, T _targetObject, string _serializationID)<para><emphasis>&lt;summary&gt;
+Deserializes the serialization data and recreates the object of specified type.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static T <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a38aa7a063cb3ac84eed6f198d5654fdb">Deserialize&lt; T &gt;</link> (
+string _serializationID, T _targetObject)<para><emphasis>&lt;summary&gt;
+Deserializes the data serialization associated with identifier and recreates the object of specified type.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a75d7bd13b5eb98362397280ef2744862">GetSerializationData</link> (
+string _serializationID)<para><emphasis>&lt;summary&gt;
+Returns serialization data associated with given identifier.
+Ideal for supporting multi device login, wherein you can remotely save serialization data and restore it on other devices using &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RSManager.RestoreSerializationData&quot;/&gt;.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static bool <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a9c0963c7dad73a4331c53ec8937c889c">RestoreSerializationData</link> (
+string _serializationData, string _serializationID, <link linkend="namespace_voxel_busters_1_1_runtime_serialization_1aacaa3008b2cb441fbe4708df854019bf">eSaveTarget</link> _saveTarget)<para><emphasis>&lt;summary&gt;
+Saves Base64String format serialization data to specified target location where it is associated with an identifier.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a66f9398473654f1ba786049512c6c228">RegisterEventListener</link> (
+string _serializationID, <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener">IRuntimeSerializationEventListener</link> _newListener)<para><emphasis>&lt;summary&gt;
+Register object to receive serialization events.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1af0b7b8a2966346bbc84bfcb469894764">UnRegisterEventListener</link> (
+string _serializationID, <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener">IRuntimeSerializationEventListener</link> _listener)<para><emphasis>&lt;summary&gt;
+Unregister object from receiving serialization events.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1afc15ae076f5d17b9b2a9f70aa6e9630d">Remove</link> (
+string _serializationID)<para><emphasis>&lt;summary&gt;
+Clears existing serialization data associated with serialization identifier.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1ae181b60d8c24114b8c417b74a51bff12">RemoveAll</link> (
+)<para><emphasis>&lt;summary&gt;
+Clears all existing serialization data.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a93ae17b65d2a85ee2ad86ffb69107301">Save</link> (
+)<para><emphasis>&lt;summary&gt;
+Writes all serialization data to disk.
+By default &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RSManager&quot;/&gt; writes serialization data to PlayerPrefs/File on Application Pause and on Application Quit.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a4535a66d6e679c4b1f3a5d0488159eac">Purge</link> (
+Type _objectType)<para><emphasis>&lt;summary&gt;
+Clears all the cached information of specified object type.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para><link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager">RSManager</link> class is responsible for serializing and deserializing objects at runtime. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 18 of file RSManager.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>RSManager.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a6eb438b76ddfd5cded8609d750b1a039">
+                <title>static RSManager ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a42bc1e7ff7d79ae9cec53d7c7ddca682">
+                <title>static bool TryGetSerializationData (string _serializationID, out string _serializationData)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a8aa356c5ab3992f843c6e135248b2beb">
+                <title>static void AddSerializationData (string _serializationID, string _serializationData, eSaveTarget _saveTarget)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a4a0acfcc388c10606ba58c29c4bb8d5f">
+                <title>static List&lt;IRuntimeSerializationEventListener&gt; GetEventListeners (string _serializationID)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1ab7b79daf82b4b4d08aba6aedb867ae7a">
+                <title>static void OnSerializationFinished (string _serializationID)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a8c61472d8e8ea03401ddee7bee61238f">
+                <title>static void OnDeserializationFinished (string _serializationID, object _deserializedObject)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a72ee669d1e49c51d09c3fcf0f957c84f">
+                <title>static void LoadSerializationData ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1aee1bf6e706b8dffce0d4b118773879f9">
+                <title>static void LoadSerializationDataFromPrefs ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1aa79dddb5a466ae5088824a8c46f083b7">
+                <title>static void LoadSerializationDataFromFiles ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a4f3c8245df3deb55abec7c5d14cc4fdb">
+                <title>static List&lt;string&gt; LoadSerializationIdentifiers (string _key)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a7ecefc6c09c38dffd14b8eff71a5a72a">
+                <title>static void SaveSerializationData ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1aae7b50338624037f5fa3378464f3a65d">
+                <title>static void SaveSerializationDataToPrefs ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a2ac49dc8ce207764c761928899a96f6c">
+                <title>static void SaveSerializationDataToFiles ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1acfd5a55fad8fe660cf2be24798487d7d">
+                <title>void OnApplicationPause (bool _isPaused)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1aafb2e5ff9ac0b154ba7c920402922a91">
+                <title>override void OnDestroy ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1ab6530217efdcb8d99bf7d3044f2b8561">
+                <title>static string Serialize&lt; T &gt; (T _object, string _serializationID=null)</title> <emphasis>&lt;summary&gt;
+Returns serialization data after serializing target object. 
+Note: Serialization data is not saved.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_object</entry>
+                                <entry>
+<para>Object to serialize.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_serializationID</entry>
+                                <entry>
+<para>Identifier associated with serialization data.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Template Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>T</entry>
+                                <entry>
+<para>Type of the object to serialize.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a49a845ef8799d3cb183a51011e5aee88">
+                <title>static void Serialize&lt; T &gt; (T _object, string _serializationID, eSaveTarget _saveTarget)</title> <emphasis>&lt;summary&gt;
+Serialize the specified object and save serialization data to specified target where it is associated with an identifier.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_object</entry>
+                                <entry>
+<para>Object to serialize.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_serializationID</entry>
+                                <entry>
+<para>Identifier associated with serialization data of the target object.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_saveTarget</entry>
+                                <entry>
+<para>Save target for serialization data.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Template Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>T</entry>
+                                <entry>
+<para>Type of the object to serialize.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a862f53c7275407d42b1c1e282cdc7d48">
+                <title>static T DeserializeData&lt; T &gt; (string _serializationData, T _targetObject=default(T), string _serializationID=null)</title> <emphasis>&lt;summary&gt;
+Deserializes the serialization data and recreates the object of specified type.
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>The deserialized object of specified type.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_serializationData</entry>
+                                <entry>
+<para>Serialization data in Base64String format.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_targetObject</entry>
+                                <entry>
+<para>Deserialized value is assigned to this instance, if value is not null.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_serializationID</entry>
+                                <entry>
+<para>Identifier associated with serialization data.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Template Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>T</entry>
+                                <entry>
+<para>The Type of the value to deserialize.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a38aa7a063cb3ac84eed6f198d5654fdb">
+                <title>static T Deserialize&lt; T &gt; (string _serializationID, T _targetObject=default(T))</title> <emphasis>&lt;summary&gt;
+Deserializes the data serialization associated with identifier and recreates the object of specified type.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_serializationID</entry>
+                                <entry>
+<para>Identifier associated with serialization data.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_targetObject</entry>
+                                <entry>
+<para>Deserialized value is assigned to this instance, if value is not null.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Template Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>T</entry>
+                                <entry>
+<para>The Type of the value to deserialize.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a75d7bd13b5eb98362397280ef2744862">
+                <title>static string GetSerializationData (string _serializationID)</title> <emphasis>&lt;summary&gt;
+Returns serialization data associated with given identifier.
+Ideal for supporting multi device login, wherein you can remotely save serialization data and restore it on other devices using &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RSManager.RestoreSerializationData&quot;/&gt;.
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Serialization data as Base64String.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_serializationID</entry>
+                                <entry>
+<para>Identifier associated with serialization data.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a9c0963c7dad73a4331c53ec8937c889c">
+                <title>static bool RestoreSerializationData (string _serializationData, string _serializationID, eSaveTarget _saveTarget)</title> <emphasis>&lt;summary&gt;
+Saves Base64String format serialization data to specified target location where it is associated with an identifier.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_serializationData</entry>
+                                <entry>
+<para>Serialization data in Base64String format.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_serializationID</entry>
+                                <entry>
+<para>Identifier associated with serialization data.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_saveTarget</entry>
+                                <entry>
+<para>Serialization data save target.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a66f9398473654f1ba786049512c6c228">
+                <title>static void RegisterEventListener (string _serializationID, IRuntimeSerializationEventListener _newListener)</title> <emphasis>&lt;summary&gt;
+Register object to receive serialization events.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_serializationID</entry>
+                                <entry>
+<para>Identifier associated with serialization.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_newListener</entry>
+                                <entry>
+<para>Instance to be registered as listener.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1af0b7b8a2966346bbc84bfcb469894764">
+                <title>static void UnRegisterEventListener (string _serializationID, IRuntimeSerializationEventListener _listener)</title> <emphasis>&lt;summary&gt;
+Unregister object from receiving serialization events.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_serializationID</entry>
+                                <entry>
+<para>Identifier associated with serialization data.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_callback</entry>
+                                <entry>
+<para>Target object to be unregistered from serialization callbacks.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1afc15ae076f5d17b9b2a9f70aa6e9630d">
+                <title>static void Remove (string _serializationID)</title> <emphasis>&lt;summary&gt;
+Clears existing serialization data associated with serialization identifier.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_serializationID</entry>
+                                <entry>
+<para>Identifier associated with serialization data.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1ae181b60d8c24114b8c417b74a51bff12">
+                <title>static void RemoveAll ()</title> <emphasis>&lt;summary&gt;
+Clears all existing serialization data.
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a93ae17b65d2a85ee2ad86ffb69107301">
+                <title>static void Save ()</title> <emphasis>&lt;summary&gt;
+Writes all serialization data to disk.
+By default &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RSManager&quot;/&gt; writes serialization data to PlayerPrefs/File on Application Pause and on Application Quit.
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a4535a66d6e679c4b1f3a5d0488159eac">
+                <title>static void Purge (Type _objectType)</title> <emphasis>&lt;summary&gt;
+Clears all the cached information of specified object type.
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+</section>

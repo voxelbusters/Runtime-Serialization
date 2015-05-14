@@ -1,0 +1,203 @@
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_notification_service}{}\section{Notification\+Service}
+\label{class_voxel_busters_1_1_native_plugins_1_1_notification_service}\index{Notification\+Service@{Notification\+Service}}
+
+
+Used for scheduling, registering and handling both local and remote notifications.  
+
+
+
+
+Inherits Mono\+Behaviour, and Mono\+Behaviour.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_notification_service_a83e1d708241a024ce3994443c3d30d78}{Register\+Notification\+Types} (\hyperlink{namespace_voxel_busters_1_1_native_plugins_a25a31a4bdc02a0d0adb743e26dd14ba9}{Notification\+Type} \+\_\+notification\+Types)
+\begin{DoxyCompactList}\small\item\em Apps that use either local or remote notifications must register the types of notifications they intend to deliver. \end{DoxyCompactList}\item 
+virtual string \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_notification_service_ab8eaf2bbfef786a88b9556e881c61ecd}{Schedule\+Local\+Notification} (\hyperlink{class_voxel_busters_1_1_native_plugins_1_1_cross_platform_notification}{Cross\+Platform\+Notification} \+\_\+notification)
+\begin{DoxyCompactList}\small\item\em Schedules a local notification. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_notification_service_a6ec99b73a3dc7fbdd9069eec0bfc961c}{Cancel\+Local\+Notification} (string \+\_\+notification\+I\+D)
+\begin{DoxyCompactList}\small\item\em Cancels the delivery of the specified scheduled local notification. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_notification_service_a677dbcbc871e2bad7d247fa7eab1918e}{Cancel\+All\+Local\+Notification} ()
+\begin{DoxyCompactList}\small\item\em Cancels the delivery of all scheduled local notification. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_notification_service_a68885259422119ac6697a12190e1970a}{Clear\+Notifications} ()
+\begin{DoxyCompactList}\small\item\em Discards all received notifications. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_notification_service_ab0d332cef9e48924c9b4c10e8a3bf534}{Register\+For\+Remote\+Notifications} ()
+\begin{DoxyCompactList}\small\item\em Register to receive remote notifications via Push Notification service. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_notification_service_a6f4ecad241e4f2dd070aa56e62e08ca1}{Unregister\+For\+Remote\+Notifications} ()
+\begin{DoxyCompactList}\small\item\em Unregister for all remote notifications received via Push Notification service. \end{DoxyCompactList}\item 
+delegate void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_notification_service_ae68c46f5013c239b682e24ec68638aa6}{Register\+For\+Remote\+Notification\+Completion} (string \+\_\+device\+Token, string \+\_\+error)
+\begin{DoxyCompactList}\small\item\em Use this delegate type to get callback when app finishes registering with Push Notification service. \end{DoxyCompactList}\item 
+delegate void \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_notification_service_abbbb745d69a5113b081d85f4b4660890}{Received\+Notification\+Response} (\hyperlink{class_voxel_busters_1_1_native_plugins_1_1_cross_platform_notification}{Cross\+Platform\+Notification} \+\_\+notification)
+\begin{DoxyCompactList}\small\item\em Use this delegate type to get callback when app receives a notification. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_notification_service_ae68c46f5013c239b682e24ec68638aa6}{Register\+For\+Remote\+Notification\+Completion} \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_notification_service_a6c46acbf61e90252864bf46037c8a42b}{Did\+Finish\+Register\+For\+Remote\+Notification\+Event}
+\begin{DoxyCompactList}\small\item\em Occurs when app finishes registering with Push Notification service. \end{DoxyCompactList}\item 
+static \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_notification_service_abbbb745d69a5113b081d85f4b4660890}{Received\+Notification\+Response} \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_notification_service_a7c1e2f29f0d6ce01cbda2a7b46bec757}{Did\+Receive\+Local\+Notification\+Event}
+\begin{DoxyCompactList}\small\item\em Occurs when app receives a local notification. \end{DoxyCompactList}\item 
+static \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_notification_service_abbbb745d69a5113b081d85f4b4660890}{Received\+Notification\+Response} \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_notification_service_afe03cd020860a6733c2262133e082610}{Did\+Receive\+Remote\+Notification\+Event}
+\begin{DoxyCompactList}\small\item\em Occurs when app receives a remote notification. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Used for scheduling, registering and handling both local and remote notifications. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_notification_service_a83e1d708241a024ce3994443c3d30d78}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service}!Register\+Notification\+Types@{Register\+Notification\+Types}}
+\index{Register\+Notification\+Types@{Register\+Notification\+Types}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service}}
+\subsubsection[{Register\+Notification\+Types}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Register\+Notification\+Types (
+\begin{DoxyParamCaption}
+\item[{{\bf Notification\+Type}}]{\+\_\+notification\+Types}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_notification_service_a83e1d708241a024ce3994443c3d30d78}
+
+
+Apps that use either local or remote notifications must register the types of notifications they intend to deliver. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+notification\+Types} & The notification types that your app supports.\\
+\hline
+\end{DoxyParams}
+If your app displays alerts, play sounds, or badges its icon, you must call this method during your launch.  \hypertarget{class_voxel_busters_1_1_native_plugins_1_1_notification_service_ab8eaf2bbfef786a88b9556e881c61ecd}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service}!Schedule\+Local\+Notification@{Schedule\+Local\+Notification}}
+\index{Schedule\+Local\+Notification@{Schedule\+Local\+Notification}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service}}
+\subsubsection[{Schedule\+Local\+Notification}]{\setlength{\rightskip}{0pt plus 5cm}virtual string Schedule\+Local\+Notification (
+\begin{DoxyParamCaption}
+\item[{{\bf Cross\+Platform\+Notification}}]{\+\_\+notification}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_notification_service_ab8eaf2bbfef786a88b9556e881c61ecd}
+
+
+Schedules a local notification. 
+
+\begin{DoxyReturn}{Returns}
+Notification I\+D that can be used to uniquely identify every scheduled notification.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+notification} & Notification to be scheduled.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_notification_service_a6ec99b73a3dc7fbdd9069eec0bfc961c}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service}!Cancel\+Local\+Notification@{Cancel\+Local\+Notification}}
+\index{Cancel\+Local\+Notification@{Cancel\+Local\+Notification}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service}}
+\subsubsection[{Cancel\+Local\+Notification}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Cancel\+Local\+Notification (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+notification\+I\+D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_notification_service_a6ec99b73a3dc7fbdd9069eec0bfc961c}
+
+
+Cancels the delivery of the specified scheduled local notification. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+notification\+I\+D} & Identifier for the scheduled notification to be cancelled.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_notification_service_a677dbcbc871e2bad7d247fa7eab1918e}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service}!Cancel\+All\+Local\+Notification@{Cancel\+All\+Local\+Notification}}
+\index{Cancel\+All\+Local\+Notification@{Cancel\+All\+Local\+Notification}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service}}
+\subsubsection[{Cancel\+All\+Local\+Notification}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Cancel\+All\+Local\+Notification (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_notification_service_a677dbcbc871e2bad7d247fa7eab1918e}
+
+
+Cancels the delivery of all scheduled local notification. 
+
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_notification_service_a68885259422119ac6697a12190e1970a}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service}!Clear\+Notifications@{Clear\+Notifications}}
+\index{Clear\+Notifications@{Clear\+Notifications}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service}}
+\subsubsection[{Clear\+Notifications}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Clear\+Notifications (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_notification_service_a68885259422119ac6697a12190e1970a}
+
+
+Discards all received notifications. 
+
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_notification_service_ab0d332cef9e48924c9b4c10e8a3bf534}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service}!Register\+For\+Remote\+Notifications@{Register\+For\+Remote\+Notifications}}
+\index{Register\+For\+Remote\+Notifications@{Register\+For\+Remote\+Notifications}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service}}
+\subsubsection[{Register\+For\+Remote\+Notifications}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Register\+For\+Remote\+Notifications (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_notification_service_ab0d332cef9e48924c9b4c10e8a3bf534}
+
+
+Register to receive remote notifications via Push Notification service. 
+
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_notification_service_a6f4ecad241e4f2dd070aa56e62e08ca1}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service}!Unregister\+For\+Remote\+Notifications@{Unregister\+For\+Remote\+Notifications}}
+\index{Unregister\+For\+Remote\+Notifications@{Unregister\+For\+Remote\+Notifications}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service}}
+\subsubsection[{Unregister\+For\+Remote\+Notifications}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Unregister\+For\+Remote\+Notifications (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_native_plugins_1_1_notification_service_a6f4ecad241e4f2dd070aa56e62e08ca1}
+
+
+Unregister for all remote notifications received via Push Notification service. 
+
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_notification_service_ae68c46f5013c239b682e24ec68638aa6}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service}!Register\+For\+Remote\+Notification\+Completion@{Register\+For\+Remote\+Notification\+Completion}}
+\index{Register\+For\+Remote\+Notification\+Completion@{Register\+For\+Remote\+Notification\+Completion}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service}}
+\subsubsection[{Register\+For\+Remote\+Notification\+Completion}]{\setlength{\rightskip}{0pt plus 5cm}delegate void Register\+For\+Remote\+Notification\+Completion (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+device\+Token, }
+\item[{string}]{\+\_\+error}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_notification_service_ae68c46f5013c239b682e24ec68638aa6}
+
+
+Use this delegate type to get callback when app finishes registering with Push Notification service. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+device\+Token} & The device token received after registering successfully. This will be nil if register fails with error.\\
+\hline
+{\em \+\_\+error} & An error that details why registration failed.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_notification_service_abbbb745d69a5113b081d85f4b4660890}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service}!Received\+Notification\+Response@{Received\+Notification\+Response}}
+\index{Received\+Notification\+Response@{Received\+Notification\+Response}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service}}
+\subsubsection[{Received\+Notification\+Response}]{\setlength{\rightskip}{0pt plus 5cm}delegate void Received\+Notification\+Response (
+\begin{DoxyParamCaption}
+\item[{{\bf Cross\+Platform\+Notification}}]{\+\_\+notification}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_native_plugins_1_1_notification_service_abbbb745d69a5113b081d85f4b4660890}
+
+
+Use this delegate type to get callback when app receives a notification. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+notification} & Received notification.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Event Documentation}
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_notification_service_a6c46acbf61e90252864bf46037c8a42b}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service}!Did\+Finish\+Register\+For\+Remote\+Notification\+Event@{Did\+Finish\+Register\+For\+Remote\+Notification\+Event}}
+\index{Did\+Finish\+Register\+For\+Remote\+Notification\+Event@{Did\+Finish\+Register\+For\+Remote\+Notification\+Event}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service}}
+\subsubsection[{Did\+Finish\+Register\+For\+Remote\+Notification\+Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Register\+For\+Remote\+Notification\+Completion} Did\+Finish\+Register\+For\+Remote\+Notification\+Event\hspace{0.3cm}{\ttfamily [static]}}\label{class_voxel_busters_1_1_native_plugins_1_1_notification_service_a6c46acbf61e90252864bf46037c8a42b}
+
+
+Occurs when app finishes registering with Push Notification service. 
+
+After you call the \hyperlink{class_voxel_busters_1_1_native_plugins_1_1_notification_service_ab0d332cef9e48924c9b4c10e8a3bf534}{Register\+For\+Remote\+Notifications} method, the app calls this method when device registration completes successfully or when there is an error in the registration process. When registration completes successfully, connect with your push notification server and give the device token to it. Push notification server pushes notifications only to the device represented by the token.  \hypertarget{class_voxel_busters_1_1_native_plugins_1_1_notification_service_a7c1e2f29f0d6ce01cbda2a7b46bec757}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service}!Did\+Receive\+Local\+Notification\+Event@{Did\+Receive\+Local\+Notification\+Event}}
+\index{Did\+Receive\+Local\+Notification\+Event@{Did\+Receive\+Local\+Notification\+Event}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service}}
+\subsubsection[{Did\+Receive\+Local\+Notification\+Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Received\+Notification\+Response} Did\+Receive\+Local\+Notification\+Event\hspace{0.3cm}{\ttfamily [static]}}\label{class_voxel_busters_1_1_native_plugins_1_1_notification_service_a7c1e2f29f0d6ce01cbda2a7b46bec757}
+
+
+Occurs when app receives a local notification. 
+
+\hypertarget{class_voxel_busters_1_1_native_plugins_1_1_notification_service_afe03cd020860a6733c2262133e082610}{}\index{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service}!Did\+Receive\+Remote\+Notification\+Event@{Did\+Receive\+Remote\+Notification\+Event}}
+\index{Did\+Receive\+Remote\+Notification\+Event@{Did\+Receive\+Remote\+Notification\+Event}!Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service@{Voxel\+Busters\+::\+Native\+Plugins\+::\+Notification\+Service}}
+\subsubsection[{Did\+Receive\+Remote\+Notification\+Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Received\+Notification\+Response} Did\+Receive\+Remote\+Notification\+Event\hspace{0.3cm}{\ttfamily [static]}}\label{class_voxel_busters_1_1_native_plugins_1_1_notification_service_afe03cd020860a6733c2262133e082610}
+
+
+Occurs when app receives a remote notification. 
+

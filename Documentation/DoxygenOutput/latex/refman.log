@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.20)  14 MAY 2015 01:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.20)  14 MAY 2015 13:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1148,66 +1148,24 @@ LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <7> not available
 (Font)              Font shape `T1/phv/bc/sl' tried instead on input line 29.
 LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
 (Font)              scaled to size 6.29996pt on input line 29.
-
-Underfull \hbox (badness 1142) in paragraph at lines 32--33
-\T1/phv/m/n/10 Populate [][]Voxel[]Busters.[]Runtime[]Serialization.[]Runtime[]
-Serialization[]Info[][] with the prop-er-ties re-quired to se-ri-al-ize
- []
-
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 8.99994pt on input line 36.
-[9
-
-]
-Underfull \hbox (badness 832) in paragraph at lines 52--53
-[]\T1/phv/m/n/10 The [][]Voxel[]Busters.[]Runtime[]Serialization.[]Runtime[]Ser
-ialization[]Info[][] pro-vides in-ter-face to re-
- []
-
 )
 (./interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializatio
-n_callback.tex)
+n_callback.tex [9
+
+])
 (./interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializatio
-n_event_listener.tex
-Underfull \hbox (badness 2951) in paragraph at lines 5--6
-\T1/phv/m/n/10 Implement this in-ter-face to ob-serve se-ri-al-iza-tion pro-ces
-s of [][]Voxel[]Busters.[]Runtime[]Serialization.[]Runtime[]
- []
-
-
-Underfull \hbox (badness 2951) in paragraph at lines 18--19
-\T1/phv/m/n/10 Implement this in-ter-face to ob-serve se-ri-al-iza-tion pro-ces
-s of [][]Voxel[]Busters.[]Runtime[]Serialization.[]Runtime[]
- []
-
-[10]
-Underfull \hbox (badness 2269) in paragraph at lines 36--37
-[]\T1/phv/m/n/10 Identifier as-so-ci-ated with [][]Voxel[]Busters.[]Runtime[]Se
-rialization.[]Runtime[]Serializable[]Attribute[][]
- []
-
-
-Underfull \hbox (badness 2269) in paragraph at lines 53--54
-[]\T1/phv/m/n/10 Identifier as-so-ci-ated with [][]Voxel[]Busters.[]Runtime[]Se
-rialization.[]Runtime[]Serializable[]Attribute[][]
- []
-
-)
+n_event_listener.tex [10])
 (./interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializatio
-n_extension.tex [11]
+n_extension.tex
 Underfull \hbox (badness 10000) detected at line 58
 [][][]
  []
 
-
-Underfull \hbox (badness 832) in paragraph at lines 65--66
-[]\T1/phv/m/n/10 The [][]Voxel[]Busters.[]Runtime[]Serialization.[]Runtime[]Ser
-ialization[]Info[][] pro-vides in-ter-face to re-
- []
-
-) (./class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager.tex [12]
+[11]) (./class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager.tex
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 54.
 
 (/usr/local/texlive/2014basic/texmf-dist/tex/latex/psnfss/t1pcr.fd
@@ -1237,6 +1195,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 54.
 
+[12]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 79.
@@ -1274,31 +1233,30 @@ Underfull \hbox (badness 10000) detected at line 111
 [][][]
  []
 
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 135.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 135.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 135.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 135.
+
 [13]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 135.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 135.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 135.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 135.
-
-
 Underfull \hbox (badness 10000) detected at line 163
 [][][]
  []
 
-[14] [15])
+[14])
 (./class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attri
-bute.tex [16] [17])
+bute.tex [15])
 (./class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info
 .tex
 
@@ -1317,7 +1275,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 34.
 
-[18]
+[16]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 79.
@@ -1346,7 +1304,7 @@ Underfull \hbox (badness 10000) detected at line 109
 
 )
 (./class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialize_field_at
-tribute.tex) [19] [20
+tribute.tex) [17] [18
 
 ] (./refman.ind
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
@@ -1487,7 +1445,7 @@ Overfull \hbox (15.93582pt too wide) in paragraph at lines 130--131
 rialization[]
  []
 
-[21
+[19
 
 
 ]
@@ -1497,18 +1455,18 @@ rialization[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--162
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
 []| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]I[]Runtime[]
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--164
+Underfull \hbox (badness 10000) in paragraph at lines 161--163
 []| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]I[]Runtime[]
 
  []
 
-[22
+[20
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 171.
@@ -1525,13 +1483,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 171.
  ) 
 Here is how much of TeX's memory you used:
- 13193 strings out of 494522
- 192522 string characters out of 6167205
- 284035 words of memory out of 5000000
+ 13191 strings out of 494522
+ 192508 string characters out of 6167205
+ 280035 words of memory out of 5000000
  16058 multiletter control sequences out of 15000+600000
  68663 words of font info for 70 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 48i,15n,43p,647b,520s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,15n,43p,610b,520s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014basic/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/lo
 cal/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/local/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><
@@ -1543,10 +1501,10 @@ r/local/texlive/2014basic/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr
 /local/texlive/2014basic/texmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr
 /local/texlive/2014basic/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/l
 ocal/texlive/2014basic/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (26 pages, 138290 bytes).
+Output written on refman.pdf (24 pages, 135264 bytes).
 PDF statistics:
- 799 PDF objects out of 1000 (max. 8388607)
- 753 compressed objects within 8 object streams
- 142 named destinations out of 1000 (max. 500000)
+ 778 PDF objects out of 1000 (max. 8388607)
+ 734 compressed objects within 8 object streams
+ 140 named destinations out of 1000 (max. 500000)
  521 words of extra memory for PDF output out of 10000 (max. 10000000)
 

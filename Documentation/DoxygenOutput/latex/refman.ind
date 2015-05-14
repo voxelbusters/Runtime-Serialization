@@ -2,16 +2,16 @@
 
   \item {Add\+Value}
     \subitem {Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}, 
-		\hyperpage{19}
+		\hyperpage{17}
   \item {Add\+Value$<$ T $>$}
     \subitem {Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}, 
-		\hyperpage{18}
+		\hyperpage{16}
 
   \indexspace
 
   \item {Deserialize$<$ T $>$}
     \subitem {Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}, 
-		\hyperpage{14}
+		\hyperpage{13}
   \item {Deserialize\+Data$<$ T $>$}
     \subitem {Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}, 
 		\hyperpage{13}
@@ -35,10 +35,10 @@
 		\hyperpage{14}
   \item {Get\+Value}
     \subitem {Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}, 
-		\hyperpage{19}
+		\hyperpage{17}
   \item {Get\+Value$<$ T $>$}
     \subitem {Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}, 
-		\hyperpage{19}
+		\hyperpage{17}
 
   \indexspace
 
@@ -58,7 +58,7 @@
     \subitem {Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Callback}, 
 		\hyperpage{10}
     \subitem {Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Event\+Listener}, 
-		\hyperpage{11}
+		\hyperpage{10}
 
   \indexspace
 
@@ -67,7 +67,7 @@
 		\hyperpage{8}
   \item {Purge}
     \subitem {Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}, 
-		\hyperpage{16}
+		\hyperpage{15}
 
   \indexspace
 
@@ -76,33 +76,33 @@
     \subitem {Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serializable}, 
 		\hyperpage{9}
     \subitem {Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Extension}, 
-		\hyperpage{12}
+		\hyperpage{11}
   \item {Register\+Event\+Listener}
     \subitem {Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}, 
 		\hyperpage{14}
   \item {Remove}
     \subitem {Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}, 
-		\hyperpage{16}
+		\hyperpage{14}
   \item {Remove\+All}
     \subitem {Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}, 
-		\hyperpage{16}
+		\hyperpage{15}
   \item {Restore\+Serialization\+Data}
     \subitem {Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}, 
 		\hyperpage{14}
-  \item {Runtime\+Serializable\+Attribute}, \hyperpage{16}
+  \item {Runtime\+Serializable\+Attribute}, \hyperpage{15}
     \subitem {Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serializable\+Attribute}, 
-		\hyperpage{16}, \hyperpage{18}
-  \item {Runtime\+Serialization\+Info}, \hyperpage{18}
-  \item {Runtime\+Serialize\+Field\+Attribute}, \hyperpage{19}
+		\hyperpage{15, 16}
+  \item {Runtime\+Serialization\+Info}, \hyperpage{16}
+  \item {Runtime\+Serialize\+Field\+Attribute}, \hyperpage{17}
 
   \indexspace
 
   \item {Save}
     \subitem {Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}, 
-		\hyperpage{16}
+		\hyperpage{15}
   \item {Serialize$<$ T $>$}
     \subitem {Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}, 
-		\hyperpage{13}
+		\hyperpage{12, 13}
 
   \indexspace
 
@@ -129,30 +129,29 @@
     \subitem {On\+After\+Runtime\+Serialize}, \hyperpage{10}
   \item {Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Event\+Listener}
     \subitem {On\+After\+Runtime\+Deserialize}, \hyperpage{11}
-    \subitem {On\+After\+Runtime\+Serialize}, \hyperpage{11}
+    \subitem {On\+After\+Runtime\+Serialize}, \hyperpage{10}
   \item {Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Extension}
-    \subitem {Read\+Serialization\+Data}, \hyperpage{12}
+    \subitem {Read\+Serialization\+Data}, \hyperpage{11}
     \subitem {Write\+Serialization\+Data}, \hyperpage{11}
   \item {Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}
-    \subitem {Deserialize$<$ T $>$}, \hyperpage{14}
+    \subitem {Deserialize$<$ T $>$}, \hyperpage{13}
     \subitem {Deserialize\+Data$<$ T $>$}, \hyperpage{13}
     \subitem {Get\+Serialization\+Data}, \hyperpage{14}
-    \subitem {Purge}, \hyperpage{16}
+    \subitem {Purge}, \hyperpage{15}
     \subitem {Register\+Event\+Listener}, \hyperpage{14}
-    \subitem {Remove}, \hyperpage{16}
-    \subitem {Remove\+All}, \hyperpage{16}
+    \subitem {Remove}, \hyperpage{14}
+    \subitem {Remove\+All}, \hyperpage{15}
     \subitem {Restore\+Serialization\+Data}, \hyperpage{14}
-    \subitem {Save}, \hyperpage{16}
-    \subitem {Serialize$<$ T $>$}, \hyperpage{13}
+    \subitem {Save}, \hyperpage{15}
+    \subitem {Serialize$<$ T $>$}, \hyperpage{12, 13}
     \subitem {Un\+Register\+Event\+Listener}, \hyperpage{14}
   \item {Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serializable\+Attribute}
-    \subitem {Runtime\+Serializable\+Attribute}, \hyperpage{16}, 
-		\hyperpage{18}
+    \subitem {Runtime\+Serializable\+Attribute}, \hyperpage{15, 16}
   \item {Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}
-    \subitem {Add\+Value}, \hyperpage{19}
-    \subitem {Add\+Value$<$ T $>$}, \hyperpage{18}
-    \subitem {Get\+Value}, \hyperpage{19}
-    \subitem {Get\+Value$<$ T $>$}, \hyperpage{19}
+    \subitem {Add\+Value}, \hyperpage{17}
+    \subitem {Add\+Value$<$ T $>$}, \hyperpage{16}
+    \subitem {Get\+Value}, \hyperpage{17}
+    \subitem {Get\+Value$<$ T $>$}, \hyperpage{17}
 
   \indexspace
 

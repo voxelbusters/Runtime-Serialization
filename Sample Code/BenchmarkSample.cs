@@ -1,10 +1,11 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System;
 using System.Collections.Generic;
 
 namespace VoxelBusters.RuntimeSerialization.Benchmark
 {
+	// All public fields are serialized
 	[System.Serializable, RuntimeSerializable(true)]
 	public class BenchmarkSampleBase
 	{
@@ -15,17 +16,18 @@ namespace VoxelBusters.RuntimeSerialization.Benchmark
 		public 			float					floatField				= 11.11f;
 	}
 
+	// All public fields are serialized
 	[System.Serializable, RuntimeSerializable(true)]
 	public class BenchmarkSample : BenchmarkSampleBase
 	{
-		public 			int						intField				= 10;
+		public 			int					intField				= 10;
 		public 			ushort					ushortField				= 128;
 		public 			int[,]					int2DArray				= new int[,]{{1, 2, 3}, {3, 2, 1}};
 		public 			DateTime				dateTime;
 
 #pragma warning disable
-		private 		long					m_privateLongField		= 9787;
-		private 		string[]				m_privateStringArray	= null;
+		private 		long					m_privateLongField			= 9787;
+		private 		string[]				m_privateStringArray			= null;
 #pragma warning restore
 	}
 }

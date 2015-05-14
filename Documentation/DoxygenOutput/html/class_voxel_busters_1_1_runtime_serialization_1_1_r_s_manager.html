@@ -31,7 +31,6 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Runtime Serialization
    &#160;<span id="projectnumber">1.0</span>
@@ -135,7 +134,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a38aa7a063cb3ac84eed6f198d5654fdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes the data serialization associated with identifier and recreates the object of specified type.  <a href="#a38aa7a063cb3ac84eed6f198d5654fdb">More...</a><br /></td></tr>
 <tr class="separator:a38aa7a063cb3ac84eed6f198d5654fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75d7bd13b5eb98362397280ef2744862"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager.html#a75d7bd13b5eb98362397280ef2744862">GetSerializationData</a> (string _serializationID)</td></tr>
-<tr class="memdesc:a75d7bd13b5eb98362397280ef2744862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns serialization data associated with given identifier. Ideal for supporting multi device login, wherein you can remotely save serialization data and restore it on other devices using <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager.html#a9c0963c7dad73a4331c53ec8937c889c" title="Saves Base64String format serialization data to specified target location where it is associated with...">VoxelBusters.RuntimeSerialization.RSManager.RestoreSerializationData</a>.  <a href="#a75d7bd13b5eb98362397280ef2744862">More...</a><br /></td></tr>
+<tr class="memdesc:a75d7bd13b5eb98362397280ef2744862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns serialization data associated with given identifier. Ideal for supporting multi device login, wherein you can remotely save serialization data and restore it on other devices using <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager.html#a9c0963c7dad73a4331c53ec8937c889c" title="Saves Base64String format serialization data to specified target location where it is associated with...">RSManager.RestoreSerializationData</a>.  <a href="#a75d7bd13b5eb98362397280ef2744862">More...</a><br /></td></tr>
 <tr class="separator:a75d7bd13b5eb98362397280ef2744862"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c0963c7dad73a4331c53ec8937c889c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager.html#a9c0963c7dad73a4331c53ec8937c889c">RestoreSerializationData</a> (string _serializationData, string _serializationID, <a class="el" href="namespace_voxel_busters_1_1_runtime_serialization.html#aacaa3008b2cb441fbe4708df854019bf">eSaveTarget</a> _saveTarget)</td></tr>
 <tr class="memdesc:a9c0963c7dad73a4331c53ec8937c889c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves Base64String format serialization data to specified target location where it is associated with an identifier.  <a href="#a9c0963c7dad73a4331c53ec8937c889c">More...</a><br /></td></tr>
@@ -153,7 +152,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae181b60d8c24114b8c417b74a51bff12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all existing serialization data.  <a href="#ae181b60d8c24114b8c417b74a51bff12">More...</a><br /></td></tr>
 <tr class="separator:ae181b60d8c24114b8c417b74a51bff12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93ae17b65d2a85ee2ad86ffb69107301"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager.html#a93ae17b65d2a85ee2ad86ffb69107301">Save</a> ()</td></tr>
-<tr class="memdesc:a93ae17b65d2a85ee2ad86ffb69107301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes all serialization data to disk. By default <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager.html" title="RSManager class is responsible for serializing and deserializing objects at runtime. ">VoxelBusters.RuntimeSerialization.RSManager</a> writes serialization data to PlayerPrefs/File on Application Pause and on Application Quit.  <a href="#a93ae17b65d2a85ee2ad86ffb69107301">More...</a><br /></td></tr>
+<tr class="memdesc:a93ae17b65d2a85ee2ad86ffb69107301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes all serialization data to disk. By default <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager.html" title="RSManager class is responsible for serializing and deserializing objects at runtime. ">RSManager</a> writes serialization data to PlayerPrefs/File on Application Pause and on Application Quit.  <a href="#a93ae17b65d2a85ee2ad86ffb69107301">More...</a><br /></td></tr>
 <tr class="separator:a93ae17b65d2a85ee2ad86ffb69107301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4535a66d6e679c4b1f3a5d0488159eac"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager.html#a4535a66d6e679c4b1f3a5d0488159eac">Purge</a> (Type _objectType)</td></tr>
 <tr class="memdesc:a4535a66d6e679c4b1f3a5d0488159eac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all the cached information of specified object type.  <a href="#a4535a66d6e679c4b1f3a5d0488159eac">More...</a><br /></td></tr>
@@ -395,7 +394,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns serialization data associated with given identifier. Ideal for supporting multi device login, wherein you can remotely save serialization data and restore it on other devices using <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager.html#a9c0963c7dad73a4331c53ec8937c889c" title="Saves Base64String format serialization data to specified target location where it is associated with...">VoxelBusters.RuntimeSerialization.RSManager.RestoreSerializationData</a>. </p>
+<p>Returns serialization data associated with given identifier. Ideal for supporting multi device login, wherein you can remotely save serialization data and restore it on other devices using <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager.html#a9c0963c7dad73a4331c53ec8937c889c" title="Saves Base64String format serialization data to specified target location where it is associated with...">RSManager.RestoreSerializationData</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>Serialization data as Base64String.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -620,7 +619,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Writes all serialization data to disk. By default <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager.html" title="RSManager class is responsible for serializing and deserializing objects at runtime. ">VoxelBusters.RuntimeSerialization.RSManager</a> writes serialization data to PlayerPrefs/File on Application Pause and on Application Quit. </p>
+<p>Writes all serialization data to disk. By default <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager.html" title="RSManager class is responsible for serializing and deserializing objects at runtime. ">RSManager</a> writes serialization data to PlayerPrefs/File on Application Pause and on Application Quit. </p>
 
 </div>
 </div>
@@ -656,7 +655,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_voxel_busters.html">VoxelBusters</a></li><li class="navelem"><a class="el" href="namespace_voxel_busters_1_1_runtime_serialization.html">RuntimeSerialization</a></li><li class="navelem"><a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager.html">RSManager</a></li>
-    <li class="footer">Generated on Thu May 14 2015 01:46:32 for Runtime Serialization by
+    <li class="footer">Generated on Thu May 14 2015 13:30:36 for Runtime Serialization by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

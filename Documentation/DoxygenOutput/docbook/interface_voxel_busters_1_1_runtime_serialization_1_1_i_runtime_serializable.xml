@@ -8,7 +8,7 @@
                     <listitem>
                         <para>void <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_1ad0d562a5e94e40838224b0a126f87c43">WriteSerializationData</link> (
 <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link> _info)<para><emphasis>&lt;summary&gt;
-Populate &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializationInfo&quot;/&gt; with the properties required to serialize &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; object.
+Populate &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; with the properties required to serialize &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; object.
 &lt;/summary&gt;</emphasis></para>
 </para>
                     </listitem>
@@ -19,7 +19,7 @@ Populate &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializati
                     <listitem>
                         <para>void <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_1a052bee3d106563961eb5f7d0d7a26756">ReadSerializationData</link> (
 <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link> _info)<para><emphasis>&lt;summary&gt;
-Retrieve properties of &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; object from &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializationInfo&quot;/&gt;.
+Retrieve properties of &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; object from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt;.
 &lt;/summary&gt;</emphasis></para>
 </para>
                     </listitem>
@@ -28,7 +28,7 @@ Retrieve properties of &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.Runt
         </section>
     <simplesect>
 
-<para>Implement this interface to control serialization and deserialization of <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute">VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute</link> object. </para>
+<para>Implement this interface to control serialization and deserialization of <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute">RuntimeSerializableAttribute</link> object. </para>
     </simplesect>
         <simplesect>
             <title>Detailed Description</title>
@@ -38,7 +38,7 @@ Retrieve properties of &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.Runt
         </simplesect>
             <section xml:id="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_1ad0d562a5e94e40838224b0a126f87c43">
                 <title>void WriteSerializationData (RuntimeSerializationInfo _info)</title> <emphasis>&lt;summary&gt;
-Populate &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializationInfo&quot;/&gt; with the properties required to serialize &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; object.
+Populate &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; with the properties required to serialize &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; object.
 &lt;/summary&gt;</emphasis>
                 
 <para>
@@ -53,7 +53,7 @@ Populate &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializati
                             <row>
                                 <entry>_info</entry>
                                 <entry>
-<para>The <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">VoxelBusters.RuntimeSerialization.RuntimeSerializationInfo</link> provides interface to store properties of <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute">VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute</link> object to be serialized.</para>
+<para>The <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link> provides interface to store properties of <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute">RuntimeSerializableAttribute</link> object to be serialized.</para>
 </entry>
                             </row>
                         </tbody>
@@ -65,7 +65,7 @@ Populate &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializati
             </section>
             <section xml:id="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_1a052bee3d106563961eb5f7d0d7a26756">
                 <title>void ReadSerializationData (RuntimeSerializationInfo _info)</title> <emphasis>&lt;summary&gt;
-Retrieve properties of &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; object from &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializationInfo&quot;/&gt;.
+Retrieve properties of &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; object from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt;.
 &lt;/summary&gt;</emphasis>
                 
 <para>
@@ -80,7 +80,7 @@ Retrieve properties of &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.Runt
                             <row>
                                 <entry>_info</entry>
                                 <entry>
-<para>The <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">VoxelBusters.RuntimeSerialization.RuntimeSerializationInfo</link> provides interface to retrieve <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute">VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute</link> object property values.</para>
+<para>The <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link> provides interface to retrieve <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute">RuntimeSerializableAttribute</link> object property values.</para>
 </entry>
                             </row>
                         </tbody>

@@ -3,7 +3,7 @@
 <title>VoxelBusters::RuntimeSerialization::RuntimeSerializeFieldAttribute class Reference</title>
     <simplesect>
 
-<para>Indicates that a field of a <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute">VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute</link> class should be serialized at runtime. </para>
+<para>Indicates that a field of a <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute">RuntimeSerializableAttribute</link> class should be serialized at runtime. </para>
     </simplesect>
         <simplesect>
             <title>Detailed Description</title>

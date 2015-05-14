@@ -8,7 +8,7 @@
                     <listitem>
                         <para>void <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_callback_1aac1895404ac627f90f5c2da1e0168430">OnAfterRuntimeSerialize</link> (
 )<para><emphasis>&lt;summary&gt;
-Event triggered after &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; object is serialized.
+Event triggered after &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; object is serialized.
 &lt;/summary&gt;</emphasis></para>
 </para>
                     </listitem>
@@ -19,7 +19,7 @@ Event triggered after &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.Runti
                     <listitem>
                         <para>void <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_callback_1ae69d517ef3e44fb508e804a576a0ad36">OnAfterRuntimeDeserialize</link> (
 )<para><emphasis>&lt;summary&gt;
-Event triggered after &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; object is deserialized.
+Event triggered after &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; object is deserialized.
 &lt;/summary&gt;</emphasis></para>
 </para>
                     </listitem>
@@ -28,7 +28,7 @@ Event triggered after &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.Runti
         </section>
     <simplesect>
 
-<para>Implement this interface to receive implicit callbacks on <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute">VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute</link> object. </para>
+<para>Implement this interface to receive implicit callbacks on <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute">RuntimeSerializableAttribute</link> object. </para>
     </simplesect>
         <simplesect>
             <title>Detailed Description</title>
@@ -38,13 +38,13 @@ Event triggered after &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.Runti
         </simplesect>
             <section xml:id="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_callback_1aac1895404ac627f90f5c2da1e0168430">
                 <title>void OnAfterRuntimeSerialize ()</title> <emphasis>&lt;summary&gt;
-Event triggered after &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; object is serialized.
+Event triggered after &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; object is serialized.
 &lt;/summary&gt;</emphasis>
                 
             </section>
             <section xml:id="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_callback_1ae69d517ef3e44fb508e804a576a0ad36">
                 <title>void OnAfterRuntimeDeserialize ()</title> <emphasis>&lt;summary&gt;
-Event triggered after &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; object is deserialized.
+Event triggered after &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; object is deserialized.
 &lt;/summary&gt;</emphasis>
                 
             </section>

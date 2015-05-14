@@ -21,7 +21,7 @@ static T \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manage
 static T \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a38aa7a063cb3ac84eed6f198d5654fdb}{Deserialize$<$ T $>$} (string \+\_\+serialization\+I\+D, T \+\_\+target\+Object=default(T))
 \begin{DoxyCompactList}\small\item\em Deserializes the data serialization associated with identifier and recreates the object of specified type. \end{DoxyCompactList}\item 
 static string \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a75d7bd13b5eb98362397280ef2744862}{Get\+Serialization\+Data} (string \+\_\+serialization\+I\+D)
-\begin{DoxyCompactList}\small\item\em Returns serialization data associated with given identifier. Ideal for supporting multi device login, wherein you can remotely save serialization data and restore it on other devices using \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a9c0963c7dad73a4331c53ec8937c889c}{Voxel\+Busters.\+Runtime\+Serialization.\+R\+S\+Manager.\+Restore\+Serialization\+Data}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Returns serialization data associated with given identifier. Ideal for supporting multi device login, wherein you can remotely save serialization data and restore it on other devices using \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a9c0963c7dad73a4331c53ec8937c889c}{R\+S\+Manager.\+Restore\+Serialization\+Data}. \end{DoxyCompactList}\item 
 static bool \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a9c0963c7dad73a4331c53ec8937c889c}{Restore\+Serialization\+Data} (string \+\_\+serialization\+Data, string \+\_\+serialization\+I\+D, \hyperlink{namespace_voxel_busters_1_1_runtime_serialization_aacaa3008b2cb441fbe4708df854019bf}{e\+Save\+Target} \+\_\+save\+Target)
 \begin{DoxyCompactList}\small\item\em Saves Base64\+String format serialization data to specified target location where it is associated with an identifier. \end{DoxyCompactList}\item 
 static void \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a66f9398473654f1ba786049512c6c228}{Register\+Event\+Listener} (string \+\_\+serialization\+I\+D, \hyperlink{interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener}{I\+Runtime\+Serialization\+Event\+Listener} \+\_\+new\+Listener)
@@ -33,7 +33,7 @@ static void \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_man
 static void \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_ae181b60d8c24114b8c417b74a51bff12}{Remove\+All} ()
 \begin{DoxyCompactList}\small\item\em Clears all existing serialization data. \end{DoxyCompactList}\item 
 static void \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a93ae17b65d2a85ee2ad86ffb69107301}{Save} ()
-\begin{DoxyCompactList}\small\item\em Writes all serialization data to disk. By default \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager}{Voxel\+Busters.\+Runtime\+Serialization.\+R\+S\+Manager} writes serialization data to Player\+Prefs/\+File on Application Pause and on Application Quit. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Writes all serialization data to disk. By default \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager}{R\+S\+Manager} writes serialization data to Player\+Prefs/\+File on Application Pause and on Application Quit. \end{DoxyCompactList}\item 
 static void \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a4535a66d6e679c4b1f3a5d0488159eac}{Purge} (Type \+\_\+object\+Type)
 \begin{DoxyCompactList}\small\item\em Clears all the cached information of specified object type. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -158,7 +158,7 @@ Deserializes the data serialization associated with identifier and recreates the
 )\hspace{0.3cm}{\ttfamily [static]}}\label{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a75d7bd13b5eb98362397280ef2744862}
 
 
-Returns serialization data associated with given identifier. Ideal for supporting multi device login, wherein you can remotely save serialization data and restore it on other devices using \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a9c0963c7dad73a4331c53ec8937c889c}{Voxel\+Busters.\+Runtime\+Serialization.\+R\+S\+Manager.\+Restore\+Serialization\+Data}. 
+Returns serialization data associated with given identifier. Ideal for supporting multi device login, wherein you can remotely save serialization data and restore it on other devices using \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a9c0963c7dad73a4331c53ec8937c889c}{R\+S\+Manager.\+Restore\+Serialization\+Data}. 
 
 \begin{DoxyReturn}{Returns}
 Serialization data as Base64\+String.
@@ -264,7 +264,7 @@ Clears all existing serialization data.
 )\hspace{0.3cm}{\ttfamily [static]}}\label{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a93ae17b65d2a85ee2ad86ffb69107301}
 
 
-Writes all serialization data to disk. By default \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager}{Voxel\+Busters.\+Runtime\+Serialization.\+R\+S\+Manager} writes serialization data to Player\+Prefs/\+File on Application Pause and on Application Quit. 
+Writes all serialization data to disk. By default \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager}{R\+S\+Manager} writes serialization data to Player\+Prefs/\+File on Application Pause and on Application Quit. 
 
 \hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_a4535a66d6e679c4b1f3a5d0488159eac}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}!Purge@{Purge}}
 \index{Purge@{Purge}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+R\+S\+Manager}}

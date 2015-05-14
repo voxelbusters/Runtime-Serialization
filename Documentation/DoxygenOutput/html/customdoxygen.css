@@ -1149,20 +1149,21 @@ dl.section dd {
 {
 	font: 230% Tahoma, Arial,sans-serif;
 	margin: 0px;
-	padding: 0px 0px;
+	padding: 10px 10px 10px 10px;
     text-align: left;
     width: 100%;
-    color: #54a6e4;
+    color: #0077d0;
     font-weight: lighter;
-    text-shadow: 0px 1px 1px rgba(0, 0, 0, 1.0);
+    #text-shadow: 0px 1px 1px rgba(0, 0, 0, 1.0);
 }
     
 #projectbrief
 {
 	font: 80% Tahoma, Arial,sans-serif;
 	margin: 0px;
-	padding-bottom: 55px;
-    text-shadow: 0px 1px 1px rgba(128, 128, 128, 0.5);
+    padding-left: 10px;
+    padding-bottom: 55px;
+    #text-shadow: 0px 1px 1px rgba(128, 128, 128, 0.5);
 }
 
 #projectnumber
@@ -1515,20 +1516,20 @@ tr.heading h2 {
 #nav-tree {
   background-image:url('tab_header.png');
   background-repeat:repeat-x;
-  background-color: #021d33;
+  background-color: #ffffff;
   -webkit-overflow-scrolling : touch; /* iOS 5+ */
 }
 
 #nav-tree .label a {
     padding:20px;
-    color: #54a6e4;
+    color: #0077d0;
     font-weight: lighter;
     font-size: 24px;
 }
 
 #nav-tree .selected a {
   text-decoration:underline;
-  color:#fff;
+  color:#0077d0;
 }
 
 #nav-tree .item {
@@ -1549,5 +1550,5 @@ tr.heading h2 {
   background-image: none;
   background-repeat:repeat-x;
   color: #fff;
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, 1.0);
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 1.0);
 }

@@ -48,7 +48,7 @@ Type _type, Dictionary&lt; string, RuntimeSerializationEntry &gt; _serializedVal
                     <listitem>
                         <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1ac0ca49c051194ccb86acf86a757a9fed">AddValue&lt; T &gt;</link> (
 string _name, T _value)<para><emphasis>&lt;summary&gt;
-Adds the specified object into the &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializationInfo&quot;/&gt; for serialization, where it is associated with name.
+Adds the specified object into the &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; for serialization, where it is associated with name.
 &lt;/summary&gt;</emphasis></para>
 </para>
                     </listitem>
@@ -59,7 +59,7 @@ Adds the specified object into the &lt;see cref=&quot;VoxelBusters.RuntimeSerial
                     <listitem>
                         <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1a2c98842a732a81c60f927c1c93664dac">AddValue</link> (
 string _name, object _value, Type _valueType)<para><emphasis>&lt;summary&gt;
-Adds the specified object into the &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializationInfo&quot;/&gt; for serialization, where it is associated with name.
+Adds the specified object into the &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; for serialization, where it is associated with name.
 &lt;/summary&gt;</emphasis></para>
 </para>
                     </listitem>
@@ -70,7 +70,7 @@ Adds the specified object into the &lt;see cref=&quot;VoxelBusters.RuntimeSerial
                     <listitem>
                         <para>T <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1a197deebcf58f289b38878942ec3f980c">GetValue&lt; T &gt;</link> (
 string _name)<para><emphasis>&lt;summary&gt;
-Retrieves value from &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializationInfo&quot;/&gt;.
+Retrieves value from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt;.
 &lt;/summary&gt;</emphasis></para>
 </para>
                     </listitem>
@@ -81,7 +81,7 @@ Retrieves value from &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.Runtim
                     <listitem>
                         <para>object <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1a4ed12be7f59087807778a09c29468439">GetValue</link> (
 string _name, Type _type)<para><emphasis>&lt;summary&gt;
-Retrieves value from &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializationInfo&quot;/&gt;.
+Retrieves value from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt;.
 &lt;/summary&gt;</emphasis></para>
 </para>
                     </listitem>
@@ -108,7 +108,7 @@ Retrieves value from &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.Runtim
             </section>
             <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1ac0ca49c051194ccb86acf86a757a9fed">
                 <title>void AddValue&lt; T &gt; (string _name, T _value)</title> <emphasis>&lt;summary&gt;
-Adds the specified object into the &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializationInfo&quot;/&gt; for serialization, where it is associated with name.
+Adds the specified object into the &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; for serialization, where it is associated with name.
 &lt;/summary&gt;</emphasis>
                 
 <para>
@@ -160,7 +160,7 @@ Adds the specified object into the &lt;see cref=&quot;VoxelBusters.RuntimeSerial
             </section>
             <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1a2c98842a732a81c60f927c1c93664dac">
                 <title>void AddValue (string _name, object _value, Type _valueType)</title> <emphasis>&lt;summary&gt;
-Adds the specified object into the &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializationInfo&quot;/&gt; for serialization, where it is associated with name.
+Adds the specified object into the &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; for serialization, where it is associated with name.
 &lt;/summary&gt;</emphasis>
                 
 <para>
@@ -199,7 +199,7 @@ Adds the specified object into the &lt;see cref=&quot;VoxelBusters.RuntimeSerial
             </section>
             <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1a197deebcf58f289b38878942ec3f980c">
                 <title>T GetValue&lt; T &gt; (string _name)</title> <emphasis>&lt;summary&gt;
-Retrieves value from &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializationInfo&quot;/&gt;.
+Retrieves value from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt;.
 &lt;/summary&gt;</emphasis>
                 
 <para><formalpara><title>Returns: </title>
@@ -249,7 +249,7 @@ Retrieves value from &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.Runtim
             </section>
             <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1a4ed12be7f59087807778a09c29468439">
                 <title>object GetValue (string _name, Type _type)</title> <emphasis>&lt;summary&gt;
-Retrieves value from &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializationInfo&quot;/&gt;.
+Retrieves value from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt;.
 &lt;/summary&gt;</emphasis>
                 
 <para><formalpara><title>Returns: </title>

@@ -8,7 +8,7 @@
                     <listitem>
                         <para>void <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_extension_1aad6284d5fa589cb9ec565d0f6a64d822">WriteSerializationData</link> (
 object _object, <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link> _info)<para><emphasis>&lt;summary&gt;
-Populate &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializationInfo&quot;/&gt; with the properties required to serialize target object.
+Populate &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; with the properties required to serialize target object.
 &lt;/summary&gt;</emphasis></para>
 </para>
                     </listitem>
@@ -19,7 +19,7 @@ Populate &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializati
                     <listitem>
                         <para>object <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_extension_1ad7cbc4dec1138fee757be8e783e4f323">ReadSerializationData</link> (
 object _object, <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link> _info)<para><emphasis>&lt;summary&gt;
-Retrieve serialized properties of target object from &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializationInfo&quot;/&gt;.
+Retrieve serialized properties of target object from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt;.
 &lt;/summary&gt;</emphasis></para>
 </para>
                     </listitem>
@@ -38,7 +38,7 @@ Retrieve serialized properties of target object from &lt;see cref=&quot;VoxelBus
         </simplesect>
             <section xml:id="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_extension_1aad6284d5fa589cb9ec565d0f6a64d822">
                 <title>void WriteSerializationData (object _object, RuntimeSerializationInfo _info)</title> <emphasis>&lt;summary&gt;
-Populate &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializationInfo&quot;/&gt; with the properties required to serialize target object.
+Populate &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; with the properties required to serialize target object.
 &lt;/summary&gt;</emphasis>
                 
 <para>
@@ -59,7 +59,7 @@ Populate &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializati
                             <row>
                                 <entry>_info</entry>
                                 <entry>
-<para>The <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">VoxelBusters.RuntimeSerialization.RuntimeSerializationInfo</link> provides interface to add properties to be serialized.</para>
+<para>The <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link> provides interface to add properties to be serialized.</para>
 </entry>
                             </row>
                         </tbody>
@@ -71,7 +71,7 @@ Populate &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializati
             </section>
             <section xml:id="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_extension_1ad7cbc4dec1138fee757be8e783e4f323">
                 <title>object ReadSerializationData (object _object, RuntimeSerializationInfo _info)</title> <emphasis>&lt;summary&gt;
-Retrieve serialized properties of target object from &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializationInfo&quot;/&gt;.
+Retrieve serialized properties of target object from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt;.
 &lt;/summary&gt;</emphasis>
                 
 <para><formalpara><title>Returns: </title>
@@ -96,7 +96,7 @@ Retrieve serialized properties of target object from &lt;see cref=&quot;VoxelBus
                             <row>
                                 <entry>_info</entry>
                                 <entry>
-<para>The <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">VoxelBusters.RuntimeSerialization.RuntimeSerializationInfo</link> provides interface to retrieve serialized values.</para>
+<para>The <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link> provides interface to retrieve serialized values.</para>
 </entry>
                             </row>
                         </tbody>

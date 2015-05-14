@@ -8,7 +8,7 @@
                     <listitem>
                         <para>struct <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable">VoxelBusters::RuntimeSerialization::IRuntimeSerializable</link></para>
 <para><emphasis>&lt;summary&gt;
-Implement this interface to control serialization and deserialization of &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; object.
+Implement this interface to control serialization and deserialization of &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; object.
 &lt;/summary&gt;</emphasis></para>
                     </listitem>
                 </itemizedlist>
@@ -18,7 +18,7 @@ Implement this interface to control serialization and deserialization of &lt;see
                     <listitem>
                         <para>struct <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_callback">VoxelBusters::RuntimeSerialization::IRuntimeSerializationCallback</link></para>
 <para><emphasis>&lt;summary&gt;
-Implement this interface to receive implicit callbacks on &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; object.
+Implement this interface to receive implicit callbacks on &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; object.
 &lt;/summary&gt;</emphasis></para>
                     </listitem>
                 </itemizedlist>
@@ -28,7 +28,7 @@ Implement this interface to receive implicit callbacks on &lt;see cref=&quot;Vox
                     <listitem>
                         <para>struct <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener">VoxelBusters::RuntimeSerialization::IRuntimeSerializationEventListener</link></para>
 <para><emphasis>&lt;summary&gt;
-Implement this interface to observe serialization process of &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; object.
+Implement this interface to observe serialization process of &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; object.
 &lt;/summary&gt;</emphasis></para>
                     </listitem>
                 </itemizedlist>
@@ -78,7 +78,7 @@ Stores all the data required to serialize or deserialize an object.
                     <listitem>
                         <para>struct <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialize_field_attribute">VoxelBusters::RuntimeSerialization::RuntimeSerializeFieldAttribute</link></para>
 <para><emphasis>&lt;summary&gt;
-Indicates that a field of a &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; class should be serialized at runtime.
+Indicates that a field of a &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; class should be serialized at runtime.
 &lt;/summary&gt;</emphasis></para>
                     </listitem>
                 </itemizedlist>
@@ -118,7 +118,7 @@ Saves serialization data to specified save target.
         <simplesect>
             <title>Detailed Description</title>
 
-<para>The <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable">VoxelBusters.RuntimeSerialization.IRuntimeSerializable</link> interface provides a way to control their own serialization behaviour. The <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_extension">VoxelBusters.RuntimeSerialization.IRuntimeSerializationExtension</link> interface provides a way to support runtime serialization for classes which belong to external assembly. </para>
+<para>The <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable">IRuntimeSerializable</link> interface provides a way to control their own serialization behaviour. The <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_extension">IRuntimeSerializationExtension</link> interface provides a way to support runtime serialization for classes which belong to external assembly. </para>
                 <para>Definition at line 1 of file [generated]</para>
                 <para>The Documentation for this struct was generated from the following file: </para>
                 <para><itemizedlist><listitem><para>[generated]</para></listitem></itemizedlist></para>

@@ -224,7 +224,7 @@ Deserializes the data serialization associated with identifier and recreates the
                         <para>static string <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a75d7bd13b5eb98362397280ef2744862">GetSerializationData</link> (
 string _serializationID)<para><emphasis>&lt;summary&gt;
 Returns serialization data associated with given identifier.
-Ideal for supporting multi device login, wherein you can remotely save serialization data and restore it on other devices using &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RSManager.RestoreSerializationData&quot;/&gt;.
+Ideal for supporting multi device login, wherein you can remotely save serialization data and restore it on other devices using &lt;see cref=&quot;RSManager.RestoreSerializationData&quot;/&gt;.
 &lt;/summary&gt;</emphasis></para>
 </para>
                     </listitem>
@@ -291,7 +291,7 @@ Clears all existing serialization data.
                         <para>static void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a93ae17b65d2a85ee2ad86ffb69107301">Save</link> (
 )<para><emphasis>&lt;summary&gt;
 Writes all serialization data to disk.
-By default &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RSManager&quot;/&gt; writes serialization data to PlayerPrefs/File on Application Pause and on Application Quit.
+By default &lt;see cref=&quot;RSManager&quot;/&gt; writes serialization data to PlayerPrefs/File on Application Pause and on Application Quit.
 &lt;/summary&gt;</emphasis></para>
 </para>
                     </listitem>
@@ -610,7 +610,7 @@ Deserializes the data serialization associated with identifier and recreates the
             <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a75d7bd13b5eb98362397280ef2744862">
                 <title>static string GetSerializationData (string _serializationID)</title> <emphasis>&lt;summary&gt;
 Returns serialization data associated with given identifier.
-Ideal for supporting multi device login, wherein you can remotely save serialization data and restore it on other devices using &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RSManager.RestoreSerializationData&quot;/&gt;.
+Ideal for supporting multi device login, wherein you can remotely save serialization data and restore it on other devices using &lt;see cref=&quot;RSManager.RestoreSerializationData&quot;/&gt;.
 &lt;/summary&gt;</emphasis>
                 
 <para><formalpara><title>Returns: </title>
@@ -780,7 +780,7 @@ Clears all existing serialization data.
             <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager_1a93ae17b65d2a85ee2ad86ffb69107301">
                 <title>static void Save ()</title> <emphasis>&lt;summary&gt;
 Writes all serialization data to disk.
-By default &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RSManager&quot;/&gt; writes serialization data to PlayerPrefs/File on Application Pause and on Application Quit.
+By default &lt;see cref=&quot;RSManager&quot;/&gt; writes serialization data to PlayerPrefs/File on Application Pause and on Application Quit.
 &lt;/summary&gt;</emphasis>
                 
             </section>

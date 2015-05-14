@@ -40,7 +40,7 @@
                     <listitem>
                         <para> <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute_1aa3cb2cc3689fb86c9017b0a719be2752">RuntimeSerializableAttribute</link> (
 )<para><emphasis>&lt;summary&gt;
-Initializes a new instance of the &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; class.
+Initializes a new instance of the &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; class.
 &lt;/summary&gt;</emphasis></para>
 </para>
                     </listitem>
@@ -51,7 +51,7 @@ Initializes a new instance of the &lt;see cref=&quot;VoxelBusters.RuntimeSeriali
                     <listitem>
                         <para> <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute_1aad88c45dd08a7aa5fe22b8be15ed6c89">RuntimeSerializableAttribute</link> (
 bool _serializeAllPublicVariables)<para><emphasis>&lt;summary&gt;
-Initializes a new instance of the &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; class.
+Initializes a new instance of the &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; class.
 &lt;/summary&gt;</emphasis></para>
 </para>
                     </listitem>
@@ -62,7 +62,7 @@ Initializes a new instance of the &lt;see cref=&quot;VoxelBusters.RuntimeSeriali
                     <listitem>
                         <para> <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute_1a2905def45da7c64fc82be1b7d8a06953">RuntimeSerializableAttribute</link> (
 bool _serializeAllPublicVariables, bool _serializeAllNonPublicVariables)<para><emphasis>&lt;summary&gt;
-Initializes a new instance of the &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; class.
+Initializes a new instance of the &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; class.
 &lt;/summary&gt;</emphasis></para>
 </para>
                     </listitem>
@@ -84,13 +84,13 @@ Initializes a new instance of the &lt;see cref=&quot;VoxelBusters.RuntimeSeriali
         </section>
             <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute_1aa3cb2cc3689fb86c9017b0a719be2752">
                 <title>RuntimeSerializableAttribute ()</title> <emphasis>&lt;summary&gt;
-Initializes a new instance of the &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; class.
+Initializes a new instance of the &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; class.
 &lt;/summary&gt;</emphasis>
                 
             </section>
             <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute_1aad88c45dd08a7aa5fe22b8be15ed6c89">
                 <title>RuntimeSerializableAttribute (bool _serializeAllPublicVariables)</title> <emphasis>&lt;summary&gt;
-Initializes a new instance of the &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; class.
+Initializes a new instance of the &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; class.
 &lt;/summary&gt;</emphasis>
                 
 <para>
@@ -117,7 +117,7 @@ Initializes a new instance of the &lt;see cref=&quot;VoxelBusters.RuntimeSeriali
             </section>
             <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute_1a2905def45da7c64fc82be1b7d8a06953">
                 <title>RuntimeSerializableAttribute (bool _serializeAllPublicVariables, bool _serializeAllNonPublicVariables)</title> <emphasis>&lt;summary&gt;
-Initializes a new instance of the &lt;see cref=&quot;VoxelBusters.RuntimeSerialization.RuntimeSerializableAttribute&quot;/&gt; class.
+Initializes a new instance of the &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; class.
 &lt;/summary&gt;</emphasis>
                 
 <para>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="struct_voxel_busters_1_1_utility_1_1_web_response">
+<title>VoxelBusters::Utility::WebResponse struct Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static WebResponse <link linkend="struct_voxel_busters_1_1_utility_1_1_web_response_1a6878f3fcc79ff2c0f10e889d6532cffa">WebResponseOnSuccess</link> (
+IDictionary _jsonResponse)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static WebResponse <link linkend="struct_voxel_busters_1_1_utility_1_1_web_response_1a8361db3493e584a388c37b0a2bb77c0d">WebResponseOnFail</link> (
+IDictionary _jsonResponse)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="struct_voxel_busters_1_1_utility_1_1_web_response_1a6878f3fcc79ff2c0f10e889d6532cffa">
+                <title>static WebResponse WebResponseOnSuccess (IDictionary _jsonResponse)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="struct_voxel_busters_1_1_utility_1_1_web_response_1a8361db3493e584a388c37b0a2bb77c0d">
+                <title>static WebResponse WebResponseOnFail (IDictionary _jsonResponse)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

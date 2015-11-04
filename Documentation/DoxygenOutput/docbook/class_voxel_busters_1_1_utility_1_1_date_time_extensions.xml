@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_date_time_extensions">
+<title>VoxelBusters::Utility::DateTimeExtensions class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kZuluFormat</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static System.DateTime <link linkend="class_voxel_busters_1_1_utility_1_1_date_time_extensions_1a52087cfffb8a535fb58b2baaa578b10a">ToDateTimeUTC</link> (
+this string _string, string _format)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static System.DateTime <link linkend="class_voxel_busters_1_1_utility_1_1_date_time_extensions_1a4a8fd5c0531eb27db71f87df84a1b324">ToDateTimeLocal</link> (
+this string _string, string _format)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static System.DateTime <link linkend="class_voxel_busters_1_1_utility_1_1_date_time_extensions_1a9a46687d2d52f3b8a315b7f34517f456">ToZuluFormatDateTimeUTC</link> (
+this string _string)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static System.DateTime <link linkend="class_voxel_busters_1_1_utility_1_1_date_time_extensions_1a9fdef0516f37c45ef4bd04a721115798">ToZuluFormatDateTimeLocal</link> (
+this string _string)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_voxel_busters_1_1_utility_1_1_date_time_extensions_1a178a132f0acb1c466138761115ff4c07">ToStringUsingZuluFormat</link> (
+this System.DateTime _dateTime)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static System.DateTime <link linkend="class_voxel_busters_1_1_utility_1_1_date_time_extensions_1a47065f0defde49e3399cddbf6a078fb4">ToDateTimeFromJavaTime</link> (
+this long _time)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static long <link linkend="class_voxel_busters_1_1_utility_1_1_date_time_extensions_1a4f92ec5a79b90f6d8556d812c58bb6ac">ToJavaTimeFromDateTime</link> (
+this System.DateTime _dateTime)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_date_time_extensions_1a52087cfffb8a535fb58b2baaa578b10a">
+                <title>static System.DateTime ToDateTimeUTC (this string _string, string _format=null)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_date_time_extensions_1a4a8fd5c0531eb27db71f87df84a1b324">
+                <title>static System.DateTime ToDateTimeLocal (this string _string, string _format=null)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_date_time_extensions_1a9a46687d2d52f3b8a315b7f34517f456">
+                <title>static System.DateTime ToZuluFormatDateTimeUTC (this string _string)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_date_time_extensions_1a9fdef0516f37c45ef4bd04a721115798">
+                <title>static System.DateTime ToZuluFormatDateTimeLocal (this string _string)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_date_time_extensions_1a178a132f0acb1c466138761115ff4c07">
+                <title>static string ToStringUsingZuluFormat (this System.DateTime _dateTime)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_date_time_extensions_1a47065f0defde49e3399cddbf6a078fb4">
+                <title>static System.DateTime ToDateTimeFromJavaTime (this long _time)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_date_time_extensions_1a4f92ec5a79b90f6d8556d812c58bb6ac">
+                <title>static long ToJavaTimeFromDateTime (this System.DateTime _dateTime)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -17,7 +17,7 @@ Populate &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; with the propert
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_1a052bee3d106563961eb5f7d0d7a26756">ReadSerializationData</link> (
+                        <para>object <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_1aefabb56185a95845d52baf552879d6c5">ReadSerializationData</link> (
 <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link> _info)<para><emphasis>&lt;summary&gt;
 Retrieve properties of &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; object from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt;.
 &lt;/summary&gt;</emphasis></para>
@@ -63,12 +63,16 @@ Populate &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; with the propert
                 </para>
 
             </section>
-            <section xml:id="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_1a052bee3d106563961eb5f7d0d7a26756">
-                <title>void ReadSerializationData (RuntimeSerializationInfo _info)</title> <emphasis>&lt;summary&gt;
+            <section xml:id="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_1aefabb56185a95845d52baf552879d6c5">
+                <title>object ReadSerializationData (RuntimeSerializationInfo _info)</title> <emphasis>&lt;summary&gt;
 Retrieve properties of &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; object from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt;.
 &lt;/summary&gt;</emphasis>
                 
-<para>
+<para><formalpara><title>Returns: </title>
+
+<para>Object retrieved from deserializing serialization data.</para>
+</formalpara>
+
                 <formalpara>
                     <title/>
                     <table frame="all">

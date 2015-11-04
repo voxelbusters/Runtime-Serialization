@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_unity_g_u_i_layout_utility">
+<title>VoxelBusters::Utility::UnityGUILayoutUtility class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static bool <link linkend="class_voxel_busters_1_1_utility_1_1_unity_g_u_i_layout_utility_1a0690b74bdacd73038434dd4e2f38cf37">Foldout</link> (
+GUIContent _label, bool _state)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_unity_g_u_i_layout_utility_1a0690b74bdacd73038434dd4e2f38cf37">
+                <title>static bool Foldout (GUIContent _label, bool _state)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

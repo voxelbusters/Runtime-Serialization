@@ -1,0 +1,87 @@
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system}{}\section{U\+I\+D\+System}
+\label{class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system}\index{U\+I\+D\+System@{U\+I\+D\+System}}
+
+
+Unique Identifier System is used for uniquely identify a Game\+Object and Component attached to it. Please attach this component to all the Game\+Object that will undergo serialization and deserialization. When this component is attached to a Game\+Object, it recursively creates \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system}{U\+I\+D\+System} component in all descendants and assigns U\+I\+D. All the assigned U\+I\+D\textquotesingle{}s are cached and used for R\+S system for identifying an object in Scene hierarchy. Note that U\+I\+D for each object, is assigned only once until and unless user forcefully reset\textquotesingle{}s component. Please dont forget to enable Is\+Prefab flag, which is used for differentiating between normal Game\+Object and Prefab. U\+I\+D\textquotesingle{}s for Prefab are generated and assigned at runtime only.  
+
+
+
+
+Inherits Mono\+Behaviour, Mono\+Behaviour, and Mono\+Behaviour.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_a75c6c5969a529560977d81b057045591}{Update\+U\+I\+Ds} (bool \+\_\+recursive)
+\begin{DoxyCompactList}\small\item\em Assigns new U\+I\+D for all the new Components attached to this Game\+Object. \end{DoxyCompactList}\item 
+void \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_a08bb2b4305e52d8aed36cc6e596321b9}{Reassign\+U\+I\+Ds} (bool \+\_\+recursive)
+\begin{DoxyCompactList}\small\item\em Flushes all the existing U\+I\+D\textquotesingle{}s and reassigns new U\+I\+D\textquotesingle{}s to this Game\+Object and its components. \end{DoxyCompactList}\item 
+void \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_a005f830bafab7110730d5401c9191816}{Assign\+U\+I\+D\+To\+New\+Component} (Component \+\_\+component)
+\begin{DoxyCompactList}\small\item\em Generates and assigns a new U\+I\+D to the given component. Operation fails, if U\+I\+D was already assigned to this component. \end{DoxyCompactList}\item 
+void \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_ad3e2318987bafe5ca509ca2585bbcb14}{Update\+Can\+Serialize\+Component\+Status} (Component \+\_\+component, bool \+\_\+can\+Serialize)
+\begin{DoxyCompactList}\small\item\em Mark the components you would like to serialize while serializing the game object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Unique Identifier System is used for uniquely identify a Game\+Object and Component attached to it. Please attach this component to all the Game\+Object that will undergo serialization and deserialization. When this component is attached to a Game\+Object, it recursively creates \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system}{U\+I\+D\+System} component in all descendants and assigns U\+I\+D. All the assigned U\+I\+D\textquotesingle{}s are cached and used for R\+S system for identifying an object in Scene hierarchy. Note that U\+I\+D for each object, is assigned only once until and unless user forcefully reset\textquotesingle{}s component. Please dont forget to enable Is\+Prefab flag, which is used for differentiating between normal Game\+Object and Prefab. U\+I\+D\textquotesingle{}s for Prefab are generated and assigned at runtime only. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_a75c6c5969a529560977d81b057045591}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+U\+I\+D\+System@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+U\+I\+D\+System}!Update\+U\+I\+Ds@{Update\+U\+I\+Ds}}
+\index{Update\+U\+I\+Ds@{Update\+U\+I\+Ds}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+U\+I\+D\+System@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+U\+I\+D\+System}}
+\subsubsection[{Update\+U\+I\+Ds}]{\setlength{\rightskip}{0pt plus 5cm}void Update\+U\+I\+Ds (
+\begin{DoxyParamCaption}
+\item[{bool}]{\+\_\+recursive}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_a75c6c5969a529560977d81b057045591}
+
+
+Assigns new U\+I\+D for all the new Components attached to this Game\+Object. 
+
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_a08bb2b4305e52d8aed36cc6e596321b9}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+U\+I\+D\+System@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+U\+I\+D\+System}!Reassign\+U\+I\+Ds@{Reassign\+U\+I\+Ds}}
+\index{Reassign\+U\+I\+Ds@{Reassign\+U\+I\+Ds}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+U\+I\+D\+System@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+U\+I\+D\+System}}
+\subsubsection[{Reassign\+U\+I\+Ds}]{\setlength{\rightskip}{0pt plus 5cm}void Reassign\+U\+I\+Ds (
+\begin{DoxyParamCaption}
+\item[{bool}]{\+\_\+recursive}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_a08bb2b4305e52d8aed36cc6e596321b9}
+
+
+Flushes all the existing U\+I\+D\textquotesingle{}s and reassigns new U\+I\+D\textquotesingle{}s to this Game\+Object and its components. 
+
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_a005f830bafab7110730d5401c9191816}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+U\+I\+D\+System@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+U\+I\+D\+System}!Assign\+U\+I\+D\+To\+New\+Component@{Assign\+U\+I\+D\+To\+New\+Component}}
+\index{Assign\+U\+I\+D\+To\+New\+Component@{Assign\+U\+I\+D\+To\+New\+Component}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+U\+I\+D\+System@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+U\+I\+D\+System}}
+\subsubsection[{Assign\+U\+I\+D\+To\+New\+Component}]{\setlength{\rightskip}{0pt plus 5cm}void Assign\+U\+I\+D\+To\+New\+Component (
+\begin{DoxyParamCaption}
+\item[{Component}]{\+\_\+component}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_a005f830bafab7110730d5401c9191816}
+
+
+Generates and assigns a new U\+I\+D to the given component. Operation fails, if U\+I\+D was already assigned to this component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+component} & Component to which U\+I\+D needs to be assigned.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_ad3e2318987bafe5ca509ca2585bbcb14}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+U\+I\+D\+System@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+U\+I\+D\+System}!Update\+Can\+Serialize\+Component\+Status@{Update\+Can\+Serialize\+Component\+Status}}
+\index{Update\+Can\+Serialize\+Component\+Status@{Update\+Can\+Serialize\+Component\+Status}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+U\+I\+D\+System@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+U\+I\+D\+System}}
+\subsubsection[{Update\+Can\+Serialize\+Component\+Status}]{\setlength{\rightskip}{0pt plus 5cm}void Update\+Can\+Serialize\+Component\+Status (
+\begin{DoxyParamCaption}
+\item[{Component}]{\+\_\+component, }
+\item[{bool}]{\+\_\+can\+Serialize}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_ad3e2318987bafe5ca509ca2585bbcb14}
+
+
+Mark the components you would like to serialize while serializing the game object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+component} & Component attached to this gameobject.\\
+\hline
+{\em \+\_\+can\+Serialize} & If set to {\ttfamily true} then component is serialized.\\
+\hline
+\end{DoxyParams}

@@ -21,22 +21,9 @@
                     </listitem>
                 </itemizedlist>
             </para>
-        </section>
-        <section>
-            <title></title>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para> <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1a1908677cb8cba71d8f9ec66b707191a1">RuntimeSerializationInfo</link> (
-Type _type)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para> <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1ac4e6feeef82bc2db894db2cf8348b961">RuntimeSerializationInfo</link> (
-Type _type, Dictionary&lt; string, RuntimeSerializationEntry &gt; _serializedValues)</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -46,8 +33,38 @@ Type _type, Dictionary&lt; string, RuntimeSerializationEntry &gt; _serializedVal
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1ac0ca49c051194ccb86acf86a757a9fed">AddValue&lt; T &gt;</link> (
-string _name, T _value)<para><emphasis>&lt;summary&gt;
+                        <para> <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1a07ca1ac1cfc43bc7fc3c6cc397521da1">RuntimeSerializationInfo</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1a0ea0f166d3b7d3e872497a642aa676db">RuntimeSerializationInfo</link> (
+Type _targetType)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1a43e3563570b5ef49439af788905c6dc6">RuntimeSerializationInfo</link> (
+Type _targetType, Dictionary&lt; string, RuntimeSerializationEntry &gt; _initializerValuesCollection, Dictionary&lt; string, RuntimeSerializationEntry &gt; _nonInitializerValuesCollection)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1afc7377af684433c79b96aaa5cba28b8e">AddValue&lt; T &gt;</link> (
+string _name, T _value, bool _isObjectInitializer)<para><emphasis>&lt;summary&gt;
 Adds the specified object into the &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; for serialization, where it is associated with name.
 &lt;/summary&gt;</emphasis></para>
 </para>
@@ -57,8 +74,8 @@ Adds the specified object into the &lt;see cref=&quot;RuntimeSerializationInfo&q
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1a2c98842a732a81c60f927c1c93664dac">AddValue</link> (
-string _name, object _value, Type _valueType)<para><emphasis>&lt;summary&gt;
+                        <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1a2f81259a486737aca459d58b5e0dcde9">AddValue</link> (
+string _name, object _value, Type _valueType, bool _isObjectInitializer)<para><emphasis>&lt;summary&gt;
 Adds the specified object into the &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; for serialization, where it is associated with name.
 &lt;/summary&gt;</emphasis></para>
 </para>
@@ -68,9 +85,9 @@ Adds the specified object into the &lt;see cref=&quot;RuntimeSerializationInfo&q
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>T <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1a197deebcf58f289b38878942ec3f980c">GetValue&lt; T &gt;</link> (
-string _name)<para><emphasis>&lt;summary&gt;
-Retrieves value from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt;.
+                        <para>T <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1a05337b60778fbd1effa007cff1255dee">GetValue&lt; T &gt;</link> (
+string _name, bool _isObjectInitializer)<para><emphasis>&lt;summary&gt;
+Gets the value from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; using specified name.
 &lt;/summary&gt;</emphasis></para>
 </para>
                     </listitem>
@@ -79,9 +96,42 @@ Retrieves value from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt;.
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>object <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1a4ed12be7f59087807778a09c29468439">GetValue</link> (
-string _name, Type _type)<para><emphasis>&lt;summary&gt;
-Retrieves value from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt;.
+                        <para>object <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1afa5472bda7c1cd80f4150b92a786a810">GetValue</link> (
+string _name, Type _type, bool _isObjectInitializer)<para><emphasis>&lt;summary&gt;
+Gets the value from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; using specified name.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1a8f6f8bcd13d3ecaad5ba8dc85f4dfcda">TryGetValue&lt; T &gt;</link> (
+string _name, out T _value, bool _isObjectInitializer)<para><emphasis>&lt;summary&gt;
+Gets the value from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; using specified name.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1aae1c7a92bad7239f92897ac999026122">TryGetValue</link> (
+string _name, out object _value, Type _type, bool _isObjectInitializer)<para><emphasis>&lt;summary&gt;
+Gets the value from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; using specified name.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1ae1e552a892e7fa0cd5aea44277bef990">ContainsValue</link> (
+string _name, bool _isObjectInitializer)<para><emphasis>&lt;summary&gt;
+Determines whether the &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; contains a specific value.
 &lt;/summary&gt;</emphasis></para>
 </para>
                     </listitem>
@@ -98,16 +148,20 @@ Retrieves value from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt;.
                 <para>The Documentation for this struct was generated from the following file: </para>
                 <para><itemizedlist><listitem><para>RuntimeSerializationInfo.cs</para></listitem></itemizedlist></para>
         </simplesect>
-            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1a1908677cb8cba71d8f9ec66b707191a1">
-                <title>RuntimeSerializationInfo (Type _type)</title> <emphasis></emphasis>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1a07ca1ac1cfc43bc7fc3c6cc397521da1">
+                <title>RuntimeSerializationInfo ()</title> <emphasis></emphasis>
                 
             </section>
-            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1ac4e6feeef82bc2db894db2cf8348b961">
-                <title>RuntimeSerializationInfo (Type _type, Dictionary&lt; string, RuntimeSerializationEntry &gt; _serializedValues)</title> <emphasis></emphasis>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1a0ea0f166d3b7d3e872497a642aa676db">
+                <title>RuntimeSerializationInfo (Type _targetType)</title> <emphasis></emphasis>
                 
             </section>
-            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1ac0ca49c051194ccb86acf86a757a9fed">
-                <title>void AddValue&lt; T &gt; (string _name, T _value)</title> <emphasis>&lt;summary&gt;
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1a43e3563570b5ef49439af788905c6dc6">
+                <title>RuntimeSerializationInfo (Type _targetType, Dictionary&lt; string, RuntimeSerializationEntry &gt; _initializerValuesCollection, Dictionary&lt; string, RuntimeSerializationEntry &gt; _nonInitializerValuesCollection)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1afc7377af684433c79b96aaa5cba28b8e">
+                <title>void AddValue&lt; T &gt; (string _name, T _value, bool _isObjectInitializer=false)</title> <emphasis>&lt;summary&gt;
 Adds the specified object into the &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; for serialization, where it is associated with name.
 &lt;/summary&gt;</emphasis>
                 
@@ -123,13 +177,19 @@ Adds the specified object into the &lt;see cref=&quot;RuntimeSerializationInfo&q
                             <row>
                                 <entry>_name</entry>
                                 <entry>
-<para>The name to associate with the value, so it can be deserialized later.</para>
+<para>The name associated with the value to be stored in <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link>.</para>
 </entry>
                             </row>
                             <row>
                                 <entry>_value</entry>
                                 <entry>
 <para>The value to be serialized. Any children of this object will automatically be serialized.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_isObjectInitializer</entry>
+                                <entry>
+<para>The flag indicates whether this value is object intializer. Object initializers are the values that are available while creating object instance.</para>
 </entry>
                             </row>
                         </tbody>
@@ -158,8 +218,8 @@ Adds the specified object into the &lt;see cref=&quot;RuntimeSerializationInfo&q
                 </para>
 
             </section>
-            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1a2c98842a732a81c60f927c1c93664dac">
-                <title>void AddValue (string _name, object _value, Type _valueType)</title> <emphasis>&lt;summary&gt;
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1a2f81259a486737aca459d58b5e0dcde9">
+                <title>void AddValue (string _name, object _value, Type _valueType, bool _isObjectInitializer=false)</title> <emphasis>&lt;summary&gt;
 Adds the specified object into the &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; for serialization, where it is associated with name.
 &lt;/summary&gt;</emphasis>
                 
@@ -175,7 +235,7 @@ Adds the specified object into the &lt;see cref=&quot;RuntimeSerializationInfo&q
                             <row>
                                 <entry>_name</entry>
                                 <entry>
-<para>The name to associate with the value, so it can be deserialized later.</para>
+<para>The name associated with the value to be stored in <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link>.</para>
 </entry>
                             </row>
                             <row>
@@ -190,6 +250,12 @@ Adds the specified object into the &lt;see cref=&quot;RuntimeSerializationInfo&q
 <para>The Type associated with the current object. This must always be the type of the object itself.</para>
 </entry>
                             </row>
+                            <row>
+                                <entry>_isObjectInitializer</entry>
+                                <entry>
+<para>The flag indicates whether this value is object intializer. Object initializers are the values that are available while creating object instance.</para>
+</entry>
+                            </row>
                         </tbody>
                         </tgroup>
                     </table>
@@ -197,9 +263,9 @@ Adds the specified object into the &lt;see cref=&quot;RuntimeSerializationInfo&q
                 </para>
 
             </section>
-            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1a197deebcf58f289b38878942ec3f980c">
-                <title>T GetValue&lt; T &gt; (string _name)</title> <emphasis>&lt;summary&gt;
-Retrieves value from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt;.
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1a05337b60778fbd1effa007cff1255dee">
+                <title>T GetValue&lt; T &gt; (string _name, bool _isObjectInitializer=false)</title> <emphasis>&lt;summary&gt;
+Gets the value from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; using specified name.
 &lt;/summary&gt;</emphasis>
                 
 <para><formalpara><title>Returns: </title>
@@ -218,7 +284,13 @@ Retrieves value from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt;.
                             <row>
                                 <entry>_name</entry>
                                 <entry>
-<para>The name associated with the value to retrieve.</para>
+<para>The name associated with the value to be retreived from <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link>.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_isObjectInitializer</entry>
+                                <entry>
+<para>The flag indicates whether this value is object intializer. Object initializers are the values that are available while creating object instance.</para>
 </entry>
                             </row>
                         </tbody>
@@ -247,9 +319,9 @@ Retrieves value from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt;.
                 </para>
 
             </section>
-            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1a4ed12be7f59087807778a09c29468439">
-                <title>object GetValue (string _name, Type _type)</title> <emphasis>&lt;summary&gt;
-Retrieves value from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt;.
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1afa5472bda7c1cd80f4150b92a786a810">
+                <title>object GetValue (string _name, Type _type, bool _isObjectInitializer=false)</title> <emphasis>&lt;summary&gt;
+Gets the value from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; using specified name.
 &lt;/summary&gt;</emphasis>
                 
 <para><formalpara><title>Returns: </title>
@@ -268,7 +340,7 @@ Retrieves value from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt;.
                             <row>
                                 <entry>_name</entry>
                                 <entry>
-<para>The name associated with the value to retrieve.</para>
+<para>The name associated with the value to be retreived from <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link>.</para>
 </entry>
                             </row>
                         </tbody>
@@ -276,6 +348,184 @@ Retrieves value from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt;.
                     </table>
                 </formalpara>
                 &lt;param name==&quot;_type&quot;&gt;The Type of the value to retrieve.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_isObjectInitializer</entry>
+                                <entry>
+<para>The flag indicates whether this value is object intializer. Object initializers are the values that are available while creating object instance.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1a8f6f8bcd13d3ecaad5ba8dc85f4dfcda">
+                <title>bool TryGetValue&lt; T &gt; (string _name, out T _value, bool _isObjectInitializer=false)</title> <emphasis>&lt;summary&gt;
+Gets the value from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; using specified name.
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para><computeroutput>true</computeroutput>, if value was found in <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link>, <computeroutput>false</computeroutput> otherwise.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_name</entry>
+                                <entry>
+<para>The name associated with the value to be retreived from <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link>.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_value</entry>
+                                <entry>
+<para>The value associated with the specified name.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_isObjectInitializer</entry>
+                                <entry>
+<para>The flag indicates whether this value is object intializer. Object initializers are the values that are available while creating object instance.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Template Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>T</entry>
+                                <entry>
+<para>The Type of the value to retrieve.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1aae1c7a92bad7239f92897ac999026122">
+                <title>bool TryGetValue (string _name, out object _value, Type _type, bool _isObjectInitializer=false)</title> <emphasis>&lt;summary&gt;
+Gets the value from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; using specified name.
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para><computeroutput>true</computeroutput>, if value was found in <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link>, <computeroutput>false</computeroutput> otherwise.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_name</entry>
+                                <entry>
+<para>The name associated with the value to be fetched from <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link>.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_value</entry>
+                                <entry>
+<para>The value associated with the specified name.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                &lt;param name==&quot;_type&quot;&gt;The Type of the value to be fetched.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_isObjectInitializer</entry>
+                                <entry>
+<para>The flag indicates whether this value is object intializer. Object initializers are the values that are available while creating object instance.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_1ae1e552a892e7fa0cd5aea44277bef990">
+                <title>bool ContainsValue (string _name, bool _isObjectInitializer=false)</title> <emphasis>&lt;summary&gt;
+Determines whether the &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; contains a specific value.
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para><computeroutput>true</computeroutput>, if value with specified name exists in <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link>, <computeroutput>false</computeroutput> otherwise.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_name</entry>
+                                <entry>
+<para>The name associated with the value to be fetched from <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link>.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_isObjectInitializer</entry>
+                                <entry>
+<para>The flag indicates whether this value is object intializer. Object initializers are the values that are available while creating object instance.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
 
             </section>
 </section>

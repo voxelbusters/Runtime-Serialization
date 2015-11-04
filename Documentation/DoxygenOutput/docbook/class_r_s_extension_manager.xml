@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_r_s_extension_manager">
+<title>RSExtensionManager class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static Dictionary&lt; Type, RSExtension &gt; extensionCollection</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_r_s_extension_manager_1aa6453ae6dc5b3b09be742882e5d0f5ff">AddNewExtension</link> (
+Type _objectType, object _extension)<para><emphasis>&lt;summary&gt;
+Adds the new serialization extension to its collection. If extension information is manually provided, then serialization system avoids using Reflection for finding type&apos;s extension at runtime. 
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_r_s_extension_manager_1afde649bf8e42a8cf43fee5fdf93745f2">RemoveExtension</link> (
+Type _objectType)<para><emphasis>&lt;summary&gt;
+Removes the extension from its collections.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static RSExtension <link linkend="class_r_s_extension_manager_1ac7cba4b934a8ba04b95604ac214ab892">GetExtension</link> (
+Type _objectType)<para><emphasis>&lt;summary&gt;
+Returns the extension for a particular type.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Manages extension selection to delegate serialization and deserialization process. You can Add, Remove and Get extensions of a specific type. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 11 of file RSExtensionManager.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>RSExtensionManager.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="class_r_s_extension_manager_1aa6453ae6dc5b3b09be742882e5d0f5ff">
+                <title>static void AddNewExtension (Type _objectType, object _extension)</title> <emphasis>&lt;summary&gt;
+Adds the new serialization extension to its collection. If extension information is manually provided, then serialization system avoids using Reflection for finding type&apos;s extension at runtime. 
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_objectType</entry>
+                                <entry>
+<para>The Type for which the extension is required.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_extensionType</entry>
+                                <entry>
+<para>The object called while serializing and deserializing.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_r_s_extension_manager_1afde649bf8e42a8cf43fee5fdf93745f2">
+                <title>static void RemoveExtension (Type _objectType)</title> <emphasis>&lt;summary&gt;
+Removes the extension from its collections.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_objectType</entry>
+                                <entry>
+<para>The Type for which the extension has to be removed.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_r_s_extension_manager_1ac7cba4b934a8ba04b95604ac214ab892">
+                <title>static RSExtension GetExtension (Type _objectType)</title> <emphasis>&lt;summary&gt;
+Returns the extension for a particular type.
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>The extension for a particular type.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_objectType</entry>
+                                <entry>
+<para>The type for which extension is requested.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1_1_unity_object_u_i_d_map">
+<title>VoxelBusters::RuntimeSerialization::UIDSystem::UnityObjectUIDMap class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>UnityEngine.Object m_unityObject</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string m_uniqueIdentifier</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_canSerialize</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1_1_unity_object_u_i_d_map_1a2caa513cfb0c83392f05e0d6ef1f9f8d">UnityObjectUIDMap</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1_1_unity_object_u_i_d_map_1a8d85330bb2282f2287c4134c4f3a7a5d">UnityObjectUIDMap</link> (
+UnityEngine.Object _object, bool _canSerialize)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1_1_unity_object_u_i_d_map_1a7ca8ee38d37aefdf3426910df93bcdae">UnityObjectUIDMap</link> (
+UnityEngine.Object _object, string _uniqueIdentifier, bool _canSerialize)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1_1_unity_object_u_i_d_map_1a2caa513cfb0c83392f05e0d6ef1f9f8d">
+                <title>UnityObjectUIDMap ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1_1_unity_object_u_i_d_map_1a8d85330bb2282f2287c4134c4f3a7a5d">
+                <title>UnityObjectUIDMap (UnityEngine.Object _object, bool _canSerialize=true)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1_1_unity_object_u_i_d_map_1a7ca8ee38d37aefdf3426910df93bcdae">
+                <title>UnityObjectUIDMap (UnityEngine.Object _object, string _uniqueIdentifier, bool _canSerialize=true)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

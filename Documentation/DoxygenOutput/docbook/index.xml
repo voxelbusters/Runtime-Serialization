@@ -9,37 +9,76 @@
         <xi:include href="namespace_system.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="namespace_system_1_1_collections.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="namespace_system_1_1_collections_1_1_generic.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-        <xi:include href="namespace_system_1_1_diagnostics.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="namespace_system_1_1_i_o.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-        <xi:include href="namespace_system_1_1_linq.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="namespace_system_1_1_reflection.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-        <xi:include href="namespace_system_1_1_runtime_1_1_serialization_1_1_formatters_1_1_binary.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="namespace_unity_engine.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespace_unity_engine_1_1_u_i.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="namespace_voxel_busters.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="namespace_voxel_busters_1_1_design_patterns.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="namespace_voxel_busters_1_1_runtime_serialization.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-        <xi:include href="namespace_voxel_busters_1_1_runtime_serialization_1_1_benchmark.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="namespace_voxel_busters_1_1_runtime_serialization_1_1_internal.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="namespace_voxel_busters_1_1_utility.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     </chapter>
     <chapter>
         <title>Class Documentation</title>
+        <xi:include href="class_anchored_joint2_d_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_array_list_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_attribute.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_base_raycaster_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_base_vertex_effect_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_behaviour_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-        <xi:include href="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_benchmark_sample.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-        <xi:include href="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_benchmark_sample_base.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_bone_weight_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_bounds_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_box_collider2_d_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_box_collider_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_camera_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_canvas_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_canvas_scaler_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_capsule_collider_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_character_controller_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_character_joint_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_circle_collider2_d_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_collider2_d_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_collider_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_color32_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_color_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_component_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_configurable_joint_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_dictionary_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_distance_joint2_d_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_edge_collider2_d_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_fixed_joint_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_game_object_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_graphic_raycaster_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_graphic_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_guid_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_hash_set_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_hashtable_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_hinge_joint2_d_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_hinge_joint_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_i_collection_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_i_dictionary_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_i_list_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_image_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_activator.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_callback.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-        <xi:include href="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_joint2_d_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_joint_angle_limits2_d_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_joint_drive_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_joint_limits_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_joint_motor2_d_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_joint_motor_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_joint_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_joint_spring_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_joint_suspension2_d_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_joint_translation_limits2_d_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_layer_mask_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_light_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_list_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_maskable_graphic_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_material_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_matrix4x4_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_mesh_collider_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -48,24 +87,50 @@
         <xi:include href="class_mesh_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_mono_behaviour.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_mono_behaviour_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_nav_mesh_agent_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_nav_mesh_hit_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_nav_mesh_obstacle_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_voxel_busters_1_1_runtime_serialization_1_1_non_runtime_serialized_field_attribute.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_unity_engine_1_1_object_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_outline_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_physic_material_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-        <xi:include href="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_physics_material2_d_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_polygon_collider2_d_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_quaternion_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_queue_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_rect_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_rect_transform_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_renderer_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_rigidbody2_d_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_rigidbody_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-        <xi:include href="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_r_s_extension_manager.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_r_s_manager.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_r_s_utility.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialize_field_attribute.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_shader_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_shadow_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1_1_short_g_u_i_d.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_singleton_pattern.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_skinned_mesh_renderer_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_slider_joint2_d_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_soft_joint_limit_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_sphere_collider_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_spring_joint2_d_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_spring_joint_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_sprite_renderer_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_sprite_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_stack_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_texture2_d_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_time_span_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_transform_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_u_i_behaviour_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1_1_unity_object_u_i_d_map.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_vector2_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_vector3_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="class_vector4_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="class_wheel_joint2_d_r_s_extension.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     </chapter>
 </book>

@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['deserialize_3c_20t_20_3e',['Deserialize&lt; T &gt;',['../class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager.html#a38aa7a063cb3ac84eed6f198d5654fdb',1,'VoxelBusters::RuntimeSerialization::RSManager']]],
-  ['deserializedata_3c_20t_20_3e',['DeserializeData&lt; T &gt;',['../class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager.html#a862f53c7275407d42b1c1e282cdc7d48',1,'VoxelBusters::RuntimeSerialization::RSManager']]]
+  ['containskey',['ContainsKey',['../class_r_s_manager.html#a1a5c88e07167dfd4b9bd0293c871cccb',1,'RSManager']]],
+  ['containsvalue',['ContainsValue',['../class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html#ae1e552a892e7fa0cd5aea44277bef990',1,'VoxelBusters::RuntimeSerialization::RuntimeSerializationInfo']]],
+  ['creategameobject',['CreateGameObject',['../class_r_s_utility.html#a35ddf47b4b9e37b290fc4cded36b0449',1,'RSUtility']]],
+  ['createinstance',['CreateInstance',['../class_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_extension.html#aea67c59932ae24c6450076bb18922203',1,'VoxelBusters::RuntimeSerialization::IRuntimeSerializableExtension']]]
 ];

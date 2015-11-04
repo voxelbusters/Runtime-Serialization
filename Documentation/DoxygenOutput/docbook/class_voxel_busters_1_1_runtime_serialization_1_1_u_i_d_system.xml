@@ -1,0 +1,449 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system">
+<title>VoxelBusters::RuntimeSerialization::UIDSystem class Reference</title>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1_1_short_g_u_i_d">VoxelBusters::RuntimeSerialization::UIDSystem::ShortGUID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1_1_unity_object_u_i_d_map">VoxelBusters::RuntimeSerialization::UIDSystem::UnityObjectUIDMap</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kMethodUpdateUIDs</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kMethodReassignUIDs</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kRSManagerUID</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>UnityObjectUIDMap m_gameObjectUIDMap</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; UnityObjectUIDMap &gt; m_componentUIDMapList</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_serializeChildren</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_isPrefab</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>GameObject m_cGameObject</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Transform m_cTransform</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1ae4b513cddd594f1c359e4f0a3e79a8c6">Awake</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a372de693ad40b3f42839c8ec6ac845f4">Reset</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a031a3dd24393a9cbc3fea452611febe8">UpdateUIDs</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a098607676edcfc23d89abd004bcd1310">AssignUIDsRecursively</link> (
+bool _reassign)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1ac01543af86e8236e111cb5be06a4839d">CopyParentProperties</link> (
+<link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system">UIDSystem</link> _parent)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a5377c490144cce6c9e17d1ac26c79daf">SetGameObjectUID</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a45843cac2f3a56a29f29554bbf1398ac">SetGameObjectUIDMap</link> (
+UnityObjectUIDMap _gameObjectUIDMap)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1ab5b2ce70b5ae471ab015d7a29faba010">GetComponentMapIndex</link> (
+Component _component)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a5b7429361e90b80866cd5aea95262b78">GetComponentMapIndex</link> (
+string _identifier)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a75c6c5969a529560977d81b057045591">UpdateUIDs</link> (
+bool _recursive)<para><emphasis>&lt;summary&gt;
+Assigns new UID for all the new Components attached to this GameObject.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a08bb2b4305e52d8aed36cc6e596321b9">ReassignUIDs</link> (
+bool _recursive)<para><emphasis>&lt;summary&gt;
+Flushes all the existing UID&apos;s and reassigns new UID&apos;s to this GameObject and its components.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1af2fb0787ef96827b10b9d511817e16f6">GetGameObjectIdentifier</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Component[] <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a988bab861fc772c05186fbee4fdf7e86">GetSerializableComponents</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a005f830bafab7110730d5401c9191816">AssignUIDToNewComponent</link> (
+Component _component)<para><emphasis>&lt;summary&gt;
+Generates and assigns a new UID to the given component. 
+Operation fails, if UID was already assigned to this component.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1ad3e2318987bafe5ca509ca2585bbcb14">UpdateCanSerializeComponentStatus</link> (
+Component _component, bool _canSerialize)<para><emphasis>&lt;summary&gt;
+Mark the components you would like to serialize while serializing the game object.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a3075531e6e72431d7a059c8b696bdd91">GetComponentUID</link> (
+Component _component)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>new Component <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a46045ead532ca2cd78e827588f2d0d22">GetComponent</link> (
+string _identifier)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a9f8e170ca50c096c1ec8aaafd0a7fd84">UpdateComponent</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a96201f9819410a01fdde74bf1743ebde">SetGameObjectUID</link> (
+string _gameObjectUID)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1af6bb65e6a982b0caf1232764cbc966e7">SetComponentUID</link> (
+Component _component, string _identifier)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Unique Identifier System is used for uniquely identify a GameObject and Component attached to it. Please attach this component to all the GameObject that will undergo serialization and deserialization. When this component is attached to a GameObject, it recursively creates <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system">UIDSystem</link> component in all descendants and assigns UID. All the assigned UID&apos;s are cached and used for RS system for identifying an object in Scene hierarchy. Note that UID for each object, is assigned only once until and unless user forcefully reset&apos;s component. Please dont forget to enable IsPrefab flag, which is used for differentiating between normal GameObject and Prefab. UID&apos;s for Prefab are generated and assigned at runtime only. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 20 of file UIDSystem.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>UIDSystem.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1ae4b513cddd594f1c359e4f0a3e79a8c6">
+                <title>void Awake ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a372de693ad40b3f42839c8ec6ac845f4">
+                <title>void Reset ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a031a3dd24393a9cbc3fea452611febe8">
+                <title>void UpdateUIDs ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a098607676edcfc23d89abd004bcd1310">
+                <title>void AssignUIDsRecursively (bool _reassign)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1ac01543af86e8236e111cb5be06a4839d">
+                <title>void CopyParentProperties (UIDSystem _parent)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a5377c490144cce6c9e17d1ac26c79daf">
+                <title>void SetGameObjectUID ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a45843cac2f3a56a29f29554bbf1398ac">
+                <title>void SetGameObjectUIDMap (UnityObjectUIDMap _gameObjectUIDMap)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1ab5b2ce70b5ae471ab015d7a29faba010">
+                <title>int GetComponentMapIndex (Component _component)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a5b7429361e90b80866cd5aea95262b78">
+                <title>int GetComponentMapIndex (string _identifier)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a75c6c5969a529560977d81b057045591">
+                <title>void UpdateUIDs (bool _recursive)</title> <emphasis>&lt;summary&gt;
+Assigns new UID for all the new Components attached to this GameObject.
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a08bb2b4305e52d8aed36cc6e596321b9">
+                <title>void ReassignUIDs (bool _recursive)</title> <emphasis>&lt;summary&gt;
+Flushes all the existing UID&apos;s and reassigns new UID&apos;s to this GameObject and its components.
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1af2fb0787ef96827b10b9d511817e16f6">
+                <title>string GetGameObjectIdentifier ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a988bab861fc772c05186fbee4fdf7e86">
+                <title>Component [] GetSerializableComponents ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a005f830bafab7110730d5401c9191816">
+                <title>void AssignUIDToNewComponent (Component _component)</title> <emphasis>&lt;summary&gt;
+Generates and assigns a new UID to the given component. 
+Operation fails, if UID was already assigned to this component.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_component</entry>
+                                <entry>
+<para>Component to which UID needs to be assigned.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1ad3e2318987bafe5ca509ca2585bbcb14">
+                <title>void UpdateCanSerializeComponentStatus (Component _component, bool _canSerialize)</title> <emphasis>&lt;summary&gt;
+Mark the components you would like to serialize while serializing the game object.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_component</entry>
+                                <entry>
+<para>Component attached to this gameobject.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_canSerialize</entry>
+                                <entry>
+<para>If set to <computeroutput>true</computeroutput> then component is serialized.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a3075531e6e72431d7a059c8b696bdd91">
+                <title>string GetComponentUID (Component _component)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a46045ead532ca2cd78e827588f2d0d22">
+                <title>new Component GetComponent (string _identifier)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a9f8e170ca50c096c1ec8aaafd0a7fd84">
+                <title>void UpdateComponent ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1a96201f9819410a01fdde74bf1743ebde">
+                <title>void SetGameObjectUID (string _gameObjectUID)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1af6bb65e6a982b0caf1232764cbc966e7">
+                <title>void SetComponentUID (Component _component, string _identifier)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

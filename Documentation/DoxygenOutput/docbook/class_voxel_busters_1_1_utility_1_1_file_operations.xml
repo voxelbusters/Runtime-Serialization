@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_file_operations">
+<title>VoxelBusters::Utility::FileOperations class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_utility_1_1_file_operations_1aea7024669ecdcfb52c41d30f367284d9">Delete</link> (
+string _filePath)<para><emphasis>&lt;summary&gt;
+Deletes the specified file.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_utility_1_1_file_operations_1aacc605c0a43887bd15b9587a40986d35">Move</link> (
+string _sourcePath, string _destinationPath)<para><emphasis>&lt;summary&gt;
+Moves the specified file to destination path.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static bool <link linkend="class_voxel_busters_1_1_utility_1_1_file_operations_1a4276a188f692e803c3499aa854fc3cca">Exists</link> (
+string _filePath)<para><emphasis>&lt;summary&gt;
+Determines whether the specified file exists.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static byte[] <link linkend="class_voxel_busters_1_1_utility_1_1_file_operations_1a2c5a608973ba518679f1401cffdbc53f">ReadAllBytes</link> (
+string _filePath)<para><emphasis>&lt;summary&gt;
+Opens a binary file, reads the contents of the file into a byte array, and then closes the file.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_utility_1_1_file_operations_1a587f8d9a8e3bad486ca57817ba1e3ce4">WriteAllBytes</link> (
+string _filePath, byte[] _bytes)<para><emphasis>&lt;summary&gt;
+Creates a new file, writes the specified byte array to the file, and then closes the file. If the target file already exists, it is overwritten.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static StreamWriter <link linkend="class_voxel_busters_1_1_utility_1_1_file_operations_1a3fa192a56a33888c39227e9fc4d139b7">CreateText</link> (
+string _filePath)<para><emphasis>&lt;summary&gt;
+Creates or opens a file for writing UTF-8 encoded text.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_voxel_busters_1_1_utility_1_1_file_operations_1a97e6118e001d8371ca73648f0e72a372">ReadAllText</link> (
+string _filePath)<para><emphasis>&lt;summary&gt;
+Opens a text file, reads all lines of the file, and then closes the file.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_utility_1_1_file_operations_1adbc516c383dc37ed2a2143c65627b727">Rename</link> (
+string _filePath, string _newFileName)<para><emphasis>&lt;summary&gt;
+Renames a file
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_file_operations_1aea7024669ecdcfb52c41d30f367284d9">
+                <title>static void Delete (string _filePath)</title> <emphasis>&lt;summary&gt;
+Deletes the specified file.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_filePath</entry>
+                                <entry>
+<para>The name of the file to be deleted.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_file_operations_1aacc605c0a43887bd15b9587a40986d35">
+                <title>static void Move (string _sourcePath, string _destinationPath)</title> <emphasis>&lt;summary&gt;
+Moves the specified file to destination path.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_sourcePath</entry>
+                                <entry>
+<para>Path of file to move.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_destinationPath</entry>
+                                <entry>
+<para>Path of destination.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_file_operations_1a4276a188f692e803c3499aa854fc3cca">
+                <title>static bool Exists (string _filePath)</title> <emphasis>&lt;summary&gt;
+Determines whether the specified file exists.
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para><computeroutput>true</computeroutput>, if file exists at given path, <computeroutput>false</computeroutput> otherwise.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_filePath</entry>
+                                <entry>
+<para>The file to check.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_file_operations_1a2c5a608973ba518679f1401cffdbc53f">
+                <title>static byte [] ReadAllBytes (string _filePath)</title> <emphasis>&lt;summary&gt;
+Opens a binary file, reads the contents of the file into a byte array, and then closes the file.
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>The file contents as byte array.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_filePath</entry>
+                                <entry>
+<para>The file to open for reading.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_file_operations_1a587f8d9a8e3bad486ca57817ba1e3ce4">
+                <title>static void WriteAllBytes (string _filePath, byte[] _bytes)</title> <emphasis>&lt;summary&gt;
+Creates a new file, writes the specified byte array to the file, and then closes the file. If the target file already exists, it is overwritten.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_filePath</entry>
+                                <entry>
+<para>The file to write to.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_bytes</entry>
+                                <entry>
+<para>The bytes to write to the file.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_file_operations_1a3fa192a56a33888c39227e9fc4d139b7">
+                <title>static StreamWriter CreateText (string _filePath)</title> <emphasis>&lt;summary&gt;
+Creates or opens a file for writing UTF-8 encoded text.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_filePath</entry>
+                                <entry>
+<para>The file to be opened for writing.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_file_operations_1a97e6118e001d8371ca73648f0e72a372">
+                <title>static string ReadAllText (string _filePath)</title> <emphasis>&lt;summary&gt;
+Opens a text file, reads all lines of the file, and then closes the file.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_filePath</entry>
+                                <entry>
+<para>The file to be opened for writing.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_file_operations_1adbc516c383dc37ed2a2143c65627b727">
+                <title>static void Rename (string _filePath, string _newFileName)</title> <emphasis>&lt;summary&gt;
+Renames a file
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_filePath</entry>
+                                <entry>
+<para>The file to rename.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_newFileName</entry>
+                                <entry>
+<para>New file name for this file.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

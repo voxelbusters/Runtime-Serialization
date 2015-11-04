@@ -31,9 +31,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Runtime Serialization
-   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Efficient way to Serialize data and Scenes</div>
   </td>
@@ -104,7 +104,6 @@ $(document).ready(function(){initNavTree('namespace_voxel_busters_1_1_runtime_se
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
@@ -115,15 +114,16 @@ $(document).ready(function(){initNavTree('namespace_voxel_busters_1_1_runtime_se
 <p>The <a class="el" href="namespace_voxel_busters_1_1_runtime_serialization.html" title="The VoxelBusters.RuntimeSerialization namespace contains classes that can be used for serializing and...">VoxelBusters.RuntimeSerialization</a> namespace contains classes that can be used for serializing and deserializing objects at runtime. Serialization is a process of converting an object into binary stream of data and storing it on disk. Deserialization is a process of reading stored data and recreating objects from it.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_voxel_busters_1_1_runtime_serialization_1_1_benchmark"><td class="memItemLeft" align="right" valign="top">package &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_voxel_busters_1_1_runtime_serialization_1_1_benchmark.html">Benchmark</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable.html">IRuntimeSerializable</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this interface to control serialization and deserialization of <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute.html" title="Indicates that a class can be serialized at runtime. ">RuntimeSerializableAttribute</a> object.  <a href="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_activator.html">IRuntimeSerializableActivator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this interface to control instance creation of serialized type. Static method with signature: object CreateInstance (<a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a> _info) is invoked when creating serialized object instance. <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a> contains all the initializer values that were formerly serialized. So get all the initializer values from <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a> and create object instance.  <a href="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_activator.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_extension.html">IRuntimeSerializableExtension</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this abstract class to support runtime serialization for classes which belong to external assembly.  <a href="class_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_extension.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_callback.html">IRuntimeSerializationCallback</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this interface to receive implicit callbacks on <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute.html" title="Indicates that a class can be serialized at runtime. ">RuntimeSerializableAttribute</a> object.  <a href="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_callback.html#details">More...</a><br /></td></tr>
@@ -131,11 +131,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener.html">IRuntimeSerializationEventListener</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this interface to observe serialization process of <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute.html" title="Indicates that a class can be serialized at runtime. ">RuntimeSerializableAttribute</a> object.  <a href="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_extension.html">IRuntimeSerializationExtension</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this interface to support runtime serialization for classes which belong to external assembly.  <a href="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_extension.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager.html">RSManager</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager.html" title="RSManager class is responsible for serializing and deserializing objects at runtime. ">RSManager</a> class is responsible for serializing and deserializing objects at runtime.  <a href="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_non_runtime_serialized_field_attribute.html">NonRuntimeSerializedFieldAttribute</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates that a field of a <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute.html" title="Indicates that a class can be serialized at runtime. ">RuntimeSerializableAttribute</a> class should not be serialized at runtime.  <a href="class_voxel_busters_1_1_runtime_serialization_1_1_non_runtime_serialized_field_attribute.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute.html">RuntimeSerializableAttribute</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates that a class can be serialized at runtime.  <a href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute.html#details">More...</a><br /></td></tr>
@@ -145,6 +142,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialize_field_attribute.html">RuntimeSerializeFieldAttribute</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates that a field of a <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute.html" title="Indicates that a class can be serialized at runtime. ">RuntimeSerializableAttribute</a> class should be serialized at runtime.  <a href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialize_field_attribute.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system.html">UIDSystem</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique Identifier System is used for uniquely identify a GameObject and Component attached to it. Please attach this component to all the GameObject that will undergo serialization and deserialization. When this component is attached to a GameObject, it recursively creates <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system.html" title="Unique Identifier System is used for uniquely identify a GameObject and Component attached to it...">UIDSystem</a> component in all descendants and assigns UID. All the assigned UID's are cached and used for RS system for identifying an object in Scene hierarchy. Note that UID for each object, is assigned only once until and unless user forcefully reset's component. Please dont forget to enable IsPrefab flag, which is used for differentiating between normal GameObject and Prefab. UID's for Prefab are generated and assigned at runtime only.  <a href="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -160,7 +160,7 @@ Enumerations</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="namespace_voxel_busters_1_1_runtime_serialization.html" title="The VoxelBusters.RuntimeSerialization namespace contains classes that can be used for serializing and...">VoxelBusters.RuntimeSerialization</a> namespace contains classes that can be used for serializing and deserializing objects at runtime. Serialization is a process of converting an object into binary stream of data and storing it on disk. Deserialization is a process of reading stored data and recreating objects from it. </p>
-<p>The <a class="el" href="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable.html" title="Implement this interface to control serialization and deserialization of RuntimeSerializableAttribute...">IRuntimeSerializable</a> interface provides a way to control their own serialization behaviour. The <a class="el" href="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_extension.html" title="Implement this interface to support runtime serialization for classes which belong to external assemb...">IRuntimeSerializationExtension</a> interface provides a way to support runtime serialization for classes which belong to external assembly. </p>
+<p>The <a class="el" href="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable.html" title="Implement this interface to control serialization and deserialization of RuntimeSerializableAttribute...">IRuntimeSerializable</a> interface provides a way to control their own serialization behaviour. The <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_extension.html" title="Implement this abstract class to support runtime serialization for classes which belong to external a...">IRuntimeSerializableExtension</a> interface provides a way to support runtime serialization for classes which belong to external assembly. </p>
 </div><h2 class="groupheader">Enumeration Type Documentation</h2>
 <a class="anchor" id="aacaa3008b2cb441fbe4708df854019bf"></a>
 <div class="memitem">
@@ -190,7 +190,7 @@ Enumerations</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_voxel_busters.html">VoxelBusters</a></li><li class="navelem"><a class="el" href="namespace_voxel_busters_1_1_runtime_serialization.html">RuntimeSerialization</a></li>
-    <li class="footer">Generated on Thu May 14 2015 13:30:36 for Runtime Serialization by
+    <li class="footer">Generated on Mon Nov 2 2015 12:19:32 for Runtime Serialization by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

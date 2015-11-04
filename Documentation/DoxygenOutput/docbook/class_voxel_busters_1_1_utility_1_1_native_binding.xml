@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_native_binding">
+<title>VoxelBusters::Utility::NativeBinding class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_voxel_busters_1_1_utility_1_1_native_binding_1af2c9f3f4c9e1cd4f3c83c2775af8af2c">GetBundleVersion</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_voxel_busters_1_1_utility_1_1_native_binding_1ad0940c70b77b0ab99b29d559cde37955">GetBundleIdentifier</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_native_binding_1af2c9f3f4c9e1cd4f3c83c2775af8af2c">
+                <title>static string GetBundleVersion ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_native_binding_1ad0940c70b77b0ab99b29d559cde37955">
+                <title>static string GetBundleIdentifier ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

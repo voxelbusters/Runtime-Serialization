@@ -1,0 +1,78 @@
+\hypertarget{class_r_s_extension_manager}{}\section{R\+S\+Extension\+Manager}
+\label{class_r_s_extension_manager}\index{R\+S\+Extension\+Manager@{R\+S\+Extension\+Manager}}
+
+
+Manages extension selection to delegate serialization and deserialization process. You can Add, Remove and Get extensions of a specific type.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_r_s_extension_manager_aa6453ae6dc5b3b09be742882e5d0f5ff}{Add\+New\+Extension} (Type \+\_\+object\+Type, object \+\_\+extension)
+\begin{DoxyCompactList}\small\item\em Adds the new serialization extension to its collection. If extension information is manually provided, then serialization system avoids using Reflection for finding type\textquotesingle{}s extension at runtime. \end{DoxyCompactList}\item 
+static void \hyperlink{class_r_s_extension_manager_afde649bf8e42a8cf43fee5fdf93745f2}{Remove\+Extension} (Type \+\_\+object\+Type)
+\begin{DoxyCompactList}\small\item\em Removes the extension from its collections. \end{DoxyCompactList}\item 
+static R\+S\+Extension \hyperlink{class_r_s_extension_manager_ac7cba4b934a8ba04b95604ac214ab892}{Get\+Extension} (Type \+\_\+object\+Type)
+\begin{DoxyCompactList}\small\item\em Returns the extension for a particular type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Manages extension selection to delegate serialization and deserialization process. You can Add, Remove and Get extensions of a specific type. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_r_s_extension_manager_aa6453ae6dc5b3b09be742882e5d0f5ff}{}\index{R\+S\+Extension\+Manager@{R\+S\+Extension\+Manager}!Add\+New\+Extension@{Add\+New\+Extension}}
+\index{Add\+New\+Extension@{Add\+New\+Extension}!R\+S\+Extension\+Manager@{R\+S\+Extension\+Manager}}
+\subsubsection[{Add\+New\+Extension}]{\setlength{\rightskip}{0pt plus 5cm}static void Add\+New\+Extension (
+\begin{DoxyParamCaption}
+\item[{Type}]{\+\_\+object\+Type, }
+\item[{object}]{\+\_\+extension}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_r_s_extension_manager_aa6453ae6dc5b3b09be742882e5d0f5ff}
+
+
+Adds the new serialization extension to its collection. If extension information is manually provided, then serialization system avoids using Reflection for finding type\textquotesingle{}s extension at runtime. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+object\+Type} & The Type for which the extension is required.\\
+\hline
+{\em \+\_\+extension\+Type} & The object called while serializing and deserializing.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_r_s_extension_manager_afde649bf8e42a8cf43fee5fdf93745f2}{}\index{R\+S\+Extension\+Manager@{R\+S\+Extension\+Manager}!Remove\+Extension@{Remove\+Extension}}
+\index{Remove\+Extension@{Remove\+Extension}!R\+S\+Extension\+Manager@{R\+S\+Extension\+Manager}}
+\subsubsection[{Remove\+Extension}]{\setlength{\rightskip}{0pt plus 5cm}static void Remove\+Extension (
+\begin{DoxyParamCaption}
+\item[{Type}]{\+\_\+object\+Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_r_s_extension_manager_afde649bf8e42a8cf43fee5fdf93745f2}
+
+
+Removes the extension from its collections. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+object\+Type} & The Type for which the extension has to be removed.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_r_s_extension_manager_ac7cba4b934a8ba04b95604ac214ab892}{}\index{R\+S\+Extension\+Manager@{R\+S\+Extension\+Manager}!Get\+Extension@{Get\+Extension}}
+\index{Get\+Extension@{Get\+Extension}!R\+S\+Extension\+Manager@{R\+S\+Extension\+Manager}}
+\subsubsection[{Get\+Extension}]{\setlength{\rightskip}{0pt plus 5cm}static R\+S\+Extension Get\+Extension (
+\begin{DoxyParamCaption}
+\item[{Type}]{\+\_\+object\+Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_r_s_extension_manager_ac7cba4b934a8ba04b95604ac214ab892}
+
+
+Returns the extension for a particular type. 
+
+\begin{DoxyReturn}{Returns}
+The extension for a particular type.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+object\+Type} & The type for which extension is requested.\\
+\hline
+\end{DoxyParams}

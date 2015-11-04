@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_download_texture">
+<title>VoxelBusters::Utility::DownloadTexture class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>delegate void <link linkend="class_voxel_busters_1_1_utility_1_1_download_texture_1ab486c6abf82a19823c6c8cc180868fe5">Completion</link> (
+Texture2D _texture, string _error)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_voxel_busters_1_1_utility_1_1_download_texture_1a7720cf16071ca2b627c76da7287d4983">DownloadTexture</link> (
+URL _URL, bool _isAsynchronous, bool _autoFixOrientation)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_request_1ab198f2f151aa323c4a19a9751e7354f6">StartRequest</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_request_1a12b9283f52eaf7610afe4b04fbca2ff0">Abort</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="class_voxel_busters_1_1_utility_1_1_download_texture_1ab282ad0cf7242031cb1d31600710a67f">DidFailStartRequestWithError</link> (
+string _error)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="class_voxel_busters_1_1_utility_1_1_download_texture_1ac154577e7a940474d901b274080e6827">OnFetchingResponse</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_download_texture_1ab486c6abf82a19823c6c8cc180868fe5">
+                <title>delegate void Completion (Texture2D _texture, string _error)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_download_texture_1a7720cf16071ca2b627c76da7287d4983">
+                <title>DownloadTexture (URL _URL, bool _isAsynchronous, bool _autoFixOrientation)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_request_1ab198f2f151aa323c4a19a9751e7354f6">
+                <title>void StartRequest ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_request_1a12b9283f52eaf7610afe4b04fbca2ff0">
+                <title>void Abort ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_download_texture_1ab282ad0cf7242031cb1d31600710a67f">
+                <title>override void DidFailStartRequestWithError (string _error)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_download_texture_1ac154577e7a940474d901b274080e6827">
+                <title>override void OnFetchingResponse ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

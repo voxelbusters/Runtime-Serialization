@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="struct_voxel_busters_1_1_utility_1_1_u_r_l">
+<title>VoxelBusters::Utility::URL struct Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kFileProtocol</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kHttpProtocol</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kHttpsProtocol</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="struct_voxel_busters_1_1_utility_1_1_u_r_l_1a99c396cd73cb4185e1c4ca44c6cde46f">URL</link> (
+string _URLString)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static URL <link linkend="struct_voxel_busters_1_1_utility_1_1_u_r_l_1a58d04057860ce8cef12e566055cb2f50">FileURLWithPath</link> (
+string _rootPath, string _relativePath)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static URL <link linkend="struct_voxel_busters_1_1_utility_1_1_u_r_l_1a592c733dfc704d6a5ecc8b542dacf957">FileURLWithPath</link> (
+string _path)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static URL <link linkend="struct_voxel_busters_1_1_utility_1_1_u_r_l_1a8fc7468aa35376cf51fea3c9d36082d9">URLWithString</link> (
+string _rootURLString, string _relativePath)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static URL <link linkend="struct_voxel_busters_1_1_utility_1_1_u_r_l_1ac6210a98082fa3ede2c27737b6c27dc9">URLWithString</link> (
+string _URLString)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="struct_voxel_busters_1_1_utility_1_1_u_r_l_1af4c4ffaa7f9de821d844a7b192666501">isFileReferenceURL</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override string <link linkend="struct_voxel_busters_1_1_utility_1_1_u_r_l_1aa73e7c4dd1df5fd5fbf81c7764ee1533">ToString</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="struct_voxel_busters_1_1_utility_1_1_u_r_l_1a99c396cd73cb4185e1c4ca44c6cde46f">
+                <title>URL (string _URLString)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="struct_voxel_busters_1_1_utility_1_1_u_r_l_1a58d04057860ce8cef12e566055cb2f50">
+                <title>static URL FileURLWithPath (string _rootPath, string _relativePath)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="struct_voxel_busters_1_1_utility_1_1_u_r_l_1a592c733dfc704d6a5ecc8b542dacf957">
+                <title>static URL FileURLWithPath (string _path)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="struct_voxel_busters_1_1_utility_1_1_u_r_l_1a8fc7468aa35376cf51fea3c9d36082d9">
+                <title>static URL URLWithString (string _rootURLString, string _relativePath)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="struct_voxel_busters_1_1_utility_1_1_u_r_l_1ac6210a98082fa3ede2c27737b6c27dc9">
+                <title>static URL URLWithString (string _URLString)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="struct_voxel_busters_1_1_utility_1_1_u_r_l_1af4c4ffaa7f9de821d844a7b192666501">
+                <title>bool isFileReferenceURL ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="struct_voxel_busters_1_1_utility_1_1_u_r_l_1aa73e7c4dd1df5fd5fbf81c7764ee1533">
+                <title>override string ToString ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1_1_short_g_u_i_d">
+<title>VoxelBusters::RuntimeSerialization::UIDSystem::ShortGUID class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1_1_short_g_u_i_d_1ad257f7c639cbbec01ad8b24fe4aa46af">Create</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system_1_1_short_g_u_i_d_1ad257f7c639cbbec01ad8b24fe4aa46af">
+                <title>static string Create ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

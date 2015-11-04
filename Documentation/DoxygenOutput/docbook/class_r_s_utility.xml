@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_r_s_utility">
+<title>RSUtility class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static GameObject <link linkend="class_r_s_utility_1a9a14924ea59bb6f451e8f69e2fb649a7">Instantiate</link> (
+GameObject _gameobject)<para><emphasis>&lt;summary&gt;
+Creates an exact copy of original game object.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static GameObject <link linkend="class_r_s_utility_1a5853ff696b08c22f55d37a93177338d9">Instantiate</link> (
+GameObject _gameobject, Vector3 _position, Quaternion _rotation)<para><emphasis>&lt;summary&gt;
+Creates an exact copy of original game object.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static GameObject <link linkend="class_r_s_utility_1a35ddf47b4b9e37b290fc4cded36b0449">CreateGameObject</link> (
+string _name, params System.Type[] _components)<para><emphasis>&lt;summary&gt;
+Creates a new game object with specified name and attaches the specified components.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static T <link linkend="class_r_s_utility_1ae6e80f89d975b2fe61cdf7b50d243b17">AddComponent&lt; T &gt;</link> (
+GameObject _gameObject)<para><emphasis>&lt;summary&gt;
+Adds a component class to the game object. 
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Utility class which has methods to support serialization for objects created at runtime. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 10 of file RSUtility.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>RSUtility.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="class_r_s_utility_1a9a14924ea59bb6f451e8f69e2fb649a7">
+                <title>static GameObject Instantiate (GameObject _gameobject)</title> <emphasis>&lt;summary&gt;
+Creates an exact copy of original game object.</emphasis>
+                
+<para>When you clone a game object, all child objects and components will also be cloned with their properties set like those of the original object. Additionally, UIDSystem component will be attached to every game object (only if it doesn&apos;t exist). Also new set of unique identifiers are assigned for each game object and its components. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_gameobject</entry>
+                                <entry>
+<para>The object that you want to clone.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_r_s_utility_1a5853ff696b08c22f55d37a93177338d9">
+                <title>static GameObject Instantiate (GameObject _gameobject, Vector3 _position, Quaternion _rotation)</title> <emphasis>&lt;summary&gt;
+Creates an exact copy of original game object.</emphasis>
+                
+<para>When you clone a game object, all child objects and components will also be cloned with their properties set like those of the original object. Additionally, UIDSystem component will be attached to every game object (only if it doesn&apos;t exist). Also new set of unique identifiers are assigned for each game object and its components. </para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_gameobject</entry>
+                                <entry>
+<para>The object that you want to clone.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_position</entry>
+                                <entry>
+<para>Position for the new object.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_rotation</entry>
+                                <entry>
+<para>Orientation of the new object.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_r_s_utility_1a35ddf47b4b9e37b290fc4cded36b0449">
+                <title>static GameObject CreateGameObject (string _name, params System.Type[] _components)</title> <emphasis>&lt;summary&gt;
+Creates a new game object with specified name and attaches the specified components.</emphasis>
+                
+<para>Additionally, UIDSystem component is attached and along with it, new set of unique identifiers are assigned to the game object as well as its components. </para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>The newly created game object.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_name</entry>
+                                <entry>
+<para>The string value used for naming this game object.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_components</entry>
+                                <entry>
+<para>Type of components that needs to be attached to this newly created game object.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_r_s_utility_1ae6e80f89d975b2fe61cdf7b50d243b17">
+                <title>static T AddComponent&lt; T &gt; (GameObject _gameObject)</title> <emphasis>&lt;summary&gt;
+Adds a component class to the game object. 
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>The newly created component instance.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_gameObject</entry>
+                                <entry>
+<para>The game object to which this new component has to be added.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Template Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>T</entry>
+                                <entry>
+<para>Type of the component to be added.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

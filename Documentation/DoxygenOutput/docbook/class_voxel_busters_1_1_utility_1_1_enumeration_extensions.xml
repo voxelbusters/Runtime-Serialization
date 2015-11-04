@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_enumeration_extensions">
+<title>VoxelBusters::Utility::EnumerationExtensions class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static int <link linkend="class_voxel_busters_1_1_utility_1_1_enumeration_extensions_1abd836aaa5b522c8984378bb1581e3c8a">GetValue</link> (
+this System.Enum _enum)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_enumeration_extensions_1abd836aaa5b522c8984378bb1581e3c8a">
+                <title>static int GetValue (this System.Enum _enum)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

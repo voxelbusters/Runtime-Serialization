@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_transform_extensions">
+<title>VoxelBusters::Utility::TransformExtensions class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_voxel_busters_1_1_utility_1_1_transform_extensions_1a5929c9df4c4f90adb88934ec2df70cdd">GetPath</link> (
+this Transform _transform)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_transform_extensions_1a5929c9df4c4f90adb88934ec2df70cdd">
+                <title>static string GetPath (this Transform _transform)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

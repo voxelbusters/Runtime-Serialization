@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_game_object_extensions">
+<title>VoxelBusters::Utility::GameObjectExtensions class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static GameObject <link linkend="class_voxel_busters_1_1_utility_1_1_game_object_extensions_1aafbb9eff92e0e44f2829dffe7ce59d75">AddChild</link> (
+this GameObject _parentGO, string _childName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static GameObject <link linkend="class_voxel_busters_1_1_utility_1_1_game_object_extensions_1a75095ed9879f31f87cde812050f2d056">AddChild</link> (
+this GameObject _parentGO, string _childName, Vector3 _localPosition, Quaternion _localRotation, Vector3 _localScale)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static GameObject <link linkend="class_voxel_busters_1_1_utility_1_1_game_object_extensions_1a8972cb986c5e998dcbec1f4cc61616cb">AddChild</link> (
+this GameObject _parentGO, GameObject _childGO)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static GameObject <link linkend="class_voxel_busters_1_1_utility_1_1_game_object_extensions_1ae85d55b4732bf6043c3842af2341a7e6">AddChild</link> (
+this GameObject _parentGO, GameObject _childGO, Vector3 _localPosition, Quaternion _localRotation, Vector3 _localScale)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_voxel_busters_1_1_utility_1_1_game_object_extensions_1a5ef38701f41528a500d43f5bd15a7706">GetPath</link> (
+this GameObject _gameObject)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static T <link linkend="class_voxel_busters_1_1_utility_1_1_game_object_extensions_1a39be8e75eae3b92e1937a2b7d642bbab">AddInvisibleComponent&lt; T &gt;</link> (
+this GameObject _gameObject)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static GameObject <link linkend="class_voxel_busters_1_1_utility_1_1_game_object_extensions_1a062ebb3076a543830dd75cd688704ff1">CreateGameObjectAtPath</link> (
+string _path)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static GameObject <link linkend="class_voxel_busters_1_1_utility_1_1_game_object_extensions_1a508908c28ceea805ab5e26842c615e80">CreateGameObject</link> (
+string[] _pathComponents, ref int _index, int _count, Transform _parentTransform)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_game_object_extensions_1aafbb9eff92e0e44f2829dffe7ce59d75">
+                <title>static GameObject AddChild (this GameObject _parentGO, string _childName)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_game_object_extensions_1a75095ed9879f31f87cde812050f2d056">
+                <title>static GameObject AddChild (this GameObject _parentGO, string _childName, Vector3 _localPosition, Quaternion _localRotation, Vector3 _localScale)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_game_object_extensions_1a8972cb986c5e998dcbec1f4cc61616cb">
+                <title>static GameObject AddChild (this GameObject _parentGO, GameObject _childGO)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_game_object_extensions_1ae85d55b4732bf6043c3842af2341a7e6">
+                <title>static GameObject AddChild (this GameObject _parentGO, GameObject _childGO, Vector3 _localPosition, Quaternion _localRotation, Vector3 _localScale)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_game_object_extensions_1a5ef38701f41528a500d43f5bd15a7706">
+                <title>static string GetPath (this GameObject _gameObject)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_game_object_extensions_1a39be8e75eae3b92e1937a2b7d642bbab">
+                <title>static T AddInvisibleComponent&lt; T &gt; (this GameObject _gameObject)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_game_object_extensions_1a062ebb3076a543830dd75cd688704ff1">
+                <title>static GameObject CreateGameObjectAtPath (string _path)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_game_object_extensions_1a508908c28ceea805ab5e26842c615e80">
+                <title>static GameObject CreateGameObject (string[] _pathComponents, ref int _index, int _count, Transform _parentTransform=null)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

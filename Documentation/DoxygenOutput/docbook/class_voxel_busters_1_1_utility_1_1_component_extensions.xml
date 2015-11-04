@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_component_extensions">
+<title>VoxelBusters::Utility::ComponentExtensions class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static T <link linkend="class_voxel_busters_1_1_utility_1_1_component_extensions_1af2de56f174e03336431a11fffb7c50f3">AddComponentIfDoesntExist&lt; T &gt;</link> (
+this GameObject _gameObject)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static T[] <link linkend="class_voxel_busters_1_1_utility_1_1_component_extensions_1a6856a51ca452141f8929ce35da152d3a">GetComponentsInChildren&lt; T &gt;</link> (
+this Component _component, bool _includeParent, bool _includeInactive)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_component_extensions_1af2de56f174e03336431a11fffb7c50f3">
+                <title>static T AddComponentIfDoesntExist&lt; T &gt; (this GameObject _gameObject)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_component_extensions_1a6856a51ca452141f8929ce35da152d3a">
+                <title>static T [] GetComponentsInChildren&lt; T &gt; (this Component _component, bool _includeParent, bool _includeInactive)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

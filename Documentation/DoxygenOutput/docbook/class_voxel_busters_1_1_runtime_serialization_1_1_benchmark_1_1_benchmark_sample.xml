@@ -6,7 +6,7 @@
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>int intField</para>
+                        <para>int unserializedIntField</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -20,42 +20,35 @@
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>int[,] int2DArray</para>
+                        <para>List&lt; int &gt; intList</para>
                     </listitem>
                 </itemizedlist>
             </para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>DateTime dateTime</para>
+                        <para>DateTime dateTimeField</para>
                     </listitem>
                 </itemizedlist>
             </para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>string stringField</para>
+                        <para>string baseClassStringField</para>
                     </listitem>
                 </itemizedlist>
             </para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>char charField</para>
+                        <para>int baseClassIntField</para>
                     </listitem>
                 </itemizedlist>
             </para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>double doubleField</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>float floatField</para>
+                        <para>float baseClassFloatField</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -65,7 +58,7 @@
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>long m_privateLongField</para>
+                        <para>string m_unserializedString</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -78,9 +71,36 @@
             </para>
         </section>
         <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_benchmark_sample_1abce393d0dd5b974889a026eb205c6d64">BenchmarkSample</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_benchmark_sample_1a8b23c63103aafebb9ac9eb6ba8abadc7">BenchmarkSample</link> (
+bool _random)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
             <title>Member Data Documentation</title>
         </section>
         <section>
             <title>Member Data Documentation</title>
         </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_benchmark_sample_1abce393d0dd5b974889a026eb205c6d64">
+                <title>BenchmarkSample ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_benchmark_sample_1a8b23c63103aafebb9ac9eb6ba8abadc7">
+                <title>BenchmarkSample (bool _random)</title> <emphasis></emphasis>
+                
+            </section>
 </section>

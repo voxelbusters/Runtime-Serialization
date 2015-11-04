@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['purge',['Purge',['../class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager.html#a4535a66d6e679c4b1f3a5d0488159eac',1,'VoxelBusters::RuntimeSerialization::RSManager']]]
+  ['instantiate',['Instantiate',['../class_r_s_utility.html#a9a14924ea59bb6f451e8f69e2fb649a7',1,'RSUtility.Instantiate(GameObject _gameobject)'],['../class_r_s_utility.html#a5853ff696b08c22f55d37a93177338d9',1,'RSUtility.Instantiate(GameObject _gameobject, Vector3 _position, Quaternion _rotation)']]]
 ];

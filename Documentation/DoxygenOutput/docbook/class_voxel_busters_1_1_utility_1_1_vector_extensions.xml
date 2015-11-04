@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_vector_extensions">
+<title>VoxelBusters::Utility::VectorExtensions class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static Vector2 <link linkend="class_voxel_busters_1_1_utility_1_1_vector_extensions_1a3385d0d6859f04b038948e9e22cf16e9">Rotate</link> (
+this Vector2 _vec, float _angleDeg)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_vector_extensions_1a3385d0d6859f04b038948e9e22cf16e9">
+                <title>static Vector2 Rotate (this Vector2 _vec, float _angleDeg)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

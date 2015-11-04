@@ -13,7 +13,9 @@
 <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a61fe0349d692eb6d4f5b94e35049b2e9a85551a75d2247a61504b4aeaf79c7f6b">RS_SERIALIZATION_CLASS</link>,
 <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a61fe0349d692eb6d4f5b94e35049b2e9ad1448d9b2b6d16893e54f0141df09ee6">RS_DESERIALIZATION_CLASS</link>,
 <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a61fe0349d692eb6d4f5b94e35049b2e9a60990949cdbe73c55e8ea98611490ca4">RS_SERIALIZATION_GAMEOBJECT</link>,
-<link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a61fe0349d692eb6d4f5b94e35049b2e9a16bbbc25b0be721c392cd1fe24703c91">RS_DESERIALIZATION_GAMEOBJECT</link>
+<link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a61fe0349d692eb6d4f5b94e35049b2e9a16bbbc25b0be721c392cd1fe24703c91">RS_DESERIALIZATION_GAMEOBJECT</link>,
+<link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a61fe0349d692eb6d4f5b94e35049b2e9ae836a56e155e53f8d0a6cdfb25877a31">RS_SERIALIZATION_PREFAB</link>,
+<link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a61fe0349d692eb6d4f5b94e35049b2e9a07b016e7439b17fca19a6f8f9c8e9834">RS_DESERIALIZATION_PREFAB</link>
 }</literallayout>
 </para>
                     </listitem>
@@ -39,7 +41,14 @@
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>string m_BSSerializationData</para>
+                        <para>GameObject m_serializePrefab</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>byte[] m_BSSerializationData</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -74,7 +83,14 @@
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>const string kRuntimeSerializationGameobjectID</para>
+                        <para>const string kGameobjectSaveID</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kPrefabSaveID</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -194,6 +210,18 @@ T _object)</para>
                                 <para></para>
                             </listitem>
                         </varlistentry>
+                        <varlistentry xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a61fe0349d692eb6d4f5b94e35049b2e9ae836a56e155e53f8d0a6cdfb25877a31">
+                            <term>RS_SERIALIZATION_PREFAB</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_profiler_1a61fe0349d692eb6d4f5b94e35049b2e9a07b016e7439b17fca19a6f8f9c8e9834">
+                            <term>RS_DESERIALIZATION_PREFAB</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
                      </variablelist>
                 </formalpara>
                 <para>Definition at line 21 of file Profiler.cs
@@ -206,6 +234,8 @@ RS_SERIALIZATION_CLASS,
 RS_DESERIALIZATION_CLASS, 
 RS_SERIALIZATION_GAMEOBJECT, 
 RS_DESERIALIZATION_GAMEOBJECT, 
+RS_SERIALIZATION_PREFAB, 
+RS_DESERIALIZATION_PREFAB, 
 }TestCase;
                     </literallayout></computeroutput>
                 </para>

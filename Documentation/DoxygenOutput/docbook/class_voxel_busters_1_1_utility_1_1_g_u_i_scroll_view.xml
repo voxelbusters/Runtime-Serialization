@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_g_u_i_scroll_view">
+<title>VoxelBusters::Utility::GUIScrollView class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Vector2 m_scrollPosition</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float m_scrollSpeed</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Rect m_rect</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_g_u_i_scroll_view_1ac36cfb309a84469835ea8eb0319fc05e">BeginScrollView</link> (
+GUIStyle _style, params GUILayoutOption[] _options)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_g_u_i_scroll_view_1af149d6d93d5037ca8fef39e9393db140">BeginScrollView</link> (
+params GUILayoutOption[] _options)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_g_u_i_scroll_view_1a6b90f5c4c2673e709d3b71d45ee085e5">EndScrollView</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_g_u_i_scroll_view_1a372de693ad40b3f42839c8ec6ac845f4">Reset</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_g_u_i_scroll_view_1aec0783b5a136e042adcc47bae4fe5291">Update</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_g_u_i_scroll_view_1affb20f8e0ef963c5dde4250df724969a">UpdateScroll</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_g_u_i_scroll_view_1ac36cfb309a84469835ea8eb0319fc05e">
+                <title>void BeginScrollView (GUIStyle _style, params GUILayoutOption[] _options)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_g_u_i_scroll_view_1af149d6d93d5037ca8fef39e9393db140">
+                <title>void BeginScrollView (params GUILayoutOption[] _options)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_g_u_i_scroll_view_1a6b90f5c4c2673e709d3b71d45ee085e5">
+                <title>void EndScrollView ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_g_u_i_scroll_view_1a372de693ad40b3f42839c8ec6ac845f4">
+                <title>void Reset ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_g_u_i_scroll_view_1aec0783b5a136e042adcc47bae4fe5291">
+                <title>void Update ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_g_u_i_scroll_view_1affb20f8e0ef963c5dde4250df724969a">
+                <title>void UpdateScroll ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

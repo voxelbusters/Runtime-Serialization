@@ -16,6 +16,28 @@ Implement this interface to control serialization and deserialization of &lt;see
             <para>
                 <itemizedlist>
                     <listitem>
+                        <para>struct <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_activator">VoxelBusters::RuntimeSerialization::IRuntimeSerializableActivator</link></para>
+<para><emphasis>&lt;summary&gt;
+Implement this interface to control instance creation of serialized type.
+Static method with signature: object CreateInstance (RuntimeSerializationInfo _info) is invoked when creating serialized object instance.
+&lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; contains all the initializer values that were formerly serialized. So get all the initializer values from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; and create object instance.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_extension">VoxelBusters::RuntimeSerialization::IRuntimeSerializableExtension</link></para>
+<para><emphasis>&lt;summary&gt;
+Implement this abstract class to support runtime serialization for classes which belong to external assembly.
+&lt;/summary&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
                         <para>struct <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_callback">VoxelBusters::RuntimeSerialization::IRuntimeSerializationCallback</link></para>
 <para><emphasis>&lt;summary&gt;
 Implement this interface to receive implicit callbacks on &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; object.
@@ -36,19 +58,9 @@ Implement this interface to observe serialization process of &lt;see cref=&quot;
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>struct <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_extension">VoxelBusters::RuntimeSerialization::IRuntimeSerializationExtension</link></para>
+                        <para>struct <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_non_runtime_serialized_field_attribute">VoxelBusters::RuntimeSerialization::NonRuntimeSerializedFieldAttribute</link></para>
 <para><emphasis>&lt;summary&gt;
-Implement this interface to support runtime serialization for classes which belong to external assembly.
-&lt;/summary&gt;</emphasis></para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>struct <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager">VoxelBusters::RuntimeSerialization::RSManager</link></para>
-<para><emphasis>&lt;summary&gt;
-RSManager class is responsible for serializing and deserializing objects at runtime.
+Indicates that a field of a &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; class should not be serialized at runtime.
 &lt;/summary&gt;</emphasis></para>
                     </listitem>
                 </itemizedlist>
@@ -83,17 +95,23 @@ Indicates that a field of a &lt;see cref=&quot;RuntimeSerializableAttribute&quot
                     </listitem>
                 </itemizedlist>
             </para>
-        </section>
-        <simplesect>
-            <title> Namespaces </title>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>struct <link linkend="namespace_voxel_busters_1_1_runtime_serialization_1_1_benchmark">VoxelBusters::RuntimeSerialization::Benchmark</link></para>
+                        <para>struct <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system">VoxelBusters::RuntimeSerialization::UIDSystem</link></para>
+<para><emphasis>&lt;summary&gt;
+Unique Identifier System is used for uniquely identify a GameObject and Component attached to it.
+Please attach this component to all the GameObject that will undergo serialization and deserialization.
+When this component is attached to a GameObject, it recursively creates UIDSystem component in all descendants and assigns UID.
+All the assigned UID&apos;s are cached and used for RS system for identifying an object in Scene hierarchy.
+Note that UID for each object, is assigned only once until and unless user forcefully reset&apos;s component. 
+Please dont forget to enable IsPrefab flag, which is used for differentiating between normal GameObject and Prefab.
+UID&apos;s for Prefab are generated and assigned at runtime only.
+&lt;/summary&gt;</emphasis></para>
                     </listitem>
                 </itemizedlist>
             </para>
-        </simplesect>
+        </section>
         <section>
             <title>Enumerations</title>
             <para>
@@ -118,9 +136,9 @@ Saves serialization data to specified save target.
         <simplesect>
             <title>Detailed Description</title>
 
-<para>The <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable">IRuntimeSerializable</link> interface provides a way to control their own serialization behaviour. The <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_extension">IRuntimeSerializationExtension</link> interface provides a way to support runtime serialization for classes which belong to external assembly. </para>
-                <para>Definition at line 1 of file [generated]</para>
+<para>The <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable">IRuntimeSerializable</link> interface provides a way to control their own serialization behaviour. The <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_extension">IRuntimeSerializableExtension</link> interface provides a way to support runtime serialization for classes which belong to external assembly. </para>
+                <para>Definition at line 7 of file NonRuntimeSerializableFieldAttribute.cs</para>
                 <para>The Documentation for this struct was generated from the following file: </para>
-                <para><itemizedlist><listitem><para>[generated]</para></listitem></itemizedlist></para>
+                <para><itemizedlist><listitem><para>NonRuntimeSerializableFieldAttribute.cs</para></listitem></itemizedlist></para>
         </simplesect>
 </section>

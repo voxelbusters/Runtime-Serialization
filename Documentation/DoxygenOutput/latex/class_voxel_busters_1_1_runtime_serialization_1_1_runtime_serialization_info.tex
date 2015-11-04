@@ -8,14 +8,20 @@ Stores all the data required to serialize or deserialize an object.
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_ac0ca49c051194ccb86acf86a757a9fed}{Add\+Value$<$ T $>$} (string \+\_\+name, T \+\_\+value)
+void \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_afc7377af684433c79b96aaa5cba28b8e}{Add\+Value$<$ T $>$} (string \+\_\+name, T \+\_\+value, bool \+\_\+is\+Object\+Initializer=false)
 \begin{DoxyCompactList}\small\item\em Adds the specified object into the \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info} for serialization, where it is associated with name. \end{DoxyCompactList}\item 
-void \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_a2c98842a732a81c60f927c1c93664dac}{Add\+Value} (string \+\_\+name, object \+\_\+value, Type \+\_\+value\+Type)
+void \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_a2f81259a486737aca459d58b5e0dcde9}{Add\+Value} (string \+\_\+name, object \+\_\+value, Type \+\_\+value\+Type, bool \+\_\+is\+Object\+Initializer=false)
 \begin{DoxyCompactList}\small\item\em Adds the specified object into the \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info} for serialization, where it is associated with name. \end{DoxyCompactList}\item 
-T \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_a197deebcf58f289b38878942ec3f980c}{Get\+Value$<$ T $>$} (string \+\_\+name)
-\begin{DoxyCompactList}\small\item\em Retrieves value from \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info}. \end{DoxyCompactList}\item 
-object \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_a4ed12be7f59087807778a09c29468439}{Get\+Value} (string \+\_\+name, Type \+\_\+type)
-\begin{DoxyCompactList}\small\item\em Retrieves value from \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+T \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_a05337b60778fbd1effa007cff1255dee}{Get\+Value$<$ T $>$} (string \+\_\+name, bool \+\_\+is\+Object\+Initializer=false)
+\begin{DoxyCompactList}\small\item\em Gets the value from \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info} using specified name. \end{DoxyCompactList}\item 
+object \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_afa5472bda7c1cd80f4150b92a786a810}{Get\+Value} (string \+\_\+name, Type \+\_\+type, bool \+\_\+is\+Object\+Initializer=false)
+\begin{DoxyCompactList}\small\item\em Gets the value from \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info} using specified name. \end{DoxyCompactList}\item 
+bool \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_a8f6f8bcd13d3ecaad5ba8dc85f4dfcda}{Try\+Get\+Value$<$ T $>$} (string \+\_\+name, out T \+\_\+value, bool \+\_\+is\+Object\+Initializer=false)
+\begin{DoxyCompactList}\small\item\em Gets the value from \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info} using specified name. \end{DoxyCompactList}\item 
+bool \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_aae1c7a92bad7239f92897ac999026122}{Try\+Get\+Value} (string \+\_\+name, out object \+\_\+value, Type \+\_\+type, bool \+\_\+is\+Object\+Initializer=false)
+\begin{DoxyCompactList}\small\item\em Gets the value from \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info} using specified name. \end{DoxyCompactList}\item 
+bool \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_ae1e552a892e7fa0cd5aea44277bef990}{Contains\+Value} (string \+\_\+name, bool \+\_\+is\+Object\+Initializer=false)
+\begin{DoxyCompactList}\small\item\em Determines whether the \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info} contains a specific value. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -24,23 +30,26 @@ Stores all the data required to serialize or deserialize an object.
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_ac0ca49c051194ccb86acf86a757a9fed}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}!Add\+Value$<$ T $>$@{Add\+Value$<$ T $>$}}
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_afc7377af684433c79b96aaa5cba28b8e}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}!Add\+Value$<$ T $>$@{Add\+Value$<$ T $>$}}
 \index{Add\+Value$<$ T $>$@{Add\+Value$<$ T $>$}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}}
 \subsubsection[{Add\+Value$<$ T $>$}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Add\+Value}$<$ T $>$ (
 \begin{DoxyParamCaption}
 \item[{string}]{\+\_\+name, }
-\item[{T}]{\+\_\+value}
+\item[{T}]{\+\_\+value, }
+\item[{bool}]{\+\_\+is\+Object\+Initializer = {\ttfamily false}}
 \end{DoxyParamCaption}
-)}\label{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_ac0ca49c051194ccb86acf86a757a9fed}
+)}\label{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_afc7377af684433c79b96aaa5cba28b8e}
 
 
 Adds the specified object into the \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info} for serialization, where it is associated with name. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em \+\_\+name} & The name to associate with the value, so it can be deserialized later.\\
+{\em \+\_\+name} & The name associated with the value to be stored in \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info}.\\
 \hline
 {\em \+\_\+value} & The value to be serialized. Any children of this object will automatically be serialized.\\
+\hline
+{\em \+\_\+is\+Object\+Initializer} & The flag indicates whether this value is object intializer. Object initializers are the values that are available while creating object instance.\\
 \hline
 \end{DoxyParams}
 
@@ -48,45 +57,51 @@ Adds the specified object into the \hyperlink{class_voxel_busters_1_1_runtime_se
 {\em T} & The Type associated with the current object. This must always be the type of the object itself.\\
 \hline
 \end{DoxyTemplParams}
-\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_a2c98842a732a81c60f927c1c93664dac}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}!Add\+Value@{Add\+Value}}
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_a2f81259a486737aca459d58b5e0dcde9}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}!Add\+Value@{Add\+Value}}
 \index{Add\+Value@{Add\+Value}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}}
 \subsubsection[{Add\+Value}]{\setlength{\rightskip}{0pt plus 5cm}void Add\+Value (
 \begin{DoxyParamCaption}
 \item[{string}]{\+\_\+name, }
 \item[{object}]{\+\_\+value, }
-\item[{Type}]{\+\_\+value\+Type}
+\item[{Type}]{\+\_\+value\+Type, }
+\item[{bool}]{\+\_\+is\+Object\+Initializer = {\ttfamily false}}
 \end{DoxyParamCaption}
-)}\label{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_a2c98842a732a81c60f927c1c93664dac}
+)}\label{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_a2f81259a486737aca459d58b5e0dcde9}
 
 
 Adds the specified object into the \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info} for serialization, where it is associated with name. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em \+\_\+name} & The name to associate with the value, so it can be deserialized later.\\
+{\em \+\_\+name} & The name associated with the value to be stored in \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info}.\\
 \hline
 {\em \+\_\+value} & The value to be serialized. Any children of this object will automatically be serialized.\\
 \hline
 {\em \+\_\+value\+Type} & The Type associated with the current object. This must always be the type of the object itself.\\
 \hline
+{\em \+\_\+is\+Object\+Initializer} & The flag indicates whether this value is object intializer. Object initializers are the values that are available while creating object instance.\\
+\hline
 \end{DoxyParams}
-\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_a197deebcf58f289b38878942ec3f980c}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}!Get\+Value$<$ T $>$@{Get\+Value$<$ T $>$}}
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_a05337b60778fbd1effa007cff1255dee}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}!Get\+Value$<$ T $>$@{Get\+Value$<$ T $>$}}
 \index{Get\+Value$<$ T $>$@{Get\+Value$<$ T $>$}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}}
 \subsubsection[{Get\+Value$<$ T $>$}]{\setlength{\rightskip}{0pt plus 5cm}T {\bf Get\+Value}$<$ T $>$ (
 \begin{DoxyParamCaption}
-\item[{string}]{\+\_\+name}
+\item[{string}]{\+\_\+name, }
+\item[{bool}]{\+\_\+is\+Object\+Initializer = {\ttfamily false}}
 \end{DoxyParamCaption}
-)}\label{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_a197deebcf58f289b38878942ec3f980c}
+)}\label{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_a05337b60778fbd1effa007cff1255dee}
 
 
-Retrieves value from \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info}. 
+Gets the value from \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info} using specified name. 
 
 \begin{DoxyReturn}{Returns}
 The object of specified type associated with name.
 \end{DoxyReturn}
 
 \begin{DoxyParams}{Parameters}
-{\em \+\_\+name} & The name associated with the value to retrieve.\\
+{\em \+\_\+name} & The name associated with the value to be retreived from \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info}.\\
+\hline
+{\em \+\_\+is\+Object\+Initializer} & The flag indicates whether this value is object intializer. Object initializers are the values that are available while creating object instance.\\
 \hline
 \end{DoxyParams}
 
@@ -94,24 +109,114 @@ The object of specified type associated with name.
 {\em T} & The Type of the value to retrieve.\\
 \hline
 \end{DoxyTemplParams}
-\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_a4ed12be7f59087807778a09c29468439}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}!Get\+Value@{Get\+Value}}
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_afa5472bda7c1cd80f4150b92a786a810}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}!Get\+Value@{Get\+Value}}
 \index{Get\+Value@{Get\+Value}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}}
 \subsubsection[{Get\+Value}]{\setlength{\rightskip}{0pt plus 5cm}object Get\+Value (
 \begin{DoxyParamCaption}
 \item[{string}]{\+\_\+name, }
-\item[{Type}]{\+\_\+type}
+\item[{Type}]{\+\_\+type, }
+\item[{bool}]{\+\_\+is\+Object\+Initializer = {\ttfamily false}}
 \end{DoxyParamCaption}
-)}\label{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_a4ed12be7f59087807778a09c29468439}
+)}\label{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_afa5472bda7c1cd80f4150b92a786a810}
 
 
-Retrieves value from \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info}. 
+Gets the value from \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info} using specified name. 
 
 \begin{DoxyReturn}{Returns}
 The object of specified type associated with name.
 \end{DoxyReturn}
 
 \begin{DoxyParams}{Parameters}
-{\em \+\_\+name} & The name associated with the value to retrieve.\\
+{\em \+\_\+name} & The name associated with the value to be retreived from \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info}.\\
 \hline
 \end{DoxyParams}
 $<$param name==\char`\"{}\+\_\+type\char`\"{}$>$The Type of the value to retrieve.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+is\+Object\+Initializer} & The flag indicates whether this value is object intializer. Object initializers are the values that are available while creating object instance.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_a8f6f8bcd13d3ecaad5ba8dc85f4dfcda}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}!Try\+Get\+Value$<$ T $>$@{Try\+Get\+Value$<$ T $>$}}
+\index{Try\+Get\+Value$<$ T $>$@{Try\+Get\+Value$<$ T $>$}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}}
+\subsubsection[{Try\+Get\+Value$<$ T $>$}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf Try\+Get\+Value}$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+name, }
+\item[{out T}]{\+\_\+value, }
+\item[{bool}]{\+\_\+is\+Object\+Initializer = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_a8f6f8bcd13d3ecaad5ba8dc85f4dfcda}
+
+
+Gets the value from \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info} using specified name. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true}, if value was found in \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info}, {\ttfamily false} otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+name} & The name associated with the value to be retreived from \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info}.\\
+\hline
+{\em \+\_\+value} & The value associated with the specified name.\\
+\hline
+{\em \+\_\+is\+Object\+Initializer} & The flag indicates whether this value is object intializer. Object initializers are the values that are available while creating object instance.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The Type of the value to retrieve.\\
+\hline
+\end{DoxyTemplParams}
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_aae1c7a92bad7239f92897ac999026122}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}!Try\+Get\+Value@{Try\+Get\+Value}}
+\index{Try\+Get\+Value@{Try\+Get\+Value}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}}
+\subsubsection[{Try\+Get\+Value}]{\setlength{\rightskip}{0pt plus 5cm}bool Try\+Get\+Value (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+name, }
+\item[{out object}]{\+\_\+value, }
+\item[{Type}]{\+\_\+type, }
+\item[{bool}]{\+\_\+is\+Object\+Initializer = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_aae1c7a92bad7239f92897ac999026122}
+
+
+Gets the value from \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info} using specified name. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true}, if value was found in \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info}, {\ttfamily false} otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+name} & The name associated with the value to be fetched from \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info}.\\
+\hline
+{\em \+\_\+value} & The value associated with the specified name.\\
+\hline
+\end{DoxyParams}
+$<$param name==\char`\"{}\+\_\+type\char`\"{}$>$The Type of the value to be fetched.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+is\+Object\+Initializer} & The flag indicates whether this value is object intializer. Object initializers are the values that are available while creating object instance.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_ae1e552a892e7fa0cd5aea44277bef990}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}!Contains\+Value@{Contains\+Value}}
+\index{Contains\+Value@{Contains\+Value}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+Runtime\+Serialization\+Info}}
+\subsubsection[{Contains\+Value}]{\setlength{\rightskip}{0pt plus 5cm}bool Contains\+Value (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+name, }
+\item[{bool}]{\+\_\+is\+Object\+Initializer = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info_ae1e552a892e7fa0cd5aea44277bef990}
+
+
+Determines whether the \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info} contains a specific value. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true}, if value with specified name exists in \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info}, {\ttfamily false} otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+name} & The name associated with the value to be fetched from \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info}.\\
+\hline
+{\em \+\_\+is\+Object\+Initializer} & The flag indicates whether this value is object intializer. Object initializers are the values that are available while creating object instance.\\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,1059 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_r_s_manager">
+<title>RSManager class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kKeyForSaveToPrefsKeyCollection</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kKeyForSaveToFileKeyCollection</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Dictionary&lt; string, List&lt; IRuntimeSerializationEventListener &gt; &gt; m_eventListeners</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Dictionary&lt; string, byte[]&gt; m_saveToPrefsSerializationData</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; string &gt; m_saveToFileKeyCollection</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BinarySerializer m_binarySerializer</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>BinaryDeserializer m_binaryDeserializer</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static Action OnDestroyEvent</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="class_r_s_manager_1a8045e088b31fe0754fb20cb0a5ff0dc9">Init</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="class_r_s_manager_1a298cb68f7f3fb7f40595f4302af4ae25">Reset</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="class_r_s_manager_1aafb2e5ff9ac0b154ba7c920402922a91">OnDestroy</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_r_s_manager_1acfd5a55fad8fe660cf2be24798487d7d">OnApplicationPause</link> (
+bool _isPaused)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="class_r_s_manager_1a10aa6adc350b771c7f5e2eaffda453c4">Obj_Serialize&lt; T &gt;</link> (
+T _object, string _key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_r_s_manager_1a5e60b2b27f5eecb6d686f176aba2e643">Obj_Serialize&lt; T &gt;</link> (
+T _object, string _key, <link linkend="namespace_voxel_busters_1_1_runtime_serialization_1aacaa3008b2cb441fbe4708df854019bf">eSaveTarget</link> _saveTarget)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>T <link linkend="class_r_s_manager_1a8cb8d7645244ebc67e7c992a5991d5ac">Obj_Deserialize&lt; T &gt;</link> (
+string _key, T _targetObject)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_r_s_manager_1aa3465c5a2e075a53086f0fbc0698a7f6">Obj_ContainsKey</link> (
+string _key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="class_r_s_manager_1a4b57c7afd2b04390c3e97729e83246be">Obj_GetSerializationData</link> (
+string _key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_r_s_manager_1a4be81dbc59c3703a23b29b599e324022">Obj_TryGetSerializationData</link> (
+string _key, out byte[] _serializationData)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_r_s_manager_1aa694a231c1a9c3be1b3682422617e9c6">Obj_RestoreSerializationData</link> (
+string _serializationDataString, string _key, <link linkend="namespace_voxel_busters_1_1_runtime_serialization_1aacaa3008b2cb441fbe4708df854019bf">eSaveTarget</link> _saveTarget)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_r_s_manager_1a6c8756f18546b5acd44230c61476b5c3">AddSerializationData</link> (
+string _key, byte[] _serializationData, <link linkend="namespace_voxel_busters_1_1_runtime_serialization_1aacaa3008b2cb441fbe4708df854019bf">eSaveTarget</link> _saveTarget)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_r_s_manager_1abc7c82eccd710a90dd401749df2a7a22">Obj_RegisterEventListener</link> (
+string _key, <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener">IRuntimeSerializationEventListener</link> _newListener)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_r_s_manager_1a5bc15cf90765d5445a3964f148442faf">Obj_UnRegisterEventListener</link> (
+string _key, <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener">IRuntimeSerializationEventListener</link> _listener)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener">IRuntimeSerializationEventListener</link> &gt; <link linkend="class_r_s_manager_1ab1d884b06927bdcd2ac460667dd82d4e">GetEventListeners</link> (
+string _key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_r_s_manager_1a5edc48114f51e54b2e38c267e0d44579">OnSerializationFinished</link> (
+string _key, object _object)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_r_s_manager_1ac898cdadc136b2c0783adc7bf835c0cd">OnDeserializationFinished</link> (
+string _key, object _object)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_r_s_manager_1a5d2627e480926ac4cb63ef676523081f">LoadSerializationData</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_r_s_manager_1aa82edb75ef13060f4e25efb043197906">LoadDataRelatedToSaveTargetPrefs</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_r_s_manager_1ab158852fd08300b9bd59a590f0a12d62">LoadDataRelatedToSaveTargetFile</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; string &gt; <link linkend="class_r_s_manager_1a32503c130709cb1125f5fc1f8d571a30">LoadKeyCollectionInfo</link> (
+string _key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_r_s_manager_1a7372b37a1c79ca43ab3a5c69d11cd1b2">Obj_Save</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_r_s_manager_1aff1b7c97d48393ddd7d12b6f12d0f72e">SaveDataRelatedToSaveTargetPrefs</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_r_s_manager_1af692790f6287132cad0d8ca05dcba9f5">SaveDataRelatedToSaveTargetFile</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_r_s_manager_1add79bebd2a4639be9f926e94dd27de74">Obj_Remove</link> (
+string _key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_r_s_manager_1acc28a1208f53f78d453cd25ebf690710">Obj_RemoveAll</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="class_r_s_manager_1ae7064381520db7bacb633d01016c20eb">GetSerializationDataSavePathForKey</link> (
+string _key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_r_s_manager_1ac839e3c63f6d39fdca27fb15d5ded852">RemoveSerializationDataFileWithKey</link> (
+string _key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_r_s_manager_1a8f9e0f48f1659ab548f840b344302815">Serialize&lt; T &gt;</link> (
+T _object, string _key)<para><emphasis>&lt;summary&gt;
+Returns serialization data of target object as Base64 string. 
+After serialization, associated serialization data doesn&apos;t get saved by &lt;see cref=&quot;RSManager&quot;&gt;. And it is user&apos;s responsiblity to provide this data while deserializing object using method &lt;see cref=&quot;DeserializeData&quot;/&gt; .
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static T <link linkend="class_r_s_manager_1aacb8fb568297e83048ffdee62934c5a4">DeserializeData&lt; T &gt;</link> (
+string _serializationDataString, string _key, T _targetObject)<para><emphasis>&lt;summary&gt;
+Deserializes the serialization data and recreates the object of specified type.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_r_s_manager_1a895490662c28260917e8d41029a584e1">Serialize&lt; T &gt;</link> (
+T _object, string _key, <link linkend="namespace_voxel_busters_1_1_runtime_serialization_1aacaa3008b2cb441fbe4708df854019bf">eSaveTarget</link> _saveTarget)<para><emphasis>&lt;summary&gt;
+Serialize the specified object and then save its serialization data to mentioned target location. Also given key value is used for identifing objects serialization data. 
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static T <link linkend="class_r_s_manager_1a331c1537211afdc7720b6d82fd77c435">Deserialize&lt; T &gt;</link> (
+string _key, T _targetObject)<para><emphasis>&lt;summary&gt;
+Deserializes the data serialization associated with given key and recreates the object of specified type.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static bool <link linkend="class_r_s_manager_1a1a5c88e07167dfd4b9bd0293c871cccb">ContainsKey</link> (
+string _key)<para><emphasis>&lt;summary&gt;
+Determines whether &lt;see cref=&quot;RSManager&quot;/&gt; contains serialization data for specified key.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_r_s_manager_1ad0da99fc39195b85481e5b1a94b6e451">GetSerializationData</link> (
+string _key)<para><emphasis>&lt;summary&gt;
+Returns serialization data associated with specified key.
+Ideal for supporting multi device login, wherein you can save serialization data remotely and restore it on other devices using method &lt;see cref=&quot;RSManager.RestoreSerializationData&quot;/&gt;.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static bool <link linkend="class_r_s_manager_1a5a9532e8ddf7cba352f3f7cbdf5058ce">TryGetSerializationData</link> (
+string _key, out byte[] _serializationData)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static bool <link linkend="class_r_s_manager_1afa6f7bc8fae802b923bc090b60f7a92f">RestoreSerializationData</link> (
+string _serializationDataString, string _key, <link linkend="namespace_voxel_busters_1_1_runtime_serialization_1aacaa3008b2cb441fbe4708df854019bf">eSaveTarget</link> _saveTarget)<para><emphasis>&lt;summary&gt;
+Saves Base64String format serialization data to specified target location where it is associated with specified key.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_r_s_manager_1aec7a89a1be1d258f23edf4a9018d312a">RegisterEventListener</link> (
+string _key, <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener">IRuntimeSerializationEventListener</link> _newListener)<para><emphasis>&lt;summary&gt;
+Register object to receive serialization events.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_r_s_manager_1a47c28044983d7a3dcb729c8a40f0f0f9">UnRegisterEventListener</link> (
+string _key, <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener">IRuntimeSerializationEventListener</link> _listener)<para><emphasis>&lt;summary&gt;
+Unregister object from receiving serialization events.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_r_s_manager_1a93ae17b65d2a85ee2ad86ffb69107301">Save</link> (
+)<para><emphasis>&lt;summary&gt;
+Writes all serialization data to disk.
+By default &lt;see cref=&quot;RSManager&quot;/&gt; writes serialization data to PlayerPrefs/File on Application Pause and on Application Quit.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_r_s_manager_1aa4aae89f01d20407c26a3f568932a3db">Remove</link> (
+string _key)<para><emphasis>&lt;summary&gt;
+Removes serialization data associated with specified key.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_r_s_manager_1ae181b60d8c24114b8c417b74a51bff12">RemoveAll</link> (
+)<para><emphasis>&lt;summary&gt;
+Clears all existing serialization data.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_r_s_manager_1a4535a66d6e679c4b1f3a5d0488159eac">Purge</link> (
+Type _objectType)<para><emphasis>&lt;summary&gt;
+Clears all the cached information of specified object type.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>T <link linkend="class_r_s_manager_1a082236f6ae59de0ccd85068bc9e96153">Obj_DeserializeData&lt; T &gt;</link> (
+string _serializationDataString, string _key, T _targetObject)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_r_s_manager_1a469b7cced5cfda5b7ce5b108ecd2d3b5">GetSerializationFormatVersion</link> (
+)<para><emphasis>&lt;summary&gt;
+Gets the serialization format version.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para><link linkend="class_r_s_manager">RSManager</link> class is responsible for serializing and deserializing objects at runtime. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 22 of file RSManager.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>RSManager.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_r_s_manager_1a8045e088b31fe0754fb20cb0a5ff0dc9">
+                <title>override void Init ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1a298cb68f7f3fb7f40595f4302af4ae25">
+                <title>override void Reset ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1aafb2e5ff9ac0b154ba7c920402922a91">
+                <title>override void OnDestroy ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1acfd5a55fad8fe660cf2be24798487d7d">
+                <title>void OnApplicationPause (bool _isPaused)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1a10aa6adc350b771c7f5e2eaffda453c4">
+                <title>string Obj_Serialize&lt; T &gt; (T _object, string _key)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1a5e60b2b27f5eecb6d686f176aba2e643">
+                <title>void Obj_Serialize&lt; T &gt; (T _object, string _key, eSaveTarget _saveTarget)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1a8cb8d7645244ebc67e7c992a5991d5ac">
+                <title>T Obj_Deserialize&lt; T &gt; (string _key, T _targetObject)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1aa3465c5a2e075a53086f0fbc0698a7f6">
+                <title>bool Obj_ContainsKey (string _key)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1a4b57c7afd2b04390c3e97729e83246be">
+                <title>string Obj_GetSerializationData (string _key)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1a4be81dbc59c3703a23b29b599e324022">
+                <title>bool Obj_TryGetSerializationData (string _key, out byte[] _serializationData)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1aa694a231c1a9c3be1b3682422617e9c6">
+                <title>bool Obj_RestoreSerializationData (string _serializationDataString, string _key, eSaveTarget _saveTarget)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1a6c8756f18546b5acd44230c61476b5c3">
+                <title>void AddSerializationData (string _key, byte[] _serializationData, eSaveTarget _saveTarget)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1abc7c82eccd710a90dd401749df2a7a22">
+                <title>void Obj_RegisterEventListener (string _key, IRuntimeSerializationEventListener _newListener)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1a5bc15cf90765d5445a3964f148442faf">
+                <title>void Obj_UnRegisterEventListener (string _key, IRuntimeSerializationEventListener _listener)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1ab1d884b06927bdcd2ac460667dd82d4e">
+                <title>List&lt;IRuntimeSerializationEventListener&gt; GetEventListeners (string _key)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1a5edc48114f51e54b2e38c267e0d44579">
+                <title>void OnSerializationFinished (string _key, object _object)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1ac898cdadc136b2c0783adc7bf835c0cd">
+                <title>void OnDeserializationFinished (string _key, object _object)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1a5d2627e480926ac4cb63ef676523081f">
+                <title>void LoadSerializationData ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1aa82edb75ef13060f4e25efb043197906">
+                <title>void LoadDataRelatedToSaveTargetPrefs ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1ab158852fd08300b9bd59a590f0a12d62">
+                <title>void LoadDataRelatedToSaveTargetFile ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1a32503c130709cb1125f5fc1f8d571a30">
+                <title>List&lt;string&gt; LoadKeyCollectionInfo (string _key)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1a7372b37a1c79ca43ab3a5c69d11cd1b2">
+                <title>void Obj_Save ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1aff1b7c97d48393ddd7d12b6f12d0f72e">
+                <title>void SaveDataRelatedToSaveTargetPrefs ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1af692790f6287132cad0d8ca05dcba9f5">
+                <title>void SaveDataRelatedToSaveTargetFile ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1add79bebd2a4639be9f926e94dd27de74">
+                <title>void Obj_Remove (string _key)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1acc28a1208f53f78d453cd25ebf690710">
+                <title>void Obj_RemoveAll ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1ae7064381520db7bacb633d01016c20eb">
+                <title>string GetSerializationDataSavePathForKey (string _key)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1ac839e3c63f6d39fdca27fb15d5ded852">
+                <title>bool RemoveSerializationDataFileWithKey (string _key)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1a8f9e0f48f1659ab548f840b344302815">
+                <title>static string Serialize&lt; T &gt; (T _object, string _key=null)</title> <emphasis>&lt;summary&gt;
+Returns serialization data of target object as Base64 string. 
+After serialization, associated serialization data doesn&apos;t get saved by &lt;see cref=&quot;RSManager&quot;&gt;. And it is user&apos;s responsiblity to provide this data while deserializing object using method &lt;see cref=&quot;DeserializeData&quot;/&gt; .
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_object</entry>
+                                <entry>
+<para>The object to be serialized.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_key</entry>
+                                <entry>
+<para>A key string used to identify object&apos;s serialization. An optional parameter, when supplied it is used for firing serialization finished callback.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Template Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>T</entry>
+                                <entry>
+<para>The type of the object being serialized.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_r_s_manager_1aacb8fb568297e83048ffdee62934c5a4">
+                <title>static T DeserializeData&lt; T &gt; (string _serializationDataString, string _key=null, T _targetObject=default(T))</title> <emphasis>&lt;summary&gt;
+Deserializes the serialization data and recreates the object of specified type.
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>The deserialized object of specified type.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_serializationDataString</entry>
+                                <entry>
+<para>Serialization data in Base64String format.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_key</entry>
+                                <entry>
+<para>A key string used to identify object&apos;s deserialization. An optional parameter, when supplied it is used for firing deserialization finished callback.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_targetObject</entry>
+                                <entry>
+<para>If value is non-null, then all the properties are deserialized back to this object.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Template Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>T</entry>
+                                <entry>
+<para>The type of the object returned after it is deserialized.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_r_s_manager_1a895490662c28260917e8d41029a584e1">
+                <title>static void Serialize&lt; T &gt; (T _object, string _key, eSaveTarget _saveTarget)</title> <emphasis>&lt;summary&gt;
+Serialize the specified object and then save its serialization data to mentioned target location. Also given key value is used for identifing objects serialization data. 
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_object</entry>
+                                <entry>
+<para>The object to be serialized.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_key</entry>
+                                <entry>
+<para>A key string used to identify object&apos;s serialization.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_saveTarget</entry>
+                                <entry>
+<para>Preferred target where serialization data is saved.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Template Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>T</entry>
+                                <entry>
+<para>The type of the object being serialized.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_r_s_manager_1a331c1537211afdc7720b6d82fd77c435">
+                <title>static T Deserialize&lt; T &gt; (string _key, T _targetObject=default(T))</title> <emphasis>&lt;summary&gt;
+Deserializes the data serialization associated with given key and recreates the object of specified type.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_key</entry>
+                                <entry>
+<para>A key string used to identify object&apos;s deserialization.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_targetObject</entry>
+                                <entry>
+<para>If value is non-null, then all the properties are deserialized back to this object.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Template Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>T</entry>
+                                <entry>
+<para>The type of the object returned after it is deserialized.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_r_s_manager_1a1a5c88e07167dfd4b9bd0293c871cccb">
+                <title>static bool ContainsKey (string _key)</title> <emphasis>&lt;summary&gt;
+Determines whether &lt;see cref=&quot;RSManager&quot;/&gt; contains serialization data for specified key.
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para><computeroutput>true</computeroutput>, if serialization data was found, <computeroutput>false</computeroutput> otherwise.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_key</entry>
+                                <entry>
+<para>A key string used to identify object&apos;s serialization data.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_r_s_manager_1ad0da99fc39195b85481e5b1a94b6e451">
+                <title>static string GetSerializationData (string _key)</title> <emphasis>&lt;summary&gt;
+Returns serialization data associated with specified key.
+Ideal for supporting multi device login, wherein you can save serialization data remotely and restore it on other devices using method &lt;see cref=&quot;RSManager.RestoreSerializationData&quot;/&gt;.
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Serialization data as Base64String.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_key</entry>
+                                <entry>
+<para>A key string used to identify object&apos;s serialization data.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_r_s_manager_1a5a9532e8ddf7cba352f3f7cbdf5058ce">
+                <title>static bool TryGetSerializationData (string _key, out byte[] _serializationData)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1afa6f7bc8fae802b923bc090b60f7a92f">
+                <title>static bool RestoreSerializationData (string _serializationDataString, string _key, eSaveTarget _saveTarget)</title> <emphasis>&lt;summary&gt;
+Saves Base64String format serialization data to specified target location where it is associated with specified key.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_serializationDataString</entry>
+                                <entry>
+<para>Serialization data in Base64String format.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_key</entry>
+                                <entry>
+<para>A key string used to identify object&apos;s serialization data.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_saveTarget</entry>
+                                <entry>
+<para>Serialization data save target.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_r_s_manager_1aec7a89a1be1d258f23edf4a9018d312a">
+                <title>static void RegisterEventListener (string _key, IRuntimeSerializationEventListener _newListener)</title> <emphasis>&lt;summary&gt;
+Register object to receive serialization events.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_key</entry>
+                                <entry>
+<para>A key string used to identify object serialization and deserialization.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_newListener</entry>
+                                <entry>
+<para>Register listener object for the events associated with given key.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_r_s_manager_1a47c28044983d7a3dcb729c8a40f0f0f9">
+                <title>static void UnRegisterEventListener (string _key, IRuntimeSerializationEventListener _listener)</title> <emphasis>&lt;summary&gt;
+Unregister object from receiving serialization events.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_key</entry>
+                                <entry>
+<para>A key string used to identify object serialization and deserialization.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_newListener</entry>
+                                <entry>
+<para>Unregister listener object from the events associated with given key.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_r_s_manager_1a93ae17b65d2a85ee2ad86ffb69107301">
+                <title>static void Save ()</title> <emphasis>&lt;summary&gt;
+Writes all serialization data to disk.
+By default &lt;see cref=&quot;RSManager&quot;/&gt; writes serialization data to PlayerPrefs/File on Application Pause and on Application Quit.
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1aa4aae89f01d20407c26a3f568932a3db">
+                <title>static void Remove (string _key)</title> <emphasis>&lt;summary&gt;
+Removes serialization data associated with specified key.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_key</entry>
+                                <entry>
+<para>A key string used to identify object&apos;s serialization data.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_r_s_manager_1ae181b60d8c24114b8c417b74a51bff12">
+                <title>static void RemoveAll ()</title> <emphasis>&lt;summary&gt;
+Clears all existing serialization data.
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1a4535a66d6e679c4b1f3a5d0488159eac">
+                <title>static void Purge (Type _objectType)</title> <emphasis>&lt;summary&gt;
+Clears all the cached information of specified object type.
+&lt;/summary&gt;</emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1a082236f6ae59de0ccd85068bc9e96153">
+                <title>T Obj_DeserializeData&lt; T &gt; (string _serializationDataString, string _key, T _targetObject)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_r_s_manager_1a469b7cced5cfda5b7ce5b108ecd2d3b5">
+                <title>int GetSerializationFormatVersion ()</title> <emphasis>&lt;summary&gt;
+Gets the serialization format version.
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>The serialization format version.</para>
+</formalpara>
+</para>
+
+            </section>
+</section>

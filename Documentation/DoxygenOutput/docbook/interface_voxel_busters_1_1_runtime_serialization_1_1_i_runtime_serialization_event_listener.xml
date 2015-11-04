@@ -6,9 +6,9 @@
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener_1abfb7c64c92db39873b146329d65b28d3">OnAfterRuntimeSerialize</link> (
-string _serializationID)<para><emphasis>&lt;summary&gt;
-Event triggered after &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; object is serialized.
+                        <para>void <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener_1a110fd82847987d42f8fabae783017b7a">OnAfterRuntimeSerialize</link> (
+string _key, object _object)<para><emphasis>&lt;summary&gt;
+Event triggered after &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; object serialization is completed.
 &lt;/summary&gt;</emphasis></para>
 </para>
                     </listitem>
@@ -17,9 +17,9 @@ Event triggered after &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt;
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener_1a173869901c67a8165ae0c3bb05e35502">OnAfterRuntimeDeserialize</link> (
-string _serializationID, object _deserializedObject)<para><emphasis>&lt;summary&gt;
-Event triggered after &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; object is deserialized.
+                        <para>void <link linkend="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener_1afa46649cd09a5c970644a669757c4986">OnAfterRuntimeDeserialize</link> (
+string _key, object _object)<para><emphasis>&lt;summary&gt;
+Event triggered after &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; object deserialization is completed.
 &lt;/summary&gt;</emphasis></para>
 </para>
                     </listitem>
@@ -36,9 +36,9 @@ Event triggered after &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt;
                 <para>The Documentation for this struct was generated from the following file: </para>
                 <para><itemizedlist><listitem><para>IRuntimeSerializationEventListener.cs</para></listitem></itemizedlist></para>
         </simplesect>
-            <section xml:id="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener_1abfb7c64c92db39873b146329d65b28d3">
-                <title>void OnAfterRuntimeSerialize (string _serializationID)</title> <emphasis>&lt;summary&gt;
-Event triggered after &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; object is serialized.
+            <section xml:id="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener_1a110fd82847987d42f8fabae783017b7a">
+                <title>void OnAfterRuntimeSerialize (string _key, object _object)</title> <emphasis>&lt;summary&gt;
+Event triggered after &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; object serialization is completed.
 &lt;/summary&gt;</emphasis>
                 
 <para>
@@ -51,9 +51,15 @@ Event triggered after &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt;
                         <colspec colwidth="4*"/>
                         <tbody>
                             <row>
-                                <entry>_serializationID</entry>
+                                <entry>_key</entry>
                                 <entry>
-<para>Identifier associated with <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute">RuntimeSerializableAttribute</link> object.</para>
+<para>A key string used to identify object&apos;s serialization.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_object</entry>
+                                <entry>
+<para>The object which was just serialized.</para>
 </entry>
                             </row>
                         </tbody>
@@ -63,9 +69,9 @@ Event triggered after &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt;
                 </para>
 
             </section>
-            <section xml:id="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener_1a173869901c67a8165ae0c3bb05e35502">
-                <title>void OnAfterRuntimeDeserialize (string _serializationID, object _deserializedObject)</title> <emphasis>&lt;summary&gt;
-Event triggered after &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; object is deserialized.
+            <section xml:id="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener_1afa46649cd09a5c970644a669757c4986">
+                <title>void OnAfterRuntimeDeserialize (string _key, object _object)</title> <emphasis>&lt;summary&gt;
+Event triggered after &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; object deserialization is completed.
 &lt;/summary&gt;</emphasis>
                 
 <para>
@@ -78,15 +84,15 @@ Event triggered after &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt;
                         <colspec colwidth="4*"/>
                         <tbody>
                             <row>
-                                <entry>_serializationID</entry>
+                                <entry>_key</entry>
                                 <entry>
-<para>Identifier associated with <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute">RuntimeSerializableAttribute</link> object.</para>
+<para>A key string used to identify object&apos;s deserialization.</para>
 </entry>
                             </row>
                             <row>
-                                <entry>_deserializedObject</entry>
+                                <entry>_object</entry>
                                 <entry>
-<para>Deserialized <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute">RuntimeSerializableAttribute</link> object.</para>
+<para>The object retrieved from deserializing serialization data.</para>
 </entry>
                             </row>
                         </tbody>

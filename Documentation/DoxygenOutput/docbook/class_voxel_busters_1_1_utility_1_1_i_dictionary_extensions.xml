@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_i_dictionary_extensions">
+<title>VoxelBusters::Utility::IDictionaryExtensions class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static T <link linkend="class_voxel_busters_1_1_utility_1_1_i_dictionary_extensions_1a2f6027fd56bda2a10f6fef3b1bc089d4">GetIfAvailable&lt; T &gt;</link> (
+this IDictionary _dictionary, string _key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static T <link linkend="class_voxel_busters_1_1_utility_1_1_i_dictionary_extensions_1a30b871a0700522aeefe0b38a064763f7">GetIfAvailable&lt; T &gt;</link> (
+this IDictionary _sourceDictionary, string _key, string _path)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_voxel_busters_1_1_utility_1_1_i_dictionary_extensions_1a6f5d4ca6c7d57ec536b509a7caac2b56">GetKey&lt; T &gt;</link> (
+this IDictionary _sourceDictionary, T _value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_i_dictionary_extensions_1a2f6027fd56bda2a10f6fef3b1bc089d4">
+                <title>static T GetIfAvailable&lt; T &gt; (this IDictionary _dictionary, string _key)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_i_dictionary_extensions_1a30b871a0700522aeefe0b38a064763f7">
+                <title>static T GetIfAvailable&lt; T &gt; (this IDictionary _sourceDictionary, string _key, string _path)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_i_dictionary_extensions_1a6f5d4ca6c7d57ec536b509a7caac2b56">
+                <title>static string GetKey&lt; T &gt; (this IDictionary _sourceDictionary, T _value)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

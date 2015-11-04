@@ -1,0 +1,120 @@
+\hypertarget{class_r_s_utility}{}\section{R\+S\+Utility}
+\label{class_r_s_utility}\index{R\+S\+Utility@{R\+S\+Utility}}
+
+
+Utility class which has methods to support serialization for objects created at runtime.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Game\+Object \hyperlink{class_r_s_utility_a9a14924ea59bb6f451e8f69e2fb649a7}{Instantiate} (Game\+Object \+\_\+gameobject)
+\begin{DoxyCompactList}\small\item\em Creates an exact copy of original game object. \end{DoxyCompactList}\item 
+static Game\+Object \hyperlink{class_r_s_utility_a5853ff696b08c22f55d37a93177338d9}{Instantiate} (Game\+Object \+\_\+gameobject, Vector3 \+\_\+position, Quaternion \+\_\+rotation)
+\begin{DoxyCompactList}\small\item\em Creates an exact copy of original game object. \end{DoxyCompactList}\item 
+static Game\+Object \hyperlink{class_r_s_utility_a35ddf47b4b9e37b290fc4cded36b0449}{Create\+Game\+Object} (string \+\_\+name, params System.\+Type\mbox{[}$\,$\mbox{]} \+\_\+components)
+\begin{DoxyCompactList}\small\item\em Creates a new game object with specified name and attaches the specified components. \end{DoxyCompactList}\item 
+static T \hyperlink{class_r_s_utility_ae6e80f89d975b2fe61cdf7b50d243b17}{Add\+Component$<$ T $>$} (Game\+Object \+\_\+game\+Object)
+\begin{DoxyCompactList}\small\item\em Adds a component class to the game object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utility class which has methods to support serialization for objects created at runtime. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_r_s_utility_a9a14924ea59bb6f451e8f69e2fb649a7}{}\index{R\+S\+Utility@{R\+S\+Utility}!Instantiate@{Instantiate}}
+\index{Instantiate@{Instantiate}!R\+S\+Utility@{R\+S\+Utility}}
+\subsubsection[{Instantiate}]{\setlength{\rightskip}{0pt plus 5cm}static Game\+Object Instantiate (
+\begin{DoxyParamCaption}
+\item[{Game\+Object}]{\+\_\+gameobject}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_r_s_utility_a9a14924ea59bb6f451e8f69e2fb649a7}
+
+
+Creates an exact copy of original game object. 
+
+When you clone a game object, all child objects and components will also be cloned with their properties set like those of the original object. Additionally, U\+I\+D\+System component will be attached to every game object (only if it doesn\textquotesingle{}t exist). Also new set of unique identifiers are assigned for each game object and its components. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+gameobject} & The object that you want to clone.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_r_s_utility_a5853ff696b08c22f55d37a93177338d9}{}\index{R\+S\+Utility@{R\+S\+Utility}!Instantiate@{Instantiate}}
+\index{Instantiate@{Instantiate}!R\+S\+Utility@{R\+S\+Utility}}
+\subsubsection[{Instantiate}]{\setlength{\rightskip}{0pt plus 5cm}static Game\+Object Instantiate (
+\begin{DoxyParamCaption}
+\item[{Game\+Object}]{\+\_\+gameobject, }
+\item[{Vector3}]{\+\_\+position, }
+\item[{Quaternion}]{\+\_\+rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_r_s_utility_a5853ff696b08c22f55d37a93177338d9}
+
+
+Creates an exact copy of original game object. 
+
+When you clone a game object, all child objects and components will also be cloned with their properties set like those of the original object. Additionally, U\+I\+D\+System component will be attached to every game object (only if it doesn\textquotesingle{}t exist). Also new set of unique identifiers are assigned for each game object and its components. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+gameobject} & The object that you want to clone.\\
+\hline
+{\em \+\_\+position} & Position for the new object.\\
+\hline
+{\em \+\_\+rotation} & Orientation of the new object.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_r_s_utility_a35ddf47b4b9e37b290fc4cded36b0449}{}\index{R\+S\+Utility@{R\+S\+Utility}!Create\+Game\+Object@{Create\+Game\+Object}}
+\index{Create\+Game\+Object@{Create\+Game\+Object}!R\+S\+Utility@{R\+S\+Utility}}
+\subsubsection[{Create\+Game\+Object}]{\setlength{\rightskip}{0pt plus 5cm}static Game\+Object Create\+Game\+Object (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+name, }
+\item[{params System.\+Type\mbox{[}$\,$\mbox{]}}]{\+\_\+components}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_r_s_utility_a35ddf47b4b9e37b290fc4cded36b0449}
+
+
+Creates a new game object with specified name and attaches the specified components. 
+
+Additionally, U\+I\+D\+System component is attached and along with it, new set of unique identifiers are assigned to the game object as well as its components. 
+
+\begin{DoxyReturn}{Returns}
+The newly created game object.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+name} & The string value used for naming this game object.\\
+\hline
+{\em \+\_\+components} & Type of components that needs to be attached to this newly created game object.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_r_s_utility_ae6e80f89d975b2fe61cdf7b50d243b17}{}\index{R\+S\+Utility@{R\+S\+Utility}!Add\+Component$<$ T $>$@{Add\+Component$<$ T $>$}}
+\index{Add\+Component$<$ T $>$@{Add\+Component$<$ T $>$}!R\+S\+Utility@{R\+S\+Utility}}
+\subsubsection[{Add\+Component$<$ T $>$}]{\setlength{\rightskip}{0pt plus 5cm}static T Add\+Component$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{Game\+Object}]{\+\_\+game\+Object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_r_s_utility_ae6e80f89d975b2fe61cdf7b50d243b17}
+
+
+Adds a component class to the game object. 
+
+\begin{DoxyReturn}{Returns}
+The newly created component instance.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+game\+Object} & The game object to which this new component has to be added.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of the component to be added.\\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Component}]\end{description}
+\end{Desc}

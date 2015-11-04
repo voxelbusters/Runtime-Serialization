@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_g_u_i_extensions">
+<title>VoxelBusters::Utility::GUIExtensions class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_voxel_busters_1_1_utility_1_1_g_u_i_extensions_1a54d404f020443c9ed6e380799b3e7bb9">TextArea</link> (
+string _text, Rect _normalisedBounds)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_utility_1_1_g_u_i_extensions_1a2855b1ba63ec3a98a544fa05624f70f2">Buttons</link> (
+ArrayList _buttonsList, System.Action&lt; string &gt; _callbackOnPress, Rect _normalisedBounds)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_utility_1_1_g_u_i_extensions_1ac33052bcea3f6b6d475e9c0b936c23b9">DrawButtonsLayout</link> (
+ArrayList _buttonsList, System.Action&lt; string &gt; _callbackOnPress, int _startingIndex, int _buttonsPerColumn, params GUILayoutOption[] _layoutOptions)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static Rect <link linkend="class_voxel_busters_1_1_utility_1_1_g_u_i_extensions_1a32df444c143502282ad9e82facba3979">GetScreenSpaceBounds</link> (
+Rect _normalisedBounds)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_g_u_i_extensions_1a54d404f020443c9ed6e380799b3e7bb9">
+                <title>static string TextArea (string _text, Rect _normalisedBounds)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_g_u_i_extensions_1a2855b1ba63ec3a98a544fa05624f70f2">
+                <title>static void Buttons (ArrayList _buttonsList, System.Action&lt; string &gt; _callbackOnPress, Rect _normalisedBounds)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_g_u_i_extensions_1ac33052bcea3f6b6d475e9c0b936c23b9">
+                <title>static void DrawButtonsLayout (ArrayList _buttonsList, System.Action&lt; string &gt; _callbackOnPress, int _startingIndex, int _buttonsPerColumn, params GUILayoutOption[] _layoutOptions)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_g_u_i_extensions_1a32df444c143502282ad9e82facba3979">
+                <title>static Rect GetScreenSpaceBounds (Rect _normalisedBounds)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

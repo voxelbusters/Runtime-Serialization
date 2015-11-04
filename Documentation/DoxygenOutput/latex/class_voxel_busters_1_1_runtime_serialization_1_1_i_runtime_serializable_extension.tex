@@ -1,0 +1,88 @@
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_extension}{}\section{I\+Runtime\+Serializable\+Extension}
+\label{class_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_extension}\index{I\+Runtime\+Serializable\+Extension@{I\+Runtime\+Serializable\+Extension}}
+
+
+Implement this abstract class to support runtime serialization for classes which belong to external assembly.  
+
+
+
+
+Inherited by Bone\+Weight\+R\+S\+Extension, Bounds\+R\+S\+Extension, Guid\+R\+S\+Extension, Hash\+Set\+R\+S\+Extension, I\+Collection\+R\+S\+Extension, I\+Dictionary\+R\+S\+Extension, Joint\+Angle\+Limits2\+D\+R\+S\+Extension, Joint\+Drive\+R\+S\+Extension, Joint\+Limits\+R\+S\+Extension, Joint\+Motor2\+D\+R\+S\+Extension, Joint\+Motor\+R\+S\+Extension, Joint\+Spring\+R\+S\+Extension, Joint\+Suspension2\+D\+R\+S\+Extension, Joint\+Translation\+Limits2\+D\+R\+S\+Extension, Layer\+Mask\+R\+S\+Extension, Nav\+Mesh\+Hit\+R\+S\+Extension, Rect\+R\+S\+Extension, Soft\+Joint\+Limit\+R\+S\+Extension, Time\+Span\+R\+S\+Extension, and Object\+R\+S\+Extension.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual object \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_extension_aea67c59932ae24c6450076bb18922203}{Create\+Instance} (\hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info} \+\_\+info)
+\begin{DoxyCompactList}\small\item\em Creates the instance of formerly serialized object type. \end{DoxyCompactList}\item 
+abstract void \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_extension_a7a099234ce249b9f9bc5b5edf4cc06f4}{Write\+Serialization\+Data} (object \+\_\+object, \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info} \+\_\+info)
+\begin{DoxyCompactList}\small\item\em Populate \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info} with the properties required to serialize target object. \end{DoxyCompactList}\item 
+abstract object \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_extension_a08e596bb7a55206077e4dc389baaf131}{Read\+Serialization\+Data} (object \+\_\+object, \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info} \+\_\+info)
+\begin{DoxyCompactList}\small\item\em Retrieve serialized properties of target object from \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implement this abstract class to support runtime serialization for classes which belong to external assembly. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_extension_aea67c59932ae24c6450076bb18922203}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serializable\+Extension@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serializable\+Extension}!Create\+Instance@{Create\+Instance}}
+\index{Create\+Instance@{Create\+Instance}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serializable\+Extension@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serializable\+Extension}}
+\subsubsection[{Create\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}virtual object Create\+Instance (
+\begin{DoxyParamCaption}
+\item[{{\bf Runtime\+Serialization\+Info}}]{\+\_\+info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_extension_aea67c59932ae24c6450076bb18922203}
+
+
+Creates the instance of formerly serialized object type. 
+
+\begin{DoxyReturn}{Returns}
+Serialized object instance.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+info} & The \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info} provides the interface to access all the previously serialized initializer values.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_extension_a7a099234ce249b9f9bc5b5edf4cc06f4}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serializable\+Extension@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serializable\+Extension}!Write\+Serialization\+Data@{Write\+Serialization\+Data}}
+\index{Write\+Serialization\+Data@{Write\+Serialization\+Data}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serializable\+Extension@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serializable\+Extension}}
+\subsubsection[{Write\+Serialization\+Data}]{\setlength{\rightskip}{0pt plus 5cm}abstract void Write\+Serialization\+Data (
+\begin{DoxyParamCaption}
+\item[{object}]{\+\_\+object, }
+\item[{{\bf Runtime\+Serialization\+Info}}]{\+\_\+info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_extension_a7a099234ce249b9f9bc5b5edf4cc06f4}
+
+
+Populate \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info} with the properties required to serialize target object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+object} & Target object to be serialized\\
+\hline
+{\em \+\_\+info} & The \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info} provides interface to add properties to be serialized.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_extension_a08e596bb7a55206077e4dc389baaf131}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serializable\+Extension@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serializable\+Extension}!Read\+Serialization\+Data@{Read\+Serialization\+Data}}
+\index{Read\+Serialization\+Data@{Read\+Serialization\+Data}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serializable\+Extension@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serializable\+Extension}}
+\subsubsection[{Read\+Serialization\+Data}]{\setlength{\rightskip}{0pt plus 5cm}abstract object Read\+Serialization\+Data (
+\begin{DoxyParamCaption}
+\item[{object}]{\+\_\+object, }
+\item[{{\bf Runtime\+Serialization\+Info}}]{\+\_\+info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_extension_a08e596bb7a55206077e4dc389baaf131}
+
+
+Retrieve serialized properties of target object from \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info}. 
+
+\begin{DoxyReturn}{Returns}
+The deserialized object.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+object} & Target object to be deserialized.\\
+\hline
+{\em \+\_\+info} & The \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info}{Runtime\+Serialization\+Info} provides interface to retrieve serialized values.\\
+\hline
+\end{DoxyParams}

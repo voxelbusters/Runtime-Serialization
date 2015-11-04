@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_graphic_r_s_extension">
+<title>GraphicRSExtension class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kColorKey</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kMaterialKey</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="class_graphic_r_s_extension_1a59485945b98585085b8911724094ac15">WriteSerializationData</link> (
+object _object, <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link> _info)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override object <link linkend="class_graphic_r_s_extension_1a878c9c6cf9af4be1f90e37c61103f8c7">ReadSerializationData</link> (
+object _object, <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link> _info)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override object <link linkend="class_component_r_s_extension_1adb36920a51c442f1ed5fe3872f2b78c1">CreateInstance</link> (
+<link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link> _info)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_graphic_r_s_extension_1a59485945b98585085b8911724094ac15">
+                <title>override void WriteSerializationData (object _object, RuntimeSerializationInfo _info)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_graphic_r_s_extension_1a878c9c6cf9af4be1f90e37c61103f8c7">
+                <title>override object ReadSerializationData (object _object, RuntimeSerializationInfo _info)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_component_r_s_extension_1adb36920a51c442f1ed5fe3872f2b78c1">
+                <title>override object CreateInstance (RuntimeSerializationInfo _info)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

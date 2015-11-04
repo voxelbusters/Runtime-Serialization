@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_unity_g_u_i_1_1_m_e_n_u_1_1_g_u_i_menu_base">
+<title>VoxelBusters::Utility::UnityGUI::MENU::GUIMenuBase class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Rect m_titleLayoutNormalisedRect</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Rect m_buttonLayoutNormalisedRect</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Rect m_resultLayoutNormalisedRect</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float m_buttonColumnCount</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const float kButtonHeight</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const float kBackButtonWidth</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const float kBackButtonHeight</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_voxel_busters_1_1_utility_1_1_unity_g_u_i_1_1_m_e_n_u_1_1_g_u_i_menu_base_1a34316462014f78aba29c389590f6b104">OnEnable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_voxel_busters_1_1_utility_1_1_unity_g_u_i_1_1_m_e_n_u_1_1_g_u_i_menu_base_1a1aac1c9a4ae04ef3e2fbf26b0aa570cc">OnDisable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_voxel_busters_1_1_utility_1_1_unity_g_u_i_1_1_m_e_n_u_1_1_g_u_i_menu_base_1abe1911c74ef41169d13fbc9fa83323b7">OnGUI</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_unity_g_u_i_1_1_m_e_n_u_1_1_g_u_i_menu_base_1a8b9cc768a9eb7735e1aab1aa4969aea4">DrawTitle</link> (
+string _title)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_voxel_busters_1_1_utility_1_1_unity_g_u_i_1_1_m_e_n_u_1_1_g_u_i_menu_base_1a8472bbceeaad131be1b23ef3b35c0a01">DrawTitleWithBackButton</link> (
+string _title, string _button)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_unity_g_u_i_1_1_m_e_n_u_1_1_g_u_i_menu_base_1ae7b0cec29266b55d46b606ff0587928b">BeginButtonLayout</link> (
+float _columnCount, float _normalisedHeight)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_unity_g_u_i_1_1_m_e_n_u_1_1_g_u_i_menu_base_1a73994e559a252b511049b3a863ceec38">EndButtonLayout</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_voxel_busters_1_1_utility_1_1_unity_g_u_i_1_1_m_e_n_u_1_1_g_u_i_menu_base_1aa7e48c40364c8cb0f370f243dd6258b4">DrawButton</link> (
+string _buttonName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_unity_g_u_i_1_1_m_e_n_u_1_1_g_u_i_menu_base_1a5844a1ed2a1b8586bfca730d69324630">DrawResultLayout</link> (
+string _result, float _normalisedHeight)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Rect <link linkend="class_voxel_busters_1_1_utility_1_1_unity_g_u_i_1_1_m_e_n_u_1_1_g_u_i_menu_base_1ade8481ea289d63b9a71a17f7a6b04ca2">GetLayoutRect</link> (
+Rect _normalisedRect)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_unity_g_u_i_1_1_m_e_n_u_1_1_g_u_i_menu_base_1a34316462014f78aba29c389590f6b104">
+                <title>virtual void OnEnable ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_unity_g_u_i_1_1_m_e_n_u_1_1_g_u_i_menu_base_1a1aac1c9a4ae04ef3e2fbf26b0aa570cc">
+                <title>virtual void OnDisable ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_unity_g_u_i_1_1_m_e_n_u_1_1_g_u_i_menu_base_1abe1911c74ef41169d13fbc9fa83323b7">
+                <title>virtual void OnGUI ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_unity_g_u_i_1_1_m_e_n_u_1_1_g_u_i_menu_base_1a8b9cc768a9eb7735e1aab1aa4969aea4">
+                <title>void DrawTitle (string _title)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_unity_g_u_i_1_1_m_e_n_u_1_1_g_u_i_menu_base_1a8472bbceeaad131be1b23ef3b35c0a01">
+                <title>bool DrawTitleWithBackButton (string _title, string _button)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_unity_g_u_i_1_1_m_e_n_u_1_1_g_u_i_menu_base_1ae7b0cec29266b55d46b606ff0587928b">
+                <title>void BeginButtonLayout (float _columnCount=2, float _normalisedHeight=0.8f)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_unity_g_u_i_1_1_m_e_n_u_1_1_g_u_i_menu_base_1a73994e559a252b511049b3a863ceec38">
+                <title>void EndButtonLayout ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_unity_g_u_i_1_1_m_e_n_u_1_1_g_u_i_menu_base_1aa7e48c40364c8cb0f370f243dd6258b4">
+                <title>bool DrawButton (string _buttonName)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_unity_g_u_i_1_1_m_e_n_u_1_1_g_u_i_menu_base_1a5844a1ed2a1b8586bfca730d69324630">
+                <title>void DrawResultLayout (string _result, float _normalisedHeight=0.2f)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_unity_g_u_i_1_1_m_e_n_u_1_1_g_u_i_menu_base_1ade8481ea289d63b9a71a17f7a6b04ca2">
+                <title>Rect GetLayoutRect (Rect _normalisedRect)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

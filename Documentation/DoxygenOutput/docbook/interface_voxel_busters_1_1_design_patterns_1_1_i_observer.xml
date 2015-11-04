@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="interface_voxel_busters_1_1_design_patterns_1_1_i_observer">
+<title>VoxelBusters::DesignPatterns::IObserver interface Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="interface_voxel_busters_1_1_design_patterns_1_1_i_observer_1a70dbf687df4b84edf6f06b99670e63fd">OnPropertyChange</link> (
+string _key, ArrayList _data)<para><emphasis>&lt;summary&gt;
+When property of subject changes, an event is triggered which notifies all the observers.
+Wherein changed value is identified by _key and changed value is packed within _data
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="interface_voxel_busters_1_1_design_patterns_1_1_i_observer_1a70dbf687df4b84edf6f06b99670e63fd">
+                <title>void OnPropertyChange (string _key, ArrayList _data)</title> <emphasis>&lt;summary&gt;
+When property of subject changes, an event is triggered which notifies all the observers.
+Wherein changed value is identified by _key and changed value is packed within _data
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_key</entry>
+                                <entry>
+<para>_key.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_data</entry>
+                                <entry>
+<para>_data.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

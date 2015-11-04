@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_mono_behaviour_extensions">
+<title>VoxelBusters::Utility::MonoBehaviourExtensions class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static bool isPaused</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float timeScale</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_utility_1_1_mono_behaviour_extensions_1afaa0686032cd2b0e26ec170ff7a563ff">PauseUnity</link> (
+this MonoBehaviour _monoTarget)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_utility_1_1_mono_behaviour_extensions_1a81c09e6f9f909e389f5480d996c430b8">ResumeUnity</link> (
+this MonoBehaviour _monoTarget)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_mono_behaviour_extensions_1afaa0686032cd2b0e26ec170ff7a563ff">
+                <title>static void PauseUnity (this MonoBehaviour _monoTarget)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_mono_behaviour_extensions_1a81c09e6f9f909e389f5480d996c430b8">
+                <title>static void ResumeUnity (this MonoBehaviour _monoTarget)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

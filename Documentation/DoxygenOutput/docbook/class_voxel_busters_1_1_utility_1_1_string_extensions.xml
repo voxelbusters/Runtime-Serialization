@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_string_extensions">
+<title>VoxelBusters::Utility::StringExtensions class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_voxel_busters_1_1_utility_1_1_string_extensions_1acb5bc3330c756698754d0b8850682a7c">GetPrintableString</link> (
+this string _string)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static bool <link linkend="class_voxel_busters_1_1_utility_1_1_string_extensions_1a879e9779826209b6a2b2333f7532dcc6">Contains</link> (
+this string _string, string _stringToCheck, bool _ignoreCase)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_voxel_busters_1_1_utility_1_1_string_extensions_1ac7c7148a8da0c3033efee46d2b7de435">ToBase64</link> (
+this string _string)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_voxel_busters_1_1_utility_1_1_string_extensions_1a57dc2f12125f0e973aa99f55db55bd34">FromBase64</link> (
+this string _string)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_voxel_busters_1_1_utility_1_1_string_extensions_1a9f453def1bf96975a4015c80e5a2ff21">StringBetween</link> (
+this string _string, string _startString, string _endString, bool _ignoreCase)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_string_extensions_1acb5bc3330c756698754d0b8850682a7c">
+                <title>static string GetPrintableString (this string _string)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_string_extensions_1a879e9779826209b6a2b2333f7532dcc6">
+                <title>static bool Contains (this string _string, string _stringToCheck, bool _ignoreCase)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_string_extensions_1ac7c7148a8da0c3033efee46d2b7de435">
+                <title>static string ToBase64 (this string _string)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_string_extensions_1a57dc2f12125f0e973aa99f55db55bd34">
+                <title>static string FromBase64 (this string _string)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_string_extensions_1a9f453def1bf96975a4015c80e5a2ff21">
+                <title>static string StringBetween (this string _string, string _startString, string _endString, bool _ignoreCase)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

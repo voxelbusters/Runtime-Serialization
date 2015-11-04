@@ -1,0 +1,319 @@
+\hypertarget{class_r_s_manager}{}\section{R\+S\+Manager}
+\label{class_r_s_manager}\index{R\+S\+Manager@{R\+S\+Manager}}
+
+
+\hyperlink{class_r_s_manager}{R\+S\+Manager} class is responsible for serializing and deserializing objects at runtime.  
+
+
+
+
+Inherits Singleton\+Pattern$<$ R\+S\+Manager $>$.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_r_s_manager_a469b7cced5cfda5b7ce5b108ecd2d3b5}{Get\+Serialization\+Format\+Version} ()
+\begin{DoxyCompactList}\small\item\em Gets the serialization format version. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \hyperlink{class_r_s_manager_a8f9e0f48f1659ab548f840b344302815}{Serialize$<$ T $>$} (T \+\_\+object, string \+\_\+key=null)
+\begin{DoxyCompactList}\small\item\em Returns serialization data of target object as Base64 string. After serialization, associated serialization data doesn\textquotesingle{}t get saved by \hyperlink{class_r_s_manager}{. And it is user\textquotesingle{}s responsiblity to provide this data while deserializing object using method } . \end{DoxyCompactList}\item 
+static T \hyperlink{class_r_s_manager_aacb8fb568297e83048ffdee62934c5a4}{Deserialize\+Data$<$ T $>$} (string \+\_\+serialization\+Data\+String, string \+\_\+key=null, T \+\_\+target\+Object=default(T))
+\begin{DoxyCompactList}\small\item\em Deserializes the serialization data and recreates the object of specified type. \end{DoxyCompactList}\item 
+static void \hyperlink{class_r_s_manager_a895490662c28260917e8d41029a584e1}{Serialize$<$ T $>$} (T \+\_\+object, string \+\_\+key, \hyperlink{namespace_voxel_busters_1_1_runtime_serialization_aacaa3008b2cb441fbe4708df854019bf}{e\+Save\+Target} \+\_\+save\+Target)
+\begin{DoxyCompactList}\small\item\em Serialize the specified object and then save its serialization data to mentioned target location. Also given key value is used for identifing objects serialization data. \end{DoxyCompactList}\item 
+static T \hyperlink{class_r_s_manager_a331c1537211afdc7720b6d82fd77c435}{Deserialize$<$ T $>$} (string \+\_\+key, T \+\_\+target\+Object=default(T))
+\begin{DoxyCompactList}\small\item\em Deserializes the data serialization associated with given key and recreates the object of specified type. \end{DoxyCompactList}\item 
+static bool \hyperlink{class_r_s_manager_a1a5c88e07167dfd4b9bd0293c871cccb}{Contains\+Key} (string \+\_\+key)
+\begin{DoxyCompactList}\small\item\em Determines whether \hyperlink{class_r_s_manager}{R\+S\+Manager} contains serialization data for specified key. \end{DoxyCompactList}\item 
+static string \hyperlink{class_r_s_manager_ad0da99fc39195b85481e5b1a94b6e451}{Get\+Serialization\+Data} (string \+\_\+key)
+\begin{DoxyCompactList}\small\item\em Returns serialization data associated with specified key. Ideal for supporting multi device login, wherein you can save serialization data remotely and restore it on other devices using method \hyperlink{class_r_s_manager_afa6f7bc8fae802b923bc090b60f7a92f}{R\+S\+Manager.\+Restore\+Serialization\+Data}. \end{DoxyCompactList}\item 
+static bool \hyperlink{class_r_s_manager_afa6f7bc8fae802b923bc090b60f7a92f}{Restore\+Serialization\+Data} (string \+\_\+serialization\+Data\+String, string \+\_\+key, \hyperlink{namespace_voxel_busters_1_1_runtime_serialization_aacaa3008b2cb441fbe4708df854019bf}{e\+Save\+Target} \+\_\+save\+Target)
+\begin{DoxyCompactList}\small\item\em Saves Base64\+String format serialization data to specified target location where it is associated with specified key. \end{DoxyCompactList}\item 
+static void \hyperlink{class_r_s_manager_aec7a89a1be1d258f23edf4a9018d312a}{Register\+Event\+Listener} (string \+\_\+key, \hyperlink{interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener}{I\+Runtime\+Serialization\+Event\+Listener} \+\_\+new\+Listener)
+\begin{DoxyCompactList}\small\item\em Register object to receive serialization events. \end{DoxyCompactList}\item 
+static void \hyperlink{class_r_s_manager_a47c28044983d7a3dcb729c8a40f0f0f9}{Un\+Register\+Event\+Listener} (string \+\_\+key, \hyperlink{interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener}{I\+Runtime\+Serialization\+Event\+Listener} \+\_\+listener)
+\begin{DoxyCompactList}\small\item\em Unregister object from receiving serialization events. \end{DoxyCompactList}\item 
+static void \hyperlink{class_r_s_manager_a93ae17b65d2a85ee2ad86ffb69107301}{Save} ()
+\begin{DoxyCompactList}\small\item\em Writes all serialization data to disk. By default \hyperlink{class_r_s_manager}{R\+S\+Manager} writes serialization data to Player\+Prefs/\+File on Application Pause and on Application Quit. \end{DoxyCompactList}\item 
+static void \hyperlink{class_r_s_manager_aa4aae89f01d20407c26a3f568932a3db}{Remove} (string \+\_\+key)
+\begin{DoxyCompactList}\small\item\em Removes serialization data associated with specified key. \end{DoxyCompactList}\item 
+static void \hyperlink{class_r_s_manager_ae181b60d8c24114b8c417b74a51bff12}{Remove\+All} ()
+\begin{DoxyCompactList}\small\item\em Clears all existing serialization data. \end{DoxyCompactList}\item 
+static void \hyperlink{class_r_s_manager_a4535a66d6e679c4b1f3a5d0488159eac}{Purge} (Type \+\_\+object\+Type)
+\begin{DoxyCompactList}\small\item\em Clears all the cached information of specified object type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_r_s_manager}{R\+S\+Manager} class is responsible for serializing and deserializing objects at runtime. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_r_s_manager_a8f9e0f48f1659ab548f840b344302815}{}\index{R\+S\+Manager@{R\+S\+Manager}!Serialize$<$ T $>$@{Serialize$<$ T $>$}}
+\index{Serialize$<$ T $>$@{Serialize$<$ T $>$}!R\+S\+Manager@{R\+S\+Manager}}
+\subsubsection[{Serialize$<$ T $>$}]{\setlength{\rightskip}{0pt plus 5cm}static string Serialize$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{T}]{\+\_\+object, }
+\item[{string}]{\+\_\+key = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_r_s_manager_a8f9e0f48f1659ab548f840b344302815}
+
+
+Returns serialization data of target object as Base64 string. After serialization, associated serialization data doesn\textquotesingle{}t get saved by \hyperlink{class_r_s_manager}{. And it is user\textquotesingle{}s responsiblity to provide this data while deserializing object using method } . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+object} & The object to be serialized.\\
+\hline
+{\em \+\_\+key} & A key string used to identify object\textquotesingle{}s serialization. An optional parameter, when supplied it is used for firing serialization finished callback.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the object being serialized.\\
+\hline
+\end{DoxyTemplParams}
+\hypertarget{class_r_s_manager_aacb8fb568297e83048ffdee62934c5a4}{}\index{R\+S\+Manager@{R\+S\+Manager}!Deserialize\+Data$<$ T $>$@{Deserialize\+Data$<$ T $>$}}
+\index{Deserialize\+Data$<$ T $>$@{Deserialize\+Data$<$ T $>$}!R\+S\+Manager@{R\+S\+Manager}}
+\subsubsection[{Deserialize\+Data$<$ T $>$}]{\setlength{\rightskip}{0pt plus 5cm}static T Deserialize\+Data$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+serialization\+Data\+String, }
+\item[{string}]{\+\_\+key = {\ttfamily null}, }
+\item[{T}]{\+\_\+target\+Object = {\ttfamily default(T)}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_r_s_manager_aacb8fb568297e83048ffdee62934c5a4}
+
+
+Deserializes the serialization data and recreates the object of specified type. 
+
+\begin{DoxyReturn}{Returns}
+The deserialized object of specified type.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+serialization\+Data\+String} & Serialization data in Base64\+String format.\\
+\hline
+{\em \+\_\+key} & A key string used to identify object\textquotesingle{}s deserialization. An optional parameter, when supplied it is used for firing deserialization finished callback.\\
+\hline
+{\em \+\_\+target\+Object} & If value is non-\/null, then all the properties are deserialized back to this object.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the object returned after it is deserialized.\\
+\hline
+\end{DoxyTemplParams}
+\hypertarget{class_r_s_manager_a895490662c28260917e8d41029a584e1}{}\index{R\+S\+Manager@{R\+S\+Manager}!Serialize$<$ T $>$@{Serialize$<$ T $>$}}
+\index{Serialize$<$ T $>$@{Serialize$<$ T $>$}!R\+S\+Manager@{R\+S\+Manager}}
+\subsubsection[{Serialize$<$ T $>$}]{\setlength{\rightskip}{0pt plus 5cm}static void Serialize$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{T}]{\+\_\+object, }
+\item[{string}]{\+\_\+key, }
+\item[{{\bf e\+Save\+Target}}]{\+\_\+save\+Target}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_r_s_manager_a895490662c28260917e8d41029a584e1}
+
+
+Serialize the specified object and then save its serialization data to mentioned target location. Also given key value is used for identifing objects serialization data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+object} & The object to be serialized.\\
+\hline
+{\em \+\_\+key} & A key string used to identify object\textquotesingle{}s serialization.\\
+\hline
+{\em \+\_\+save\+Target} & Preferred target where serialization data is saved.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the object being serialized.\\
+\hline
+\end{DoxyTemplParams}
+\hypertarget{class_r_s_manager_a331c1537211afdc7720b6d82fd77c435}{}\index{R\+S\+Manager@{R\+S\+Manager}!Deserialize$<$ T $>$@{Deserialize$<$ T $>$}}
+\index{Deserialize$<$ T $>$@{Deserialize$<$ T $>$}!R\+S\+Manager@{R\+S\+Manager}}
+\subsubsection[{Deserialize$<$ T $>$}]{\setlength{\rightskip}{0pt plus 5cm}static T Deserialize$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+key, }
+\item[{T}]{\+\_\+target\+Object = {\ttfamily default(T)}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_r_s_manager_a331c1537211afdc7720b6d82fd77c435}
+
+
+Deserializes the data serialization associated with given key and recreates the object of specified type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+key} & A key string used to identify object\textquotesingle{}s deserialization.\\
+\hline
+{\em \+\_\+target\+Object} & If value is non-\/null, then all the properties are deserialized back to this object.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the object returned after it is deserialized.\\
+\hline
+\end{DoxyTemplParams}
+\hypertarget{class_r_s_manager_a1a5c88e07167dfd4b9bd0293c871cccb}{}\index{R\+S\+Manager@{R\+S\+Manager}!Contains\+Key@{Contains\+Key}}
+\index{Contains\+Key@{Contains\+Key}!R\+S\+Manager@{R\+S\+Manager}}
+\subsubsection[{Contains\+Key}]{\setlength{\rightskip}{0pt plus 5cm}static bool Contains\+Key (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_r_s_manager_a1a5c88e07167dfd4b9bd0293c871cccb}
+
+
+Determines whether \hyperlink{class_r_s_manager}{R\+S\+Manager} contains serialization data for specified key. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true}, if serialization data was found, {\ttfamily false} otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+key} & A key string used to identify object\textquotesingle{}s serialization data.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_r_s_manager_ad0da99fc39195b85481e5b1a94b6e451}{}\index{R\+S\+Manager@{R\+S\+Manager}!Get\+Serialization\+Data@{Get\+Serialization\+Data}}
+\index{Get\+Serialization\+Data@{Get\+Serialization\+Data}!R\+S\+Manager@{R\+S\+Manager}}
+\subsubsection[{Get\+Serialization\+Data}]{\setlength{\rightskip}{0pt plus 5cm}static string Get\+Serialization\+Data (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_r_s_manager_ad0da99fc39195b85481e5b1a94b6e451}
+
+
+Returns serialization data associated with specified key. Ideal for supporting multi device login, wherein you can save serialization data remotely and restore it on other devices using method \hyperlink{class_r_s_manager_afa6f7bc8fae802b923bc090b60f7a92f}{R\+S\+Manager.\+Restore\+Serialization\+Data}. 
+
+\begin{DoxyReturn}{Returns}
+Serialization data as Base64\+String.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+key} & A key string used to identify object\textquotesingle{}s serialization data.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_r_s_manager_afa6f7bc8fae802b923bc090b60f7a92f}{}\index{R\+S\+Manager@{R\+S\+Manager}!Restore\+Serialization\+Data@{Restore\+Serialization\+Data}}
+\index{Restore\+Serialization\+Data@{Restore\+Serialization\+Data}!R\+S\+Manager@{R\+S\+Manager}}
+\subsubsection[{Restore\+Serialization\+Data}]{\setlength{\rightskip}{0pt plus 5cm}static bool Restore\+Serialization\+Data (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+serialization\+Data\+String, }
+\item[{string}]{\+\_\+key, }
+\item[{{\bf e\+Save\+Target}}]{\+\_\+save\+Target}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_r_s_manager_afa6f7bc8fae802b923bc090b60f7a92f}
+
+
+Saves Base64\+String format serialization data to specified target location where it is associated with specified key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+serialization\+Data\+String} & Serialization data in Base64\+String format.\\
+\hline
+{\em \+\_\+key} & A key string used to identify object\textquotesingle{}s serialization data.\\
+\hline
+{\em \+\_\+save\+Target} & Serialization data save target.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_r_s_manager_aec7a89a1be1d258f23edf4a9018d312a}{}\index{R\+S\+Manager@{R\+S\+Manager}!Register\+Event\+Listener@{Register\+Event\+Listener}}
+\index{Register\+Event\+Listener@{Register\+Event\+Listener}!R\+S\+Manager@{R\+S\+Manager}}
+\subsubsection[{Register\+Event\+Listener}]{\setlength{\rightskip}{0pt plus 5cm}static void Register\+Event\+Listener (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+key, }
+\item[{{\bf I\+Runtime\+Serialization\+Event\+Listener}}]{\+\_\+new\+Listener}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_r_s_manager_aec7a89a1be1d258f23edf4a9018d312a}
+
+
+Register object to receive serialization events. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+key} & A key string used to identify object serialization and deserialization.\\
+\hline
+{\em \+\_\+new\+Listener} & Register listener object for the events associated with given key.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_r_s_manager_a47c28044983d7a3dcb729c8a40f0f0f9}{}\index{R\+S\+Manager@{R\+S\+Manager}!Un\+Register\+Event\+Listener@{Un\+Register\+Event\+Listener}}
+\index{Un\+Register\+Event\+Listener@{Un\+Register\+Event\+Listener}!R\+S\+Manager@{R\+S\+Manager}}
+\subsubsection[{Un\+Register\+Event\+Listener}]{\setlength{\rightskip}{0pt plus 5cm}static void Un\+Register\+Event\+Listener (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+key, }
+\item[{{\bf I\+Runtime\+Serialization\+Event\+Listener}}]{\+\_\+listener}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_r_s_manager_a47c28044983d7a3dcb729c8a40f0f0f9}
+
+
+Unregister object from receiving serialization events. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+key} & A key string used to identify object serialization and deserialization.\\
+\hline
+{\em \+\_\+new\+Listener} & Unregister listener object from the events associated with given key.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_r_s_manager_a93ae17b65d2a85ee2ad86ffb69107301}{}\index{R\+S\+Manager@{R\+S\+Manager}!Save@{Save}}
+\index{Save@{Save}!R\+S\+Manager@{R\+S\+Manager}}
+\subsubsection[{Save}]{\setlength{\rightskip}{0pt plus 5cm}static void Save (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_r_s_manager_a93ae17b65d2a85ee2ad86ffb69107301}
+
+
+Writes all serialization data to disk. By default \hyperlink{class_r_s_manager}{R\+S\+Manager} writes serialization data to Player\+Prefs/\+File on Application Pause and on Application Quit. 
+
+\hypertarget{class_r_s_manager_aa4aae89f01d20407c26a3f568932a3db}{}\index{R\+S\+Manager@{R\+S\+Manager}!Remove@{Remove}}
+\index{Remove@{Remove}!R\+S\+Manager@{R\+S\+Manager}}
+\subsubsection[{Remove}]{\setlength{\rightskip}{0pt plus 5cm}static void Remove (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_r_s_manager_aa4aae89f01d20407c26a3f568932a3db}
+
+
+Removes serialization data associated with specified key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+key} & A key string used to identify object\textquotesingle{}s serialization data.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_r_s_manager_ae181b60d8c24114b8c417b74a51bff12}{}\index{R\+S\+Manager@{R\+S\+Manager}!Remove\+All@{Remove\+All}}
+\index{Remove\+All@{Remove\+All}!R\+S\+Manager@{R\+S\+Manager}}
+\subsubsection[{Remove\+All}]{\setlength{\rightskip}{0pt plus 5cm}static void Remove\+All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_r_s_manager_ae181b60d8c24114b8c417b74a51bff12}
+
+
+Clears all existing serialization data. 
+
+\hypertarget{class_r_s_manager_a4535a66d6e679c4b1f3a5d0488159eac}{}\index{R\+S\+Manager@{R\+S\+Manager}!Purge@{Purge}}
+\index{Purge@{Purge}!R\+S\+Manager@{R\+S\+Manager}}
+\subsubsection[{Purge}]{\setlength{\rightskip}{0pt plus 5cm}static void Purge (
+\begin{DoxyParamCaption}
+\item[{Type}]{\+\_\+object\+Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_r_s_manager_a4535a66d6e679c4b1f3a5d0488159eac}
+
+
+Clears all the cached information of specified object type. 
+
+\hypertarget{class_r_s_manager_a469b7cced5cfda5b7ce5b108ecd2d3b5}{}\index{R\+S\+Manager@{R\+S\+Manager}!Get\+Serialization\+Format\+Version@{Get\+Serialization\+Format\+Version}}
+\index{Get\+Serialization\+Format\+Version@{Get\+Serialization\+Format\+Version}!R\+S\+Manager@{R\+S\+Manager}}
+\subsubsection[{Get\+Serialization\+Format\+Version}]{\setlength{\rightskip}{0pt plus 5cm}int Get\+Serialization\+Format\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_r_s_manager_a469b7cced5cfda5b7ce5b108ecd2d3b5}
+
+
+Gets the serialization format version. 
+
+\begin{DoxyReturn}{Returns}
+The serialization format version.
+\end{DoxyReturn}

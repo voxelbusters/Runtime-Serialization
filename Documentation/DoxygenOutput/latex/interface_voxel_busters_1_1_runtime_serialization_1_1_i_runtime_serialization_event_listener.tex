@@ -8,10 +8,10 @@ Implement this interface to observe serialization process of \hyperlink{class_vo
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener_abfb7c64c92db39873b146329d65b28d3}{On\+After\+Runtime\+Serialize} (string \+\_\+serialization\+I\+D)
-\begin{DoxyCompactList}\small\item\em Event triggered after \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute}{Runtime\+Serializable\+Attribute} object is serialized. \end{DoxyCompactList}\item 
-void \hyperlink{interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener_a173869901c67a8165ae0c3bb05e35502}{On\+After\+Runtime\+Deserialize} (string \+\_\+serialization\+I\+D, object \+\_\+deserialized\+Object)
-\begin{DoxyCompactList}\small\item\em Event triggered after \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute}{Runtime\+Serializable\+Attribute} object is deserialized. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \hyperlink{interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener_a110fd82847987d42f8fabae783017b7a}{On\+After\+Runtime\+Serialize} (string \+\_\+key, object \+\_\+object)
+\begin{DoxyCompactList}\small\item\em Event triggered after \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute}{Runtime\+Serializable\+Attribute} object serialization is completed. \end{DoxyCompactList}\item 
+void \hyperlink{interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener_afa46649cd09a5c970644a669757c4986}{On\+After\+Runtime\+Deserialize} (string \+\_\+key, object \+\_\+object)
+\begin{DoxyCompactList}\small\item\em Event triggered after \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute}{Runtime\+Serializable\+Attribute} object deserialization is completed. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -20,38 +20,41 @@ Implement this interface to observe serialization process of \hyperlink{class_vo
 
 
 \subsection{Member Function Documentation}
-\hypertarget{interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener_abfb7c64c92db39873b146329d65b28d3}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Event\+Listener@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Event\+Listener}!On\+After\+Runtime\+Serialize@{On\+After\+Runtime\+Serialize}}
+\hypertarget{interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener_a110fd82847987d42f8fabae783017b7a}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Event\+Listener@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Event\+Listener}!On\+After\+Runtime\+Serialize@{On\+After\+Runtime\+Serialize}}
 \index{On\+After\+Runtime\+Serialize@{On\+After\+Runtime\+Serialize}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Event\+Listener@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Event\+Listener}}
 \subsubsection[{On\+After\+Runtime\+Serialize}]{\setlength{\rightskip}{0pt plus 5cm}void On\+After\+Runtime\+Serialize (
 \begin{DoxyParamCaption}
-\item[{string}]{\+\_\+serialization\+I\+D}
+\item[{string}]{\+\_\+key, }
+\item[{object}]{\+\_\+object}
 \end{DoxyParamCaption}
-)}\label{interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener_abfb7c64c92db39873b146329d65b28d3}
+)}\label{interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener_a110fd82847987d42f8fabae783017b7a}
 
 
-Event triggered after \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute}{Runtime\+Serializable\+Attribute} object is serialized. 
+Event triggered after \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute}{Runtime\+Serializable\+Attribute} object serialization is completed. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em \+\_\+serialization\+I\+D} & Identifier associated with \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute}{Runtime\+Serializable\+Attribute} object.\\
+{\em \+\_\+key} & A key string used to identify object\textquotesingle{}s serialization.\\
+\hline
+{\em \+\_\+object} & The object which was just serialized.\\
 \hline
 \end{DoxyParams}
-\hypertarget{interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener_a173869901c67a8165ae0c3bb05e35502}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Event\+Listener@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Event\+Listener}!On\+After\+Runtime\+Deserialize@{On\+After\+Runtime\+Deserialize}}
+\hypertarget{interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener_afa46649cd09a5c970644a669757c4986}{}\index{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Event\+Listener@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Event\+Listener}!On\+After\+Runtime\+Deserialize@{On\+After\+Runtime\+Deserialize}}
 \index{On\+After\+Runtime\+Deserialize@{On\+After\+Runtime\+Deserialize}!Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Event\+Listener@{Voxel\+Busters\+::\+Runtime\+Serialization\+::\+I\+Runtime\+Serialization\+Event\+Listener}}
 \subsubsection[{On\+After\+Runtime\+Deserialize}]{\setlength{\rightskip}{0pt plus 5cm}void On\+After\+Runtime\+Deserialize (
 \begin{DoxyParamCaption}
-\item[{string}]{\+\_\+serialization\+I\+D, }
-\item[{object}]{\+\_\+deserialized\+Object}
+\item[{string}]{\+\_\+key, }
+\item[{object}]{\+\_\+object}
 \end{DoxyParamCaption}
-)}\label{interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener_a173869901c67a8165ae0c3bb05e35502}
+)}\label{interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serialization_event_listener_afa46649cd09a5c970644a669757c4986}
 
 
-Event triggered after \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute}{Runtime\+Serializable\+Attribute} object is deserialized. 
+Event triggered after \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute}{Runtime\+Serializable\+Attribute} object deserialization is completed. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em \+\_\+serialization\+I\+D} & Identifier associated with \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute}{Runtime\+Serializable\+Attribute} object.\\
+{\em \+\_\+key} & A key string used to identify object\textquotesingle{}s deserialization.\\
 \hline
-{\em \+\_\+deserialized\+Object} & Deserialized \hyperlink{class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute}{Runtime\+Serializable\+Attribute} object.\\
+{\em \+\_\+object} & The object retrieved from deserializing serialization data.\\
 \hline
 \end{DoxyParams}

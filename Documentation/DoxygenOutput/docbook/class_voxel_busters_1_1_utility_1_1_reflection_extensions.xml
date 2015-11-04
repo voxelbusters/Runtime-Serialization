@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_reflection_extensions">
+<title>VoxelBusters::Utility::ReflectionExtensions class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_utility_1_1_reflection_extensions_1a6a455039f687f78d34bb20ede4b3ad9a">SetFieldValue</link> (
+this object _object, string _name, object _value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static object <link linkend="class_voxel_busters_1_1_utility_1_1_reflection_extensions_1ab6c9dff443bd705a2521f8236a569459">GetStaticValue</link> (
+this Type _objectType, string _name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_utility_1_1_reflection_extensions_1afab4580ae3a7a72f88dfde8c2549b9b6">SetStaticValue</link> (
+this Type _objectType, string _name, object _value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_utility_1_1_reflection_extensions_1a0c51ef46c1d40bee42fa198ba98190a5">InvokeMethod</link> (
+this object _object, string _method, object _value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_utility_1_1_reflection_extensions_1a129557e5631ddc71c8cbf669c1c638cc">InvokeMethod</link> (
+this object _object, string _method, object[] _argValues, Type[] _argTypes)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_utility_1_1_reflection_extensions_1a3cf801077d7daf5f5e5b3caaac93bb0c">InvokeStaticMethod</link> (
+this Type _objectType, string _method, object[] _argValues, Type[] _argTypes)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static T <link linkend="class_voxel_busters_1_1_utility_1_1_reflection_extensions_1ad483292f6a6e9f14def89960ae386906">GetAttribute&lt; T &gt;</link> (
+this System.Type _type, bool _inherit)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static T <link linkend="class_voxel_busters_1_1_utility_1_1_reflection_extensions_1acbc8a747ef21164b68c2a3727e5c7542">GetAttribute&lt; T &gt;</link> (
+this FieldInfo _fieldInfo, bool _inherit)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static FieldInfo <link linkend="class_voxel_busters_1_1_utility_1_1_reflection_extensions_1ad57fa2eab6d3240a3e54adbe2cd8eb66">GetFieldWithName</link> (
+this System.Type _type, string _name, bool _isPublic)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_utility_1_1_reflection_extensions_1ac68c228d1e3beec2f1d2199c0fc6a7c8">SetFieldValue</link> (
+this object _object, Type _objectType, string _name, object _value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_utility_1_1_reflection_extensions_1a24dc4d2e44c261fc677dbacdb35af8c2">InvokeMethod</link> (
+object _object, Type _objectType, string _method, object[] _argValues, Type[] _argTypes)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_reflection_extensions_1a6a455039f687f78d34bb20ede4b3ad9a">
+                <title>static void SetFieldValue (this object _object, string _name, object _value)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_reflection_extensions_1ab6c9dff443bd705a2521f8236a569459">
+                <title>static object GetStaticValue (this Type _objectType, string _name)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_reflection_extensions_1afab4580ae3a7a72f88dfde8c2549b9b6">
+                <title>static void SetStaticValue (this Type _objectType, string _name, object _value)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_reflection_extensions_1a0c51ef46c1d40bee42fa198ba98190a5">
+                <title>static void InvokeMethod (this object _object, string _method, object _value=null)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_reflection_extensions_1a129557e5631ddc71c8cbf669c1c638cc">
+                <title>static void InvokeMethod (this object _object, string _method, object[] _argValues, Type[] _argTypes)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_reflection_extensions_1a3cf801077d7daf5f5e5b3caaac93bb0c">
+                <title>static void InvokeStaticMethod (this Type _objectType, string _method, object[] _argValues, Type[] _argTypes)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_reflection_extensions_1ad483292f6a6e9f14def89960ae386906">
+                <title>static T GetAttribute&lt; T &gt; (this System.Type _type, bool _inherit)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_reflection_extensions_1acbc8a747ef21164b68c2a3727e5c7542">
+                <title>static T GetAttribute&lt; T &gt; (this FieldInfo _fieldInfo, bool _inherit)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_reflection_extensions_1ad57fa2eab6d3240a3e54adbe2cd8eb66">
+                <title>static FieldInfo GetFieldWithName (this System.Type _type, string _name, bool _isPublic)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_reflection_extensions_1ac68c228d1e3beec2f1d2199c0fc6a7c8">
+                <title>static void SetFieldValue (this object _object, Type _objectType, string _name, object _value)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_reflection_extensions_1a24dc4d2e44c261fc677dbacdb35af8c2">
+                <title>static void InvokeMethod (object _object, Type _objectType, string _method, object[] _argValues, Type[] _argTypes)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

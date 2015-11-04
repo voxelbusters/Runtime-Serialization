@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_asset_store_product_utility_1_1_asset_store_product">
+<title>VoxelBusters::AssetStoreProductUtility::AssetStoreProduct class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ProductUpdateInfo m_productUpdateInfo</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_isAutomaticCheck</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>GETRequest m_updateGETRequest</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kServerBaseAddress</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kProductDetailsPathFormat</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kCheckUpdatesFailedMessage</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kAlreadyUptoDateMessage</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kNewVersionAvailableMessage</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int kCheckForUpdatesAfterMinutes</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kSkippedVersionPrefix</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_voxel_busters_1_1_asset_store_product_utility_1_1_asset_store_product_1a953aa0909af9b6d5bef8f421a8036876">AssetStoreProduct</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_voxel_busters_1_1_asset_store_product_utility_1_1_asset_store_product_1a937c8eaeaaefcc67c0c9877f34fb255e">~AssetStoreProduct</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_voxel_busters_1_1_asset_store_product_utility_1_1_asset_store_product_1abdcdff033e07fc41b0a0102163992ab7">AssetStoreProduct</link> (
+string _pName, string _pVersion, string _logoPath)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_asset_store_product_utility_1_1_asset_store_product_1a953aa0909af9b6d5bef8f421a8036876">
+                <title>AssetStoreProduct ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_asset_store_product_utility_1_1_asset_store_product_1a937c8eaeaaefcc67c0c9877f34fb255e">
+                <title>~AssetStoreProduct ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_asset_store_product_utility_1_1_asset_store_product_1abdcdff033e07fc41b0a0102163992ab7">
+                <title>AssetStoreProduct (string _pName, string _pVersion, string _logoPath)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

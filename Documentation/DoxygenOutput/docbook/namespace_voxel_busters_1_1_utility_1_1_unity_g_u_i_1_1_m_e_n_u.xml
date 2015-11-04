@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="namespace_voxel_busters_1_1_utility_1_1_unity_g_u_i_1_1_m_e_n_u">
+<title>VoxelBusters::Utility::UnityGUI::MENU</title>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_voxel_busters_1_1_utility_1_1_unity_g_u_i_1_1_m_e_n_u_1_1_g_u_i_main_menu">VoxelBusters::Utility::UnityGUI::MENU::GUIMainMenu</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_voxel_busters_1_1_utility_1_1_unity_g_u_i_1_1_m_e_n_u_1_1_g_u_i_menu_base">VoxelBusters::Utility::UnityGUI::MENU::GUIMenuBase</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_voxel_busters_1_1_utility_1_1_unity_g_u_i_1_1_m_e_n_u_1_1_g_u_i_sub_menu">VoxelBusters::Utility::UnityGUI::MENU::GUISubMenu</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

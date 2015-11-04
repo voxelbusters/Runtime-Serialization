@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_non_runtime_serialized_field_attribute">
+<title>VoxelBusters::RuntimeSerialization::NonRuntimeSerializedFieldAttribute class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_non_runtime_serialized_field_attribute_1ac793caa0a1ccb7f18ea529c993e078d9">NonRuntimeSerializedFieldAttribute</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Indicates that a field of a <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute">RuntimeSerializableAttribute</link> class should not be serialized at runtime. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 13 of file NonRuntimeSerializableFieldAttribute.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>NonRuntimeSerializableFieldAttribute.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_non_runtime_serialized_field_attribute_1ac793caa0a1ccb7f18ea529c993e078d9">
+                <title>NonRuntimeSerializedFieldAttribute ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

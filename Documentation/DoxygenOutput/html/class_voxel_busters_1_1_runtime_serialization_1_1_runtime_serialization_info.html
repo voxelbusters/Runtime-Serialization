@@ -31,9 +31,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Runtime Serialization
-   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">Efficient way to Serialize data and Scenes</div>
   </td>
@@ -119,28 +119,37 @@ $(document).ready(function(){initNavTree('class_voxel_busters_1_1_runtime_serial
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac0ca49c051194ccb86acf86a757a9fed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html#ac0ca49c051194ccb86acf86a757a9fed">AddValue&lt; T &gt;</a> (string _name, T _value)</td></tr>
-<tr class="memdesc:ac0ca49c051194ccb86acf86a757a9fed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the specified object into the <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a> for serialization, where it is associated with name.  <a href="#ac0ca49c051194ccb86acf86a757a9fed">More...</a><br /></td></tr>
-<tr class="separator:ac0ca49c051194ccb86acf86a757a9fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c98842a732a81c60f927c1c93664dac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html#a2c98842a732a81c60f927c1c93664dac">AddValue</a> (string _name, object _value, Type _valueType)</td></tr>
-<tr class="memdesc:a2c98842a732a81c60f927c1c93664dac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the specified object into the <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a> for serialization, where it is associated with name.  <a href="#a2c98842a732a81c60f927c1c93664dac">More...</a><br /></td></tr>
-<tr class="separator:a2c98842a732a81c60f927c1c93664dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a197deebcf58f289b38878942ec3f980c"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html#a197deebcf58f289b38878942ec3f980c">GetValue&lt; T &gt;</a> (string _name)</td></tr>
-<tr class="memdesc:a197deebcf58f289b38878942ec3f980c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves value from <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a>.  <a href="#a197deebcf58f289b38878942ec3f980c">More...</a><br /></td></tr>
-<tr class="separator:a197deebcf58f289b38878942ec3f980c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ed12be7f59087807778a09c29468439"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html#a4ed12be7f59087807778a09c29468439">GetValue</a> (string _name, Type _type)</td></tr>
-<tr class="memdesc:a4ed12be7f59087807778a09c29468439"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves value from <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a>.  <a href="#a4ed12be7f59087807778a09c29468439">More...</a><br /></td></tr>
-<tr class="separator:a4ed12be7f59087807778a09c29468439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc7377af684433c79b96aaa5cba28b8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html#afc7377af684433c79b96aaa5cba28b8e">AddValue&lt; T &gt;</a> (string _name, T _value, bool _isObjectInitializer=false)</td></tr>
+<tr class="memdesc:afc7377af684433c79b96aaa5cba28b8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the specified object into the <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a> for serialization, where it is associated with name.  <a href="#afc7377af684433c79b96aaa5cba28b8e">More...</a><br /></td></tr>
+<tr class="separator:afc7377af684433c79b96aaa5cba28b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f81259a486737aca459d58b5e0dcde9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html#a2f81259a486737aca459d58b5e0dcde9">AddValue</a> (string _name, object _value, Type _valueType, bool _isObjectInitializer=false)</td></tr>
+<tr class="memdesc:a2f81259a486737aca459d58b5e0dcde9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the specified object into the <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a> for serialization, where it is associated with name.  <a href="#a2f81259a486737aca459d58b5e0dcde9">More...</a><br /></td></tr>
+<tr class="separator:a2f81259a486737aca459d58b5e0dcde9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05337b60778fbd1effa007cff1255dee"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html#a05337b60778fbd1effa007cff1255dee">GetValue&lt; T &gt;</a> (string _name, bool _isObjectInitializer=false)</td></tr>
+<tr class="memdesc:a05337b60778fbd1effa007cff1255dee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a> using specified name.  <a href="#a05337b60778fbd1effa007cff1255dee">More...</a><br /></td></tr>
+<tr class="separator:a05337b60778fbd1effa007cff1255dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa5472bda7c1cd80f4150b92a786a810"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html#afa5472bda7c1cd80f4150b92a786a810">GetValue</a> (string _name, Type _type, bool _isObjectInitializer=false)</td></tr>
+<tr class="memdesc:afa5472bda7c1cd80f4150b92a786a810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a> using specified name.  <a href="#afa5472bda7c1cd80f4150b92a786a810">More...</a><br /></td></tr>
+<tr class="separator:afa5472bda7c1cd80f4150b92a786a810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f6f8bcd13d3ecaad5ba8dc85f4dfcda"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html#a8f6f8bcd13d3ecaad5ba8dc85f4dfcda">TryGetValue&lt; T &gt;</a> (string _name, out T _value, bool _isObjectInitializer=false)</td></tr>
+<tr class="memdesc:a8f6f8bcd13d3ecaad5ba8dc85f4dfcda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a> using specified name.  <a href="#a8f6f8bcd13d3ecaad5ba8dc85f4dfcda">More...</a><br /></td></tr>
+<tr class="separator:a8f6f8bcd13d3ecaad5ba8dc85f4dfcda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae1c7a92bad7239f92897ac999026122"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html#aae1c7a92bad7239f92897ac999026122">TryGetValue</a> (string _name, out object _value, Type _type, bool _isObjectInitializer=false)</td></tr>
+<tr class="memdesc:aae1c7a92bad7239f92897ac999026122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value from <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a> using specified name.  <a href="#aae1c7a92bad7239f92897ac999026122">More...</a><br /></td></tr>
+<tr class="separator:aae1c7a92bad7239f92897ac999026122"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1e552a892e7fa0cd5aea44277bef990"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html#ae1e552a892e7fa0cd5aea44277bef990">ContainsValue</a> (string _name, bool _isObjectInitializer=false)</td></tr>
+<tr class="memdesc:ae1e552a892e7fa0cd5aea44277bef990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether the <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a> contains a specific value.  <a href="#ae1e552a892e7fa0cd5aea44277bef990">More...</a><br /></td></tr>
+<tr class="separator:ae1e552a892e7fa0cd5aea44277bef990"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Stores all the data required to serialize or deserialize an object. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac0ca49c051194ccb86acf86a757a9fed"></a>
+<a class="anchor" id="afc7377af684433c79b96aaa5cba28b8e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html#a2c98842a732a81c60f927c1c93664dac">AddValue</a>&lt; T &gt; </td>
+          <td class="memname">void <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html#a2f81259a486737aca459d58b5e0dcde9">AddValue</a>&lt; T &gt; </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>_name</em>, </td>
@@ -149,7 +158,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>_value</em>&#160;</td>
+          <td class="paramname"><em>_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>_isObjectInitializer</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -162,8 +177,9 @@ Public Member Functions</h2></td></tr>
 <p>Adds the specified object into the <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a> for serialization, where it is associated with name. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_name</td><td>The name to associate with the value, so it can be deserialized later.</td></tr>
+    <tr><td class="paramname">_name</td><td>The name associated with the value to be stored in <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a>.</td></tr>
     <tr><td class="paramname">_value</td><td>The value to be serialized. Any children of this object will automatically be serialized.</td></tr>
+    <tr><td class="paramname">_isObjectInitializer</td><td>The flag indicates whether this value is object intializer. Object initializers are the values that are available while creating object instance.</td></tr>
   </table>
   </dd>
 </dl>
@@ -176,7 +192,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2c98842a732a81c60f927c1c93664dac"></a>
+<a class="anchor" id="a2f81259a486737aca459d58b5e0dcde9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -196,7 +212,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">Type&#160;</td>
-          <td class="paramname"><em>_valueType</em>&#160;</td>
+          <td class="paramname"><em>_valueType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>_isObjectInitializer</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -209,34 +231,46 @@ Public Member Functions</h2></td></tr>
 <p>Adds the specified object into the <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a> for serialization, where it is associated with name. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_name</td><td>The name to associate with the value, so it can be deserialized later.</td></tr>
+    <tr><td class="paramname">_name</td><td>The name associated with the value to be stored in <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a>.</td></tr>
     <tr><td class="paramname">_value</td><td>The value to be serialized. Any children of this object will automatically be serialized.</td></tr>
     <tr><td class="paramname">_valueType</td><td>The Type associated with the current object. This must always be the type of the object itself.</td></tr>
+    <tr><td class="paramname">_isObjectInitializer</td><td>The flag indicates whether this value is object intializer. Object initializers are the values that are available while creating object instance.</td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a197deebcf58f289b38878942ec3f980c"></a>
+<a class="anchor" id="a05337b60778fbd1effa007cff1255dee"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html#a4ed12be7f59087807778a09c29468439">GetValue</a>&lt; T &gt; </td>
+          <td class="memname">T <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html#afa5472bda7c1cd80f4150b92a786a810">GetValue</a>&lt; T &gt; </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>_name</em></td><td>)</td>
+          <td class="paramname"><em>_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>_isObjectInitializer</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves value from <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a>. </p>
+<p>Gets the value from <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a> using specified name. </p>
 <dl class="section return"><dt>Returns</dt><dd>The object of specified type associated with name.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_name</td><td>The name associated with the value to retrieve.</td></tr>
+    <tr><td class="paramname">_name</td><td>The name associated with the value to be retreived from <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a>.</td></tr>
+    <tr><td class="paramname">_isObjectInitializer</td><td>The flag indicates whether this value is object intializer. Object initializers are the values that are available while creating object instance.</td></tr>
   </table>
   </dd>
 </dl>
@@ -249,7 +283,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4ed12be7f59087807778a09c29468439"></a>
+<a class="anchor" id="afa5472bda7c1cd80f4150b92a786a810"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -263,7 +297,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">Type&#160;</td>
-          <td class="paramname"><em>_type</em>&#160;</td>
+          <td class="paramname"><em>_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>_isObjectInitializer</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -273,15 +313,161 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves value from <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a>. </p>
+<p>Gets the value from <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a> using specified name. </p>
 <dl class="section return"><dt>Returns</dt><dd>The object of specified type associated with name.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_name</td><td>The name associated with the value to retrieve.</td></tr>
+    <tr><td class="paramname">_name</td><td>The name associated with the value to be retreived from <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a>.</td></tr>
   </table>
   </dd>
 </dl>
 <p>&lt;param name=="_type"&gt;The Type of the value to retrieve.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_isObjectInitializer</td><td>The flag indicates whether this value is object intializer. Object initializers are the values that are available while creating object instance.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8f6f8bcd13d3ecaad5ba8dc85f4dfcda"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html#aae1c7a92bad7239f92897ac999026122">TryGetValue</a>&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out T&#160;</td>
+          <td class="paramname"><em>_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>_isObjectInitializer</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the value from <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a> using specified name. </p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code>, if value was found in <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a>, <code>false</code> otherwise.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_name</td><td>The name associated with the value to be retreived from <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a>.</td></tr>
+    <tr><td class="paramname">_value</td><td>The value associated with the specified name.</td></tr>
+    <tr><td class="paramname">_isObjectInitializer</td><td>The flag indicates whether this value is object intializer. Object initializers are the values that are available while creating object instance.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The Type of the value to retrieve.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aae1c7a92bad7239f92897ac999026122"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TryGetValue </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out object&#160;</td>
+          <td class="paramname"><em>_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Type&#160;</td>
+          <td class="paramname"><em>_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>_isObjectInitializer</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the value from <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a> using specified name. </p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code>, if value was found in <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a>, <code>false</code> otherwise.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_name</td><td>The name associated with the value to be fetched from <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a>.</td></tr>
+    <tr><td class="paramname">_value</td><td>The value associated with the specified name.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt;param name=="_type"&gt;The Type of the value to be fetched.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_isObjectInitializer</td><td>The flag indicates whether this value is object intializer. Object initializers are the values that are available while creating object instance.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae1e552a892e7fa0cd5aea44277bef990"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ContainsValue </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>_isObjectInitializer</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determines whether the <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a> contains a specific value. </p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code>, if value with specified name exists in <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a>, <code>false</code> otherwise.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_name</td><td>The name associated with the value to be fetched from <a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html" title="Stores all the data required to serialize or deserialize an object. ">RuntimeSerializationInfo</a>.</td></tr>
+    <tr><td class="paramname">_isObjectInitializer</td><td>The flag indicates whether this value is object intializer. Object initializers are the values that are available while creating object instance.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -291,7 +477,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_voxel_busters.html">VoxelBusters</a></li><li class="navelem"><a class="el" href="namespace_voxel_busters_1_1_runtime_serialization.html">RuntimeSerialization</a></li><li class="navelem"><a class="el" href="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info.html">RuntimeSerializationInfo</a></li>
-    <li class="footer">Generated on Thu May 14 2015 13:30:36 for Runtime Serialization by
+    <li class="footer">Generated on Mon Nov 2 2015 12:19:32 for Runtime Serialization by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

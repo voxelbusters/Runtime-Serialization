@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_g_u_i_modal_window">
+<title>VoxelBusters::Utility::GUIModalWindow class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>GUISkin m_uiSkin</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>GUISkin m_oldSkin</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>GUIScrollView m_rootScrollView</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Rect m_windowRect</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_voxel_busters_1_1_utility_1_1_g_u_i_modal_window_1affb6ac8f8f08d515a8b74f5c213c2c52">Awake</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_voxel_busters_1_1_utility_1_1_g_u_i_modal_window_1aacba56eb2495b7374d62dfc7dc783b79">Start</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_voxel_busters_1_1_utility_1_1_g_u_i_modal_window_1a34316462014f78aba29c389590f6b104">OnEnable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_voxel_busters_1_1_utility_1_1_g_u_i_modal_window_1a1aac1c9a4ae04ef3e2fbf26b0aa570cc">OnDisable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_voxel_busters_1_1_utility_1_1_g_u_i_modal_window_1ad1f2d039d4e62e7c86a1513f97d3a799">OnGUIWindow</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_voxel_busters_1_1_utility_1_1_g_u_i_modal_window_1aabffa4533055957965b200c00d001ef4">AdjustFontBasedOnScreen</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_voxel_busters_1_1_utility_1_1_g_u_i_modal_window_1a024566cb7e99645db96a946dc5df5a8c">AdjustWindowBasedOnScreen</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_g_u_i_modal_window_1ad34caf8029d7aa3bbec32526417741a5">SetSkin</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_g_u_i_modal_window_1a52ea6daedc1bf31a8b8e646a19d2e60d">RestoreSkin</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float <link linkend="class_voxel_busters_1_1_utility_1_1_g_u_i_modal_window_1a967b19ef93556394c2d8dba5482f5032">GetWindowWidth</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float <link linkend="class_voxel_busters_1_1_utility_1_1_g_u_i_modal_window_1ad2e9c0bc4d4619feeec5753f1bdb409d">GetWindowHeight</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_g_u_i_modal_window_1aed4a27d48069265ea875624f0b7c61a4">OnGUI</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_g_u_i_modal_window_1a29543c7960e308fdb96c603f42f73a7c">GUIWindowBase</link> (
+int _windowID)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_g_u_i_modal_window_1affb6ac8f8f08d515a8b74f5c213c2c52">
+                <title>virtual void Awake ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_g_u_i_modal_window_1aacba56eb2495b7374d62dfc7dc783b79">
+                <title>virtual void Start ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_g_u_i_modal_window_1a34316462014f78aba29c389590f6b104">
+                <title>virtual void OnEnable ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_g_u_i_modal_window_1a1aac1c9a4ae04ef3e2fbf26b0aa570cc">
+                <title>virtual void OnDisable ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_g_u_i_modal_window_1ad1f2d039d4e62e7c86a1513f97d3a799">
+                <title>virtual void OnGUIWindow ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_g_u_i_modal_window_1aabffa4533055957965b200c00d001ef4">
+                <title>virtual void AdjustFontBasedOnScreen ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_g_u_i_modal_window_1a024566cb7e99645db96a946dc5df5a8c">
+                <title>virtual void AdjustWindowBasedOnScreen ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_g_u_i_modal_window_1ad34caf8029d7aa3bbec32526417741a5">
+                <title>void SetSkin ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_g_u_i_modal_window_1a52ea6daedc1bf31a8b8e646a19d2e60d">
+                <title>void RestoreSkin ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_g_u_i_modal_window_1a967b19ef93556394c2d8dba5482f5032">
+                <title>float GetWindowWidth ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_g_u_i_modal_window_1ad2e9c0bc4d4619feeec5753f1bdb409d">
+                <title>float GetWindowHeight ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_g_u_i_modal_window_1aed4a27d48069265ea875624f0b7c61a4">
+                <title>void OnGUI ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_g_u_i_modal_window_1a29543c7960e308fdb96c603f42f73a7c">
+                <title>void GUIWindowBase (int _windowID)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

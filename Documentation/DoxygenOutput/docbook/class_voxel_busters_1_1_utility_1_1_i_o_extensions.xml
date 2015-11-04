@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_i_o_extensions">
+<title>VoxelBusters::Utility::IOExtensions class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_voxel_busters_1_1_utility_1_1_i_o_extensions_1a3aa6b10f1a95be9b9b46f5f1c8fac638">MakeRelativePath</link> (
+this string _fromPath, string _toPath)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_voxel_busters_1_1_utility_1_1_i_o_extensions_1ac67f2a96c9608403cdf798e33fd3ce21">MakeRelativePath</link> (
+this Uri _fromUri, string _toPath)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static bool <link linkend="class_voxel_busters_1_1_utility_1_1_i_o_extensions_1a2a6661b1de182a46b9ab4854678a4c1c">AssignPermissionRecursively</link> (
+string _directoryPath, FileAttributes _attribute)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static bool <link linkend="class_voxel_busters_1_1_utility_1_1_i_o_extensions_1ad87b1800491a6847795ba7a3ec320d35">AssignPermissionRecursively</link> (
+DirectoryInfo _directoryInfo, FileAttributes _attribute)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_utility_1_1_i_o_extensions_1adba9ddf5cbd5b59426b4f584f9df304d">CopyFilesRecursively</link> (
+string _sourceDirectory, string _destinationDirectory, bool _excludeMetaFiles, bool _deleteDestinationFolderIfExists)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_utility_1_1_i_o_extensions_1af58ceca5731cd4d73fb4a2aa86bca93a">CopyFilesRecursively</link> (
+DirectoryInfo _sourceDirectoryInfo, DirectoryInfo _destinationDirectoryInfo, bool _excludeMetaFiles, bool _deleteDestinationFolderIfExists)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_utility_1_1_i_o_extensions_1a5d43e5aa8fa1ebd33412a03f264d2b40">CopyFile</link> (
+FileInfo _sourceFileInfo, string _destinationFolderPath)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="class_voxel_busters_1_1_utility_1_1_i_o_extensions_1a2340edaf0761b65959c1a0668cf45d1a">CopyFile</link> (
+FileInfo _sourceFileInfo, string _destinationFolderPath, string _destinationFileName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_i_o_extensions_1a3aa6b10f1a95be9b9b46f5f1c8fac638">
+                <title>static string MakeRelativePath (this string _fromPath, string _toPath)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_i_o_extensions_1ac67f2a96c9608403cdf798e33fd3ce21">
+                <title>static string MakeRelativePath (this Uri _fromUri, string _toPath)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_i_o_extensions_1a2a6661b1de182a46b9ab4854678a4c1c">
+                <title>static bool AssignPermissionRecursively (string _directoryPath, FileAttributes _attribute)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_i_o_extensions_1ad87b1800491a6847795ba7a3ec320d35">
+                <title>static bool AssignPermissionRecursively (DirectoryInfo _directoryInfo, FileAttributes _attribute)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_i_o_extensions_1adba9ddf5cbd5b59426b4f584f9df304d">
+                <title>static void CopyFilesRecursively (string _sourceDirectory, string _destinationDirectory, bool _excludeMetaFiles=true, bool _deleteDestinationFolderIfExists=true)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_i_o_extensions_1af58ceca5731cd4d73fb4a2aa86bca93a">
+                <title>static void CopyFilesRecursively (DirectoryInfo _sourceDirectoryInfo, DirectoryInfo _destinationDirectoryInfo, bool _excludeMetaFiles=true, bool _deleteDestinationFolderIfExists=true)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_i_o_extensions_1a5d43e5aa8fa1ebd33412a03f264d2b40">
+                <title>static void CopyFile (FileInfo _sourceFileInfo, string _destinationFolderPath)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_i_o_extensions_1a2340edaf0761b65959c1a0668cf45d1a">
+                <title>static void CopyFile (FileInfo _sourceFileInfo, string _destinationFolderPath, string _destinationFileName)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

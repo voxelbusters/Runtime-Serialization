@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_utility">
+<title>VoxelBusters::Utility::JSONUtility class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_utility_1a934a76881b536c16371828682bd82b3d">ToJSON</link> (
+object _object)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static bool <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_utility_1aa20b8c359535f95ade5f5156907015ec">IsNull</link> (
+string _jsonStr)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static object <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_utility_1a22902ec9ccd676955574a92805e2ef84">FromJSON</link> (
+string _inputJSONString)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static object <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_utility_1a1d03aca0211b29e87488672831ebb993">FromJSON</link> (
+string _inputJSONString, ref int _errorIndex)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_utility_1a934a76881b536c16371828682bd82b3d">
+                <title>static string ToJSON (object _object)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_utility_1aa20b8c359535f95ade5f5156907015ec">
+                <title>static bool IsNull (string _jsonStr)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_utility_1a22902ec9ccd676955574a92805e2ef84">
+                <title>static object FromJSON (string _inputJSONString)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_utility_1a1d03aca0211b29e87488672831ebb993">
+                <title>static object FromJSON (string _inputJSONString, ref int _errorIndex)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

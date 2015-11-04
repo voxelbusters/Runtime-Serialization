@@ -2,24 +2,13 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute">
 <title>VoxelBusters::RuntimeSerialization::RuntimeSerializableAttribute class Reference</title>
         <section>
-            <title>Private Attributes</title>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>bool m_serializeAllPublicVariables</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>bool m_serializeAllNonPublicVariables</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-        </section>
-        <section>
             <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
             <para>
                 <itemizedlist>
                     <listitem>
@@ -35,33 +24,22 @@
         </section>
         <section>
             <title></title>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para> <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute_1aa3cb2cc3689fb86c9017b0a719be2752">RuntimeSerializableAttribute</link> (
-)<para><emphasis>&lt;summary&gt;
-Initializes a new instance of the &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; class.
-&lt;/summary&gt;</emphasis></para>
-</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para> <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute_1aad88c45dd08a7aa5fe22b8be15ed6c89">RuntimeSerializableAttribute</link> (
-bool _serializeAllPublicVariables)<para><emphasis>&lt;summary&gt;
-Initializes a new instance of the &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; class.
-&lt;/summary&gt;</emphasis></para>
-</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
             <para>
                 <itemizedlist>
                     <listitem>
                         <para> <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute_1a2905def45da7c64fc82be1b7d8a06953">RuntimeSerializableAttribute</link> (
 bool _serializeAllPublicVariables, bool _serializeAllNonPublicVariables)<para><emphasis>&lt;summary&gt;
+Initializes a new instance of the &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; class.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute_1ae55096cbc6b4da9974bf052598d4eb8f">RuntimeSerializableAttribute</link> (
+Type _extensionDependencyObjectType, bool _serializeAllPublicVariables, bool _serializeAllNonPublicVariables)<para><emphasis>&lt;summary&gt;
 Initializes a new instance of the &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; class.
 &lt;/summary&gt;</emphasis></para>
 </para>
@@ -79,17 +57,8 @@ Initializes a new instance of the &lt;see cref=&quot;RuntimeSerializableAttribut
                 <para>The Documentation for this struct was generated from the following file: </para>
                 <para><itemizedlist><listitem><para>RuntimeSerializableAttribute.cs</para></listitem></itemizedlist></para>
         </simplesect>
-        <section>
-            <title>Member Data Documentation</title>
-        </section>
-            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute_1aa3cb2cc3689fb86c9017b0a719be2752">
-                <title>RuntimeSerializableAttribute ()</title> <emphasis>&lt;summary&gt;
-Initializes a new instance of the &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; class.
-&lt;/summary&gt;</emphasis>
-                
-            </section>
-            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute_1aad88c45dd08a7aa5fe22b8be15ed6c89">
-                <title>RuntimeSerializableAttribute (bool _serializeAllPublicVariables)</title> <emphasis>&lt;summary&gt;
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute_1a2905def45da7c64fc82be1b7d8a06953">
+                <title>RuntimeSerializableAttribute (bool _serializeAllPublicVariables, bool _serializeAllNonPublicVariables)</title> <emphasis>&lt;summary&gt;
 Initializes a new instance of the &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; class.
 &lt;/summary&gt;</emphasis>
                 
@@ -108,6 +77,12 @@ Initializes a new instance of the &lt;see cref=&quot;RuntimeSerializableAttribut
 <para>If set to <computeroutput>true</computeroutput> all public variables will be serialized at runtime.</para>
 </entry>
                             </row>
+                            <row>
+                                <entry>_serializeAllNonPublicVariables</entry>
+                                <entry>
+<para>If set to <computeroutput>true</computeroutput> all non public variables will be serialized at runtime.</para>
+</entry>
+                            </row>
                         </tbody>
                         </tgroup>
                     </table>
@@ -115,8 +90,8 @@ Initializes a new instance of the &lt;see cref=&quot;RuntimeSerializableAttribut
                 </para>
 
             </section>
-            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute_1a2905def45da7c64fc82be1b7d8a06953">
-                <title>RuntimeSerializableAttribute (bool _serializeAllPublicVariables, bool _serializeAllNonPublicVariables)</title> <emphasis>&lt;summary&gt;
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute_1ae55096cbc6b4da9974bf052598d4eb8f">
+                <title>RuntimeSerializableAttribute (Type _extensionDependencyObjectType=null, bool _serializeAllPublicVariables=true, bool _serializeAllNonPublicVariables=false)</title> <emphasis>&lt;summary&gt;
 Initializes a new instance of the &lt;see cref=&quot;RuntimeSerializableAttribute&quot;/&gt; class.
 &lt;/summary&gt;</emphasis>
                 
@@ -129,6 +104,12 @@ Initializes a new instance of the &lt;see cref=&quot;RuntimeSerializableAttribut
                         <colspec colwidth="1*"/>
                         <colspec colwidth="4*"/>
                         <tbody>
+                            <row>
+                                <entry>_extensionDependencyObjectType</entry>
+                                <entry>
+<para>Its possible that class might be deriving properties from a class which belongs to an external library. So at that point, this property can be used to create a virtual link between derived class and serialization extension of parent class to ensure that properties are properly serialized.</para>
+</entry>
+                            </row>
                             <row>
                                 <entry>_serializeAllPublicVariables</entry>
                                 <entry>

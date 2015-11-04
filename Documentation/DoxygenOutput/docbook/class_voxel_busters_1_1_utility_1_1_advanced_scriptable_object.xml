@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_advanced_scriptable_object">
+<title>VoxelBusters::Utility::AdvancedScriptableObject class Reference</title>
+    <templateparamlist>
+      <param>
+        <type>T</type>
+      </param>
+    </templateparamlist>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static T instance</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static readonly string assetGroupFolderName</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kRelativePathToAssetsGroup</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kAssetsFolderName</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kResourcesFolderName</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kRelativePathToResources</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="class_voxel_busters_1_1_utility_1_1_advanced_scriptable_object_1a92e53fe13c58a02967869d65b63040eb">AdvancedScriptableObject</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_voxel_busters_1_1_utility_1_1_advanced_scriptable_object_1a4c4ba0ffe635d14b93794268bd8e5995">Reset</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_voxel_busters_1_1_utility_1_1_advanced_scriptable_object_1a34316462014f78aba29c389590f6b104">OnEnable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_voxel_busters_1_1_utility_1_1_advanced_scriptable_object_1a1aac1c9a4ae04ef3e2fbf26b0aa570cc">OnDisable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_voxel_busters_1_1_utility_1_1_advanced_scriptable_object_1a1be5f5b23715843a7bfc4f2ebd6c7894">OnDestroy</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_advanced_scriptable_object_1a5df140c1ee51aadf7fe88ce3fb9cac33">Save</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static T <link linkend="class_voxel_busters_1_1_utility_1_1_advanced_scriptable_object_1a3742fcded9e53c724ab21697c3e7513d">GetAsset</link> (
+string _assetName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_advanced_scriptable_object_1a92e53fe13c58a02967869d65b63040eb">
+                <title>static AdvancedScriptableObject ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_advanced_scriptable_object_1a4c4ba0ffe635d14b93794268bd8e5995">
+                <title>virtual void Reset ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_advanced_scriptable_object_1a34316462014f78aba29c389590f6b104">
+                <title>virtual void OnEnable ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_advanced_scriptable_object_1a1aac1c9a4ae04ef3e2fbf26b0aa570cc">
+                <title>virtual void OnDisable ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_advanced_scriptable_object_1a1be5f5b23715843a7bfc4f2ebd6c7894">
+                <title>virtual void OnDestroy ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_advanced_scriptable_object_1a5df140c1ee51aadf7fe88ce3fb9cac33">
+                <title>void Save ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_advanced_scriptable_object_1a3742fcded9e53c724ab21697c3e7513d">
+                <title>static T GetAsset (string _assetName)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

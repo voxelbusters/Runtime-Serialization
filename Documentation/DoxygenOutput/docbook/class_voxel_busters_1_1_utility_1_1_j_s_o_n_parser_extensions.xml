@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_parser_extensions">
+<title>VoxelBusters::Utility::JSONParserExtensions class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_parser_extensions_1af308b5781bec4a0814df51601956c63c">ToJSON</link> (
+this IDictionary _dictionary)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_parser_extensions_1a4336e6c4bea337ec8ad1520bcf16c038">ToJSON</link> (
+this IList _list)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_parser_extensions_1af308b5781bec4a0814df51601956c63c">
+                <title>static string ToJSON (this IDictionary _dictionary)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_parser_extensions_1a4336e6c4bea337ec8ad1520bcf16c038">
+                <title>static string ToJSON (this IList _list)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

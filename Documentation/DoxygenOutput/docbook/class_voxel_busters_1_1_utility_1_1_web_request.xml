@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_web_request">
+<title>VoxelBusters::Utility::WebRequest class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>delegate void <link linkend="class_voxel_busters_1_1_utility_1_1_web_request_1a546d0e9e95f4e7982304143be4a95efa">JSONResponse</link> (
+IDictionary _response)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_voxel_busters_1_1_utility_1_1_web_request_1acacb8884d099e10d3109b973b508df39">WebRequest</link> (
+URL _URL, object _params, bool _isAsynchronous)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_request_1ab198f2f151aa323c4a19a9751e7354f6">StartRequest</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_request_1a12b9283f52eaf7610afe4b04fbca2ff0">Abort</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>abstract WWW <link linkend="class_voxel_busters_1_1_utility_1_1_web_request_1a485d98c0543d4cf3fbc260f1b0348ceb">CreateWWWObject</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="class_voxel_busters_1_1_utility_1_1_web_request_1ab282ad0cf7242031cb1d31600710a67f">DidFailStartRequestWithError</link> (
+string _error)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="class_voxel_busters_1_1_utility_1_1_web_request_1ac154577e7a940474d901b274080e6827">OnFetchingResponse</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_web_request_1a546d0e9e95f4e7982304143be4a95efa">
+                <title>delegate void JSONResponse (IDictionary _response)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_web_request_1acacb8884d099e10d3109b973b508df39">
+                <title>WebRequest (URL _URL, object _params, bool _isAsynchronous)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_request_1ab198f2f151aa323c4a19a9751e7354f6">
+                <title>void StartRequest ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_request_1a12b9283f52eaf7610afe4b04fbca2ff0">
+                <title>void Abort ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_web_request_1a485d98c0543d4cf3fbc260f1b0348ceb">
+                <title>abstract WWW CreateWWWObject ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_web_request_1ab282ad0cf7242031cb1d31600710a67f">
+                <title>override void DidFailStartRequestWithError (string _error)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_web_request_1ac154577e7a940474d901b274080e6827">
+                <title>override void OnFetchingResponse ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

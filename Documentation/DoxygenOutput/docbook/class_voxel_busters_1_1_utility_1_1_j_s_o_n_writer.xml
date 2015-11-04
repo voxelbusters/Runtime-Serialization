@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer">
+<title>VoxelBusters::Utility::JSONWriter class Reference</title>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int kBufferLength</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1a98798ee868cd2ef964de601b4e0fdf58">JSONWriter</link> (
+int _bufferLength)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1afa2f7bc919e2b82dda3bfaedebe84b7c">Serialise</link> (
+object _objectValue)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1a7db3f34e87d0d0fb9776cd23ea9803ba">WriteObjectValue</link> (
+object _objectVal)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1aea9923ba6fc246adc968163dc17b491e">WriteDictionary</link> (
+IDictionary _dict)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1a5dd4e1bd4454be4187d39087bee1ca1b">WriteArray</link> (
+System.Array _array)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1a6870b494430c99f899a1224821f89ef6">WriteList</link> (
+IList _list)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1ac1b9b4789fbd79360c7cff9c5f35d8c4">WritePrimitive</link> (
+object _value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1ab8787ef46247ab34f2c4d9a4e5359636">WriteEnum</link> (
+object _value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1a24ec8f16f8528f5ed41785756f9ddc9a">WriteNullValue</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1a222eaba35019d75f8019d3756cd66089">WriteString</link> (
+string _stringVal)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1a0ae3c980042c4f128f080c1c49925338">WriteDictionaryStart</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1a2e5648a4e0af930fd840bcc6eaa8cfbf">WriteKeyValuePair</link> (
+string _key, object _value, bool _appendSeperator)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1a2c2eb6fecd2a1637daccc75cec0e9463">WriteKeyValuePairSeperator</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1a30321452dfbca86ff6809b3293e9c16b">WriteDictionaryEnd</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1afeabcbca24d71d111db59dd730476ceb">WriteArrayStart</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1a1cc4da4055f2ecebedb73da11bf24fa8">WriteArrayEnd</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1a78578d6dd223a3da3bbf41c7accd805a">WriteElementSeperator</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1a98798ee868cd2ef964de601b4e0fdf58">
+                <title>JSONWriter (int _bufferLength=kBufferLength)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1afa2f7bc919e2b82dda3bfaedebe84b7c">
+                <title>string Serialise (object _objectValue)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1a7db3f34e87d0d0fb9776cd23ea9803ba">
+                <title>void WriteObjectValue (object _objectVal)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1aea9923ba6fc246adc968163dc17b491e">
+                <title>void WriteDictionary (IDictionary _dict)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1a5dd4e1bd4454be4187d39087bee1ca1b">
+                <title>void WriteArray (System.Array _array)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1a6870b494430c99f899a1224821f89ef6">
+                <title>void WriteList (IList _list)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1ac1b9b4789fbd79360c7cff9c5f35d8c4">
+                <title>void WritePrimitive (object _value)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1ab8787ef46247ab34f2c4d9a4e5359636">
+                <title>void WriteEnum (object _value)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1a24ec8f16f8528f5ed41785756f9ddc9a">
+                <title>void WriteNullValue ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1a222eaba35019d75f8019d3756cd66089">
+                <title>void WriteString (string _stringVal)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1a0ae3c980042c4f128f080c1c49925338">
+                <title>void WriteDictionaryStart ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1a2e5648a4e0af930fd840bcc6eaa8cfbf">
+                <title>void WriteKeyValuePair (string _key, object _value, bool _appendSeperator=false)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1a2c2eb6fecd2a1637daccc75cec0e9463">
+                <title>void WriteKeyValuePairSeperator ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1a30321452dfbca86ff6809b3293e9c16b">
+                <title>void WriteDictionaryEnd ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1afeabcbca24d71d111db59dd730476ceb">
+                <title>void WriteArrayStart ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1a1cc4da4055f2ecebedb73da11bf24fa8">
+                <title>void WriteArrayEnd ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_writer_1a78578d6dd223a3da3bbf41c7accd805a">
+                <title>void WriteElementSeperator ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

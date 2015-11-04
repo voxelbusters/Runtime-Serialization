@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_extension">
+<title>VoxelBusters::RuntimeSerialization::IRuntimeSerializableExtension class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual object <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_extension_1aea67c59932ae24c6450076bb18922203">CreateInstance</link> (
+<link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link> _info)<para><emphasis>&lt;summary&gt;
+Creates the instance of formerly serialized object type.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>abstract void <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_extension_1a7a099234ce249b9f9bc5b5edf4cc06f4">WriteSerializationData</link> (
+object _object, <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link> _info)<para><emphasis>&lt;summary&gt;
+Populate &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; with the properties required to serialize target object.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>abstract object <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_extension_1a08e596bb7a55206077e4dc389baaf131">ReadSerializationData</link> (
+object _object, <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link> _info)<para><emphasis>&lt;summary&gt;
+Retrieve serialized properties of target object from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt;.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>Implement this abstract class to support runtime serialization for classes which belong to external assembly. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 11 of file IRuntimeSerializableExtension.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>IRuntimeSerializableExtension.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_extension_1aea67c59932ae24c6450076bb18922203">
+                <title>virtual object CreateInstance (RuntimeSerializationInfo _info)</title> <emphasis>&lt;summary&gt;
+Creates the instance of formerly serialized object type.
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Serialized object instance.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_info</entry>
+                                <entry>
+<para>The <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link> provides the interface to access all the previously serialized initializer values.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_extension_1a7a099234ce249b9f9bc5b5edf4cc06f4">
+                <title>abstract void WriteSerializationData (object _object, RuntimeSerializationInfo _info)</title> <emphasis>&lt;summary&gt;
+Populate &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt; with the properties required to serialize target object.
+&lt;/summary&gt;</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_object</entry>
+                                <entry>
+<para>Target object to be serialized</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_info</entry>
+                                <entry>
+<para>The <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link> provides interface to add properties to be serialized.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_extension_1a08e596bb7a55206077e4dc389baaf131">
+                <title>abstract object ReadSerializationData (object _object, RuntimeSerializationInfo _info)</title> <emphasis>&lt;summary&gt;
+Retrieve serialized properties of target object from &lt;see cref=&quot;RuntimeSerializationInfo&quot;/&gt;.
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>The deserialized object.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_object</entry>
+                                <entry>
+<para>Target object to be deserialized.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_info</entry>
+                                <entry>
+<para>The <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link> provides interface to retrieve serialized values.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

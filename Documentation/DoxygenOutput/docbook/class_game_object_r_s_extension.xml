@@ -48,20 +48,35 @@
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>const string kComponentsCountKey</para>
+                        <para>const string kComponentsKey</para>
                     </listitem>
                 </itemizedlist>
             </para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>const string kComponentNamePrefix</para>
+                        <para>const string kHierarchyMetadataKey</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const string kIsPrefabKey</para>
                     </listitem>
                 </itemizedlist>
             </para>
         </section>
         <section>
             <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override object <link linkend="class_game_object_r_s_extension_1adb36920a51c442f1ed5fe3872f2b78c1">CreateInstance</link> (
+<link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link> _info)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
             <para>
                 <itemizedlist>
                     <listitem>
@@ -82,6 +97,10 @@ object _object, <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1
         <section>
             <title>Member Data Documentation</title>
         </section>
+            <section xml:id="class_game_object_r_s_extension_1adb36920a51c442f1ed5fe3872f2b78c1">
+                <title>override object CreateInstance (RuntimeSerializationInfo _info)</title> <emphasis></emphasis>
+                
+            </section>
             <section xml:id="class_game_object_r_s_extension_1a59485945b98585085b8911724094ac15">
                 <title>override void WriteSerializationData (object _object, RuntimeSerializationInfo _info)</title> <emphasis></emphasis>
                 

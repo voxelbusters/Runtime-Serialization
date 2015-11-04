@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.20)  14 MAY 2015 13:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.20)  2 NOV 2015 12:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -998,29 +998,14 @@ Package hyperref Info: Option `unicode' set `true' on input line 122.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 12.9599pt on input line 127.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 127.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 127.
-LaTeX Font Info:    Try loading font information for U+wasy on input line 127.
-(/usr/local/texlive/2014basic/texmf-dist/tex/latex/wasysym/uwasy.fd
-File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
-)
-LaTeX Font Info:    Try loading font information for U+msa on input line 127.
-
-(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 127.
-
-(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+(Font)              scaled to size 10.79993pt on input line 129.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 8.09995pt on input line 131.
- [1
+[1
 
 
-{/usr/local/texlive/2014basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
+{/usr/local/texlive/2014basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
@@ -1031,23 +1016,43 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 22.39185pt on input line 135.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 22.39185pt on input line 135.
-
-(./refman.toc
+ (./refman.toc
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 8.99994pt on input line 1.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 1.
+
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 1.
+
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 1.
+
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 6.29996pt on input line 7.
  [3
 
-])
+]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 71.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 71.
+
+[4])
 \tf@toc=\write5
 \openout5 = `refman.toc'.
 
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 136.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 136.
- [4]
+ [5] [6
+
+]
 Package hyperref Info: Option `pageanchor' set `true' on input line 138.
 
 Chapter 1.
@@ -1068,7 +1073,6 @@ or enter new name. (Default extension: tex)
 Enter file name: 
 [1
 
-
 ] [2
 
 ]
@@ -1084,9 +1088,19 @@ LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 
 ]
 Chapter 3.
-(./annotated.tex) [5] [6
+(./annotated.tex
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 15.
 
-]
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
+)
+LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 15.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5])
+[6]
 Chapter 4.
 (./namespace_unity_engine.tex
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
@@ -1098,13 +1112,6 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 10.79993pt on input line 3.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 10.79993pt on input line 3.
-LaTeX Font Info:    Try loading font information for TS1+phv on input line 6.
-
-(/usr/local/texlive/2014basic/texmf-dist/tex/latex/psnfss/ts1phv.fd
-File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
-)
-LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 6.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 7.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
@@ -1114,28 +1121,33 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 6.29996pt on input line 7.
 )
-(./namespace_voxel_busters_1_1_runtime_serialization.tex [7]
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 8.99994pt on input line 51.
+(./namespace_voxel_busters_1_1_runtime_serialization.tex [7
 
-Underfull \hbox (badness 10000) detected at line 57
+]
+LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <9> not available
+(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 30.
+LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 30.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 8.99994pt on input line 50.
+
+Underfull \hbox (badness 10000) detected at line 56
 [][][]
  []
 
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 61.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 60.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 61.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 60.
 LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
-(Font)              scaled to size 8.99994pt on input line 61.
+(Font)              scaled to size 8.99994pt on input line 60.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <7> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 61.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 60.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <7> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 61.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 60.
 LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
-(Font)              scaled to size 6.29996pt on input line 61.
-) (./namespace_voxel_busters_1_1_runtime_serialization_1_1_benchmark.tex)
-[8]
+(Font)              scaled to size 6.29996pt on input line 60.
+) [8]
 Chapter 5.
 
 (./interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable
@@ -1152,344 +1164,441 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 8.99994pt on input line 36.
-)
-(./interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializatio
-n_callback.tex [9
 
-])
-(./interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializatio
-n_event_listener.tex [10])
-(./interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializatio
-n_extension.tex
-Underfull \hbox (badness 10000) detected at line 58
+Underfull \hbox (badness 10000) detected at line 50
 [][][]
  []
 
-[11]) (./class_voxel_busters_1_1_runtime_serialization_1_1_r_s_manager.tex
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 54.
+[9
 
+])
+(./interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable
+_activator.tex)
+(./class_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_ext
+ension.tex
+Underfull \hbox (badness 3250) in paragraph at lines 10--11
+[]\T1/phv/m/n/10 Inherited by Bone[]Weight[]R[]S[]Extension, Bounds[]R[]S[]Exte
+nsion, Guid[]R[]S[]Extension, Hash[]Set[]R[]S[]Extension, I[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+\T1/phv/m/n/10 Collection[]R[]S[]Extension, I[]Dictionary[]R[]S[]Extension, Joi
+nt[]Angle[]Limits2[]D[]R[]S[]Extension, Joint[]Drive[]R[]S[]Extension,
+ []
+
+
+Underfull \hbox (badness 977) in paragraph at lines 10--11
+\T1/phv/m/n/10 Joint[]Limits[]R[]S[]Extension, Joint[]Motor2[]D[]R[]S[]Extensio
+n, Joint[]Motor[]R[]S[]Extension, Joint[]Spring[]R[]S[]Extension, Joint[]
+ []
+
+
+Underfull \hbox (badness 1708) in paragraph at lines 10--11
+\T1/phv/m/n/10 Suspension2[]D[]R[]S[]Extension, Joint[]Translation[]Limits2[]D[
+]R[]S[]Extension, Layer[]Mask[]R[]S[]Extension, Nav[]Mesh[]Hit[]R[]S[]
+ []
+
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 35.
 (/usr/local/texlive/2014basic/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 
-LaTeX Font Warning: Font shape `T1/pcr/bc/it' undefined
-(Font)              using `T1/pcr/m/n' instead on input line 54.
-
-
 LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
-(Font)              using `T1/pcr/m/n' instead on input line 54.
+(Font)              using `T1/pcr/m/n' instead on input line 35.
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[][][]
+ []
+
+[10]
+Underfull \hbox (badness 10000) detected at line 79
+[][][]
+ []
+
+)
+(./interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializatio
+n_callback.tex)
+(./interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializatio
+n_event_listener.tex [11])
+(./class_voxel_busters_1_1_runtime_serialization_1_1_non_runtime_serialized_fie
+ld_attribute.tex) (./class_r_s_extension_manager.tex [12]
+Underfull \hbox (badness 10000) detected at line 71
+[][][]
+ []
+
+) (./class_r_s_manager.tex [13]
+
+LaTeX Font Warning: Font shape `T1/pcr/bc/it' undefined
+(Font)              using `T1/pcr/bc/n' instead on input line 61.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 54.
+(hyperref)                removing `math shift' on input line 61.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 54.
+(hyperref)                removing `math shift' on input line 61.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 54.
+(hyperref)                removing `math shift' on input line 61.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 54.
+(hyperref)                removing `math shift' on input line 61.
 
-[12]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 79.
-
+[14]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 79.
+(hyperref)                removing `math shift' on input line 86.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 79.
+(hyperref)                removing `math shift' on input line 86.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 79.
+(hyperref)                removing `math shift' on input line 86.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 106.
+(hyperref)                removing `math shift' on input line 86.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 106.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 106.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 106.
-
-
-Underfull \hbox (badness 10000) detected at line 111
+Underfull \hbox (badness 10000) detected at line 91
 [][][]
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 135.
+(hyperref)                removing `math shift' on input line 116.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 135.
+(hyperref)                removing `math shift' on input line 116.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 135.
+(hyperref)                removing `math shift' on input line 116.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 135.
+(hyperref)                removing `math shift' on input line 116.
 
-[13]
-Underfull \hbox (badness 10000) detected at line 163
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 142.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 142.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 142.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 142.
+
+[15]
+Underfull \hbox (badness 10000) detected at line 170
 [][][]
  []
 
-[14])
+
+Underfull \hbox (badness 10000) detected at line 189
+[][][]
+ []
+
+[16]
+Underfull \hbox (badness 10000) detected at line 317
+[][][]
+ []
+
+) (./class_r_s_utility.tex [17]
+Underfull \hbox (badness 10000) detected at line 83
+[][][]
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 99.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 99.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 99.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 99.
+
+
+Underfull \hbox (badness 10000) detected at line 104
+[][][]
+ []
+
+[18]
+Underfull \hbox (badness 10000) detected at line 118
+[][][]
+ []
+
+)
 (./class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attri
-bute.tex [15])
+bute.tex
+Underfull \hbox (badness 6978) in paragraph at lines 17--18
+[][][]\T1/phv/m/n/10 Runtime[]Serializable[]Attribute[][] (Type []_[]extension[
+]Dependency[]Object[]Type=null, bool []_[]serialize[]All[]Public[]
+ []
+
+[19])
 (./class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info
 .tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 34.
+(hyperref)                removing `math shift' on input line 41.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 34.
+(hyperref)                removing `math shift' on input line 41.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 34.
+(hyperref)                removing `math shift' on input line 41.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 34.
+(hyperref)                removing `math shift' on input line 41.
 
-[16]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 79.
-
+[20]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 79.
+(hyperref)                removing `math shift' on input line 92.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 79.
+(hyperref)                removing `math shift' on input line 92.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 79.
+(hyperref)                removing `math shift' on input line 92.
 
 
-Underfull \hbox (badness 10000) detected at line 84
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 92.
+
+
+Underfull \hbox (badness 10000) detected at line 97
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 109
+Underfull \hbox (badness 10000) detected at line 125
+[][][]
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 148.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 148.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 148.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 148.
+
+[21]
+Underfull \hbox (badness 10000) detected at line 153
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 184
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 213
 [][][]
  []
 
 )
 (./class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialize_field_at
-tribute.tex) [17] [18
+tribute.tex)
+(./class_voxel_busters_1_1_runtime_serialization_1_1_u_i_d_system.tex [22]
+[23])
+Underfull \hbox (badness 10000) in paragraph at lines 82--166
 
-] (./refman.ind
-Underfull \hbox (badness 10000) in paragraph at lines 4--6
+ []
+
+[24] (./refman.ind
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
 []| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]Runtime[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--9
+Underfull \hbox (badness 10000) in paragraph at lines 11--13
 []| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]Runtime[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13--15
-[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]R[]S[]Manage
-r,
+Underfull \hbox (badness 10000) in paragraph at lines 14--16
+[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]U[]I[]D[]Sys
+tem,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--18
-[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]R[]S[]Manage
-r,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--36
-[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]R[]S[]Manage
-r,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--39
+Underfull \hbox (badness 10000) in paragraph at lines 22--24
 []| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]Runtime[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--42
-[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]Runtime[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--55
-[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]I[]Runtime[]
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--57
+Underfull \hbox (badness 10000) in paragraph at lines 27--29
 []| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]I[]Runtime[]
 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 58--60
-[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]I[]Runtime[]
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--62
-[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]I[]Runtime[]
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--71
-[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]R[]S[]Manage
-r,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--78
-[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]I[]Runtime[]
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--80
-[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]I[]Runtime[]
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--83
-[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]R[]S[]Manage
-r,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--86
-[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]R[]S[]Manage
-r,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 87--89
-[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]R[]S[]Manage
-r,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--92
-[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]R[]S[]Manage
-r,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--95
 []| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]Runtime[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--103
-[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]R[]S[]Manage
-r,
+Underfull \hbox (badness 10000) in paragraph at lines 61--63
+[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]Runtime[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--106
-[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]R[]S[]Manage
-r,
+Underfull \hbox (badness 10000) in paragraph at lines 81--83
+[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]I[]Runtime[]
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--112
-[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]R[]S[]Manage
-r,
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
+[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]I[]Runtime[]
+
  []
 
 
-Overfull \hbox (15.93582pt too wide) in paragraph at lines 127--128
-[]\T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]I[]Runtime[]Se
-rialization[]
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
+[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]I[]Runtime[]
+
  []
 
 
-Overfull \hbox (15.93582pt too wide) in paragraph at lines 130--131
-[]\T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]I[]Runtime[]Se
-rialization[]
+Underfull \hbox (badness 10000) in paragraph at lines 88--90
+[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]I[]Runtime[]
+
  []
 
-[19
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--126
+[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]I[]Runtime[]
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--128
+[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]I[]Runtime[]
+
+ []
+
+[25
+
 
 
 ]
-Overfull \hbox (15.93582pt too wide) in paragraph at lines 133--134
+Underfull \hbox (badness 10000) in paragraph at lines 129--131
+[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]U[]I[]D[]Sys
+tem,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--144
+[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]Runtime[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
+[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]Runtime[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--162
+[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]Runtime[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--172
+[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]U[]I[]D[]Sys
+tem,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--175
+[]| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]U[]I[]D[]Sys
+tem,
+ []
+
+
+Overfull \hbox (15.93582pt too wide) in paragraph at lines 191--192
 []\T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]I[]Runtime[]Se
 rialization[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--161
+Overfull \hbox (15.93582pt too wide) in paragraph at lines 194--195
+[]\T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]I[]Runtime[]Se
+rialization[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--219
 []| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]I[]Runtime[]
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--163
+Underfull \hbox (badness 10000) in paragraph at lines 219--221
 []| \T1/phv/m/n/10 Voxel[]Busters[]::[]Runtime[]Serialization[]::[]I[]Runtime[]
 
  []
 
-[20
-
-])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 171.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 171.
+[26])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 175.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 175.
  (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 171.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 171.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 175.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 175.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 795D8F1E4FD54FA1B5823D16D930C4B3;13257.
+(rerunfilecheck)             Checksum: 42AFEB25BF8B95774EC7F49F506EE65A;18762.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 171.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 175.
  ) 
 Here is how much of TeX's memory you used:
- 13191 strings out of 494522
- 192508 string characters out of 6167205
- 280035 words of memory out of 5000000
- 16058 multiletter control sequences out of 15000+600000
- 68663 words of font info for 70 fonts, out of 8000000 for 9000
+ 13326 strings out of 494522
+ 196017 string characters out of 6167205
+ 282248 words of memory out of 5000000
+ 16127 multiletter control sequences out of 15000+600000
+ 69014 words of font info for 71 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 48i,15n,43p,610b,520s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,16n,43p,1180b,520s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014basic/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/lo
 cal/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/local/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><
@@ -1501,10 +1610,10 @@ r/local/texlive/2014basic/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr
 /local/texlive/2014basic/texmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr
 /local/texlive/2014basic/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/l
 ocal/texlive/2014basic/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (24 pages, 135264 bytes).
+Output written on refman.pdf (32 pages, 165000 bytes).
 PDF statistics:
- 778 PDF objects out of 1000 (max. 8388607)
- 734 compressed objects within 8 object streams
- 140 named destinations out of 1000 (max. 500000)
- 521 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1094 PDF objects out of 1200 (max. 8388607)
+ 1039 compressed objects within 11 object streams
+ 197 named destinations out of 1000 (max. 500000)
+ 745 words of extra memory for PDF output out of 10000 (max. 10000000)
 

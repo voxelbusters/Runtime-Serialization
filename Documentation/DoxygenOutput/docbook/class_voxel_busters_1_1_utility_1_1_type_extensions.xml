@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_type_extensions">
+<title>VoxelBusters::Utility::TypeExtensions class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static Type[] typeCodesToType</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="class_voxel_busters_1_1_utility_1_1_type_extensions_1ac27429a11a6a553cc3b1937b16a10d5a">TypeExtensions</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static object <link linkend="class_voxel_busters_1_1_utility_1_1_type_extensions_1ad7bd40e328c5cffde45fe99f9e0e8ff4">DefaultValue</link> (
+this Type _type)<para><emphasis>&lt;summary&gt;
+Determins default value for given type.
+&lt;/summary&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static Type <link linkend="class_voxel_busters_1_1_utility_1_1_type_extensions_1a0bdf5968339bf7e6f4c5ab568c9a1e65">GetTypeFromTypeCode</link> (
+this TypeCode _typeCode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_type_extensions_1ac27429a11a6a553cc3b1937b16a10d5a">
+                <title>static TypeExtensions ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_type_extensions_1ad7bd40e328c5cffde45fe99f9e0e8ff4">
+                <title>static object DefaultValue (this Type _type)</title> <emphasis>&lt;summary&gt;
+Determins default value for given type.
+&lt;/summary&gt;</emphasis>
+                
+<para><formalpara><title>Returns: </title>
+
+<para>Default value for a given type.</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_type</entry>
+                                <entry>
+<para>Type.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_type_extensions_1a0bdf5968339bf7e6f4c5ab568c9a1e65">
+                <title>static Type GetTypeFromTypeCode (this TypeCode _typeCode)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

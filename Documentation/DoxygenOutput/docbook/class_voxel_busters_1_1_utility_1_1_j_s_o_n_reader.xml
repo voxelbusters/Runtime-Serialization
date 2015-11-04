@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader">
+<title>VoxelBusters::Utility::JSONReader class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1ac5c21000497e0a12661d46b2c1d14ca8">JSONReader</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1a31195ba50789bb560286f18ff6fa8902">RemoveWhiteSpace</link> (
+ref int _index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1a68b8adf5abaace9b9bd8de9a371f14b8">JSONReader</link> (
+string _inputJSONString)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1a59e33f62f158132ce1326d7a95350cd0">Deserialise</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1a221de6a079555f4b77827fcf6e59c95e">Deserialise</link> (
+ref int _errorIndex)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1ac4efa317689245f8d4dce6888e14ee5d">ReadValue</link> (
+ref int _index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1aa3e876bef0fc37591f9f2668bf57906b">ReadObject</link> (
+ref int _index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1acd12b8aaa309ea98fad5ce05f5334f3c">ReadKeyValuePair</link> (
+ref int _index, out string _key, out object _value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1ae35dd00bf9de72f55827a8a4a081c4ba">ReadArray</link> (
+ref int _index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1a3b1422039e6fa468a10cd52e9f64d320">ReadArrayElement</link> (
+ref int _index, out object _element)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1a91cec4d875224267311f6a338a5e3f27">ReadString</link> (
+ref int _index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1ad13a13efb2223c988ec0c7250578564c">ReadNumber</link> (
+ref int _index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>eJSONToken <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1acbe0f8266720001a141804b20c376d98">LookAhead</link> (
+int _index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>eJSONToken <link linkend="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1a01950e4e54eef863715a2c28ce09d8cf">NextToken</link> (
+ref int _index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1ac5c21000497e0a12661d46b2c1d14ca8">
+                <title>JSONReader ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1a31195ba50789bb560286f18ff6fa8902">
+                <title>void RemoveWhiteSpace (ref int _index)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1a68b8adf5abaace9b9bd8de9a371f14b8">
+                <title>JSONReader (string _inputJSONString)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1a59e33f62f158132ce1326d7a95350cd0">
+                <title>object Deserialise ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1a221de6a079555f4b77827fcf6e59c95e">
+                <title>object Deserialise (ref int _errorIndex)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1ac4efa317689245f8d4dce6888e14ee5d">
+                <title>object ReadValue (ref int _index)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1aa3e876bef0fc37591f9f2668bf57906b">
+                <title>object ReadObject (ref int _index)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1acd12b8aaa309ea98fad5ce05f5334f3c">
+                <title>int ReadKeyValuePair (ref int _index, out string _key, out object _value)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1ae35dd00bf9de72f55827a8a4a081c4ba">
+                <title>object ReadArray (ref int _index)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1a3b1422039e6fa468a10cd52e9f64d320">
+                <title>void ReadArrayElement (ref int _index, out object _element)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1a91cec4d875224267311f6a338a5e3f27">
+                <title>string ReadString (ref int _index)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1ad13a13efb2223c988ec0c7250578564c">
+                <title>object ReadNumber (ref int _index)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1acbe0f8266720001a141804b20c376d98">
+                <title>eJSONToken LookAhead (int _index)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_j_s_o_n_reader_1a01950e4e54eef863715a2c28ce09d8cf">
+                <title>eJSONToken NextToken (ref int _index)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

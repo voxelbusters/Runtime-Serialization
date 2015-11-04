@@ -6,28 +6,40 @@
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>string stringField</para>
+                        <para>string baseClassStringField</para>
                     </listitem>
                 </itemizedlist>
             </para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>char charField</para>
+                        <para>int baseClassIntField</para>
                     </listitem>
                 </itemizedlist>
             </para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>double doubleField</para>
+                        <para>float baseClassFloatField</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_benchmark_sample_base_1a6b386d4da7dbdbb163e6a79075dcdc92">BenchmarkSampleBase</link> (
+)</para>
                     </listitem>
                 </itemizedlist>
             </para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>float floatField</para>
+                        <para> <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_benchmark_sample_base_1a59867197fe7f3a39defe2308da0d6320">BenchmarkSampleBase</link> (
+bool _random)</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -35,4 +47,12 @@
         <section>
             <title>Member Data Documentation</title>
         </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_benchmark_sample_base_1a6b386d4da7dbdbb163e6a79075dcdc92">
+                <title>BenchmarkSampleBase ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_benchmark_1_1_benchmark_sample_base_1a59867197fe7f3a39defe2308da0d6320">
+                <title>BenchmarkSampleBase (bool _random)</title> <emphasis></emphasis>
+                
+            </section>
 </section>

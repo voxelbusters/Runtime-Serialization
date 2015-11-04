@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_shader_utility">
+<title>VoxelBusters::Utility::ShaderUtility class Reference</title>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_voxel_busters_1_1_utility_1_1_shader_utility_1_1_shader_info">VoxelBusters::Utility::ShaderUtility::ShaderInfo</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_voxel_busters_1_1_utility_1_1_shader_utility_1_1_shader_property">VoxelBusters::Utility::ShaderUtility::ShaderProperty</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="class_voxel_busters_1_1_utility_1_1_shader_utility_1a130fc4b2011964580fa97dece3b09a62">eShaderPropertyType</link> {
+<link linkend="class_voxel_busters_1_1_utility_1_1_shader_utility_1a130fc4b2011964580fa97dece3b09a62a04bd834032febb3fda8c6936ee140949">COLOR</link>,
+<link linkend="class_voxel_busters_1_1_utility_1_1_shader_utility_1a130fc4b2011964580fa97dece3b09a62a87752381b583740610f1dfeb07fdad7e">VECTOR</link>,
+<link linkend="class_voxel_busters_1_1_utility_1_1_shader_utility_1a130fc4b2011964580fa97dece3b09a62ae738c26bf4ce1037fa81b039a915cbf6">FLOAT</link>,
+<link linkend="class_voxel_busters_1_1_utility_1_1_shader_utility_1a130fc4b2011964580fa97dece3b09a62a01036ddcc971d02f6c32c3da31a119f2">RANGE</link>,
+<link linkend="class_voxel_busters_1_1_utility_1_1_shader_utility_1a130fc4b2011964580fa97dece3b09a62a3f92f542bd9ec48f912b9350e22736ac">TEXTURE</link>
+}</literallayout>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>List&lt; ShaderInfo &gt; m_shaderInfoList</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string[] m_builtInAssetPathList</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>override void <link linkend="class_voxel_busters_1_1_utility_1_1_shader_utility_1ad34f3aa16da2426e67c8ecc8a0b08008">OnEnable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_voxel_busters_1_1_utility_1_1_advanced_scriptable_object_1a4c4ba0ffe635d14b93794268bd8e5995">Reset</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_voxel_busters_1_1_utility_1_1_advanced_scriptable_object_1a1aac1c9a4ae04ef3e2fbf26b0aa570cc">OnDisable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_voxel_busters_1_1_utility_1_1_advanced_scriptable_object_1a1be5f5b23715843a7bfc4f2ebd6c7894">OnDestroy</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ShaderInfo <link linkend="class_voxel_busters_1_1_utility_1_1_shader_utility_1a163e265bb85cceec19a646b83c6363e3">GetShaderInfo</link> (
+Material _material)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ShaderInfo <link linkend="class_voxel_busters_1_1_utility_1_1_shader_utility_1a9f67de3797f349e6e1ad64a0819d0604">GetShaderInfo</link> (
+string _shaderName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_shader_utility_1a152bc48e442c4dc41b0ce9987d5b97fd">ReloadShaderUtility</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_advanced_scriptable_object_1a5df140c1ee51aadf7fe88ce3fb9cac33">Save</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static T <link linkend="class_voxel_busters_1_1_utility_1_1_advanced_scriptable_object_1a3742fcded9e53c724ab21697c3e7513d">GetAsset</link> (
+string _assetName)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_shader_utility_1a130fc4b2011964580fa97dece3b09a62">
+               <title>enum eShaderPropertyType </title>
+               
+               <formalpara>
+                    <title>Enumerator:</title>
+                    <variablelist>
+                        <varlistentry xml:id="class_voxel_busters_1_1_utility_1_1_shader_utility_1a130fc4b2011964580fa97dece3b09a62a04bd834032febb3fda8c6936ee140949">
+                            <term>COLOR</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_voxel_busters_1_1_utility_1_1_shader_utility_1a130fc4b2011964580fa97dece3b09a62a87752381b583740610f1dfeb07fdad7e">
+                            <term>VECTOR</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_voxel_busters_1_1_utility_1_1_shader_utility_1a130fc4b2011964580fa97dece3b09a62ae738c26bf4ce1037fa81b039a915cbf6">
+                            <term>FLOAT</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_voxel_busters_1_1_utility_1_1_shader_utility_1a130fc4b2011964580fa97dece3b09a62a01036ddcc971d02f6c32c3da31a119f2">
+                            <term>RANGE</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_voxel_busters_1_1_utility_1_1_shader_utility_1a130fc4b2011964580fa97dece3b09a62a3f92f542bd9ec48f912b9350e22736ac">
+                            <term>TEXTURE</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                     </variablelist>
+                </formalpara>
+                <para>Definition at line 9 of file ShaderUtility.ShaderPropertyType.cs
+                    <computeroutput><literallayout>
+{
+COLOR, 
+VECTOR, 
+FLOAT, 
+RANGE, 
+TEXTURE, 
+}eShaderPropertyType;
+                    </literallayout></computeroutput>
+                </para>
+            </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_shader_utility_1ad34f3aa16da2426e67c8ecc8a0b08008">
+                <title>override void OnEnable ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_advanced_scriptable_object_1a4c4ba0ffe635d14b93794268bd8e5995">
+                <title>virtual void Reset ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_advanced_scriptable_object_1a1aac1c9a4ae04ef3e2fbf26b0aa570cc">
+                <title>virtual void OnDisable ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_advanced_scriptable_object_1a1be5f5b23715843a7bfc4f2ebd6c7894">
+                <title>virtual void OnDestroy ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_shader_utility_1a163e265bb85cceec19a646b83c6363e3">
+                <title>ShaderInfo GetShaderInfo (Material _material)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_shader_utility_1a9f67de3797f349e6e1ad64a0819d0604">
+                <title>ShaderInfo GetShaderInfo (string _shaderName)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_shader_utility_1a152bc48e442c4dc41b0ce9987d5b97fd">
+                <title>void ReloadShaderUtility ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_advanced_scriptable_object_1a5df140c1ee51aadf7fe88ce3fb9cac33">
+                <title>void Save ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_advanced_scriptable_object_1a3742fcded9e53c724ab21697c3e7513d">
+                <title>static T GetAsset (string _assetName)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

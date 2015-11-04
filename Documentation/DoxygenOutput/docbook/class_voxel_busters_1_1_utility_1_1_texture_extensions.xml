@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_texture_extensions">
+<title>VoxelBusters::Utility::TextureExtensions class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="class_voxel_busters_1_1_utility_1_1_texture_extensions_1a34a4e9049ec08956df06e564fc4fd14e">EncodeTo</link> {
+<link linkend="class_voxel_busters_1_1_utility_1_1_texture_extensions_1a34a4e9049ec08956df06e564fc4fd14ea92769fe7c40229f4301d6125e0a9e928">JPG</link>,
+<link linkend="class_voxel_busters_1_1_utility_1_1_texture_extensions_1a34a4e9049ec08956df06e564fc4fd14ea55505ba281b015ec31f03ccb151b2a34">PNG</link>
+}</literallayout>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_voxel_busters_1_1_utility_1_1_texture_extensions_1a5d1caca2921118f090d807afe8c548a2">ToString</link> (
+this Texture2D _img, EncodeTo _encodeTo)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static string <link linkend="class_voxel_busters_1_1_utility_1_1_texture_extensions_1a97f3848461f0dd3af5cd510e41f818ed">Serialise</link> (
+this Texture2D _img, EncodeTo _encodeTo)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static Texture2D <link linkend="class_voxel_busters_1_1_utility_1_1_texture_extensions_1a7eaa9b93bb0dec274b11af9bcfbb231c">Deserialise</link> (
+string _strImg)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static Texture2D <link linkend="class_voxel_busters_1_1_utility_1_1_texture_extensions_1aa218f68102e02722bf3b07e0757d65df">CreateTexture</link> (
+string _texDataB64, int _width, int _height)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static IEnumerator <link linkend="class_voxel_busters_1_1_utility_1_1_texture_extensions_1afd088f5112d5b5bf8221af688eb28d2c">TakeScreenshot</link> (
+System.Action&lt; Texture2D &gt; _onCompletionHandler)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static Texture2D <link linkend="class_voxel_busters_1_1_utility_1_1_texture_extensions_1a43418eb60f140d0e54070831df675a2b">Rotate</link> (
+this Texture2D _inputTex, float _angle)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static Texture2D <link linkend="class_voxel_busters_1_1_utility_1_1_texture_extensions_1a5ad2498b9c374e1b1b207d6ede962720">MirrorTexture</link> (
+this Texture2D _inputTex, bool _mirrorHorizontally, bool _mirrorVertically)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static Texture2D <link linkend="class_voxel_busters_1_1_utility_1_1_texture_extensions_1a474ac929395620cf93dfc5718eeb9604">Scale</link> (
+this Texture2D _inputTex, float _scaleFactor)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static Color <link linkend="class_voxel_busters_1_1_utility_1_1_texture_extensions_1a088b25d637fbb037967c6bb89277f29a">GetPixel</link> (
+this Texture2D _inputTex, Color32[] _pixels, Vector2 _coordinate)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_texture_extensions_1a34a4e9049ec08956df06e564fc4fd14e">
+               <title>enum EncodeTo </title>
+               
+               <formalpara>
+                    <title>Enumerator:</title>
+                    <variablelist>
+                        <varlistentry xml:id="class_voxel_busters_1_1_utility_1_1_texture_extensions_1a34a4e9049ec08956df06e564fc4fd14ea92769fe7c40229f4301d6125e0a9e928">
+                            <term>JPG</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_voxel_busters_1_1_utility_1_1_texture_extensions_1a34a4e9049ec08956df06e564fc4fd14ea55505ba281b015ec31f03ccb151b2a34">
+                            <term>PNG</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                     </variablelist>
+                </formalpara>
+                <para>Definition at line 10 of file TextureExtensions.cs
+                    <computeroutput><literallayout>
+{
+JPG, 
+PNG, 
+}EncodeTo;
+                    </literallayout></computeroutput>
+                </para>
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_texture_extensions_1a5d1caca2921118f090d807afe8c548a2">
+                <title>static string ToString (this Texture2D _img, EncodeTo _encodeTo=EncodeTo.PNG)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_texture_extensions_1a97f3848461f0dd3af5cd510e41f818ed">
+                <title>static string Serialise (this Texture2D _img, EncodeTo _encodeTo=EncodeTo.PNG)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_texture_extensions_1a7eaa9b93bb0dec274b11af9bcfbb231c">
+                <title>static Texture2D Deserialise (string _strImg)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_texture_extensions_1aa218f68102e02722bf3b07e0757d65df">
+                <title>static Texture2D CreateTexture (string _texDataB64, int _width, int _height)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_texture_extensions_1afd088f5112d5b5bf8221af688eb28d2c">
+                <title>static IEnumerator TakeScreenshot (System.Action&lt; Texture2D &gt; _onCompletionHandler)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_texture_extensions_1a43418eb60f140d0e54070831df675a2b">
+                <title>static Texture2D Rotate (this Texture2D _inputTex, float _angle)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_texture_extensions_1a5ad2498b9c374e1b1b207d6ede962720">
+                <title>static Texture2D MirrorTexture (this Texture2D _inputTex, bool _mirrorHorizontally, bool _mirrorVertically)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_texture_extensions_1a474ac929395620cf93dfc5718eeb9604">
+                <title>static Texture2D Scale (this Texture2D _inputTex, float _scaleFactor)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_texture_extensions_1a088b25d637fbb037967c6bb89277f29a">
+                <title>static Color GetPixel (this Texture2D _inputTex, Color32[] _pixels, Vector2 _coordinate)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

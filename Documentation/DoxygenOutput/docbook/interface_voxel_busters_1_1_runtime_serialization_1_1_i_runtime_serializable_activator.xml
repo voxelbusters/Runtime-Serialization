@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="interface_voxel_busters_1_1_runtime_serialization_1_1_i_runtime_serializable_activator">
+<title>VoxelBusters::RuntimeSerialization::IRuntimeSerializableActivator interface Reference</title>
+    <simplesect>
+
+<para>Implement this interface to control instance creation of serialized type. Static method with signature: object CreateInstance (<link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link> _info) is invoked when creating serialized object instance. <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link> contains all the initializer values that were formerly serialized. So get all the initializer values from <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialization_info">RuntimeSerializationInfo</link> and create object instance. </para>
+    </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+                <para>Definition at line 12 of file IRuntimeSerializableActivator.cs</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>IRuntimeSerializableActivator.cs</para></listitem></itemizedlist></para>
+        </simplesect>
+</section>

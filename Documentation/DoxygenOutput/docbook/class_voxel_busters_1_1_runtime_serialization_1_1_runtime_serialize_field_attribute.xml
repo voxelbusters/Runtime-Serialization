@@ -1,6 +1,34 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialize_field_attribute">
 <title>VoxelBusters::RuntimeSerialization::RuntimeSerializeFieldAttribute class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialize_field_attribute_1a784bd5fdc1a0ad44c81782e98532ce6e">RuntimeSerializeFieldAttribute</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialize_field_attribute_1ad6abdb88937f985035514689dc950b5e">RuntimeSerializeFieldAttribute</link> (
+bool _isObjectInitializer)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
     <simplesect>
 
 <para>Indicates that a field of a <link linkend="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serializable_attribute">RuntimeSerializableAttribute</link> class should be serialized at runtime. </para>
@@ -11,4 +39,12 @@
                 <para>The Documentation for this struct was generated from the following file: </para>
                 <para><itemizedlist><listitem><para>RuntimeSerializeFieldAttribute.cs</para></listitem></itemizedlist></para>
         </simplesect>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialize_field_attribute_1a784bd5fdc1a0ad44c81782e98532ce6e">
+                <title>RuntimeSerializeFieldAttribute ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_runtime_serialization_1_1_runtime_serialize_field_attribute_1ad6abdb88937f985035514689dc950b5e">
+                <title>RuntimeSerializeFieldAttribute (bool _isObjectInitializer)</title> <emphasis></emphasis>
+                
+            </section>
 </section>

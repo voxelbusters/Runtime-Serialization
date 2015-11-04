@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_generics_extension">
+<title>VoxelBusters::Utility::GenericsExtension class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static object[] <link linkend="class_voxel_busters_1_1_utility_1_1_generics_extension_1ac7b03865fd34e816ef2a01bb3c2dd44d">ToArray</link> (
+this IEnumerator _enumerator)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static object[] <link linkend="class_voxel_busters_1_1_utility_1_1_generics_extension_1abe0220b20d09864c4b8a1f4272e1bb68">ToArray</link> (
+this IList _listObject)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static object[] <link linkend="class_voxel_busters_1_1_utility_1_1_generics_extension_1afa68411fc65e561c05d14c5eb21324e6">ToArray</link> (
+this ICollection _collection)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_generics_extension_1ac7b03865fd34e816ef2a01bb3c2dd44d">
+                <title>static object [] ToArray (this IEnumerator _enumerator)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_generics_extension_1abe0220b20d09864c4b8a1f4272e1bb68">
+                <title>static object [] ToArray (this IList _listObject)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_generics_extension_1afa68411fc65e561c05d14c5eb21324e6">
+                <title>static object [] ToArray (this ICollection _collection)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

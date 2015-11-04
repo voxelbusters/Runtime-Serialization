@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_request">
+<title>VoxelBusters::Utility::Request class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static MonoBehaviour surrogateMonobehaviour</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_voxel_busters_1_1_utility_1_1_request_1ad69bb2076d5c4f1eb4b98cb3e0e2efa3">Request</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>IEnumerator <link linkend="class_voxel_busters_1_1_utility_1_1_request_1a6cda726ea3bad8b21fbb72e993b43dc1">StartAsynchronousRequest</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_voxel_busters_1_1_utility_1_1_request_1a2ad5833f464f4add50e4b9483f2ba5e2">Request</link> (
+URL _URL, bool _isAsynchronous)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>abstract void <link linkend="class_voxel_busters_1_1_utility_1_1_request_1a88b2c04e60d2d602d586bc654541ecb3">OnFetchingResponse</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>abstract void <link linkend="class_voxel_busters_1_1_utility_1_1_request_1a502e4c5cd539fa398816edbb9ded30f5">DidFailStartRequestWithError</link> (
+string _error)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_request_1ab198f2f151aa323c4a19a9751e7354f6">StartRequest</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_request_1a12b9283f52eaf7610afe4b04fbca2ff0">Abort</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_request_1ad69bb2076d5c4f1eb4b98cb3e0e2efa3">
+                <title>Request ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_request_1a6cda726ea3bad8b21fbb72e993b43dc1">
+                <title>IEnumerator StartAsynchronousRequest ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_request_1a2ad5833f464f4add50e4b9483f2ba5e2">
+                <title>Request (URL _URL, bool _isAsynchronous)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_request_1a88b2c04e60d2d602d586bc654541ecb3">
+                <title>abstract void OnFetchingResponse ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_request_1a502e4c5cd539fa398816edbb9ded30f5">
+                <title>abstract void DidFailStartRequestWithError (string _error)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_request_1ab198f2f151aa323c4a19a9751e7354f6">
+                <title>void StartRequest ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_request_1a12b9283f52eaf7610afe4b04fbca2ff0">
+                <title>void Abort ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_voxel_busters_1_1_utility_1_1_plist">
+<title>VoxelBusters::Utility::Plist class Reference</title>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static Plist <link linkend="class_voxel_busters_1_1_utility_1_1_plist_1acf3abddd8aeee73ee9581b08b5fe4779">LoadPlistAtPath</link> (
+string _filePath)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static Plist <link linkend="class_voxel_busters_1_1_utility_1_1_plist_1ac173a7d6348ee52ff4838012c4dd9b50">Load</link> (
+string _plistTextContents)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_voxel_busters_1_1_utility_1_1_plist_1a1e94782b246176b19c1936af4858bc7a">Plist</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_plist_1a2fce19912fb5b1297c32ed64e1052dd0">ParsePlistText</link> (
+string _text)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="class_voxel_busters_1_1_utility_1_1_plist_1a11396406d1bb8f57b585b71c7fdb5603">ParseValueNode</link> (
+XmlNode _valNode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_plist_1a8291a6cdd68bf35c2b6f810dd7da5a91">ParseListNode</link> (
+XmlNode _listNode, ref IList _parsedList)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_plist_1ab37d85c122fd99d7039a3a6bedfc0f61">ParseDictionaryNode</link> (
+XmlNode _dictNode, ref IDictionary _parsedDict)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_plist_1a0c80c43f32269ad012ba2ad1b9c32aa9">WriteXMLNode</link> (
+XmlWriter _xmlWriter, object _value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_plist_1aaca5678cc2ab89228b923537211a59a9">WriteXMLBoolNode</link> (
+XmlWriter _xmlWriter, bool _value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_plist_1a27ffbba1da1ff092f66825b994460c9b">WriteXMLIntegerNode</link> (
+XmlWriter _xmlWriter, int _value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_plist_1a66b26235fd141fc927fc27381b6bb9fd">WriteXMLStringNode</link> (
+XmlWriter _xmlWriter, string _value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_plist_1a0c9655930b459db79822e17cc73b073e">WriteXMLListNode</link> (
+XmlWriter _xmlWriter, IList _listValue)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_plist_1ae4e48979b3e3baa97cbd7f69c83bd355">WriteXMLDictionaryNode</link> (
+XmlWriter _xmlWriter, IDictionary _dictValue)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>object <link linkend="class_voxel_busters_1_1_utility_1_1_plist_1aada6166203a487a4b3fbe43b5b374be2">GetKeyPathValue</link> (
+string _keyPath)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_plist_1a0bca92fdee1bb4c5717db35563e6ce36">AddValue</link> (
+string _keyPath, object _newValue)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_voxel_busters_1_1_utility_1_1_plist_1afa5d8de958c1d1fa77da95c2adf04e0d">Save</link> (
+string _saveToPath)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_plist_1acf3abddd8aeee73ee9581b08b5fe4779">
+                <title>static Plist LoadPlistAtPath (string _filePath)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_plist_1ac173a7d6348ee52ff4838012c4dd9b50">
+                <title>static Plist Load (string _plistTextContents)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_plist_1a1e94782b246176b19c1936af4858bc7a">
+                <title>Plist ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_plist_1a2fce19912fb5b1297c32ed64e1052dd0">
+                <title>void ParsePlistText (string _text)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_plist_1a11396406d1bb8f57b585b71c7fdb5603">
+                <title>object ParseValueNode (XmlNode _valNode)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_plist_1a8291a6cdd68bf35c2b6f810dd7da5a91">
+                <title>void ParseListNode (XmlNode _listNode, ref IList _parsedList)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_plist_1ab37d85c122fd99d7039a3a6bedfc0f61">
+                <title>void ParseDictionaryNode (XmlNode _dictNode, ref IDictionary _parsedDict)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_plist_1a0c80c43f32269ad012ba2ad1b9c32aa9">
+                <title>void WriteXMLNode (XmlWriter _xmlWriter, object _value)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_plist_1aaca5678cc2ab89228b923537211a59a9">
+                <title>void WriteXMLBoolNode (XmlWriter _xmlWriter, bool _value)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_plist_1a27ffbba1da1ff092f66825b994460c9b">
+                <title>void WriteXMLIntegerNode (XmlWriter _xmlWriter, int _value)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_plist_1a66b26235fd141fc927fc27381b6bb9fd">
+                <title>void WriteXMLStringNode (XmlWriter _xmlWriter, string _value)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_plist_1a0c9655930b459db79822e17cc73b073e">
+                <title>void WriteXMLListNode (XmlWriter _xmlWriter, IList _listValue)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_plist_1ae4e48979b3e3baa97cbd7f69c83bd355">
+                <title>void WriteXMLDictionaryNode (XmlWriter _xmlWriter, IDictionary _dictValue)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_plist_1aada6166203a487a4b3fbe43b5b374be2">
+                <title>object GetKeyPathValue (string _keyPath)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_plist_1a0bca92fdee1bb4c5717db35563e6ce36">
+                <title>void AddValue (string _keyPath, object _newValue)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_voxel_busters_1_1_utility_1_1_plist_1afa5d8de958c1d1fa77da95c2adf04e0d">
+                <title>void Save (string _saveToPath)</title> <emphasis></emphasis>
+                
+            </section>
+</section>
